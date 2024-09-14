@@ -5,15 +5,21 @@
 # https://opensource.org/licenses/MIT
 
 CWD=$(pwd)
+echo CWD=${CWD}
+echo REPO_ROOT=${REPO_ROOT}
+echo APP_DIR=${APP_DIR}
+echo APP_ID=${APP_ID}
+echo APP_NAME=${APP_NAME}
+BASE="${CWD}/com.uniontech.foundation"
 export PATH=$PATH:${CWD}/node_modules/.bin
 
 cd "${REPO_ROOT}"
+
 if [ ! -e "$DIR" ]; then
-    yarn ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${CWD}/com.uniontech.foundation" --quiet --cache-dir "${CACHE_DIR}"
+    ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${BASE}" --quiet --cache-dir "${CACHE_DIR}"
     cp -v ./.gitignore "${APP_DIR}"
 fi
 cd "${APP_DIR}"
-echo CWD=$(pwd)
 
 ll-helper patch ld icon
 
