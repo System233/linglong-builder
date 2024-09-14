@@ -7,11 +7,12 @@
 export PATH=$PATH:$(pwd)/node_modules/.bin
 
 if [ ! -e "$DIR" ]; then
-    yarn ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from ./template
+    yarn ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from ./template --quiet
     cp -v ./.gitignore "${NEW_APP_ID}"
 fi
 cd "${NEW_APP_ID}"
 echo CWD=$(pwd)
+ll-helper patch ld icon
+
 ls -l
-yarn ll-helper patch ld icon
-yarn ll-helper resolve
+ll-helper resolve
