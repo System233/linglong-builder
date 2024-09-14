@@ -24,11 +24,24 @@ jobs:
         appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
       fail-fast: false
     steps:
+      - name: preflight
+        id: preflight
+        run: |
+          export TAG_NAME=$(date '+%Y-%m-%d')
+          export APP_ID=${{matrix.appid}}
+          export NEW_APP_ID="${APP_ID}.linyaps"
+          SKIP_BUILD=curl "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' 2>/dev/null|jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any'
+
+          echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
+          echo "skip_build=${SKIP_BUILD}" >> $GITHUB_OUTPUT
+
       - name: Checkout
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/checkout@v4
 
       - name: linglong-builder-cache
         id: linglong-builder-cache
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -40,12 +53,14 @@ jobs:
           key: ${{ runner.os }}-linglong-builder-cache
       - name: linglong-helper-cache
         id: linglong-helper-cache
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
             ~/.cache/linglong-helper
           key: ${{ runner.os }}-linglong-helper-cache
       - name: install
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
           sudo mkdir -p /etc/apt/keyrings/
@@ -56,12 +71,13 @@ jobs:
           ll-cli --version
       - name: Build ${{matrix.appid}}
         id: build
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
         run: |
           echo APPID=${{matrix.appid}}
           export REPO_ROOT=$(pwd)/repos
           export APP_ID=${{matrix.appid}}
-          export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
           export NEW_APP_ID="${APP_ID}.linyaps"
+          export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
           export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
           export CACHE_DIR=~/.cache/linglong-helper
           yarn install
@@ -76,7 +92,7 @@ jobs:
           echo "tag_name=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Commit
-        if: ${{steps.build.outputs.commit == 'yes' }}
+        if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -84,7 +100,7 @@ jobs:
           git push
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: ${{steps.build.outputs.commit == 'yes' }}
+        if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
           files: |
