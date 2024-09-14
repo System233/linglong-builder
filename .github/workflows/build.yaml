@@ -25,6 +25,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: linglong-builder-cache
+        id: linglong-builder-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.base
+            ~/.cache/linglong-builder/layers/main/org.deepin.foundation
+            ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
+            ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
+            ~/.cache/linglong-builder/repo/
+          key: ${{ runner.os }}-linglong-builder-cache
+      - name: linglong-helper-cache
+        id: linglong-helper-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-helper
+          key: ${{ runner.os }}-linglong-helper-cache
       - name: install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
@@ -41,7 +60,7 @@ jobs:
           export APP_ID=${{matrix.appid}}
           export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
           export NEW_APP_ID="${APP_ID}.linyaps"
-
+          export CACHE_DIR=~/.cache/linglong-helper
           yarn install
           bash ./build.sh
 
