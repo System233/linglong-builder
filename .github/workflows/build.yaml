@@ -16,12 +16,13 @@ jobs:
         id: list-appid
         run: |
           TAG_NAME=$(date '+%Y%m%d')
+          RELEASE=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}')
           while read APP_ID;do
             NEW_APP_ID="${APP_ID}.linyaps"
             if grep -q "${NEW_APP_ID}" ./rebuild.list;then
               SKIP_BUILD=false
             else
-              SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
+              SKIP_BUILD=$(echo $RELEASE |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
             fi
 
             if [ "${SKIP_BUILD}" == "false" ];then
