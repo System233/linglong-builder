@@ -30,7 +30,7 @@ jobs:
           TAG_NAME=$(date '+%Y-%m-%d')
           APP_ID=${{matrix.appid}}
           NEW_APP_ID="${APP_ID}.linyaps"
-          SKIP_BUILD=$(curl "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' 2>/dev/null|jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any')
+          SKIP_BUILD=$(curl "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --fail 2>/dev/null|jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
 
           echo TAG_NAME=${TAG_NAME}
           echo SKIP_BUILD=${SKIP_BUILD}
