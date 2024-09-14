@@ -87,7 +87,7 @@ jobs:
           bash ./build.sh
 
           git add .
-          COMMIT=$(git diff --quiet&&echo no||echo yes)
+          COMMIT=$(git diff --cached --quiet&&echo no||echo yes)
 
           echo COMMIT=${COMMIT}
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
