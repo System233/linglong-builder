@@ -1,0 +1,25 @@
+version: "1.0"
+package:
+  id: com.aisdp.linyaps
+  name: 亚信安全SDP
+  version: 3.8.1.218
+  kind: app
+  description: |-
+    
+    亚信安全SDP
+command:
+  - /opt/apps/com.aisdp.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.aisdp/com.aisdp_3.8.1.0218_amd64.deb
+    digest: 88a07760eadbeced2b840262e395cbb531e07d8340a2a964040a45d8f954a97f
+build: |-
+  export LINGLONG_RAW_ID="com.aisdp"
+  export LINGLONG_APP_ID="com.aisdp.linyaps"
+  export LINGLONG_APP_NAME="亚信安全SDP"
+  export LINGLONG_APP_VERSION="3.8.1.218"
+  export LINGLONG_APP_KIND="app"
+  export LINGLONG_APP_DESC="\n亚信安全SDP"
+  export LINGLONG_COMMAND="/opt/apps/com.aisdp.linyaps/files/bin/start.sh"
+  exec /project/build.sh
