@@ -36,7 +36,7 @@ jobs:
           yarn install
 
           if [ ! -e "$DIR" ];then
-            ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from ./template
+            yarn ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from ./template
             cp -v ./.gitignore "${NEW_APP_ID}"
           fi
           cd "${NEW_APP_ID}"
