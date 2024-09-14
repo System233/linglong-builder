@@ -1,3 +1,4 @@
+#!/bin/bash
 # Copyright (c) 2024 System233
 #
 # This software is released under the MIT License.

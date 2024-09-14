@@ -85,7 +85,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            ~/.cache/linglong-builder/layers/main/com.deepin.Runtime
+            ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
           key: ${{ runner.os }}-linglong-builder-deepin-Runtime
 
       - name: linglong-builder-deepin-base
@@ -93,7 +93,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            ~/.cache/linglong-builder/layers/main/com.deepin.base
+            ~/.cache/linglong-builder/layers/main/org.deepin.base
           key: ${{ runner.os }}-linglong-builder-deepin-base
 
       - name: linglong-builder-deepin-foundation
