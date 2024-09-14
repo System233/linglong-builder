@@ -1,0 +1,31 @@
+version: "1.0"
+package:
+  id: com.founderinternational.cebreader.linyaps
+  name: 方正CEB版式文档阅读器
+  version: 0.1.0.202006291
+  kind: app
+  description: Founder CEBReader
+command:
+  - /opt/apps/com.founderinternational.cebreader.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.founderinternational.cebreader/com.founderinternational.cebreader_1.0.20200629-1_amd64.deb
+    digest: 4ac85a0153d041faac213295e080811b28ade96aa6b769fa9b7a2abf141476ce
+build: >-
+  export LINGLONG_RAW_ID="com.founderinternational.cebreader"
+
+  export LINGLONG_APP_ID="com.founderinternational.cebreader.linyaps"
+
+  export LINGLONG_APP_NAME="方正CEB版式文档阅读器"
+
+  export LINGLONG_APP_VERSION="0.1.0.202006291"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="Founder CEBReader"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.founderinternational.cebreader.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
