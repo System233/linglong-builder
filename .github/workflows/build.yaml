@@ -146,16 +146,21 @@ jobs:
 
           git add .
           COMMIT=$(git diff --cached --quiet&&echo no||echo yes)
+          LAYER_NAME=$(find ${APP_DIR} -name "*_binary.layer")
+          SHA1_NAME="${LAYER_NAME}.sha1"
+          sha1sum "${LAYER_NAME}" > "${SHA1_NAME}"
 
           echo COMMIT=${COMMIT}
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
           echo "appdir=${APP_DIR}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT}" >> $GITHUB_OUTPUT
-          echo "layer_name=$(find ${APP_DIR} -name "*_binary.layer")" >> $GITHUB_OUTPUT
+          echo "layer_name=${LAYER_NAME}" >> $GITHUB_OUTPUT
+          echo "sha1_name=${SHA1_NAME}" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
 
       - name: Commit
         if: ${{steps.build.outputs.commit == 'yes' }}
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -164,12 +169,16 @@ jobs:
           git pull --rebase origin main
           git push origin main
 
+          REF_ID=$(git rev-parse --short HEAD)
+          echo "ref_id=${REF_ID}" >> $GITHUB_OUTPUT
+
       - name: Release
         uses: softprops/action-gh-release@v2
         if: ${{steps.build.outputs.commit == 'yes' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
-          body: ${{matrix.appid}}
+          body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id}}]("https://github.com/${{GITHUB_REPOSITORY}}/tree/${{steps.commit.outputs.ref_id}}/repos/${{matrix.appid}}.linyaps")
           append_body: true
           files: |
             ${{steps.build.outputs.layer_name}}
+            ${{steps.build.outputs.sha1_name}}
