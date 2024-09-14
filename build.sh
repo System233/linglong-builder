@@ -15,7 +15,7 @@ export PATH=$PATH:${CWD}/node_modules/.bin
 
 cd "${REPO_ROOT}"
 
-if [ ! -e "$DIR" ]; then
+if [ ! -e "$APP_DIR" ]; then
     ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${BASE}" --quiet --cache-dir "${CACHE_DIR}"
     # cp -v ${CWD}/.gitignore "${APP_DIR}"
 fi
