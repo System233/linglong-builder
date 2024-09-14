@@ -86,6 +86,7 @@ jobs:
           yarn install
           bash ./build.sh
 
+          ls -l ${APP_DIR}
           COMMIT=$(git diff --quiet&&echo no||echo yes)
 
           echo COMMIT=${COMMIT}

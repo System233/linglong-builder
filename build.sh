@@ -17,7 +17,7 @@ cd "${REPO_ROOT}"
 
 if [ ! -e "$DIR" ]; then
     ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${BASE}" --quiet --cache-dir "${CACHE_DIR}"
-    cp -v ${CWD}/.gitignore "${APP_DIR}"
+    # cp -v ${CWD}/.gitignore "${APP_DIR}"
 fi
 cd "${APP_DIR}"
 
