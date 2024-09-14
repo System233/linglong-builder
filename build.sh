@@ -3,7 +3,7 @@
 #
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
-
+set -e
 CWD=$(pwd)
 echo CWD=${CWD}
 echo REPO_ROOT=${REPO_ROOT}
@@ -21,10 +21,10 @@ if [ ! -e "$DIR" ]; then
 fi
 cd "${APP_DIR}"
 
-ll-helper patch ld icon
+ll-helper patch ld icon --from "${BASE}"
 
 echo [搜索依赖]
-ll-helper resolve --cache-dir ${CACHE_DIR}
+ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
 
 echo [正式构建]
 ll-builder build

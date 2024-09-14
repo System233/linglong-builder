@@ -41,18 +41,64 @@ jobs:
         if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/checkout@v4
 
-      - name: linglong-builder-cache
-        id: linglong-builder-cache
+      # - name: linglong-builder-cache
+      #   id: linglong-builder-cache
+      #   if: ${{steps.preflight.outputs.skip_build=='false'}}
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: |
+      #       ~/.cache/linglong-builder/layers/main/org.deepin.base
+      #       ~/.cache/linglong-builder/layers/main/org.deepin.foundation
+      #       ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
+      #       ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
+      #       ~/.cache/linglong-builder/repo/
+      #     key: ${{ runner.os }}-linglong-builder-cache
+
+      - name: linglong-builder-repo
+        id: linglong-builder-repo
         if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
-            ~/.cache/linglong-builder/layers/main/org.deepin.base
-            ~/.cache/linglong-builder/layers/main/org.deepin.foundation
-            ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
-            ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
             ~/.cache/linglong-builder/repo/
           key: ${{ runner.os }}-linglong-builder-cache
+
+      - name: linglong-builder-deepin-Runtime
+        id: linglong-builder-deepin-Runtime
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/com.deepin.Runtime
+          key: ${{ runner.os }}-linglong-builder-deepin-Runtime
+
+      - name: linglong-builder-deepin-base
+        id: linglong-builder-deepin-base
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/com.deepin.base
+          key: ${{ runner.os }}-linglong-builder-deepin-base
+
+      - name: linglong-builder-deepin-foundation
+        id: linglong-builder-deepin-foundation
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.foundation
+          key: ${{ runner.os }}-linglong-builder-deepin-foundation
+
+      - name: linglong-builder-uniontech-foundation
+        id: linglong-builder-uniontech-foundation
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
+          key: ${{ runner.os }}-linglong-builder-uniontech-foundation
+
       - name: linglong-helper-cache
         id: linglong-helper-cache
         if: ${{steps.preflight.outputs.skip_build=='false'}}
@@ -61,6 +107,7 @@ jobs:
           path: |
             ~/.cache/linglong-helper
           key: ${{ runner.os }}-linglong-helper-cache
+
       - name: install
         if: ${{steps.preflight.outputs.skip_build=='false'}}
         run: |
@@ -71,6 +118,7 @@ jobs:
           sudo apt update
           sudo apt install linglong-builder linglong-box linglong-bin
           ll-cli --version
+
       - name: Build ${{matrix.appid}}
         id: build
         if: ${{steps.preflight.outputs.skip_build=='false'}}
@@ -105,6 +153,7 @@ jobs:
           git status -s
           git pull --rebase origin main
           git push origin main
+
       - name: Release
         uses: softprops/action-gh-release@v2
         if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
