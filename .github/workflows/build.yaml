@@ -96,11 +96,11 @@ jobs:
       - name: Commit
         if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update ${{matrix.appid}}"
-          git pull
-          git push
+          git pull --rebase origin main
+          git push origin main
       - name: Release
         uses: softprops/action-gh-release@v2
         if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
