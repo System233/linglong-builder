@@ -85,11 +85,9 @@ jobs:
           yarn install
           bash ./build.sh
 
-          git add ${APP_DIR}
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
+          echo "appdir=${APP_DIR}" >> $GITHUB_OUTPUT
           echo "commit=$(git diff --cached --quiet&&echo no||echo yes)" >> $GITHUB_OUTPUT
-
-
           echo "layer_name=$(find ${APP_DIR} -name "*_binary.layer")" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
 
@@ -98,7 +96,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
           git commit -m "Update ${{matrix.appid}}"
+          git status -s
           git pull --rebase origin main
           git push origin main
       - name: Release
