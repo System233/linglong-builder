@@ -26,5 +26,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build Target ${{matrix.appid}}
+        id: build
         run: |
           echo APPID=${{matrix.appid}}
+          export APP_ID=${{matrix.appid}}
+          export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
+          export NEW_APP_ID="${APP_ID}.linyaps"
+
+          yarn install
+
+          if [ ! -e "$DIR" ];then
+            ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from ./template
+            cp -v ./.gitignore "${NEW_APP_ID}"
+          fi
+          cd "${NEW_APP_ID}"
+          yarn ll-helper patch ld icon
+          yarn ll-helper resolve
+
+          git add ${NEW_APP_ID}
+          echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
+          echo "commit=$(git diff --cached --quiet&&echo no||echo yes)" >> $GITHUB_OUTPUT
+      - name: Commit
+        if: ${{steps.build.outputs.commit == 'yes' }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -m "Update ${{matrix.appid}}"
+          git push
