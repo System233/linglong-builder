@@ -251,10 +251,10 @@ libphonenumber-js@^1.10.53:
   resolved "https://registry.npmmirror.com/libphonenumber-js/-/libphonenumber-js-1.11.8.tgz#697fdd36500a97bc672d7927d867edf34b4bd2a7"
   integrity sha512-0fv/YKpJBAgXKy0kaS3fnqoUVN8901vUYAKIGD/MWZaDfhJt1nZjPL3ZzdZBt/G8G8Hw2J1xOIrXWdNHFHPAvg==
 
-linglong-helper@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.npmjs.org/linglong-helper/-/linglong-helper-0.3.5.tgz#94902304eb51e0a88d5d82fa2e970e6b20fdf20c"
-  integrity sha512-hEgbsv9353ZUAHyCZAG25G3NRm1x5xorlssj68nhhVFdVKb66ZmoK8NkhWLopcjM5MjVkwpmaeKUtQcbieOX8A==
+linglong-helper@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.npmjs.org/linglong-helper/-/linglong-helper-0.3.6.tgz#2d50828653fbb307760b0acc0059f0bf1289d755"
+  integrity sha512-HogRbdcb/93P8c1/udVWfoo8zn0ZeRNkd5ZlwCJIce3uaJw85BTuSqHOv/hW88a+NDlB2yXvVgoISiNLFdWnOA==
   dependencies:
     apt-cli "^0.1.10"
     class-transformer "^0.5.1"
