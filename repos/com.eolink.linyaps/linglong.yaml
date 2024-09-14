@@ -1,0 +1,23 @@
+version: "1.0"
+package:
+  id: com.eolink.linyaps
+  name: Eolink
+  version: 0.10.3.3
+  kind: app
+  description: 专为开发者设计的免费 API 协作平台
+command:
+  - /opt/apps/com.eolink.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.eolink/com.eolink_10.3.3_amd64.deb
+    digest: a5c161c08c004e200bd9fc629a2adc773a6838d29844d109d85a07c597a7cedd
+build: |-
+  export LINGLONG_RAW_ID="com.eolink"
+  export LINGLONG_APP_ID="com.eolink.linyaps"
+  export LINGLONG_APP_NAME="Eolink"
+  export LINGLONG_APP_VERSION="0.10.3.3"
+  export LINGLONG_APP_KIND="app"
+  export LINGLONG_APP_DESC="专为开发者设计的免费 API 协作平台"
+  export LINGLONG_COMMAND="/opt/apps/com.eolink.linyaps/files/bin/start.sh"
+  exec /project/build.sh

@@ -1,0 +1,169 @@
+version: "1.0"
+package:
+  id: net.zhuoaninfo.pdf417.creator.linyaps
+  name: 卓安公文二维条形码生成软件
+  version: 0.0.1.3
+  kind: app
+  description: 此软件依据GB0226-2005标准,用于日常公文二维条形码的生成;如有其他功能需求,请联系厂商。
+command:
+  - /opt/apps/net.zhuoaninfo.pdf417.creator.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/n/net.zhuoaninfo.pdf417.creator/net.zhuoaninfo.pdf417.creator_1.03_all.deb
+    digest: be571e650189cc58fb19d93b9e732a0ed5f288de1f4d00c8333ebcb1e7c1e3ac
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/openjdk-8/openjdk-8-jdk_8u212-b01-1~deb9u1_amd64.deb
+    digest: 7263c9b2e67aeb0b065392ca8455d3f579c415e351accce89620d4730c4c447a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/openjdk-8/openjdk-8-jre_8u212-b01-1~deb9u1_amd64.deb
+    digest: faa6cd53f881b9fbdaa926347398b7ebae7a65ef7603afd781b9e34bebc7c3c6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/openjdk-8/openjdk-8-jre-headless_8u212-b01-1~deb9u1_amd64.deb
+    digest: a02bdc083f33baa713e54e32639033692862c9a83a13d32c70510e59d9af2696
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/ca-certificates-java/ca-certificates-java_20190405_all.deb
+    digest: daff9c69bd1522c3a7889b08cd342bd1015ca11236fa7af0d5f586edeafa8fdb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/j/java-common/default-jre-headless_1.11-71.2-1+dde_amd64.deb
+    digest: 1f5ed6f2c9515cd4e3159aaa5af02a0aa3aa2f851d5e36cf9a91b735c872566e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/openjdk-11/openjdk-11-jre-headless_11.0.9.2+1-1~deb10u2_amd64.deb
+    digest: fc8af7708aba4ea9d2d8ab990fc4b407da0c6d867d938a12d4bf99edbb2060b0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/j/java-common/java-common_0.71.2-1+dde_all.deb
+    digest: 9e91af596be89c10fc6e597024b86900c7c28d78ea3a89b1c2c595a58f00e35c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
+    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
+    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
+    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mesa/libgl1-mesa-glx_19.2.6.3-1_amd64.deb
+    digest: a1c196b874cf5f5e72ecdb4346a7c039e4de8a73b400cec93ff0ddd7ba3e8cd6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
+    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
+    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
+    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
+    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
+    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
+    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
+    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
+    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
+    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
+    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
+    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
+    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
+    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
+    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/j/java-atk-wrapper/libatk-wrapper-java-jni_0.33.3-22_amd64.deb
+    digest: 913e96ef523340d10b5e47937a5c28410afd8875e3859ac8afb82189771234ae
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/j/java-atk-wrapper/libatk-wrapper-java_0.33.3-22_all.deb
+    digest: fc9795c8ea4ba94b7bb596ad82c174ddb53aae07793ba913f87b8732221dc404
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/x11-utils/x11-utils_7.7+4_amd64.deb
+    digest: 626bdef46c618f74588508d94c3f02cee518dbd61f6e42451e34e8880e15b3e3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libf/libfontenc/libfontenc1_1.1.3.1-1+rebuild_amd64.deb
+    digest: 341934e5a7c90973131e3a419ca90e9cc3bb5b188915d727beef526de4081461
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxaw/libxaw7_1.0.13.1-1+rebuild_amd64.deb
+    digest: dee51e30987eccb4d83e670a25f355e0003c8c5c84c4790da9d811216032adb5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxmu/libxmu6_1.1.2.1-1+rebuild_amd64.deb
+    digest: 6dcb6ef392a2fe10f482860df5a1aeb1cbd6af5f2d49b5648a0013f2f7c45cb9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxt/libxt6_1.1.5.1.1-1+dde_amd64.deb
+    digest: 3b62b28febb4d5609d0d2ffe9307881c1607acd238857138479ad66789567dc9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxpm/libxpm4_3.5.12.3-deepin1_amd64.deb
+    digest: e1f8baa84a65403cb669f8bc95e3b9f7baa74d77ae8bed7cd70440ecc8b736af
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxmu/libxmuu1_1.1.2.1-1+rebuild_amd64.deb
+    digest: dad522055097b2428d981831a7c26327ef473e72b537c810749d452fac4fd1f2
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxv/libxv1_1.0.11-1_amd64.deb
+    digest: d77a44d3e78bdd5bf5049e938839020500ba398f4e6e76e8e7640d47d40ae932
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxxf86dga/libxxf86dga1_1.1.4.1-1+rebuild_amd64.deb
+    digest: 48e207d4da957fc9a61b4f22d82c4a6bbf79fa0b49474cc5e4d581811420f636
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/giflib/libgif7_5.1.4.3-deepin1_amd64.deb
+    digest: 3ed3fcabecab373b364762bf85cb9e822caa31903bc953f9f243eb5c39b62245
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pulseaudio/libpulse0_12.2.27-1+dde_amd64.deb
+    digest: 5325ed34769ba417071a20c1138d654e084a3f3ca01c44a5e008fdea8c43d808
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/liba/libasyncns/libasyncns0_0.8-6_amd64.deb
+    digest: ff03f23cc327b963512c7e1d0689951abbaf1406035456cf6e6d7c67ccce5431
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsndfile/libsndfile1_1.0.28.3-1+deepin_amd64.deb
+    digest: 52f5093b8cfae890826dd27350de8a1c0432ed9f8d125ebebb5c5fd8dba47dd1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/flac/libflac8_1.3.2.3-deepin1_amd64.deb
+    digest: 120eb80b701f874a7aac18bd430eb2bb2009cdac47d4ef68b8e52277186f61cf
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libo/libogg/libogg0_1.3.2.2-1+dde_amd64.deb
+    digest: 684ed420aa9ac57885cbc14989fa893d75510acf19d29e14fd9bd25338072516
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbis0a_1.3.6-2_amd64.deb
+    digest: 58ceadc9fcdb5a18c9092e0ab0b65130063132712b81fee72e14ad3d367ca172
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbisenc2_1.3.6-2_amd64.deb
+    digest: dc6ba53bfba31f24e5c8a4a54786747f1ca60855d4351c3de5bd5a1f36d292fa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/t/tcp-wrappers/libwrap0_7.6.q-28_amd64.deb
+    digest: 545d24beda62aa37ac22af697dbc43c9fb87d718aeefd3664309759f716ea0ac
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/openjdk-8/openjdk-8-jdk-headless_8u212-b01-1~deb9u1_amd64.deb
+    digest: 9022ff80eeff7b9f01877a2055c0d23246f8e4525aaef56263bde885a67a298f
+build: >-
+  export LINGLONG_RAW_ID="net.zhuoaninfo.pdf417.creator"
+
+  export LINGLONG_APP_ID="net.zhuoaninfo.pdf417.creator.linyaps"
+
+  export LINGLONG_APP_NAME="卓安公文二维条形码生成软件"
+
+  export LINGLONG_APP_VERSION="0.0.1.3"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="此软件依据GB0226-2005标准,用于日常公文二维条形码的生成;如有其他功能需求,请联系厂商。"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/net.zhuoaninfo.pdf417.creator.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

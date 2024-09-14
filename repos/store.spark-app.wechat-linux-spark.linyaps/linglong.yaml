@@ -1,0 +1,779 @@
+version: "1.0"
+package:
+  id: store.spark-app.wechat-linux-spark.linyaps
+  name: 微信Linux
+  version: 2.2.11.0
+  kind: app
+  description: WeChat Desktop WeChat Desktop
+command:
+  - /opt/apps/store.spark-app.wechat-linux-spark.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+runtime: org.deepin.Runtime/23.0.1
+sources:
+  - kind: file
+    url: https://com-store-packages.uniontech.com/appstorev23/pool/appstore/s/store.spark-app.wechat-linux-spark/store.spark-app.wechat-linux-spark_2.2.1-real1.0.0.241.6_amd64.deb
+    digest: ee122785a1a1d196657ae47f11049a03657e89b57648933943a9638fad1465dc
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libn/libnotify/libnotify4_0.7.7-4_amd64.deb
+    digest: f34c48c92e6811a9ec8157539242b72b24615e14944e728ff552ba73f2a2684d
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
+    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
+    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xdg-utils/xdg-utils_1.1.3+deepin-1+deepin_all.deb
+    digest: 4d5702d36507859b0d74b09a22e9bddde7328ea159267f0cb05e5e8c010af94f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kde-cli-tools/kde-cli-tools_5.14.5-1_amd64.deb
+    digest: a73712d64708740272134d8c560baf4dbb0168ace0c2cc07f9bc82ebf950348d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kde-cli-tools/kde-cli-tools-data_5.14.5-1_all.deb
+    digest: 862e413b659c0615bb30da1b193145c56ead21cdd7a1488a623f263cd2b79066
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kio/kio_5.54.1-1_amd64.deb
+    digest: 49e8e76012b509d7c113ce3687669d41c0e97da37d4a793a6ab5b104f4a7c0cb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/karchive/libkf5archive5_5.54.0-1_amd64.deb
+    digest: ca078a6c1d3a44addd068b6ecbb6089bed37d6d770bbe0cad6b1fd2f6118b1a9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/double-conversion/libdouble-conversion1_3.1.0.2-1+dde_amd64.deb
+    digest: 7a306a37a9952dbe292ec97a0b53c069f5cbb6ea5346f7f1acfc08a65fa968cf
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcre2/libpcre2-16-0_10.32.2-deepin1_amd64.deb
+    digest: b8511f509b2878ab25321abd71183bbb18cc37e2d75e8c4071919811082de7d2
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kauth/libkf5auth5_5.54.0-2_amd64.deb
+    digest: 8889d78cc1a2cb4f7a17afbdc7a1761067a9a274a02b8f2e6b4b43f32c051365
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kauth/libkf5auth-data_5.54.0-2_all.deb
+    digest: 46a6e9f748e17fb7a912e33b1606ce1deddaea8836c19b4c40efb78bbabe6935
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcoreaddons/libkf5coreaddons5_5.54.0-1_amd64.deb
+    digest: ab1484acf7a81e0b54e1dcd53f5d3fb05d8bfcbb3bcfd8cd106c171528a8b228
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcoreaddons/libkf5coreaddons-data_5.54.0-1_all.deb
+    digest: 46fdd0d6e9b0ec11fcdfeafe15c807d85b71251842731fae2b3af5f6f4000a47
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/fam/libfam0_2.7.0-17.3_amd64.deb
+    digest: 7421448d94944fa599e124932b4df4586452de61d1e54ad886b2009c2cfb555b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/polkit-qt-1/libpolkit-qt5-1-1_5.0.2-1_amd64.deb
+    digest: c622e37bc21b8915b53268ae0a508e49031283cfeece90d875280e33b4c99c9f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
+    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
+    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
+    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
+    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/policykit-1/libpolkit-agent-1-0_0.105.10.22-1+dde_amd64.deb
+    digest: 0818c9a38f3f4549d2dc008e4b802528a453a1bb90d1818c141b205c58635908
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/policykit-1/libpolkit-gobject-1-0_0.105.10.22-1+dde_amd64.deb
+    digest: aacc5cab841217134fe8d240891f3de0bf5cd9575daa66e4a56ed28dbdac869c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libi/libinput/libinput10_1.12.6.2-1+dde_amd64.deb
+    digest: dc29809f40278b4a80c24d819d2ce669737b2d11a882aa8cbd59649110999955
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libe/libevdev/libevdev2_1.6.0+dfsg-1_amd64.deb
+    digest: e25abaf6ca46022c0b62cc5eed3a91818b7e7c2b26696a765c3fa784f8fb3564
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mtdev/libmtdev1_1.1.5.1-1+rebuild_amd64.deb
+    digest: e25e1cb21990d0148091edba4acb9c374612a59f1a61247c9e1b164c04ea2ccd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libw/libwacom/libwacom2_0.32-1_amd64.deb
+    digest: 470f3ef98419a485d32a521ce79f0401438ff9324816e92d4ac444dd4ac6e3bb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libg/libgudev/libgudev-1.0-0_232.1-1+dde_amd64.deb
+    digest: 8e4d9002fc937c8aef15b4c5a91f47c81fdee97aeb7a97fe69b6e215ed7b6bb9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libw/libwacom/libwacom-common_0.32-1_all.deb
+    digest: 654f6d07188516ec4c566bccca0b65aca9f8b95b32e4338e66847237e2266fa6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libi/libinput/libinput-bin_1.12.6.2-1+dde_amd64.deb
+    digest: 113c65e67f86df09e1373a4b6a9f7ce7ebf8cac31a0f3abfa2491fc35aabb3f1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1_amd64.deb
+    digest: a498ff92806369ab8fdc0ac218185fe148288b840443409b665b05cdc7bf2c9e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-image/libxcb-image0_0.4.0.1-1+rebuild_amd64.deb
+    digest: f54347e90eaf15ff0e85847d226ac82a6960d2a64f14b911dc8e1916165610d5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util/libxcb-util0_0.3.8.1-1+rebuild_amd64.deb
+    digest: d571cf09a867aa8a9d416e3bfdfdbb53dae1f97d0f499cc4f7ef9124b953f9ca
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0.1-1+rebuild_amd64.deb
+    digest: a8656090cd2971bff2d6596aafa14dff59c8d5e627f8564370ed2d210505b55c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9.1-1+rebuild_amd64.deb
+    digest: 474b363a06dbbafa4a40b965ed2f066d46fa474aa3fc0a9f6da44ec1e2e240bb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_0.8.2-1_amd64.deb
+    digest: 387f2e36c582b123f7988f250f3ab739a7f3a54e5b507d4e5fa445cd1c43f61a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcodecs/libkf5codecs5_5.54.0-1_amd64.deb
+    digest: 7c0c00f92b34d5b8b2573b3b2a2325f3a437f4d6a88ae2e9419061e1f8562478
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcodecs/libkf5codecs-data_5.54.0-1_all.deb
+    digest: ca730d49e9d395b2a827c81ce2a56bb88681a9756d0ac26ab174cc1efa496616
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcompletion/libkf5completion5_5.54.0-1_amd64.deb
+    digest: 021eb39ffc95ec70eb79205a7942487abd9d514c168ecc37bbf2e3dc750e9237
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcompletion/libkf5completion-data_5.54.0-1_all.deb
+    digest: 24b19e2850c1fc5d8f22cb2c108f818e82e81dfd4a5ddabbfbc308f5d6832b6a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kconfig/libkf5configcore5_5.54.0-1+deb10u1_amd64.deb
+    digest: 6f234d0694ca682cdf8b8b01244500d68e3ad0176ef841af364337ca86596293
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kconfig/libkf5config-data_5.54.0-1+deb10u1_all.deb
+    digest: b9094e0c767f6e152cb15499b195ddbb44c6209ef5ba91fbf97a39296e0b4af9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kconfig/libkf5configgui5_5.54.0-1+deb10u1_amd64.deb
+    digest: 31dc238f50d183a66b07ebd3ee367806d98190b42b4612423bfe1ebe4a17aa2c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwidgetsaddons/libkf5widgetsaddons5_5.54.0-1_amd64.deb
+    digest: be9ea03a024f8c8dc9a3f34dc6d05cc598ec999c41e933f4a7c5fb6dfee8dc57
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwidgetsaddons/libkf5widgetsaddons-data_5.54.0-1_all.deb
+    digest: 0ca3ec3657d8c33e20f0635da3042e66c8c329828547e6bd14097502d1f5b8f3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kconfigwidgets/libkf5configwidgets5_5.54.0-1_amd64.deb
+    digest: a65fd840384c6903e484f6cf9515d8d9269d2db8a2b7443cab59f3f7cb94781b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kconfigwidgets/libkf5configwidgets-data_5.54.0-1_all.deb
+    digest: 22fbf9aea710795eb986e6c802a74ed5e026d12a3dd9c89617ea5fc06d512b5e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kguiaddons/libkf5guiaddons5_5.54.0-1_amd64.deb
+    digest: d7f70e21a14cc05f2473aa94548113062e7e983ebc8ecbee79bb493c6c079d7c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/ki18n/libkf5i18n5_5.54.0-1_amd64.deb
+    digest: 5d98e4e9b8d3feb8bfe2d6d5302ee6102cefc92d0768af570efd590ee90eea37
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/ki18n/libkf5i18n-data_5.54.0-1_all.deb
+    digest: 2fd2235ca61650e9b779fbf937322d1415566e8e57d1de5e809e9b51ef3dbb90
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdbusaddons/libkf5dbusaddons5_5.54.0-1_amd64.deb
+    digest: 2bf5089c059ebbc26e7b3abd4cb112235c9091d0e88d126f97ed25028d161789
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdbusaddons/libkf5dbusaddons-data_5.54.0-1_all.deb
+    digest: 9d7cf899f76610fdc80b6acc461af6048ab6759a3a6ad8a05a558d0b10db532a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdoctools/libkf5doctools5_5.54.0-1_amd64.deb
+    digest: 1c25502941c2cea662fbaacbf1169f9dec8a59bfaa768a299ccc3c87c4f6a89e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxslt/libxslt1.1_1.1.32.5-deepin1_amd64.deb
+    digest: 43f39c0d0c7479daa0fac987ef793ee66dcdda0b05b59e5f043ccafe16c07ecd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kitemviews/libkf5itemviews5_5.54.0-1_amd64.deb
+    digest: b0f84dfe8ed8d8ca032f698eb5abd9d90c49695c43ffdb442b7d71196a3f6136
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kitemviews/libkf5itemviews-data_5.54.0-1_all.deb
+    digest: 68d07cbcbafdeb2a8097bed168e353bd0d28f041e80edd441498d6d579f81cec
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kio/libkf5kiocore5_5.54.1-1_amd64.deb
+    digest: 8570d08f401c333c1c4f891793b167db20ce4b2f9f89921b8c0aaaeeb738895a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcrash/libkf5crash5_5.54.0-1_amd64.deb
+    digest: 702e3eb619a3d7c5594a9b7c608762666b066ca39e0368dcf7b5aa71ca9a2ce4
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwindowsystem/libkf5windowsystem5_5.54.0-1_amd64.deb
+    digest: 598d4dc1d386d8323322f6cb48fa9f9a39efc570eb112b79749023a8427d6a37
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwindowsystem/libkf5windowsystem-data_5.54.0-1_all.deb
+    digest: 8746002fb10ad3a835bb735ee1e12405e9d95919f97424b6ee41019fe9f8bc1b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kservice/libkf5service-bin_5.54.0-1_amd64.deb
+    digest: 24b491206a2b135c1c843c771d128ef9085dd965937e773a11b84b45637d823a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kservice/libkf5service5_5.54.0-1_amd64.deb
+    digest: 2b058d788b04033e9a52f5b94c545e8be7fbc243e924e1a6de498b3123dfc303
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kservice/libkf5service-data_5.54.0-1_all.deb
+    digest: 7798bacad1d5fc27d94d0fbcd77ae30821619cab415f7512b9cb67d3e3ffcd64
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kio/libkf5kiontlm5_5.54.1-1_amd64.deb
+    digest: 2b36ce002c01032d0d8af1aa11382afbf6db7e032f494e395b59e99d6de6752d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kio/libkf5kiowidgets5_5.54.1-1_amd64.deb
+    digest: a7383e741a5f5b56d906b6e6b73a16bf1a664f89a6418ea8ac075e4e453157d0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kiconthemes/libkf5iconthemes5_5.54.0-1_amd64.deb
+    digest: 6c6849527a28184bcc03133e74dca6c6d23d2389826c051f3cc1fdc1a0606b03
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kiconthemes/libkf5iconthemes-data_5.54.0-1_all.deb
+    digest: 97ee76ea78fa3baef803ac17ed0cb3a9d38548c7e4f1bd9aeba36bd13893090f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kjobwidgets/libkf5jobwidgets5_5.54.0-1_amd64.deb
+    digest: 1865785d08768c3a385aabe54ad8a18970b208bd7b6505d059917aa8792449fb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kjobwidgets/libkf5jobwidgets-data_5.54.0-1_all.deb
+    digest: 99f4ab0586579b88b8ce01cbc39b0c84b565ec85749744ba3fbcea3ab31a796b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/knotifications/libkf5notifications5_5.54.0-1_amd64.deb
+    digest: 0a8e192a3f3cf160ffe6f9cf3bd90049ca7c983b73000a0719a24bbbe6ac8ec8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/knotifications/libkf5notifications-data_5.54.0-1_all.deb
+    digest: 14592627f3ebdf444bf0868981402dcebdb82647dec80447a06aaf7b86c7552d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libd/libdbusmenu-qt/libdbusmenu-qt5-2_0.9.3+16.04.20160218-1_amd64.deb
+    digest: acc2177b7f49d761f25bbae322f961c9e3c3051ea9c66351ab08f138e9430336
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/phonon/libphonon4qt5-4_4.10.2-1_amd64.deb
+    digest: 12a65471c9627b9a4731b9e4b591192d6b2cf39bf969e0ab0b926427244f849b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pulseaudio/libpulse-mainloop-glib0_12.2.27-1+dde_amd64.deb
+    digest: 5bf2394c749545b1de4c7d7e677a7b13bb70f6acfc33d890af3083c4d802e5ef
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pulseaudio/libpulse0_12.2.27-1+dde_amd64.deb
+    digest: 5325ed34769ba417071a20c1138d654e084a3f3ca01c44a5e008fdea8c43d808
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/liba/libasyncns/libasyncns0_0.8-6_amd64.deb
+    digest: ff03f23cc327b963512c7e1d0689951abbaf1406035456cf6e6d7c67ccce5431
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsndfile/libsndfile1_1.0.28.3-1+deepin_amd64.deb
+    digest: 52f5093b8cfae890826dd27350de8a1c0432ed9f8d125ebebb5c5fd8dba47dd1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/flac/libflac8_1.3.2.3-deepin1_amd64.deb
+    digest: 120eb80b701f874a7aac18bd430eb2bb2009cdac47d4ef68b8e52277186f61cf
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libo/libogg/libogg0_1.3.2.2-1+dde_amd64.deb
+    digest: 684ed420aa9ac57885cbc14989fa893d75510acf19d29e14fd9bd25338072516
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbis0a_1.3.6-2_amd64.deb
+    digest: 58ceadc9fcdb5a18c9092e0ab0b65130063132712b81fee72e14ad3d367ca172
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbisenc2_1.3.6-2_amd64.deb
+    digest: dc6ba53bfba31f24e5c8a4a54786747f1ca60855d4351c3de5bd5a1f36d292fa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/t/tcp-wrappers/libwrap0_7.6.q-28_amd64.deb
+    digest: 545d24beda62aa37ac22af697dbc43c9fb87d718aeefd3664309759f716ea0ac
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/phonon/phonon4qt5_4.10.2-1_amd64.deb
+    digest: b9a1b107add5fc95e8c0177704c60d9a3402f85475aab1c7784ed5cae3c5b373
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/phonon-backend-vlc/phonon4qt5-backend-vlc_0.10.2-1_amd64.deb
+    digest: 18812de2d9f71c3321fbf5c05cd099f0d865012926a4e84ca3eb47174c603617
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vlc/vlc-plugin-base_3.0.17.8-deepin8_amd64.deb
+    digest: 96ecaab79686629b3e6c4d54dbf3bb1893f3ec52706535b1ec6a8866ac8c8e77
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vlc/vlc-data_3.0.17.8-deepin8_all.deb
+    digest: a94e0a5cd13a0dd920c7a3ad7ac4033271435605c1707fcda6cfc98d0a4ea849
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/a/a52dec/liba52-0.7.4_0.7.4-19_amd64.deb
+    digest: f0e17bcd23ae9530fa4913cc8fd21a8b970ee059ebaf4f8d008f554c5d70d7b8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/a/aom/libaom0_1.0.0.1-1+dde_amd64.deb
+    digest: 3c4037b8a55b8fe4811fd974762eba261856e31a76f40e1035df51e2c7320991
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/a/aribb24/libaribb24-0_1.0.3-2_amd64.deb
+    digest: f8fb01fba326b6a7296add6120522bbdca704b290afd36fdeb384f99231cbc26
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/liba/libass/libass9_0.14.0-2_amd64.deb
+    digest: adca33cfc6875764e880ff7e3271e7de8ff6e1e5a0be695334e55e5d7f3c8323
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/liba/libavc1394/libavc1394-0_0.5.4-5_amd64.deb
+    digest: 8d56a4234ca7372a09f2e282ca7af1c0e4cb5d920dda8adeae55fa6f43948169
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libr/libraw1394/libraw1394-11_2.1.2.1-1+rebuild_amd64.deb
+    digest: ff1ddda100bdbf3dad8b8586653c5e5ff2d11302499cde11dbcfa71cfcb6a4d6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libavcodec-extra58_4.1.9.13-deepin13_amd64.deb
+    digest: 2ccff09bf9a068cc4d6155c951d6e2e77520b253425358efdd4746a44d926994
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libavutil56_4.1.9.13-deepin13_amd64.deb
+    digest: 229b06b46502c41eb5e801406abafab9bc64afb658f05076b18267c731545e54
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libva/libva-drm2_2.4.0-1_amd64.deb
+    digest: 7dbf42fe0bcdd8e28476839f3473df11a18479dc55732122606806561d76a7a8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libva/libva2_2.4.0-1_amd64.deb
+    digest: 5169fa81e7c17d280aac0ecc03e3e7457d51ed6713e0951dd4b1f864de1de344
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libva/libva-x11-2_2.4.0-1_amd64.deb
+    digest: 3a5b414345a018c9dc8fd9bfc604a6f5a72f45237fa8593389574380bfbcaac3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvdpau/libvdpau1_1.1.1-10_amd64.deb
+    digest: 0a7fde6fb66ebda340914ddcc716d17f622af3e38f897678a1307d9477ee25e5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/codec2/libcodec2-0.8.1_0.8.1-2_amd64.deb
+    digest: d313482fb33d4639a41e06407b75e05ebaba639b1d3ecc4ee25b43d3578855da
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/crystalhd/libcrystalhd3_0.0~git20110715.fdd2f19-13_amd64.deb
+    digest: e2dab38126a0b92abdc149397307f9af3f04f5aa26ae08a1ed461a0178f4b1fe
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/davs2/libdavs2-16_1.7.1-1+dde_amd64.deb
+    digest: 89483dbb126a2b2cbc70a3f757c919687a2009437913fc88d018fc2b8b1d9f3c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libg/libgsm/libgsm1_1.0.18-2_amd64.deb
+    digest: 7a2526bced6cb6de1830ab02150bc84be0756b2d7945274bee1bca24aa0cd561
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/lame/libmp3lame0_3.100.1-1+rebuild_amd64.deb
+    digest: 123d1042e02a70b559e1d47b3272b5ef4ecb8819e5fd24ad00f3cc4f793bdbbc
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/opencore-amr/libopencore-amrnb0_0.1.3.1-1+rebuild_amd64.deb
+    digest: ff86cd72362a305e2a7a9f43aadeeac0d75824267a6eb0f774f72d3c9568b4f6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/opencore-amr/libopencore-amrwb0_0.1.3.1-1+rebuild_amd64.deb
+    digest: 75ad20cbe1357258b53772ebe54cac270e31350147249d1050499a37fa5d7dc5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/openjpeg2/libopenjp2-7_2.3.0.5-2+deb10u2+dde_amd64.deb
+    digest: bcd2eb22c5b98139982382afde4c0d4e933308878b1da3e4b2ac9ae5a132faad
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/opus/libopus0_1.3.1-1+dde_amd64.deb
+    digest: c4e3840479eaed46146f07826702b19fa1a30d7210eb29acb02edcde9bae37aa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/shine/libshine3_3.1.1-2_amd64.deb
+    digest: 31edca62da03d6a5390e74cc60aad25a26f5bd10a73c6881cdb47f521d363f6a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/snappy/libsnappy1v5_1.1.7-1_amd64.deb
+    digest: 2fb28e83a9d69034ef729d32f1a4ed0ff075c944449264a97ed91f1ea9595af5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/speex/libspeex1_1.2.1.1-1+dde_amd64.deb
+    digest: d05a2cac1aa8be49eef2e309e301e812cb4598f9cd8d3b439fe78b89894c2b34
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libswresample3_4.1.9.13-deepin13_amd64.deb
+    digest: 75bd4d4ab06b45438407ee5d260e8ba9360e5e2a94c0421fa8e396e4b57d4534
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoxr/libsoxr0_0.1.2-3_amd64.deb
+    digest: c5f8f03143f48f9b50e5f2b38ad6dd717fbcc79d5add1598515519f42df24afd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libt/libtheora/libtheora0_1.1.1+dfsg.1-15_amd64.deb
+    digest: 810420dc717e295115576639b8e95d65f5938fb6c2a00aa95b63ce1d6cbd4a66
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/t/twolame/libtwolame0_0.3.13-4_amd64.deb
+    digest: e7260c1012b5bcbc6f39652f9cc6e37707946d5859358745c8fb4471130339c7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vo-amrwbenc/libvo-amrwbenc0_0.1.3.1-1+rebuild_amd64.deb
+    digest: 699864b758ef0dd94feb7aeadba534ad3c22f5359fab8ae528de1aade357c52d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvpx/libvpx5_1.7.0.3-deepin1_amd64.deb
+    digest: d12555bc92b59d24b4ddf8a5c6f117e9a19b6e4aef5f0f11f6b44c39c2fcf04d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/w/wavpack/libwavpack1_5.1.0.2-1+dde_amd64.deb
+    digest: c366e6d3fab7729e86f1427c0cc348f330b51123997d81d37182baf2d24a18b8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/x264/libx264-155_0.155.2917.4-1+dde_amd64.deb
+    digest: cab4b909f76108a22458ef050636551730955c6eac9689ba73be6f700238cfbc
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/x265/libx265-165_2.9-4_amd64.deb
+    digest: d61f507020bfe33755f2d7aaa37d7788be71619177e6ccaec7e21278cd79d2e9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/numactl/libnuma1_2.0.12-1_amd64.deb
+    digest: 3fa5514eeef47fda7e09aabd5d5108fd7f01f6ce30143d4129fb1c76cdfe8a5e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xavs2/libxavs2-13_1.4.1-1+dde_amd64.deb
+    digest: 433724059752146d5a73f3c6cdae646019cd4f8a0bf7e03d4e88a51937321ba2
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xvidcore/libxvidcore4_1.3.5-1_amd64.deb
+    digest: cb5711704119cea06b2410f205499dd34b5eeafa761a5062df565229f5ab5132
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/z/zvbi/libzvbi0_0.2.35-16_amd64.deb
+    digest: b6fd33cba43784a9ae6beebca689b44ed2273770826ac4fa1ed4338b03c1e18e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/z/zvbi/libzvbi-common_0.2.35-16_all.deb
+    digest: 5eea3f86857626ce4371a8a70ba9ce89f1abfc47ed033d1de12ebc0c7d1dd3ea
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libavformat58_4.1.9.13-deepin13_amd64.deb
+    digest: 8633e7e5129fd6124f26c5d837f3e640614476134da2a9460659b218e56015ee
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libb/libbluray/libbluray2_1.1.0-1_amd64.deb
+    digest: c836aca7da86ec39b655c0ffd2e4e13d498bd2a88b3f6c4df64eef0d5b1270bd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/chromaprint/libchromaprint1_1.4.3.1-1+dde_amd64.deb
+    digest: 452439148e31e39daa3551b29f742a1890ea9d4dfaaa8c7ab68980aa8eafebde
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/game-music-emu/libgme0_0.6.2-1_amd64.deb
+    digest: 46f15b6152b5733be0e6c80237a956951d7064f0ab58bfac913274587a7ce0f5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libo/libopenmpt/libopenmpt0_0.4.3.3-1+dde_amd64.deb
+    digest: 4405eb200d2115519d2f8eeb65995365c7ee47d4e38ca185592f9a525ba9b93c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mpg123/libmpg123-0_1.25.10-2_amd64.deb
+    digest: fb4b7f428842121b0dd79abbb213fb5608526f51ad7de62e8f82f64bd206672b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbisfile3_1.3.6-2_amd64.deb
+    digest: 1515ce5de5deaabd71654649d229fbe543c84f7aec27eb7d65f1b3dec72420e3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libssh/libssh-gcrypt-4_0.8.7.4-deepin1_amd64.deb
+    digest: 6d625e2f726cbfd6197a074d6d1ae8fb36dfbfa00d51974bc668cdc7323f504e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libl/liblivemedia/libbasicusageenvironment1_2018.11.26.1-1+eagle_amd64.deb
+    digest: f4de3882e2ae6f7daec0d62fc8f8c1942976bd9fb5706d44b350ebc960230f62
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libl/liblivemedia/libusageenvironment3_2018.11.26.1-1+eagle_amd64.deb
+    digest: 17e42cd0f5d26b58e4c89394158c6903cd951900262d73dc05a2afdf3bf565c9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libc/libcddb/libcddb2_1.3.2-6_amd64.deb
+    digest: f06aaa9a6d0218daf75e5a741e4fe87d6a17ee2a6bfe702dbd842a554e865af1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libd/libdc1394-22/libdc1394-22_2.2.5-1_amd64.deb
+    digest: 75780f919b757cb6fe22edccc177109d829e46a9b842bf62cd13addbfcaa1e73
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.22-2_amd64.deb
+    digest: 8a43f6ea6356adcf2067c46f0781372b5b85b632182da19ffa61757703458b1b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libd/libdca/libdca0_0.0.6-1_amd64.deb
+    digest: fe704dc3fe826e0ea638a80d3ce0b91af3e977d5533c98d4d0ea26533600c7aa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libd/libdvbpsi/libdvbpsi10_1.3.2-1_amd64.deb
+    digest: 2d65f26ddd9caf00409f7f74823cf7764d1870047674c625834c34589a07a3b3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libd/libdvdnav/libdvdnav4_6.0.0-1_amd64.deb
+    digest: 62039bdeffd14069586fab2cb8c977ff3cb4920b2019b2b8913bca46aa8056eb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libd/libdvdread/libdvdread4_6.0.1-1_amd64.deb
+    digest: f9a4c94609113706e68b1f5f7cdf237453db02d9f591599283c11d24ebedabb7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libe/libebml/libebml4v5_1.3.6-2_amd64.deb
+    digest: 1b94a0e5bbe1962af4e0d968cbffb235d18ce9f8e54cc6fd87007f685255f8b5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/faad2/libfaad2_2.8.8.6-deepin1_amd64.deb
+    digest: 8ee99e387e4334ae8e6fc681b6854a4f48d9ae5094e92112e98d520c7853d876
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libl/liblivemedia/libgroupsock8_2018.11.26.1-1+eagle_amd64.deb
+    digest: a2d6a4eb0799a835b75d76161be83e0adb6df2b204a4ee46d880604547499b96
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pupnp-1.8/libixml10_1.8.4.1-deepin1_amd64.deb
+    digest: d6aff688e822764ac7c6163221c41e381737240d66859085ab631bec58d93dc4
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libk/libkate/libkate1_0.4.1-9_amd64.deb
+    digest: 8989daec3593da913602d401636216ecfa77a667b4fe4a64adddcae8347a9d5a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/lirc/liblirc-client0_0.10.1.1-1+dde_amd64.deb
+    digest: 31f5a2a5f9f2deb6ae59c05d6e3ddff0ef0b8040b17487eca4e0de7981779a65
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libl/liblivemedia/liblivemedia64_2018.11.26.1-1+eagle_amd64.deb
+    digest: 105eb4abc6b7bb1a092457c56744ba9e601251ef1fa15716a12a99a83ffd26aa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/lua5.2/liblua5.2-0_5.2.4.1-1+rebuild_amd64.deb
+    digest: e73ec8bfa17562a4b3a54c0e6a96a222149b1e40767b687efee7273e2c3bb24a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmad/libmad0_0.15.1b-10_amd64.deb
+    digest: 5ff1fa44e8cf39cfb81ef592f576ea16dc4cb5e45141674490d9bfc97b2c7933
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmatroska/libmatroska6v5_1.4.9-1+deb10u1_amd64.deb
+    digest: d762ff6e789465fe8e21e8b6917dfb8bf8ae3979c4366982bb53a9b6a2020b76
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmpc/libmpcdec6_0.1.1-1+rebuild_amd64.deb
+    digest: edd9b4dc19e84e5fb969649dbd562d75fbd013b9f8b3e857c582c27ae119c474
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mpeg2dec/libmpeg2-4_0.5.1-8_amd64.deb
+    digest: 16921f70ecd7461e2bc523a89c38e0a9d3be4e34d1e9f59ca1b994abab857299
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmtp/libmtp9_1.1.16-2_amd64.deb
+    digest: bde1a43f283fd73c3aab1b1ad495b8c9a661f9b65d7bfe6f5a8bee2eb422c2d9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmtp/libmtp-common_1.1.16-2_all.deb
+    digest: 38b7b81c146ba54ffb00bd2b7fa8450ad75751518cafd7eea096a00e763e15de
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libn/libnfs/libnfs12_3.0.0-2_amd64.deb
+    digest: cb2c1621ba4408f1472bf676b3ed1b4273498510dd8b4a880d710e3bc00f6604
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libo/libopenmpt/libopenmpt-modplug1_0.4.3.3-1+dde_amd64.deb
+    digest: 7b877a82a9217c8cd20919065c837b75e046a554ffbfee62be3be4486422260e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libpostproc55_4.1.9.13-deepin13_amd64.deb
+    digest: 8a29f07ea5446f3965283625533c1be6e141df0b5592bcb6747c8a087523f3e3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/protobuf/libprotobuf-lite17_3.6.1.3.1-deepin1_amd64.deb
+    digest: 20e225dec092763274da0eb37113e152b33b83706becbc3e7d15cccfc7cb3b87
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sidplay-libs/libresid-builder0c2a_2.1.1-15_amd64.deb
+    digest: 291a7c9ee65feb24e246bab1c0e61a1253334caa76fb9e10d2c7a4cdee325140
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsamplerate/libsamplerate0_0.1.9.1-1+deepin_amd64.deb
+    digest: 743544d2718be1dd19aa77ad8b787997ba0dfeab8f6662f9da05f9d50e997035
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sdl-image1.2/libsdl-image1.2_1.2.12.1-1+eagle_amd64.deb
+    digest: 2ab55416656c99a51a637b28c0e570563c477128bd11f8a7687139a8db4ab44b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsdl1.2/libsdl1.2debian_1.2.15.5-deepin1_amd64.deb
+    digest: 562a2923a8eec5c1ac5654105296fdee3152a681e0b96b478d2d659ee157212b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libc/libcaca/libcaca0_0.99.beta19.2-deepin1_amd64.deb
+    digest: 6ecd042bf14412511d1236db3c4df16d7821c4b4c554928d6e2902d2cfd4543e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/slang2/libslang2_2.3.2-2_amd64.deb
+    digest: ad7f4717f04c4780e9acce56cdcfe757f1d46fbad718775985f95956216c9915
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsecret/libsecret-1-0_0.18.7-1_amd64.deb
+    digest: 7a2c98e07ae86aa1918e91bb5e8a1dd92d526acd1cf0a86b9892e04b8997452e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsecret/libsecret-common_0.18.7-1_all.deb
+    digest: e62b8f91545459fc77bcc21bacf0e450de532ca852b8080ad882bebc3b38e3d0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libshout/libshout3_2.4.1-2_amd64.deb
+    digest: 890e45793eac03f9ba529fb815b146e8d772690a7fb64850bfdf790391ffd86e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sidplay-libs/libsidplay2_2.1.1-15_amd64.deb
+    digest: aaac3f6c3ede126b5f2a03a9b5c01b1b576237a9485b536c1c19e5f287620264
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sndio/libsndio7.0_1.5.0-3_amd64.deb
+    digest: 3c2c3b73947c70b6d526f6e70457f1c0d5ce9d0b63f1124c3e3ed951a02138ab
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libspatialaudio/libspatialaudio0_0.3.0+git20180730+dfsg1-2_amd64.deb
+    digest: 6c4ca5b8ef8d0568c3e217ff6997ba8daf097a7c9ca466ec17a4a1e7fd11c794
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmysofa/libmysofa0_0.6~dfsg0.2-1+security_amd64.deb
+    digest: 1d5c4deff800ae37a512db4cfc1abdaa287ab82dbc48d2021b45e700ee701611
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/speex/libspeexdsp1_1.2.1.1-1+dde_amd64.deb
+    digest: d7703da55dc03766223b15ed6e6de1293cba24d7b720740d9f4963788ebc1044
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libswscale5_4.1.9.13-deepin13_amd64.deb
+    digest: 23a09cacae25fe495cafbbb9aefbf7c3aeb0c5837eacaf51dc3cf9f7474ba8ee
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/t/taglib/libtag1v5_1.11.1+dfsg.1.1-1+dde_amd64.deb
+    digest: f3a63c010283f0b075e99bbf183460a444c92d8fe5067ebee2212494ec1b2417
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/t/taglib/libtag1v5-vanilla_1.11.1+dfsg.1.1-1+dde_amd64.deb
+    digest: d6d28932600f290ff4f81a25315ebee01a33499436265cb993608fcde85f8533
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pupnp-1.8/libupnp13_1.8.4.1-deepin1_amd64.deb
+    digest: 9732a58cfddd0cbbde6c663472c91e9d8ae24ae9af1e4e69fe49f8e6f060fda3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vlc/libvlccore9_3.0.17.8-deepin8_amd64.deb
+    digest: ad651c90a16415ba90743a6588fd43445e30598cc6c2ce83c4ae008d9ca0d581
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vlc/vlc-plugin-video-output_3.0.17.8-deepin8_amd64.deb
+    digest: 0febd6c5c1b951de9e0799eabf6a142e6c814219610b1c0fb835b056f9f04d55
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/a/aalib/libaa1_1.4p5-46_amd64.deb
+    digest: 86a205c8b7b94ac84ffecf2f1727ea79cced05f79741899618c8bb6d3776ecc1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gpm/libgpm2_1.20.7-5_amd64.deb
+    digest: c8f598f1c55173f6726e4071335d74d904496bdd3c68d03fddbb7952dfead224
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libp/libplacebo/libplacebo7_1.7.0-2_amd64.deb
+    digest: 183a343e45af58f9984efc909e29ca5cf9ef7b2b68812375af96e7e58af5d93e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vulkan-loader/libvulkan1_1.1.97-2_amd64.deb
+    digest: 197ba05c850a484e33f0abb932028d044cfa85c4e6e88a3a35b49bf9219e2b6b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libva/libva-wayland2_2.4.0-1_amd64.deb
+    digest: c8028ddbf6146637b4930530f5aee0fe31a5d0c244461959024253c52a196cba
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vlc/libvlc5_3.0.17.8-deepin8_amd64.deb
+    digest: 219614e9e775870bc5c32a9da1f6e90f117df691a66403460f684a0256683a8b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/solid/libkf5solid5_5.54.0-1_amd64.deb
+    digest: 2921e81bcf9d3f226a52729ed161e55661e93e9fc5f3c3b75b7df622c65fc689
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/solid/libkf5solid5-data_5.54.0-1_all.deb
+    digest: 19f81f4be63332bc38f5b14838ec8727f30a5a9a24ff5faff7e3d64974c91e50
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/ktextwidgets/libkf5textwidgets5_5.54.0-1_amd64.deb
+    digest: b96700ecc59538f248d64958c67f00866363b9fccc4d960a33a1286d365e0c47
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/ktextwidgets/libkf5textwidgets-data_5.54.0-1_all.deb
+    digest: 65a15c03a9145b7f0d5d57a9b11f35a7b6a9f46081a38974e6cbda845c8e71b8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sonnet/libkf5sonnetcore5_5.54.0-1_amd64.deb
+    digest: 7f1fa028961d9b99847c46f273cabc634a6540e697fb82b092a5e79178c8291f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sonnet/libkf5sonnet5-data_5.54.0-1_all.deb
+    digest: 997a0c79e18a5cd18ef6ae8d55539d6159ced5cb4b75796e1392834b58effbba
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sonnet/libkf5sonnetui5_5.54.0-1_amd64.deb
+    digest: bccd225f001d85fd8d7d7a6c56d6ed3533d3c2c7102cb5f1c4c38702725528a0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwallet-kf5/libkf5wallet-bin_5.54.0-1_amd64.deb
+    digest: 6813dc9b13fb5047a060d2af6a3d7e817638317ab64177e743841e44e4973c77
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwallet-kf5/libkf5wallet-data_5.54.0-1_all.deb
+    digest: e2175296d0536d2949d2207afd9c0e300437c427aa437bfffbba8558a56f9ffd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gpgme1.0/libgpgmepp6_1.12.0-6_amd64.deb
+    digest: a05a0b8f0f1068db5b7f7963ad3b185073fb17169f954e75be4e36b64d90eebe
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/liba/libassuan/libassuan0_2.5.2-1_amd64.deb
+    digest: 092a0561e191e3bf611946a842119a7a9b795a2329031009948d47e4e2b41682
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gpgme1.0/libgpgme11_1.12.0-6_amd64.deb
+    digest: 69912171855d908792544c046300c4314efb3042fd4fd61ae660ddcb228142f0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gnupg_2.2.12-1+deb10u1_all.deb
+    digest: 359e8c0524ce6a4729af5aaf581bc37ebe7b3c3919bfb18ce310e92a2948987a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/dirmngr_2.2.12-1+deb10u1_amd64.deb
+    digest: 8b2390d2996dadff71c100aa81dcf7c7b09e0eabb5541c1c69b301c303dbb5df
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gpgconf_2.2.12-1+deb10u1_amd64.deb
+    digest: c472991b6fed2efac0a5eb1ba6fca02f2061172b7ae4669627c96daf6f575afb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libk/libksba/libksba8_1.3.5.3-deepin1_amd64.deb
+    digest: 4ad962e51b2bd5bc322693ef9148972d9862a197bb74168c7a1e7d428c4b1710
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/npth/libnpth0_1.6-1_amd64.deb
+    digest: 4596e00161b103751c7a22668904cd7bfa07516b6b658133b1d96bd7ecf13bac
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gnupg-l10n_2.2.12-1+deb10u1_all.deb
+    digest: e7157cc999402118a01919b90be27249e70ae830d06a5dc42e9069ed230926be
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gnupg-utils_2.2.12-1+deb10u1_amd64.deb
+    digest: 791b343ed8c48bcaf2cbf26168cef19cb219ec77d59fed8714e6a309bf7d5cba
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gpg_2.2.12-1+deb10u1_amd64.deb
+    digest: 9ddccf6c37b9ac540b499da06e5eb7406d52b66bc4659b48be0eea85e6f86df9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gpg-agent_2.2.12-1+deb10u1_amd64.deb
+    digest: 6b375ddff08752c7e512a1137c6ed5a2d183442786803cf77066be76b3482ebe
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pinentry/pinentry-curses_1.1.0-2_amd64.deb
+    digest: ee7300195d7c28182097e81c4210ee633922a5ff74881099e456b8d42aa27ab3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gpg-wks-client_2.2.12-1+deb10u1_amd64.deb
+    digest: 3e04a24ec61841bb6fb8b17b1af7c904272f26479001c2dc054501e839222425
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gpg-wks-server_2.2.12-1+deb10u1_amd64.deb
+    digest: 05e64681a0c3037fa71c94c083a8aabb6eb5f40e974c4ec548e0376635cffeb0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gnupg2/gpgsm_2.2.12-1+deb10u1_amd64.deb
+    digest: 4edf6f10f1c28753e198e6993643f5aac1245e657a4fe4739211fe60f38d6ba9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwallet-kf5/libkf5wallet5_5.54.0-1_amd64.deb
+    digest: 23666347734f4f5baad69a1825a8fc330f15c85276b248edd9e8c5d56d53ed3c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kwallet-kf5/libkwalletbackend5-5_5.54.0-1_amd64.deb
+    digest: c2cf78f2aaa2584cfd3b70311e7145a0e30a3d9a7427854bb5c107386f080a1f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdesu/libkf5su-bin_5.54.0-1_amd64.deb
+    digest: 288f5bb821de7e8bdb106444a5bfd3ae74464e697b05c54caaa1e7cd774b0140
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdesu/libkf5su5_5.54.0-1_amd64.deb
+    digest: 445ae0a95f12a3b917ebf9b49af155af8f6f6ca1b730a3897d2c2f529d90c97a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdesu/libkf5su-data_5.54.0-1_all.deb
+    digest: 57aa1ec5a59e527195552c9d22f470a7a04897e623d3eb1e1a2a0f29cbcb3f7f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sudo/sudo_1.8.27.10-deepin1_amd64.deb
+    digest: 7bd91a5175939d899d9d50cb6f9cfe698c418d71a57e9a64f40df5e261f25086
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kpty/libkf5pty5_5.54.0-1_amd64.deb
+    digest: e0471b10e6ac64b6482e64e824036426de560ce6f6d2dd0111fcbc9cd6da6d46
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kpty/libkf5pty-data_5.54.0-1_all.deb
+    digest: 8a1031aca95c573b05dad948a3907fadb6c1671f4131f9ab210e7ce487734fca
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kactivities-kf5/libkf5activities5_5.54.0-1_amd64.deb
+    digest: 1ff4c6f32d5d02d75a10812a6e6d7661aa211cb38eb812d6263c328290fdfb7a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcmutils/libkf5kcmutils5_5.54.0-1_amd64.deb
+    digest: 27270dd012058b84373bf144895665fbb93f1c39871ece82ed2e2d3c5d26b61b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kcmutils/libkf5kcmutils-data_5.54.0-1_all.deb
+    digest: 6dfe1fcec3d2a4541f41731ce0f95cd3404a0ce2ee1334668fc59254590dd505
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdeclarative/libkf5declarative5_5.54.0-1_amd64.deb
+    digest: 7a3c53d04c6779bb69bfc5ad32e1bde3507b806bdd9d8c7f9bd7835e6c641ed0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdeclarative/libkf5declarative-data_5.54.0-1_all.deb
+    digest: cd25895dc8459fb6891cff7a775c76f3e7121ffe93fc2ca6f683d434586e316e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kpackage/kpackagetool5_5.54.0-1_amd64.deb
+    digest: e435ba5f5505ac4dd2eaf1ba7d5ab47277d0fbca9aa8e58fe44506c914d13d22
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kpackage/libkf5package5_5.54.0-1_amd64.deb
+    digest: 9c3d35fd9d2a9502dee7437d1e5ec236e790e4f65241413b45b9115112362d76
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kpackage/libkf5package-data_5.54.0-1_all.deb
+    digest: 0ec505c8e9e519be9a84c7da6f8fc07a497a2b1f83e1b3e09412518c78d70006
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kdeclarative/libkf5quickaddons5_5.54.0-1_amd64.deb
+    digest: 075edf61b3ab7c0b743a1abc001160e97f6738e1412e2a028968f9d09ec52059
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kxmlgui/libkf5xmlgui5_5.54.0-1_amd64.deb
+    digest: 05233300a9724e8e15b21f6da634d349ce9d6e9829379eb8101a05bbc6ba26db
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kxmlgui/libkf5xmlgui-data_5.54.0-1_all.deb
+    digest: 17947060b73cb5c9956776b8ce373b9880a2c98a8a402bcd40be5b5450090572
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/a/attica-kf5/libkf5attica5_5.54.0-1_amd64.deb
+    digest: 5e4e69b826b8f59a46030cc4bca178df381f13b1dc1669eb0b878d8db22cf3e6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kglobalaccel/libkf5globalaccel-bin_5.54.0-1_amd64.deb
+    digest: a096640748dacf464a859250830c00ae538dfec2f3bd812bf3c6f97d0a96a4dc
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kglobalaccel/libkf5globalaccel-data_5.54.0-1_all.deb
+    digest: 6dcd422eae4b2279096ad1725b9f01dea74e55a48a24327713d7702580777efd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kglobalaccel/libkf5globalaccelprivate5_5.54.0-1_amd64.deb
+    digest: 33d8b89a76d211d7a877c2de92afe107f170cfdb2ed6e9a47c8616eb25d62ed8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/kglobalaccel/libkf5globalaccel5_5.54.0-1_amd64.deb
+    digest: 0e73086c5004d5d8faadada6be2631cba770c9bd70498daeb46e9466ccdc60ff
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/plasma-workspace/libkworkspace5-5_5.14.5.1-1_amd64.deb
+    digest: c3b47ed3a7fc174b5f307096c97c45f2c61e5999aca053c68c59fa8f732cae9a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/b/bubblewrap/bubblewrap_0.3.1-4_amd64.deb
+    digest: de2624d8d96efdf1cf3b4b6fc6804f8d6e1918cfa026e33f0d17e2b599ae6e4a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/procps/procps_3.3.15-2_amd64.deb
+    digest: c398144505c8e49d9f26b405d98c396063200c5e18b5603b9a9e75d762bebe70
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
+    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
+    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
+    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
+    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
+    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
+    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
+    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
+    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
+    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
+    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
+    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
+    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+build: >-
+  export LINGLONG_RAW_ID="store.spark-app.wechat-linux-spark"
+
+  export LINGLONG_APP_ID="store.spark-app.wechat-linux-spark.linyaps"
+
+  export LINGLONG_APP_NAME="微信Linux"
+
+  export LINGLONG_APP_VERSION="2.2.11.0"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="WeChat Desktop WeChat Desktop"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/store.spark-app.wechat-linux-spark.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

@@ -1,0 +1,28 @@
+version: "1.0"
+package:
+  id: ubx-server.linyaps
+  name: 统信有往服务
+  version: 0.1.0.1
+  kind: app
+  description: |-
+    统信浏览器插件接口平台.
+    统信浏览器插件接口平台.
+command:
+  - /opt/apps/ubx-server.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/ubx-server/ubx-server_1.0.1_amd64.deb
+    digest: 9fadc6309a4f54a2d4c851d2bbd2786989d2f0cb2d64668cada308ab50b5ef48
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/ubx-sdk/ubx-sdk_1.0.1_amd64.deb
+    digest: be36ddb887a70a69fde16ebc911b460c048a28b2990bcb9c8a62a7313ad92dfc
+build: |-
+  export LINGLONG_RAW_ID="ubx-server"
+  export LINGLONG_APP_ID="ubx-server.linyaps"
+  export LINGLONG_APP_NAME="统信有往服务"
+  export LINGLONG_APP_VERSION="0.1.0.1"
+  export LINGLONG_APP_KIND="app"
+  export LINGLONG_APP_DESC="统信浏览器插件接口平台.\n统信浏览器插件接口平台."
+  export LINGLONG_COMMAND="/opt/apps/ubx-server.linyaps/files/bin/start.sh"
+  exec /project/build.sh

@@ -1,0 +1,31 @@
+version: "1.0"
+package:
+  id: com.cutecomm.remotedt.linyaps
+  name: 智慧帮远程
+  version: 0.1.1.1
+  kind: app
+  description: 北京领通科技智慧帮远程协助
+command:
+  - /opt/apps/com.cutecomm.remotedt.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.cutecomm.remotedt/com.cutecomm.remotedt_1.1.0-1_amd64.deb
+    digest: d024f7768c530542d2acdce04a9f12b9585393a53b4cc46f9802a872be781b29
+build: >-
+  export LINGLONG_RAW_ID="com.cutecomm.remotedt"
+
+  export LINGLONG_APP_ID="com.cutecomm.remotedt.linyaps"
+
+  export LINGLONG_APP_NAME="智慧帮远程"
+
+  export LINGLONG_APP_VERSION="0.1.1.1"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="北京领通科技智慧帮远程协助"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.cutecomm.remotedt.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

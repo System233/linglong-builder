@@ -1,0 +1,31 @@
+version: "1.0"
+package:
+  id: com.yiqixie.yiqixie.linyaps
+  name: 一起写
+  version: 0.0.1.2
+  kind: app
+  description: 耳目一新的云端OFFICE,为了更加优雅的协作.
+command:
+  - /opt/apps/com.yiqixie.yiqixie.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.yiqixie.yiqixie/com.yiqixie.yiqixie_1.0-2_amd64.deb
+    digest: 5c7f3c4171c9754835bd71dccf8ce01d6296ed38c0e1cb3aa0f584ac57d8a2bf
+build: >-
+  export LINGLONG_RAW_ID="com.yiqixie.yiqixie"
+
+  export LINGLONG_APP_ID="com.yiqixie.yiqixie.linyaps"
+
+  export LINGLONG_APP_NAME="一起写"
+
+  export LINGLONG_APP_VERSION="0.0.1.2"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="耳目一新的云端OFFICE,为了更加优雅的协作."
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.yiqixie.yiqixie.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

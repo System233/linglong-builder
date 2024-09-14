@@ -1,0 +1,11 @@
+/opt/apps/com.sample.sradio.linyaps/files/SRadio/lib/desktop/libLimeSuite.so.20.01-1:
+/opt/apps/com.sample.sradio.linyaps/files/SRadio/lib/desktop/libSSDRLib.so.1.0:
+/opt/apps/com.sample.sradio.linyaps/files/SRadio/lib/desktop/libSSDRLib.so.1:
+/opt/apps/com.sample.sradio.linyaps/files/lib/x86_64-linux-gnu/librest-0.7.so.0.0.0:
+/opt/apps/com.sample.sradio.linyaps/files/lib/x86_64-linux-gnu/librest-0.7.so.0:
+/opt/apps/com.sample.sradio.linyaps/files/lib/x86_64-linux-gnu/libsoup-2.4.so.1.8.0:
+/opt/apps/com.sample.sradio.linyaps/files/lib/x86_64-linux-gnu/libsoup-2.4.so.1:
+/opt/apps/com.sample.sradio.linyaps/files/lib/x86_64-linux-gnu/libsoup-gnome-2.4.so.1.8.0:
+/opt/apps/com.sample.sradio.linyaps/files/lib/x86_64-linux-gnu/libsoup-gnome-2.4.so.1:
+libQt5Concurrent.so.5
+libusb-1.0.so.0

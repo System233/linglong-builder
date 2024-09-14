@@ -1,0 +1,139 @@
+version: "1.0"
+package:
+  id: com.jsdeepnet.swgap.linyaps
+  name: 深网文件传输客户端
+  version: 0.0.1.1
+  kind: app
+  description: 深网文件传输客户端
+command:
+  - /opt/apps/com.jsdeepnet.swgap.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.jsdeepnet.swgap/com.jsdeepnet.swgap_1.1_amd64.deb
+    digest: 5fa2d4ee27c0c5820a88b4a24f4e021f706a1b08007bc899e71b6accce58a3d3
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/z/zeromq3/libzmq3-dev_4.3.1.2-1_amd64.deb
+    digest: 59dea41ccbc7b0c7703f30a725af865e6a731de0fd77bb9c43fad984fc8c385f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/z/zeromq3/libzmq5_4.3.1.2-1_amd64.deb
+    digest: fb64aaf33578d8afe753233263c7c2b805037f8b2aa06eb26d62ed23fbc637c0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/norm/libnorm1_1.5.8+dfsg2-1_amd64.deb
+    digest: 8831e9e0e74eb6e618e6ca4f02bf0a6fd415c135ef6d9f49e1f3744e31ece154
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libp/libpgm/libpgm-5.2-0_5.2.122~dfsg-3_amd64.deb
+    digest: 08143209802c5a8de27b55fe9589da5570e508c4027aa0dc3d894bd579ad2039
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsodium/libsodium23_1.0.17-1_amd64.deb
+    digest: afa7c52fb6509e70d32438ec76e27f48fe0b10f10ceaac098b738f27fa19c317
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libp/libpgm/libpgm-dev_5.2.122~dfsg-3_amd64.deb
+    digest: 8249871b9c886c98f3b8753758ccf9fcb7a3bd5e0a7a02a046fc8ed38fad5274
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsodium/libsodium-dev_1.0.17-1_amd64.deb
+    digest: b442607ae3256fee32fe5bbb771bd41eb1daeeb151a1c5a248a595c268f3cd7d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/norm/libnorm-dev_1.5.8+dfsg2-1_amd64.deb
+    digest: 8418a1cbfd660584aaf38000f34264a92851a1dcebd89a336fcfe495201f1d06
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/krb5/libkrb5-dev_1.17.6-deepin1_amd64.deb
+    digest: a967c4271d3518efe23bb2eed862fa0a2c7e10f21397a97f9a2099ef2cfbaef6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/krb5/krb5-multidev_1.17.6-deepin1_amd64.deb
+    digest: 4d15de5423df65bd2c21faf2b3fea58422d2ff0af630b6db8ed38e236ec4f76d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/krb5/libgssrpc4_1.17.6-deepin1_amd64.deb
+    digest: bb3652a991be261747c56f28c4d5a3060b17536af3de8de6d7a91e1d95bb9c55
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/krb5/libkadm5srv-mit11_1.17.6-deepin1_amd64.deb
+    digest: 0903c76ec32c8bc5ebb1c4e3d3c63bf9a45c123141b2c67d595376ee9de89e8a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/krb5/libkdb5-9_1.17.6-deepin1_amd64.deb
+    digest: b9d8e150ef1739fd3e8fe1f5953f4963948bae1145c29b7aca1e93f437a1c675
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/k/krb5/libkadm5clnt-mit11_1.17.6-deepin1_amd64.deb
+    digest: dfd4a6ebf7ad7b963752a9720ca31dcf92d8257f31392329c5d4d4864f902263
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/e/e2fsprogs/comerr-dev_2.1-1.44.5.3-1+dde_amd64.deb
+    digest: 0d641cbd8f37a5087f2b0e34040f1c282b9415acdebf403afa776d2a445382df
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/czmq/libczmq-dev_4.2.0-2_amd64.deb
+    digest: 0e1e379b6c676f34925347eaa2bce39e7bd600c5eadf7897acfd1df69c704b75
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/uuid-dev_2.33.1.17-1+dde_amd64.deb
+    digest: 915548a01a06718fe6fb83a283cc5fdd264a28a50f26663c6cae001b22ccbab0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/libsystemd-dev_241.50-1+deepin1_amd64.deb
+    digest: 9ec28308c40e67befa371710ae418e1180d38a29f4d0e4be513f3045d57b77d1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/czmq/libczmq4_4.2.0-2_amd64.deb
+    digest: 2819dca18a330664cf7ded47177352708f08640b08fefd10e7a74fd015fd715f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/sqlite3/libsqlite3-dev_3.39.3-1_amd64.deb
+    digest: a99ef35ba3c56d44e1a6272f9c2b90457481996df52eb0d9cca53077dad67d17
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib2.0/libglib2.0-dev_2.58.3.12-deepin1_amd64.deb
+    digest: eef5812223ff108bd2ba76fce794f9c42e6b47f4fb47e95745829356222fd2a7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libf/libffi/libffi-dev_3.2.1.2-1+dde_amd64.deb
+    digest: ad2dd33c4a1ea32155bdbb863c879377ffc8303df020af0fbc2c29e2c7bb605e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib2.0/libglib2.0-bin_2.58.3.12-deepin1_amd64.deb
+    digest: 832de8b7ccbe70451ff75199a31c6c4077817bcc164847dd47a9ea07e77cc14e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib2.0/libglib2.0-dev-bin_2.58.3.12-deepin1_amd64.deb
+    digest: f32520c7d6af524fd47c7bb8d5ee359d39f45e582831f31a917172c016d097d5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3-stdlib-extensions/python3-distutils_3.7.3-1_all.deb
+    digest: 6918af11061d3141990e78f5ad0530ec0f9a188cac27113d9de2896203efc13f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
+    digest: eb7862c7ad2cf5b86f3851c7103f72f8fa45b48514ddcf371a8e4ba8f02a79e5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7_3.7.3.18-deepin1_amd64.deb
+    digest: aa54af41ccf48a7834c7c70049a279dcaa0ecc97cbe9590606a14cd4571c56ff
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7-minimal_3.7.3.18-deepin1_amd64.deb
+    digest: 849fa70903bc43feeee400b29f9f9266018f61233b08d70e7759520ab64dd4ec
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3-stdlib-extensions/python3-lib2to3_3.7.3-1_all.deb
+    digest: 227e2a2d12922c00dee9e55d8c5b889cfc5e72a54b85c2a509fa1664c2e9e137
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/libmount-dev_2.33.1.17-1+dde_amd64.deb
+    digest: 7f8bffd59870f483f58c80adf0e2267545927d38aa5fbc6e76e0ce980f71966d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/libblkid-dev_2.33.1.17-1+dde_amd64.deb
+    digest: d5da11a7976561e1f3f969d9d190521c4416e098295f39e0f28ca885d1579d09
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcre3/libpcre3-dev_8.39.2-12+dde2_amd64.deb
+    digest: 9928798dcca93f92303582b052d9f6f3c6cb84043b11855f79c264ae93596405
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libselinux/libselinux1-dev_2.8.1.1-1+dde_amd64.deb
+    digest: 96e143a0d905ddb30c5aae890a2a37d352c128959c69246dadd9d543cf0c56ae
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsepol/libsepol1-dev_2.8.1-1+dde_amd64.deb
+    digest: 31c98049b825e80130f5b6df7b25a8270ea360cdc854ba4f26dddd4fe732451a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pkg-config/pkg-config_0.29.1-1+dde_amd64.deb
+    digest: 9967364982d1f9c163dd72d5dc913b873606683f97e4381e8a17ce11573a2003
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/z/zlib/zlib1g-dev_1.2.12.5-1+dde_amd64.deb
+    digest: 08b7d1fc10175ad8396b26a61f1252e539796f714bf86e3a65f62a0c6ab71689
+build: >-
+  export LINGLONG_RAW_ID="com.jsdeepnet.swgap"
+
+  export LINGLONG_APP_ID="com.jsdeepnet.swgap.linyaps"
+
+  export LINGLONG_APP_NAME="深网文件传输客户端"
+
+  export LINGLONG_APP_VERSION="0.0.1.1"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="深网文件传输客户端"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.jsdeepnet.swgap.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

@@ -1,0 +1,82 @@
+version: "1.0"
+package:
+  id: com.jiaoyi.tradermaster.linyaps
+  name: 交易侠
+  version: 0.3.2.2
+  kind: app
+  description: com.jiaoyi.tradermaster
+command:
+  - /opt/apps/com.jiaoyi.tradermaster.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.jiaoyi.tradermaster/com.jiaoyi.tradermaster_3.2.2_amd64.deb
+    digest: a5d2787ee29884e445f775212e796e9c23709caa53ee8c07809e7a024c122542
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
+    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
+    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
+    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
+    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
+    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
+    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
+    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
+    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
+    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
+    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
+    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
+    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
+    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
+    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
+    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
+    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+build: >-
+  export LINGLONG_RAW_ID="com.jiaoyi.tradermaster"
+
+  export LINGLONG_APP_ID="com.jiaoyi.tradermaster.linyaps"
+
+  export LINGLONG_APP_NAME="交易侠"
+
+  export LINGLONG_APP_VERSION="0.3.2.2"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="com.jiaoyi.tradermaster"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.jiaoyi.tradermaster.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
