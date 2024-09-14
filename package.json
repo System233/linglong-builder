@@ -2,7 +2,7 @@
   "type": "module",
   "dependencies": {
     "apt-cli": "^0.1.10",
-    "linglong-helper": "^0.3.1"
+    "linglong-helper": "^0.3.2"
   },
   "devDependencies": {
     "@types/node": "^22.5.5"
