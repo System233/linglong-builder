@@ -1,0 +1,8 @@
+ubx-server
+libc6
+libgcc1
+gcc-8-base
+ubx-sdk
+libdbus-1-3
+libsystemd0
+libstdc++6
