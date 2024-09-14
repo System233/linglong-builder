@@ -24,14 +24,16 @@ jobs:
         appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
       fail-fast: false
     steps:
-      - name: preflight
+      - name: Preflight
         id: preflight
         run: |
-          export TAG_NAME=$(date '+%Y-%m-%d')
-          export APP_ID=${{matrix.appid}}
-          export NEW_APP_ID="${APP_ID}.linyaps"
-          SKIP_BUILD=curl "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' 2>/dev/null|jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any'
+          TAG_NAME=$(date '+%Y-%m-%d')
+          APP_ID=${{matrix.appid}}
+          NEW_APP_ID="${APP_ID}.linyaps"
+          SKIP_BUILD=$(curl "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' 2>/dev/null|jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any')
 
+          echo TAG_NAME=${TAG_NAME}
+          echo SKIP_BUILD=${SKIP_BUILD}
           echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
           echo "skip_build=${SKIP_BUILD}" >> $GITHUB_OUTPUT
 
