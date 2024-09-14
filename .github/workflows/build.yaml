@@ -1,0 +1,30 @@
+name: Linglong Builder
+run-name: Build Linglong Packages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    outputs:
+      appid-list: ${{ steps.list-appid.outputs.appid }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: List target
+        id: list-appid
+        run: |
+          echo "appid=$(node ./list-target.js)" >> $GITHUB_OUTPUT
+  build:
+    needs: scan
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build Target ${{matrix.appid}}
+        run: |
+          echo APPID=${{matrix.appid}}

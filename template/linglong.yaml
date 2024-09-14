@@ -1,0 +1,8 @@
+version: "1.0"
+package:
+  id: id
+  name: name
+  version: 0.0.0.1
+  kind: app
+  description: DESC
+base: com.uniontech.foundation/20.0.1

@@ -1,0 +1,5 @@
+.cache
+linglong
+node_modules
+*.swp
+*.log
