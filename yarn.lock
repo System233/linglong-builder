@@ -139,6 +139,16 @@ ansi-regex@^5.0.1:
   resolved "https://registry.npmmirror.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
   integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
 
+apt-cli@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.npmmirror.com/apt-cli/-/apt-cli-0.1.10.tgz#f1875739da691468125c833b7340f3efc2f7881e"
+  integrity sha512-3l0DcA7+0uk7WxLtZgQruZIrlwWWHJa539+RPNjFn5Nts+C6KIRqOUEzL1WkOy+oP1Q5gVsr56GZMwOc6p+WWg==
+  dependencies:
+    cli-progress "^3.12.0"
+    commander "^12.1.0"
+    lzma-native "^8.0.6"
+    unbzip2-stream "^1.4.3"
+
 apt-cli@^0.1.9:
   version "0.1.9"
   resolved "https://registry.npmmirror.com/apt-cli/-/apt-cli-0.1.9.tgz#7a25abb0be6123b3c66cd4159d1004651bfd7f61"
