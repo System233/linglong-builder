@@ -99,6 +99,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git commit -m "Update ${{matrix.appid}}"
+          git pull
           git push
       - name: Release
         uses: softprops/action-gh-release@v2
