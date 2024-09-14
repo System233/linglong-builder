@@ -15,7 +15,22 @@ jobs:
       - name: List target
         id: list-appid
         run: |
-          echo "appid=$(node ./list-target.js)" >> $GITHUB_OUTPUT
+          while read APP_ID;do
+            NEW_APP_ID="${APP_ID}.linyaps"
+            if grep -q "${NEW_APP_ID}" ./rebuild.list;then
+                SKIP_BUILD=false
+            else
+              SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
+            fi
+
+            if [ "${SKIP_BUILD}" == "false" ];then
+              echo "Selected ${APP_ID}"
+              echo '"${APP_ID}"' >>_build_app.list
+            fi
+
+          done <<<$(cat ./list.csv|grep -v -P '^#'| cut -d, -f1)
+
+          echo "appid=[$(cat _build_app.list|paste -sd ,)]" >> $GITHUB_OUTPUT
   build:
     needs: scan
     runs-on: ubuntu-24.04
@@ -25,24 +40,23 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/checkout@v4
 
-      - name: Preflight
-        id: preflight
-        run: |
-          TAG_NAME=$(date '+%Y%m%d')
-          APP_ID=${{matrix.appid}}
-          NEW_APP_ID="${APP_ID}.linyaps"
-          SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
-          if grep -q "${NEW_APP_ID}" ./rebuild.list;
-          then
-              SKIP_BUILD=false
-          fi
-          echo TAG_NAME=${TAG_NAME}
-          echo SKIP_BUILD=${SKIP_BUILD}
-          echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
-          echo "skip_build=${SKIP_BUILD}" >> $GITHUB_OUTPUT
+      # - name: Preflight
+      #   id: preflight
+      #   run: |
+      #     TAG_NAME=$(date '+%Y%m%d')
+      #     APP_ID=${{matrix.appid}}
+      #     NEW_APP_ID="${APP_ID}.linyaps"
+      #     SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
+      #     if grep -q "${NEW_APP_ID}" ./rebuild.list;
+      #     then
+      #         SKIP_BUILD=false
+      #     fi
+      #     echo TAG_NAME=${TAG_NAME}
+      #     echo SKIP_BUILD=${SKIP_BUILD}
+      #     echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
+      #     echo "skip_build=${SKIP_BUILD}" >> $GITHUB_OUTPUT
 
       # - name: linglong-builder-cache
       #   id: linglong-builder-cache
@@ -59,7 +73,6 @@ jobs:
 
       - name: linglong-builder-repo
         id: linglong-builder-repo
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -68,7 +81,6 @@ jobs:
 
       - name: linglong-builder-deepin-Runtime
         id: linglong-builder-deepin-Runtime
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -77,7 +89,6 @@ jobs:
 
       - name: linglong-builder-deepin-base
         id: linglong-builder-deepin-base
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -86,7 +97,6 @@ jobs:
 
       - name: linglong-builder-deepin-foundation
         id: linglong-builder-deepin-foundation
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -95,7 +105,6 @@ jobs:
 
       - name: linglong-builder-uniontech-foundation
         id: linglong-builder-uniontech-foundation
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -104,7 +113,6 @@ jobs:
 
       - name: linglong-helper-cache
         id: linglong-helper-cache
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         uses: actions/cache@v4
         with:
           path: |
@@ -112,7 +120,6 @@ jobs:
           key: ${{ runner.os }}-linglong-helper-cache
 
       - name: install
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
           sudo mkdir -p /etc/apt/keyrings/
@@ -124,7 +131,6 @@ jobs:
 
       - name: Build ${{matrix.appid}}
         id: build
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
         run: |
           echo APPID=${{matrix.appid}}
           export REPO_ROOT=$(pwd)/repos
@@ -148,7 +154,7 @@ jobs:
           echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
 
       - name: Commit
-        if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
+        if: ${{steps.build.outputs.commit == 'yes' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -159,7 +165,7 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
+        if: ${{steps.build.outputs.commit == 'yes' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
           body: ${{matrix.appid}}
