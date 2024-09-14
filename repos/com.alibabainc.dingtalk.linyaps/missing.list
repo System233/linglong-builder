@@ -1,0 +1,10 @@
+libXmu.so.6
+libXt.so.6
+libinput.so.10
+libmtdev.so.1
+libpulse.so.0
+libxcb-icccm.so.4
+libxcb-image.so.0
+libxcb-keysyms.so.1
+libxcb-render-util.so.0
+libxkbcommon-x11.so.0
