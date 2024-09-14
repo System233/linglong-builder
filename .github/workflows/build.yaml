@@ -54,20 +54,27 @@ jobs:
           sudo apt update
           sudo apt install linglong-builder linglong-box linglong-bin
           ll-cli --version
-      - name: Build Target ${{matrix.appid}}
+      - name: Build ${{matrix.appid}}
         id: build
         run: |
           echo APPID=${{matrix.appid}}
+          export REPO_ROOT=$(pwd)/repos
           export APP_ID=${{matrix.appid}}
           export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
           export NEW_APP_ID="${APP_ID}.linyaps"
+          export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
           export CACHE_DIR=~/.cache/linglong-helper
           yarn install
           bash ./build.sh
 
-          git add ${NEW_APP_ID}
+          git add ${APP_DIR}
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
           echo "commit=$(git diff --cached --quiet&&echo no||echo yes)" >> $GITHUB_OUTPUT
+
+
+          echo "layer_name=$(find ${APP_DIR} -name "*_binary.layer")" >> $GITHUB_OUTPUT
+          echo "tag_name=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+
       - name: Commit
         if: ${{steps.build.outputs.commit == 'yes' }}
         run: |
@@ -75,3 +82,10 @@ jobs:
           git config user.email github-actions@github.com
           git commit -m "Update ${{matrix.appid}}"
           git push
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: ${{steps.build.outputs.commit == 'yes' }}
+        with:
+          tag_name: ${{steps.build.outputs.tag_name}}
+          files: |
+            ${{steps.build.outputs.layer_name}}
