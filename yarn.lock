@@ -141,18 +141,8 @@ ansi-regex@^5.0.1:
 
 apt-cli@^0.1.10:
   version "0.1.10"
-  resolved "https://registry.npmmirror.com/apt-cli/-/apt-cli-0.1.10.tgz#f1875739da691468125c833b7340f3efc2f7881e"
+  resolved "https://registry.npmjs.org/apt-cli/-/apt-cli-0.1.10.tgz#f1875739da691468125c833b7340f3efc2f7881e"
   integrity sha512-3l0DcA7+0uk7WxLtZgQruZIrlwWWHJa539+RPNjFn5Nts+C6KIRqOUEzL1WkOy+oP1Q5gVsr56GZMwOc6p+WWg==
-  dependencies:
-    cli-progress "^3.12.0"
-    commander "^12.1.0"
-    lzma-native "^8.0.6"
-    unbzip2-stream "^1.4.3"
-
-apt-cli@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.npmmirror.com/apt-cli/-/apt-cli-0.1.9.tgz#7a25abb0be6123b3c66cd4159d1004651bfd7f61"
-  integrity sha512-Za+2XQ7f/LJWQJ7lOlfnDz7cwyh34mRfxSdCNAvw3r5sQYn1q4XtrLyxRQBUXoX4C7sR5opQbHD9QeOcx2YsnQ==
   dependencies:
     cli-progress "^3.12.0"
     commander "^12.1.0"
@@ -261,12 +251,12 @@ libphonenumber-js@^1.10.53:
   resolved "https://registry.npmmirror.com/libphonenumber-js/-/libphonenumber-js-1.11.8.tgz#697fdd36500a97bc672d7927d867edf34b4bd2a7"
   integrity sha512-0fv/YKpJBAgXKy0kaS3fnqoUVN8901vUYAKIGD/MWZaDfhJt1nZjPL3ZzdZBt/G8G8Hw2J1xOIrXWdNHFHPAvg==
 
-linglong-helper@^0.2.10:
-  version "0.2.10"
-  resolved "https://registry.npmmirror.com/linglong-helper/-/linglong-helper-0.2.10.tgz#5e552843f428006e0d7b0c26ade0aa4dd7dee45e"
-  integrity sha512-kT7niKaGbhy0uDgYHyGQgsc57Z9URoMuuyCnWBsSL11HR7m0uqNPYWJc0cyc2NfQtYWXwPr2ftwa+PZ7/nOnrw==
+linglong-helper@^0.2.11:
+  version "0.2.11"
+  resolved "https://registry.npmjs.org/linglong-helper/-/linglong-helper-0.2.11.tgz#36ff6a3a0300805cf9a7cd63e5e9586c97eadfee"
+  integrity sha512-/12VAU3DJnWzWCDgzQoUydVFUHKyRUDOkDQLc7gXkmGfvimg9xKAbxpccRNr5ylxiwCwXamFqzdQAOOfl5Uovw==
   dependencies:
-    apt-cli "^0.1.9"
+    apt-cli "^0.1.10"
     class-transformer "^0.5.1"
     class-validator "^0.14.1"
     commander "^12.1.0"
