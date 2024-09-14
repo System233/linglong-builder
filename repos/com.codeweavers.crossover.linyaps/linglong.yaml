@@ -1,0 +1,178 @@
+version: "1.0"
+package:
+  id: com.codeweavers.crossover.linyaps
+  name: Crossover-wine运行器
+  version: 0.21.0.1
+  kind: app
+  description: >-
+    Run Windows productivity and utility apps like Microsoft Office and games
+
+    CrossOver integrates with your desktop environment so you can use your
+
+    Windows applications like any other native application. This includes
+    starting
+
+    them from the desktop and using them to open Windows files and email
+
+    attachments. If an anti-virus scanner is available, CrossOver will also
+
+    automatically scan these to protect you.
+
+
+    Thanks to CrossTies, CrossOver takes the guesswork out of installing
+
+    applications referenced in its compatibility database. This makes it easy to
+
+    install Windows productivity applications such as Microsoft Office and
+
+    Quicken. CrossOver also takes care of installing any native packages that
+
+    may be required to run them.
+
+
+    This also applies to games such as Diablo III, Minecraft Dungeons and modern
+
+    Direct3D 11 and 12 games when it's time to relax.
+command:
+  - /opt/apps/com.codeweavers.crossover.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.codeweavers.crossover/com.codeweavers.crossover_21.0.0-1_amd64.deb
+    digest: b4b141a6cf840cdbe695fc43f4bb256a61c8455fadc900731d95dc9ef15e403d
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
+    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
+    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
+    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
+    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
+    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
+    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
+    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
+    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
+    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
+    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
+    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
+    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
+    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
+    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
+    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
+    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glibc/libc6-i386_2.28.31-deepin1_amd64.deb
+    digest: 41fc3cac1c48d30270490f1ee7b781b8c911cdb0f71dd9e63db76093e29b98ea
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
+    digest: eb7862c7ad2cf5b86f3851c7103f72f8fa45b48514ddcf371a8e4ba8f02a79e5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7_3.7.3.18-deepin1_amd64.deb
+    digest: aa54af41ccf48a7834c7c70049a279dcaa0ecc97cbe9590606a14cd4571c56ff
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7-minimal_3.7.3.18-deepin1_amd64.deb
+    digest: 849fa70903bc43feeee400b29f9f9266018f61233b08d70e7759520ab64dd4ec
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pygobject/python3-gi_3.30.4-1_amd64.deb
+    digest: 539d7f81bc80152194b2dccdc4559ccf637eb692b260e0e522bb77240f30fd3a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gobject-introspection/gir1.2-glib-2.0_1.58.3-2_amd64.deb
+    digest: 00a2163fb9649eb56f2227c90b297cf0ba867a7d85504f5936cdc37577a43411
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dbus-python/python3-dbus_1.2.8-3_amd64.deb
+    digest: 29f254c8fe74551ea5828bdb764818fce1f788bda8df87b739beafb1ff4f5a29
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/gir1.2-gtk-3.0_3.24.5.9-1+deepin_amd64.deb
+    digest: 8334841a267a42e9701b8e2a87d0130d1c7ec961945a7d3c6c8b242158df5e50
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/a/atk1.0/gir1.2-atk-1.0_2.30.0-2_amd64.deb
+    digest: 1c606506d2f73c4f933c231f724f0cd4cf6135fabe00f369f93717ccce435eb4
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gobject-introspection/gir1.2-freedesktop_1.58.3-2_amd64.deb
+    digest: d7decfe38fa1401f0ab54eb7923882316d71d537da0be3eb1438c6f06e726071
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gdk-pixbuf/gir1.2-gdkpixbuf-2.0_2.38.1+dfsg-1_amd64.deb
+    digest: 64d9e66e272541f790eafeb2a3ddea9868f9e7987e048d290f323cce3aaaa9ed
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pango1.0/gir1.2-pango-1.0_1.42.4-8~deb10u1_amd64.deb
+    digest: 36e4f995659cc24f73104042736e7a20a3d2c353385b2e702db44dfb804e5d32
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vte2.91/gir1.2-vte-2.91_0.54.2-2_amd64.deb
+    digest: 2a12d87fef5bcf039976b361f46f92c95b4d4951dc58c43605af46121e83c519
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/v/vte2.91/libvte-2.91-0_0.54.2-2_amd64.deb
+    digest: cf662abd3e6cb4267ca4427cee0feaa2dc825da7a58bb16a55f629c6620596e8
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/v/vte2.91/libvte-2.91-common_0.75.92-1_amd64.deb
+    digest: 9a9af645b20c801ac11ae8ffdf96bdfae553e6b2a4a80c88948daf8fa1415eed
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
+    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
+    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcre2/libpcre2-8-0_10.32.2-deepin1_amd64.deb
+    digest: b19fb4d07b792896b02663319e49515f568bce4ff439de6e4858efade44e8b0c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/desktop-file-utils/desktop-file-utils_0.23-4_amd64.deb
+    digest: 5c348a6fd46fd8cb27d7e864fda0d6314c7147015083d214f09b9dd7d9e655e4
+build: >-
+  export LINGLONG_RAW_ID="com.codeweavers.crossover"
+
+  export LINGLONG_APP_ID="com.codeweavers.crossover.linyaps"
+
+  export LINGLONG_APP_NAME="Crossover-wine运行器"
+
+  export LINGLONG_APP_VERSION="0.21.0.1"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="Run Windows productivity and utility apps like
+  Microsoft Office and games\nCrossOver integrates with your desktop environment
+  so you can use your\nWindows applications like any other native application.
+  This includes starting\nthem from the desktop and using them to open Windows
+  files and email\nattachments. If an anti-virus scanner is available, CrossOver
+  will also\nautomatically scan these to protect you.\n\nThanks to CrossTies,
+  CrossOver takes the guesswork out of installing\napplications referenced in
+  its compatibility database. This makes it easy to\ninstall Windows
+  productivity applications such as Microsoft Office and\nQuicken. CrossOver
+  also takes care of installing any native packages that\nmay be required to run
+  them.\n\nThis also applies to games such as Diablo III, Minecraft Dungeons and
+  modern\nDirect3D 11 and 12 games when it's time to relax."
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.codeweavers.crossover.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
