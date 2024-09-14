@@ -27,7 +27,7 @@ jobs:
       - name: Preflight
         id: preflight
         run: |
-          TAG_NAME=$(date '+%Y-%m-%d')
+          TAG_NAME=$(date '+%Y%m%d')
           APP_ID=${{matrix.appid}}
           NEW_APP_ID="${APP_ID}.linyaps"
           SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
@@ -86,7 +86,7 @@ jobs:
           yarn install
           bash ./build.sh
 
-          ls -l ${APP_DIR}
+          git add .
           COMMIT=$(git diff --quiet&&echo no||echo yes)
 
           echo COMMIT=${COMMIT}
@@ -94,15 +94,14 @@ jobs:
           echo "appdir=${APP_DIR}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT}" >> $GITHUB_OUTPUT
           echo "layer_name=$(find ${APP_DIR} -name "*_binary.layer")" >> $GITHUB_OUTPUT
-          echo "tag_name=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+          echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
 
       - name: Commit
         if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Update ${{matrix.appid}}"
+          git commit -m "Build ${{matrix.appid}}"
           git status -s
           git pull --rebase origin main
           git push origin main
@@ -111,5 +110,7 @@ jobs:
         if: ${{steps.build.outputs.commit == 'yes' && steps.preflight.outputs.skip_build=='false' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
+          body: ${{matrix.appid}}
+          append_body: true
           files: |
             ${{steps.build.outputs.layer_name}}
