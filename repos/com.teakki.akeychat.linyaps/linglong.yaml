@@ -1,0 +1,31 @@
+version: "1.0"
+package:
+  id: com.teakki.akeychat.linyaps
+  name: 安司密信
+  version: 2.1.14.21
+  kind: app
+  description: akeychat, a chat tool
+command:
+  - /opt/apps/com.teakki.akeychat.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.teakki.akeychat/com.teakki.akeychat_2.1.14.2-1_amd64.deb
+    digest: 287cf6d9ca65f88858f56eef6dbda492465a83059a8013bc33cb9d8e650b9ee3
+build: >-
+  export LINGLONG_RAW_ID="com.teakki.akeychat"
+
+  export LINGLONG_APP_ID="com.teakki.akeychat.linyaps"
+
+  export LINGLONG_APP_NAME="安司密信"
+
+  export LINGLONG_APP_VERSION="2.1.14.21"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="akeychat, a chat tool"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.teakki.akeychat.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
