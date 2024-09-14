@@ -1,0 +1,34 @@
+version: "1.0"
+package:
+  id: com.apps.vplayer.linyaps
+  name: vPlayer
+  version: 0.7.2.1
+  kind: app
+  description: |-
+    this is a software that can play Video and Audio.
+    <insert long description, indented with spaces>
+command:
+  - /opt/apps/com.apps.vplayer.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.apps.vplayer/com.apps.vplayer_7.2.0-1_amd64.deb
+    digest: 346d01469abbec1d98218b7a2dfe18fb5b1a0375cd15f064a5b8c9892e821f7e
+build: >-
+  export LINGLONG_RAW_ID="com.apps.vplayer"
+
+  export LINGLONG_APP_ID="com.apps.vplayer.linyaps"
+
+  export LINGLONG_APP_NAME="vPlayer"
+
+  export LINGLONG_APP_VERSION="0.7.2.1"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="this is a software that can play Video and
+  Audio.\n<insert long description, indented with spaces>"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.apps.vplayer.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
