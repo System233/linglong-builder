@@ -1,0 +1,145 @@
+version: "1.0"
+package:
+  id: cn.greenpaper.reader.linyaps
+  name: 绿页阅读器
+  version: 2.2.0.512
+  kind: app
+  description: GreenPaperReader
+command:
+  - /opt/apps/cn.greenpaper.reader.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/cn.greenpaper.reader/cn.greenpaper.reader_2.2.0.0512_amd64.deb
+    digest: c168fdcf4e17ee40437f8e5b8188b7b0ca0255336d958e493ef795911b79a61c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/nas/libaudio2_1.9.4.1-1+dde_amd64.deb
+    digest: 998126dadd5eadb592633e528b8c74839ab21ad8298af495bd9502e24ca8bd23
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxt/libxt6_1.1.5.1.1-1+dde_amd64.deb
+    digest: 3b62b28febb4d5609d0d2ffe9307881c1607acd238857138479ad66789567dc9
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
+    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
+    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.14.4.1-2+deb10u1_amd64.deb
+    digest: fe66edab8bb22475d72f897633e5d9ab8bc3f88bd3ec9179266a20354e3b970e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gstreamer1.0/libgstreamer1.0-0_1.14.4.2-1+dde_amd64.deb
+    digest: 0042fe24b08ea8d0eeb43286c7d702b970aefd0f5c3421e95460471415787cd1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libc/libcap2/libcap2-bin_2.25-2_amd64.deb
+    digest: b9e7ed33ec42322c99f2041719b95b204085a0b7828131b78d4c40295b431ead
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/orc/liborc-0.4-0_0.4.28-3.1_amd64.deb
+    digest: 10336c49a5fb3f1198e2e1fe2e8a69db8e5c675e2bfb03d83f2eebc78cbef932
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/i/iso-codes/iso-codes_4.2.1-1_all.deb
+    digest: 05e3f3c040a181ed2bad990f026cbad29bd83122eefeee34a1406cc9eb175f16
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmng/libmng1_1.0.10.1-1+rebuild_amd64.deb
+    digest: 7077e9373cf989fb17ce98f31b9e28b35db9ae4c40e43514350c05d85462898d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-defaults/libomp5_7.0-47_amd64.deb
+    digest: 070df41ee6075c3ad7f62ef682015d98a99dd830226f6f153ee751c3af2b98a9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-toolchain-7/libomp5-7_7.0.1-8_amd64.deb
+    digest: ae5128d5bbcf665e53047626bca87f28bfaff959b112fc71e2fff590f27534d8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-network_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 5494551340afe9b4f61f89565775f4e82be935c3dd95c35d3bd09557e1c4ed77
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 344282ea487885e2fc1e571377fcbf102d5e708c6547808fc81829f9d3494492
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg.2-1+dde_all.deb
+    digest: 254325c7e7161c19a68e0b8d1c2464544f2b9c211bcbd9264e96dafa40ba8b40
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtdbus4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 9276c8b76dc280379bda261c4b86d24d2c53643701fb59d02200650969bcdfe6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-xml_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: bfbd39bea0ba21d187fba978db125c6cd1b6f6bd9f860ff576d7d4cf409c258a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-opengl_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 1e656c1ec8522f9bb8c6c074e9896a4ca4324453b2e3e6901e4e9a42695798a8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtgui4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 9df1de1780032044815e3bf486188a1d1c564396b86019ecce13ea45dab02d17
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-svg_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 07dda9ffab9f48e22ffdc17ee26e83831a4ccc9ecd62b84da83e51aa4a0a09c6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-xmlpatterns_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: b1a8c034c29f025539d43f5136952b8cb705a2013d0568be0d61a38d84cff1a0
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
+    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
+    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
+    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
+    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
+    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
+    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
+    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
+    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
+    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
+    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
+    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
+    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
+    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
+    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
+    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
+    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+build: >-
+  export LINGLONG_RAW_ID="cn.greenpaper.reader"
+
+  export LINGLONG_APP_ID="cn.greenpaper.reader.linyaps"
+
+  export LINGLONG_APP_NAME="绿页阅读器"
+
+  export LINGLONG_APP_VERSION="2.2.0.512"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="GreenPaperReader"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/cn.greenpaper.reader.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
