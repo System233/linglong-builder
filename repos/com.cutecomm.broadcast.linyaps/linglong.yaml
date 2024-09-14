@@ -1,0 +1,31 @@
+version: "1.0"
+package:
+  id: com.cutecomm.broadcast.linyaps
+  name: 智慧帮直播
+  version: 0.1.0.1
+  kind: app
+  description: 智慧帮直播，支持几乎所有信创OS、CPU
+command:
+  - /opt/apps/com.cutecomm.broadcast.linyaps/files/bin/start.sh
+base: com.uniontech.foundation/20.0.1
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.cutecomm.broadcast/com.cutecomm.broadcast_1.0.0-1_amd64.deb
+    digest: 581d9a02a9a61981662d746d5f59523f2a9992f3a2c16dcc0b3805b01ed058fa
+build: >-
+  export LINGLONG_RAW_ID="com.cutecomm.broadcast"
+
+  export LINGLONG_APP_ID="com.cutecomm.broadcast.linyaps"
+
+  export LINGLONG_APP_NAME="智慧帮直播"
+
+  export LINGLONG_APP_VERSION="0.1.0.1"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="智慧帮直播，支持几乎所有信创OS、CPU"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.cutecomm.broadcast.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
