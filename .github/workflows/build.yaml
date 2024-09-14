@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   scan:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       appid-list: ${{ steps.list-appid.outputs.appid }}
     steps:
@@ -18,7 +18,7 @@ jobs:
           echo "appid=$(node ./list-target.js)" >> $GITHUB_OUTPUT
   build:
     needs: scan
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
