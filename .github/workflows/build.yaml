@@ -24,6 +24,10 @@ jobs:
         appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
       fail-fast: false
     steps:
+      - name: Checkout
+        if: ${{steps.preflight.outputs.skip_build=='false'}}
+        uses: actions/checkout@v4
+
       - name: Preflight
         id: preflight
         run: |
@@ -31,15 +35,14 @@ jobs:
           APP_ID=${{matrix.appid}}
           NEW_APP_ID="${APP_ID}.linyaps"
           SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
-
+          if grep -q "${NEW_APP_ID}" ./rebuild.list;
+          then
+              SKIP_BUILD=false
+          fi
           echo TAG_NAME=${TAG_NAME}
           echo SKIP_BUILD=${SKIP_BUILD}
           echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
           echo "skip_build=${SKIP_BUILD}" >> $GITHUB_OUTPUT
-
-      - name: Checkout
-        if: ${{steps.preflight.outputs.skip_build=='false'}}
-        uses: actions/checkout@v4
 
       # - name: linglong-builder-cache
       #   id: linglong-builder-cache
@@ -61,7 +64,7 @@ jobs:
         with:
           path: |
             ~/.cache/linglong-builder/repo/
-          key: ${{ runner.os }}-linglong-builder-cache
+          key: ${{ runner.os }}-linglong-builder-repo
 
       - name: linglong-builder-deepin-Runtime
         id: linglong-builder-deepin-Runtime

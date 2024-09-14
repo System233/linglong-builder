@@ -8,7 +8,7 @@ package:
 command:
   - /opt/apps/com.mingdao.officetool.linyaps/files/bin/start.sh
 base: com.uniontech.foundation/20.0.1
-runtime: org.deepin.Runtime/23.0.1
+runtime: org.deepin.Runtime/20.0.1
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.mingdao.officetool/com.mingdao.officetool_1.2.1.2_amd64.deb
