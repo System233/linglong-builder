@@ -4,27 +4,27 @@ com.foxit.foxitpdfeditor,福昕高级PDF编辑器
 com.huluer.ichainpi,派盘
 com.rembb.jsx-tc,记上学三个课堂
 com.qq.wemeet,腾讯会议
-com.wind.wft,Wind金融终端(机构专用)
-net.textseek.off,TextSeek (离线版)-文本搜索
-net.textseek,TextSeek 文本搜索工具
-com.huidu.hdplayer,HDPlayer软件
-mct,视宽电子教室广播教学软件教师端
-mcs,视宽电子教室广播教学软件学生端
-com.ovital.map,奥维互动地图
-com.hisense-syxs.hiedu,海信智学
-hscore,山河安全工作空间
-holder,holder
-ppthelper-agent,PPT遥控翻页
-cn.wps.wps-office-pro,WPS2019专业版
-dev.warp.app,Warp Terminal
-com.insight.client,信创运维小助手
-store.spark-app.wechat-linux-spark,微信Linux
-com.mythware.cms-teacher,极域课堂互动教学系统软件（教师端）
-com.tencent.wechat,微信
-com.mythware.cms-student,极域课堂互动教学系统软件（学生端）
-com.hsl.amis,电子档案管理系统
-pdmaner,PDManer 元数建模
-com.360.browser-stable,360安全浏览器
+#com.wind.wft,Wind金融终端(机构专用)
+#net.textseek.off,TextSeek (离线版)-文本搜索
+#net.textseek,TextSeek 文本搜索工具
+#com.huidu.hdplayer,HDPlayer软件
+#mct,视宽电子教室广播教学软件教师端
+#mcs,视宽电子教室广播教学软件学生端
+#com.ovital.map,奥维互动地图
+#com.hisense-syxs.hiedu,海信智学
+#hscore,山河安全工作空间
+#holder,holder
+#ppthelper-agent,PPT遥控翻页
+#cn.wps.wps-office-pro,WPS2019专业版
+#dev.warp.app,Warp Terminal
+#com.insight.client,信创运维小助手
+#store.spark-app.wechat-linux-spark,微信Linux
+#com.mythware.cms-teacher,极域课堂互动教学系统软件（教师端）
+#com.tencent.wechat,微信
+#com.mythware.cms-student,极域课堂互动教学系统软件（学生端）
+#com.hsl.amis,电子档案管理系统
+#pdmaner,PDManer 元数建模
+#com.360.browser-stable,360安全浏览器
 #com.zwsoft.zwcadm2024,中望CAD机械版 2024
 #net.thunderbird,雷鸟邮件客户端
 #weici-teaching,维词教学系统

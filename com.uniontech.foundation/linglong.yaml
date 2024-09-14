@@ -6,3 +6,4 @@ package:
   kind: app
   description: DESC
 base: com.uniontech.foundation/20.0.1
+runtime: org.deepin.Runtime/20.0.1

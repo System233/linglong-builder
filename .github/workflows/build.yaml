@@ -82,12 +82,16 @@ jobs:
           export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
           export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
           export CACHE_DIR=~/.cache/linglong-helper
+
           yarn install
           bash ./build.sh
 
+          COMMIT=$(git diff --quiet&&echo no||echo yes)
+
+          echo COMMIT=${COMMIT}
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
           echo "appdir=${APP_DIR}" >> $GITHUB_OUTPUT
-          echo "commit=$(git diff --cached --quiet&&echo no||echo yes)" >> $GITHUB_OUTPUT
+          echo "commit=${COMMIT}" >> $GITHUB_OUTPUT
           echo "layer_name=$(find ${APP_DIR} -name "*_binary.layer")" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
 
