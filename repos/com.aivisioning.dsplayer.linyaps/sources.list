@@ -1,0 +1,8 @@
+deb [arch=amd64] https://pro-store-packages.uniontech.com/appstore eagle-pro appstore
+deb [arch=amd64] https://professional-security.chinauos.com  eagle/1070 main contrib non-free
+deb [arch=amd64] https://com-store-packages.uniontech.com/appstorev23 beige appstore
+deb [arch=amd64] https://community-packages.deepin.com/beige beige main
+deb [arch=amd64] https://pro-store-packages.uniontech.com/appstore eagle-pro appstore
+deb [arch=amd64] https://professional-security.chinauos.com  eagle/1070 main contrib non-free
+deb [arch=amd64] https://com-store-packages.uniontech.com/appstorev23 beige appstore
+deb [arch=amd64] https://community-packages.deepin.com/beige beige main
