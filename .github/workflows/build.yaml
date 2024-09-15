@@ -33,7 +33,11 @@ jobs:
           #   fi
           # done <<<$(cat ./list.csv|grep -v -P '^#'| cut -d, -f1)
 
-          cat rebuild.list > _build_app.list
+          if [ -e rebuild.list ];then
+            cat rebuild.list > _build_app.list
+          eles
+            echo > _build_app.list
+          fi
           git diff --name-only ${{ github.event.before }} ${{ github.sha }}| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e '#.linyaps$##' >> _build_app.list
 
           cat _build_app.list
