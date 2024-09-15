@@ -63,6 +63,33 @@ sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
     digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.14.4.1-2+deb10u1_amd64.deb
+    digest: fe66edab8bb22475d72f897633e5d9ab8bc3f88bd3ec9179266a20354e3b970e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/g/gstreamer1.0/libgstreamer1.0-0_1.14.4.2-1+dde_amd64.deb
+    digest: 0042fe24b08ea8d0eeb43286c7d702b970aefd0f5c3421e95460471415787cd1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libc/libcap2/libcap2-bin_2.25-2_amd64.deb
+    digest: b9e7ed33ec42322c99f2041719b95b204085a0b7828131b78d4c40295b431ead
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/o/orc/liborc-0.4-0_0.4.28-3.1_amd64.deb
+    digest: 10336c49a5fb3f1198e2e1fe2e8a69db8e5c675e2bfb03d83f2eebc78cbef932
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/i/iso-codes/iso-codes_4.2.1-1_all.deb
+    digest: 05e3f3c040a181ed2bad990f026cbad29bd83122eefeee34a1406cc9eb175f16
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsecret/libsecret-1-0_0.18.7-1_amd64.deb
+    digest: 7a2c98e07ae86aa1918e91bb5e8a1dd92d526acd1cf0a86b9892e04b8997452e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsecret/libsecret-common_0.18.7-1_all.deb
+    digest: e62b8f91545459fc77bcc21bacf0e450de532ca852b8080ad882bebc3b38e3d0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxslt/libxslt1.1_1.1.32.5-deepin1_amd64.deb
+    digest: 43f39c0d0c7479daa0fac987ef793ee66dcdda0b05b59e5f043ccafe16c07ecd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxt/libxt6_1.1.5.1.1-1+dde_amd64.deb
+    digest: 3b62b28febb4d5609d0d2ffe9307881c1607acd238857138479ad66789567dc9
 build: >-
   export LINGLONG_RAW_ID="cn.com.topsec.topsap"
 

@@ -30,6 +30,10 @@ function merge() {
 
 merge $PREFIX/opt/apps/*/files $PREFIX
 merge $PREFIX/opt/apps/*/entries $PREFIX/share
+
+merge $PREFIX/${LINGLONG_RAW_ID}/files $PREFIX
+merge $PREFIX/${LINGLONG_RAW_ID}/entries $PREFIX/share
+
 merge $PREFIX/usr $PREFIX
 
 

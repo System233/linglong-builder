@@ -1,1 +1,6 @@
 cn.com.topsec.topsap
+libgstreamer-plugins-base1.0-0
+libgstreamer1.0-0
+libsecret-1-0
+libxslt1.1
+libxt6
