@@ -16,3 +16,16 @@ systemd-sysv
 libgtk-3-common
 libpcsclite1
 ca-certificates-uniontech
+libpulse0
+libasyncns0
+libsndfile1
+libflac8
+libogg0
+libvorbis0a
+libvorbisenc2
+libwrap0
+libsndio7.0
+libroar-compat2
+libroar2
+libspeex1
+libspeexdsp1
