@@ -1,9 +1,16 @@
-/opt/apps/cn.hitecloud.hitecontroller/files/Release/Linux/Own/libslsdk.so
 libgstapp-1.0.so.0
 libgstaudio-1.0.so.0
 libgstbase-1.0.so.0
 libgstpbutils-1.0.so.0
 libgstreamer-1.0.so.0
 libgstvideo-1.0.so.0
+libjasper.so.1
+libmysqlclient.so.18
 libpulse-mainloop-glib.so.0
 libpulse.so.0
+libQt5MultimediaQuick_p.so.5
+libQt5Scxml.so.5
+libQt5SerialBus.so.5
+libQt5WebView.so.5
+/opt/apps/cn.hitecloud.hitecontroller/files/Release/Linux/Own/libHTerminalUI.so
+/opt/apps/cn.hitecloud.hitecontroller/files/Release/Linux/Own/libslsdk.so

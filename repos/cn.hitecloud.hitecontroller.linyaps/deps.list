@@ -1,1 +1,10 @@
 cn.hitecloud.hitecontroller
+apulse
+libgstreamer-plugins-base1.0-0
+libgstreamer1.0-0
+libpulse-mainloop-glib0
+libpulse0
+libqt5serialbus5
+libqt5webview5
+libroar-compat2
+pipewire-audio-client-libraries

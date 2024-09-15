@@ -9,3 +9,4 @@ cn.coremail.cmclient.linyaps, 控件全灰
 cn.foxitsoftware.online.linyaps, 打开网页https://online.foxitsoftware.cn/ xdg失败-等待修复
 cn.fxkp.fxkpofficesuite.appstore.linyaps, 显示安装有误-等待修复
 cn.gzca.certmanager.linyaps, Segmentation fault，读取了USB，可能需要加密狗
+cn.hitecloud.hitecenter.linyaps, 无快捷方式，等待修复
