@@ -13,3 +13,4 @@ cn.gzca.certmanager.linyaps, Segmentation fault，读取了USB，可能需要加
 cn.hitecloud.hitecenter.linyaps, 无快捷方式，等待修复
 cn.hitecloud.hitecontroller.linyaps, 提示需要重启，不一定能用
 cn.lanxin.linyaps, 启动器模型，等待修复
+cn.newcloud.newss.linyaps,TScrollBox.Destroy with LCLRefCount>0
