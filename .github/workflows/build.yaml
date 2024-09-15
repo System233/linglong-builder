@@ -24,7 +24,7 @@ jobs:
             elif grep -q "${NEW_APP_ID}" ./rebuild.list;then
               SKIP_BUILD=false
             else
-              SKIP_BUILD=$(echo $RELEASE |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
+              SKIP_BUILD=true # $(echo $RELEASE |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' 2>/dev/null || echo true)
             fi
 
             if [ "${SKIP_BUILD}" == "false" ];then
