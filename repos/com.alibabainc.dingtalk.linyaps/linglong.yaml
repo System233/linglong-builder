@@ -1,10 +1,10 @@
 version: "1.0"
 package:
   id: com.alibabainc.dingtalk.linyaps
-  name: 3.-让工作学习更简单
+  name: 钉钉
   version: 7.6.0.40718
   kind: app
-  description: 钉钉
+  description: 钉钉-让工作学习更简单
 command:
   - /opt/apps/com.alibabainc.dingtalk.linyaps/files/bin/start.sh
 base: com.uniontech.foundation/20.0.1
