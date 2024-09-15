@@ -2,3 +2,4 @@ cn.ankexinchuang.weimail.linyaps,启动时间较长
 cn.bitnum.certmanager,qt.network.ssl: No TLS backend is available
 cn.bjca.certaide.linyaps, 试图打开本地网页-等待修复
 cn.com.sangfor.atrust.linyaps,Error: connect ENOENT /usr/share/sangfor/.aTrust/var/run/aTrustTunnel-c46a26c5-2cd4-4c20-9352-8efbb6358ea0
+cn.com.gf.hippo.linyaps,Received signal 11 SEGV_MAPERR 000000000000
