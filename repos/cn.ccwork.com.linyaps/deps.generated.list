@@ -17,5 +17,3 @@ libgtk-3-common
 libpcsclite1
 ca-certificates-uniontech
 libnotify4
-libgcc-s1
-gcc-13-base
