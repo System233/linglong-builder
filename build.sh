@@ -20,12 +20,12 @@ if [ ! -e "$APP_DIR" ]; then
     cd "${APP_DIR}"
     # cp -v ${CWD}/.gitignore "${APP_DIR}"
     ll-helper patch ld icon --from "${BASE}"
+    echo [搜索依赖]
+    ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
 else
     cd "${APP_DIR}"
 fi
 
-echo [搜索依赖]
-ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
 
 echo [正式构建]
 ll-builder build
