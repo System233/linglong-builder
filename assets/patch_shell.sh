@@ -3,8 +3,9 @@
 
 echo Applying Patch: shell
 
-
 while read file;do
-    echo "Patching $file"
-    sed -i -e "s#${LINGLONG_RAW_ID}#${LINGLONG_APP_ID}#g" "$file"
-done<<<$(find "$PREFIX" -name "*.sh")
+    if [ "$LINGLONG_COMMAND" != "$file" ] && od "$file" -An -N2 -tx2 | grep -q "2123"; then
+        echo Patch Script: ${file}
+        sed -i -e "s#${LINGLONG_RAW_ID}#${LINGLONG_APP_ID}#g" "$file"
+    fi
+done<<<$(find $PREFIX -type f -executable)
