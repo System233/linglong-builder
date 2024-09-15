@@ -41,7 +41,7 @@ libopencv_structured_light.so.4.5
 libopencv_surface_matching.so.4.5
 libopencv_text.so.4.5
 libopencv_tracking.so.4.5
-libopencv_videoio.so.4.5
 libopencv_video.so.4.5
+libopencv_videoio.so.4.5
 libopencv_ximgproc.so.4.5
 libopencv_xphoto.so.4.5
