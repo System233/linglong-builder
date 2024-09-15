@@ -17,11 +17,12 @@ cd "${REPO_ROOT}"
 
 if [ ! -e "$APP_DIR" ]; then
     ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${BASE}" --quiet --cache-dir "${CACHE_DIR}"
+    cd "${APP_DIR}"
     # cp -v ${CWD}/.gitignore "${APP_DIR}"
+    ll-helper patch ld icon --from "${BASE}"
+else
+    cd "${APP_DIR}"
 fi
-cd "${APP_DIR}"
-
-ll-helper patch ld icon --from "${BASE}"
 
 echo [搜索依赖]
 ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
