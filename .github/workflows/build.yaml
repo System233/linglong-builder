@@ -36,7 +36,10 @@ jobs:
           git diff --name-only -z ${{ github.event.before }} ${{ github.sha }}|xargs -0 -I {} echo "{}"| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e 's#.linyaps$##' >> _build_app.list
           echo [Selected]
           cat _build_app.list
-          echo "appid=[$(cat _build_app.list| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
+          if [ ! -e "ignore.list" ];
+            touch ignore.list
+          fi
+          echo "appid=[$(cat _build_app.list| sort -u |grep -vxf ignore.list|xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
   build:
     needs: scan
     runs-on: ubuntu-24.04
@@ -118,12 +121,6 @@ jobs:
           export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
           export CACHE_DIR=~/.cache/linglong-helper
 
-          export FORCE_BUILD=no
-
-          if [ -e ./rebuild.list ] && grep -q "${NEW_APP_ID}" ./rebuild.list;then
-              FORCE_BUILD=yes
-          fi
-
           yarn install
           bash ./build.sh
 
@@ -144,7 +141,6 @@ jobs:
           echo "layer_name=${LAYER_NAME}" >> $GITHUB_OUTPUT
           echo "sha1_name=${SHA1_NAME}" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
-          echo "force_build=${FORCE_BUILD}" >> $GITHUB_OUTPUT
           echo "ref_id=${REF_ID}" >> $GITHUB_OUTPUT
 
       - name: Commit
@@ -163,7 +159,6 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: ${{steps.build.outputs.commit == 'yes' || steps.build.outputs.force_build == 'yes' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
           body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}/repos/${{matrix.appid}}.linyaps")
