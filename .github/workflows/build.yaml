@@ -14,27 +14,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 100
-      - name: List target
+      - name: Check changes
         id: list-appid
         run: |
-          # TAG_NAME=$(date '+%Y%m%d')
-          # RELEASE=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}')
-          # while read APP_ID;do
-          #   NEW_APP_ID="${APP_ID}.linyaps"
-          #   if grep -q "${NEW_APP_ID}" ./dead.list;then
-          #     SKIP_BUILD=true
-          #   elif grep -q "${NEW_APP_ID}" ./rebuild.list;then
-          #     SKIP_BUILD=false
-          #   else
-          #     SKIP_BUILD=true # $(echo $RELEASE |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' 2>/dev/null || echo true)
-          #   fi
-
-          #   if [ "${SKIP_BUILD}" == "false" ];then
-          #     echo "Selected ${APP_ID}"
-          #     echo "\"${APP_ID}\"" >>_build_app.list
-          #   fi
-          # done <<<$(cat ./list.csv|grep -v -P '^#'| cut -d, -f1)
-
           if [ -e rebuild.list ];then
             cat rebuild.list > _build_app.list
           eles
@@ -54,35 +36,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      # - name: Preflight
-      #   id: preflight
-      #   run: |
-      #     TAG_NAME=$(date '+%Y%m%d')
-      #     APP_ID=${{matrix.appid}}
-      #     NEW_APP_ID="${APP_ID}.linyaps"
-      #     SKIP_BUILD=$(curl --silent "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/tags/$TAG_NAME" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' |jq -r --arg FILE "${NEW_APP_ID}" '.assets | map(.name | startswith($FILE)) | any' || echo false)
-      #     if grep -q "${NEW_APP_ID}" ./rebuild.list;
-      #     then
-      #         SKIP_BUILD=false
-      #     fi
-      #     echo TAG_NAME=${TAG_NAME}
-      #     echo SKIP_BUILD=${SKIP_BUILD}
-      #     echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
-      #     echo "skip_build=${SKIP_BUILD}" >> $GITHUB_OUTPUT
-
-      # - name: linglong-builder-cache
-      #   id: linglong-builder-cache
-      #   if: ${{steps.preflight.outputs.skip_build=='false'}}
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: |
-      #       ~/.cache/linglong-builder/layers/main/org.deepin.base
-      #       ~/.cache/linglong-builder/layers/main/org.deepin.foundation
-      #       ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
-      #       ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
-      #       ~/.cache/linglong-builder/repo/
-      #     key: ${{ runner.os }}-linglong-builder-cache
 
       - name: linglong-builder-repo
         id: linglong-builder-repo
@@ -155,9 +108,10 @@ jobs:
 
           export FORCE_BUILD=no
 
-          if grep -q "${NEW_APP_ID}" ./rebuild.list;then
+          if [ -e ./rebuild.list ] && grep -q "${NEW_APP_ID}" ./rebuild.list;then
               FORCE_BUILD=yes
           fi
+
           yarn install
           bash ./build.sh
 
@@ -195,7 +149,7 @@ jobs:
         if: ${{steps.build.outputs.commit == 'yes' || steps.build.outputs.force_build == 'yes' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
-          body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id}}/repos/${{matrix.appid}}.linyaps")
+          body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || github.sha}}/repos/${{matrix.appid}}.linyaps")
           append_body: true
           files: |
             ${{steps.build.outputs.layer_name}}
