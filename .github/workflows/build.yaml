@@ -42,7 +42,7 @@ jobs:
           fi
           git diff --name-only -z ${{ github.event.before }} ${{ github.sha }}|xargs -0 -I {} echo "{}"| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e 's#.linyaps$##' >> _build_app.list
           cat _build_app.list
-          echo "appid=[$(cat _build_app.lis t| sort -u | paste -sd ,)]" >> $GITHUB_OUTPUT
+          echo "appid=[$(cat _build_app.list| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
   build:
     needs: scan
     runs-on: ubuntu-24.04
