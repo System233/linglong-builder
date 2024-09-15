@@ -1,3 +1,4 @@
+app.web.3done.linyaps,网页应用，网站已挂
 cn.ankexinchuang.weimail.linyaps,启动时间较长
 cn.bitnum.certmanager,qt.network.ssl: No TLS backend is available
 cn.bjca.certaide.linyaps, 试图打开本地网页-等待修复
@@ -10,3 +11,4 @@ cn.foxitsoftware.online.linyaps, 打开网页https://online.foxitsoftware.cn/ xd
 cn.fxkp.fxkpofficesuite.appstore.linyaps, 显示安装有误-等待修复
 cn.gzca.certmanager.linyaps, Segmentation fault，读取了USB，可能需要加密狗
 cn.hitecloud.hitecenter.linyaps, 无快捷方式，等待修复
+cn.hitecloud.hitecontroller.linyaps, 提示需要重启，不一定能用
