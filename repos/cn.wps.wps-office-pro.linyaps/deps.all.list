@@ -78,13 +78,13 @@ libsensors-config
 libsm6
 libice6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libxrender1
 libfontconfig1
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libbz2-1.0
 deepin-elf-verify

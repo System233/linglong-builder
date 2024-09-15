@@ -15,3 +15,4 @@ cn.hitecloud.hitecontroller.linyaps, 提示需要重启，不一定能用
 cn.lanxin.linyaps, 启动器模型，等待修复
 cn.newcloud.newss.linyaps,TScrollBox.Destroy with LCLRefCount>0
 com.360.browser-stable, 提示安装损坏
+cn.wps.wps-office-pro.linyaps, 段错误，等待修复

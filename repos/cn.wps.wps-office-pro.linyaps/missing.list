@@ -1,5 +1,10 @@
-/opt/apps/cn.wps.wps-office-pro.linyaps/files/lib/x86_64-linux-gnu/libgcc_s.so.1:
-libXv.so.1
-libltdl.so.7
+libcaja-extension.so.1
+libmysqlclient.so.18
+libnautilus-extension.so.1
 libomp.so
-libxkbcommon-x11.so.0
+libpeony.so.3
+libpng12.so.0
+libQtNetwork.so.4
+libQtXml.so.4
+libusb-1.0.so.0
+libXv.so.1
