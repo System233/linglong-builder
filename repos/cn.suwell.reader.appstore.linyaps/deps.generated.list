@@ -16,3 +16,10 @@ systemd-sysv
 libgtk-3-common
 libpcsclite1
 ca-certificates-uniontech
+libmng1
+libqt4-opengl
+libqtcore4
+qtcore4-l10n
+libqtgui4
+libaudio2
+libxt6

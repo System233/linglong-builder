@@ -63,6 +63,27 @@ sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
     digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libm/libmng/libmng1_1.0.10.1-1+rebuild_amd64.deb
+    digest: 7077e9373cf989fb17ce98f31b9e28b35db9ae4c40e43514350c05d85462898d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-opengl_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 1e656c1ec8522f9bb8c6c074e9896a4ca4324453b2e3e6901e4e9a42695798a8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 344282ea487885e2fc1e571377fcbf102d5e708c6547808fc81829f9d3494492
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg.2-1+dde_all.deb
+    digest: 254325c7e7161c19a68e0b8d1c2464544f2b9c211bcbd9264e96dafa40ba8b40
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtgui4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 9df1de1780032044815e3bf486188a1d1c564396b86019ecce13ea45dab02d17
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/nas/libaudio2_1.9.4.1-1+dde_amd64.deb
+    digest: 998126dadd5eadb592633e528b8c74839ab21ad8298af495bd9502e24ca8bd23
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxt/libxt6_1.1.5.1.1-1+dde_amd64.deb
+    digest: 3b62b28febb4d5609d0d2ffe9307881c1607acd238857138479ad66789567dc9
 build: >-
   export LINGLONG_RAW_ID="cn.suwell.reader.appstore"
 
