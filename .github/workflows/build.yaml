@@ -22,7 +22,19 @@ jobs:
           eles
             echo > _build_app.list
           fi
+
+
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          if [[ "$COMMIT_MESSAGE" =~ \[\s*build\s+(\S+)\s*\] ]]; then
+            FILE_LIST="${BASH_REMATCH[1]}"
+            echo CI build cmd: ${FILE_LIST}
+            if [ -e "$FILE_LIST" ];then
+              cat "$FILE_LIST" >>_build_app.list
+            fi
+          fi
+
           git diff --name-only -z ${{ github.event.before }} ${{ github.sha }}|xargs -0 -I {} echo "{}"| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e 's#.linyaps$##' >> _build_app.list
+          echo [Selected]
           cat _build_app.list
           echo "appid=[$(cat _build_app.list| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
   build:
@@ -118,8 +130,12 @@ jobs:
           git add .
           COMMIT=$(git diff --cached --quiet&&echo no||echo yes)
           LAYER_NAME=$(find ${APP_DIR} -name "*_binary.layer")
+          REF_ID=$(git rev-parse --short HEAD)
           SHA1_NAME="${LAYER_NAME}.sha1"
-          sha1sum "${LAYER_NAME}" > "${SHA1_NAME}"
+
+          pushd ${APP_DIR} >/dev/null
+          sha1sum `basename "${LAYER_NAME}"` > "${SHA1_NAME}"
+          popd >/dev/null
 
           echo COMMIT=${COMMIT}
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
@@ -129,6 +145,7 @@ jobs:
           echo "sha1_name=${SHA1_NAME}" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
           echo "force_build=${FORCE_BUILD}" >> $GITHUB_OUTPUT
+          echo "ref_id=${REF_ID}" >> $GITHUB_OUTPUT
 
       - name: Commit
         if: ${{steps.build.outputs.commit == 'yes' }}
@@ -149,7 +166,7 @@ jobs:
         if: ${{steps.build.outputs.commit == 'yes' || steps.build.outputs.force_build == 'yes' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
-          body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || github.sha}}/repos/${{matrix.appid}}.linyaps")
+          body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}/repos/${{matrix.appid}}.linyaps")
           append_body: true
           files: |
             ${{steps.build.outputs.layer_name}}
