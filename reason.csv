@@ -5,3 +5,4 @@ cn.com.sangfor.atrust.linyaps,Error: connect ENOENT /usr/share/sangfor/.aTrust/v
 cn.com.gf.hippo.linyaps,Received signal 11 SEGV_MAPERR 000000000000
 cn.com.topsec.topsap.linyaps, VPN软件，能启动不一定能用
 cn.com.topsec.topnac.linyaps,Segmentation fault
+cn.coremail.cmclient.linyaps, 控件全灰

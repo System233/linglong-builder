@@ -1,9 +1,6 @@
 cn.coremail.cmclient
 osspd
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 osspd-pulseaudio
 pulseaudio
 libasound2
@@ -77,6 +74,9 @@ libfreetype6
 libpng16-16
 zlib1g
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libxcb-render0

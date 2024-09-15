@@ -1,7 +1,5 @@
 cn.coremail.cmclient
 osspd
-libgcc-s1
-gcc-13-base
 osspd-pulseaudio
 pulseaudio
 libltdl7
