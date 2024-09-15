@@ -7,62 +7,102 @@ package:
   description: 由upTool工具构建 证书管理器是一款简单高效的本地证书管理工具，提供证书安装、证书管理、证书验证等功能，支持国密证书。
 command:
   - /opt/apps/cn.bitnum.certmanager.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/23.0.0
+runtime: org.deepin.Runtime/23.0.1
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/cn.bitnum.certmanager/cn.bitnum.certmanager_1.0.0_amd64.deb
+    url: https://com-store-packages.uniontech.com/appstorev23/pool/appstore/c/cn.bitnum.certmanager/cn.bitnum.certmanager_1.0.0_amd64.deb
     digest: e5e15c046381827d6558e4cd351b73934c3812546fc85204259ea2a20e2febd9
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
-    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+    url: https://community-packages.deepin.com/beige/pool/main/d/deepin-app-store-runtime/deepin-app-store-runtime_1.0.2+community_amd64.deb
+    digest: 72b0e156537437f4628468f53607a50c64aef9dd0984ea8187108b2d5bb2b6aa
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
-    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6widgets6_6.6.1+dfsg-5deepin3_amd64.deb
+    digest: 5d22275db35cbc5bc2c3e34c6f5eb74e6c04eb8b4c81ef2e8c436ed1d7a936ae
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
-    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6core6_6.6.1+dfsg-5deepin3_amd64.deb
+    digest: be41af480581396f074efe78910eca4fb0425dd8e292b700616cdb79977cfe74
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
-    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+    url: https://community-packages.deepin.com/beige/pool/main/i/icu/libicu74_74.2-1_amd64.deb
+    digest: ad3f769fb52e996fad6d8dd369ab7a09f558b221ddc7647164ab8cc0bd8fa245
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
-    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+    url: https://community-packages.deepin.com/beige/pool/main/libb/libb2/libb2-1_0.98.1-1.1_amd64.deb
+    digest: ad82b2de93cc49cdf37c861b03275245318b1555255639e5e805cf612a40171e
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
-    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+    url: https://community-packages.deepin.com/beige/pool/main/d/double-conversion/libdouble-conversion3_3.3.0-1_amd64.deb
+    digest: e6c6d028a74d0a752ae638ec19b8239f404c36d676c7569936f31000d25a75f4
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
-    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6gui6_6.6.1+dfsg-5deepin3_amd64.deb
+    digest: 1c8fb9dfe6c48909448ba73f57e341c0c9351b17bb81910df760f459ed590207
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
-    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+    url: https://community-packages.deepin.com/beige/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-deepin_all.deb
+    digest: 5982963d05dbf4efa009c3ab6db3576a03f680199d75d7d5edda89c55def912c
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
-    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+    url: https://community-packages.deepin.com/beige/pool/main/l/llvm-toolchain-17/libllvm17_17.0.6-5deepin4_amd64.deb
+    digest: 35468337c934ac3332b00ea22b6d99bef74912a6f1966de5c09ce2f8551e3cd8
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
-    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+    url: https://community-packages.deepin.com/beige/pool/main/libi/libinput/libinput10_1.26.0-1_amd64.deb
+    digest: 8b68002f99694109a7a13f1b83192260a2ce776ea91097d0e8dded6a95e8757d
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
-    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+    url: https://community-packages.deepin.com/beige/pool/main/libe/libevdev/libevdev2_1.12.0+dfsg-1_amd64.deb
+    digest: 48c0a7c73d835054b291645fa21fd597271e28a6eb98d8b22f2283e364e83893
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
-    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+    url: https://community-packages.deepin.com/beige/pool/main/m/mtdev/libmtdev1_1.1.6-1_amd64.deb
+    digest: 28686d830a44272e63013aae1e508f0f767ea28c2a4856d6c6724e11b2a6f93e
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
-    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+    url: https://community-packages.deepin.com/beige/pool/main/libw/libwacom/libwacom2_1.12-1_amd64.deb
+    digest: 2e0eb22e108ff3de178a570dcd21ab3d6cc16f6baf94bec37595008786789280
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
-    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+    url: https://community-packages.deepin.com/beige/pool/main/libg/libgudev/libgudev-1.0-0_238-2deepin1_amd64.deb
+    digest: fb9f1c72e40fd7fece5eab37c9eb473bf3d19c84fb808512d60af3bc909a8c5f
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
-    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+    url: https://community-packages.deepin.com/beige/pool/main/libw/libwacom/libwacom-common_1.12-1_all.deb
+    digest: ae18d0c6d1b68084756ae6a5ca4d4d680659ad6a9e5384bdbb49de48ffb75bd8
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
-    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+    url: https://community-packages.deepin.com/beige/pool/main/libi/libinput/libinput-bin_1.26.0-1_amd64.deb
+    digest: 026146dba0e556895d54dc0178ad5da9dabcddaadda48f5948d4c2fb8267993e
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
-    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+    url: https://community-packages.deepin.com/beige/pool/main/m/md4c/libmd4c0_0.4.8-1_amd64.deb
+    digest: 9f1630409adb3464aa42afc519d2163a7741d152b53c937eddea55b9fb6fb10a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6dbus6_6.6.1+dfsg-5deepin3_amd64.deb
+    digest: 4ca32aeab9c2256325e5cb1fd459a06d3d85fa705433f310354f81994550208d
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/e/elogind/libelogind0_246.9.1-1+debian1_amd64.deb
+    digest: 6148a3218b1431e495b7fd399d860ef5d8bf0a428e3521689515fe1baa238830
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/t/tslib/libts0_1.22-1+rb3_amd64.deb
+    digest: d7c7fffd808cd0b765d2287b98bea752d740994788dbf90de6db4f9710e41162
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-cursor/libxcb-cursor0_0.1.1-4_amd64.deb
+    digest: f3575052a14a5ec2d016bc667d466fc5bceec389db5b6ad9ab03ca53b50411f6
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-image/libxcb-image0_0.4.0-deepin1_amd64.deb
+    digest: f41b73e88b0dfb9a8b1cf7dc6b7717cdbf19b3eb0c4b9a395323b70cb3f22daf
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util/libxcb-util1_0.4.0-deepin1_amd64.deb
+    digest: f0b0176f922757c116b36801584068ab4e0411c6d97a6ed9acb578a4ef56a7c7
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9-deepin1_amd64.deb
+    digest: c7bee3954ed81690c89b297ad68e14b95a634dc57ec1a235348efbf63de095b5
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1_amd64.deb
+    digest: be2ad80833f41279cad9ff66445251ea6ad3eec32cc9d2b9400ff8ad75ae255c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0-deepin1_amd64.deb
+    digest: f240c2c0304a253f65767ab856f995ceea9d999fca674f71e210704210218e65
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.6.0-1_amd64.deb
+    digest: d763060cdbffd1ed849ae63e091ca47b8b75c8777ccc2d0ee968fcbe66aa9b51
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6network6_6.6.1+dfsg-5deepin3_amd64.deb
+    digest: 85a22379e0e0509eba507e773541e852aa694623d1376b688f6f508618d3f86a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.19_amd64.deb
+    digest: 10ab83cb1741451205766a833ddf58ad38cf222e4a6e219210839dbf943a723c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6opengl6_6.6.1+dfsg-5deepin3_amd64.deb
+    digest: 7cf93e172a9a678caf7903563b9eb7e880e5fc6da21a1c4f9fc3259e26444d3e
 build: >-
   export LINGLONG_RAW_ID="cn.bitnum.certmanager"
 

@@ -1,1 +1,5 @@
 cn.bitnum.certmanager
+libqt6widgets6
+libqt6network6
+#libqt6gui6
+#dde-qt6xcb-plugin
