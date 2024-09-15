@@ -46,6 +46,7 @@ jobs:
   build:
     needs: scan
     runs-on: ubuntu-24.04
+    if: ${{needs.scan.outputs.appid-list != '[]' }}
     strategy:
       matrix:
         appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
