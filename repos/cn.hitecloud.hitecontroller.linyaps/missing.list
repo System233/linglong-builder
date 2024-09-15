@@ -1,6 +1,6 @@
-libjasper.so.1
-libmysqlclient.so.18
-libQt5MultimediaQuick_p.so.5
-libQt5Scxml.so.5
 /opt/apps/cn.hitecloud.hitecontroller/files/Release/Linux/Own/libHTerminalUI.so
 /opt/apps/cn.hitecloud.hitecontroller/files/Release/Linux/Own/libslsdk.so
+libQt5MultimediaQuick_p.so.5
+libQt5Scxml.so.5
+libjasper.so.1
+libmysqlclient.so.18
