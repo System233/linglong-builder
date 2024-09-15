@@ -41,7 +41,7 @@ jobs:
             echo > _build_app.list
           fi
           git diff --name-only ${{ github.event.before }} ${{ github.sha }}| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e '#.linyaps$##' >> _build_app.list
-
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }}
           cat _build_app.list
           # echo "appid=[$(cat _build_app.lis t| sort -u | paste -sd ,)]" >> $GITHUB_OUTPUT
   build:
