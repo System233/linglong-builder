@@ -13,9 +13,6 @@ sources:
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/cn.lanxin/cn.lanxin_8.2.1.107897_amd64.deb
     digest: ca670eddd39c17080347f0a5d35a468a3c8604423d8b914bfdf16f3b29cd4aa8
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
-    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
-  - kind: file
     url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
     digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
   - kind: file
