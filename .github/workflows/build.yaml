@@ -143,6 +143,11 @@ jobs:
           export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
           export CACHE_DIR=~/.cache/linglong-helper
 
+          export FORCE_BUILD=no
+
+          if grep -q "${NEW_APP_ID}" ./rebuild.list;then
+              FORCE_BUILD=yes
+          fi
           yarn install
           bash ./build.sh
 
@@ -159,6 +164,7 @@ jobs:
           echo "layer_name=${LAYER_NAME}" >> $GITHUB_OUTPUT
           echo "sha1_name=${SHA1_NAME}" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
+          echo "force_build=${FORCE_BUILD}" >> $GITHUB_OUTPUT
 
       - name: Commit
         if: ${{steps.build.outputs.commit == 'yes' }}
@@ -176,7 +182,7 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: ${{steps.build.outputs.commit == 'yes' }}
+        if: ${{steps.build.outputs.commit == 'yes' || ${{steps.build.outputs.force_build == 'yes' }} }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
           body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id}}/repos/${{matrix.appid}}.linyaps")
