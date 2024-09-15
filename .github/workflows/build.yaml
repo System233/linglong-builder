@@ -36,10 +36,10 @@ jobs:
           git diff --name-only -z ${{ github.event.before }} ${{ github.sha }}|xargs -0 -I {} echo "{}"| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e 's#.linyaps$##' >> _build_app.list
           echo [Selected]
           cat _build_app.list
-          if [ ! -e "ignore.list" ];then
-            touch ignore.list
+          if [ ! -e "skip.list" ];then
+            touch skip.list
           fi
-          echo "appid=[$(cat _build_app.list| sort -u |grep -vxf ignore.list|xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
+          echo "appid=[$(cat _build_app.list| sort -u |grep -vxf skip.list|xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
   build:
     needs: scan
     runs-on: ubuntu-24.04
