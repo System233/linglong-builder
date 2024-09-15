@@ -197,17 +197,3 @@ libindicator7
 xdg-utils
 wget
 libpcre2-8-0
-lsb-release
-python3
-python3.7
-python3.7-minimal
-libpython3.7-minimal
-libpython3.7-stdlib
-mime-support
-libmpdec2
-libreadline7
-readline-common
-dpkg
-tar
-libpython3-stdlib
-distro-info-data

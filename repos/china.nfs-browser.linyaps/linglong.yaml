@@ -101,21 +101,6 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/p/pcre2/libpcre2-8-0_10.32.2-deepin1_amd64.deb
     digest: b19fb4d07b792896b02663319e49515f568bce4ff439de6e4858efade44e8b0c
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/l/lsb/lsb-release_10.2019051400_all.deb
-    digest: 7e6d476b4dd777f84800d28eedd94f82507d46a586f645bb72ff7607a1e72c76
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
-    digest: eb7862c7ad2cf5b86f3851c7103f72f8fa45b48514ddcf371a8e4ba8f02a79e5
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7_3.7.3.18-deepin1_amd64.deb
-    digest: aa54af41ccf48a7834c7c70049a279dcaa0ecc97cbe9590606a14cd4571c56ff
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7-minimal_3.7.3.18-deepin1_amd64.deb
-    digest: 849fa70903bc43feeee400b29f9f9266018f61233b08d70e7759520ab64dd4ec
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/distro-info-data/distro-info-data_0.41.1-deepin1_all.deb
-    digest: 6e48f1f4870f3078ae9ea97cffa99fda7201ceef2d3bbeb0c1fa8fcee4a9c8e2
 build: >-
   export LINGLONG_RAW_ID="china.nfs-browser"
 
