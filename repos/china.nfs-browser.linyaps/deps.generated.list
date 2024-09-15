@@ -20,8 +20,6 @@ gconf-service
 libdbus-glib-1-2
 libgconf-2-4
 gconf2-common
-libgcc-s1
-gcc-13-base
 fonts-liberation
 libappindicator1
 libdbusmenu-glib4
@@ -30,3 +28,8 @@ libindicator7
 xdg-utils
 wget
 libpcre2-8-0
+lsb-release
+python3
+python3.7
+python3.7-minimal
+distro-info-data
