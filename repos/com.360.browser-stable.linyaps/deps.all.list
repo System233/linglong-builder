@@ -34,6 +34,9 @@ libexpat1
 libfreetype6
 libpng16-16
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libxcb-render0
@@ -118,10 +121,7 @@ libxkbcommon0
 xkb-data
 libxtst6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 wget
 libpcre2-8-0
 xdg-utils

@@ -1,7 +1,5 @@
 com.360.browser-stable
 libcurl3-gnutls
-libgcc-s1
-gcc-13-base
 wget
 libpcre2-8-0
 xdg-utils
