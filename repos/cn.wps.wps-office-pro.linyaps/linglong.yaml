@@ -70,6 +70,51 @@ sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
     digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libp/libpng/libpng12-0_1.2.54-6_amd64.deb
+    digest: 1c367c5e6f2390d0f306815733362cf840a5cec7e2f6750349a63ab5dfbd4aaa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.22-2_amd64.deb
+    digest: 8a43f6ea6356adcf2067c46f0781372b5b85b632182da19ffa61757703458b1b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-toolchain-13/libomp-13-dev_13.0.1~+rc3-1~exp1_amd64.deb
+    digest: 99f04130987466f053ce9f111849dd47f6992a1c36f19c8b4a53d9c33bc8389e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-toolchain-13/libomp5-13_13.0.1~+rc3-1~exp1_amd64.deb
+    digest: 744077469f534785f94bdb39173198a94ea1c5bf1d33f7f4bd8baaa49fc5610e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-toolchain-13/libllvm13_13.0.1~+rc3-1~exp1_amd64.deb
+    digest: 13bc69503b35bee8198fac6dd4b8f46381e4ce79235c4bef72774120fb92e018
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-toolchain-7/libomp-7-dev_7.0.1-8_amd64.deb
+    digest: 1819daf3e7ef393771c4f5e4e4a9e3e4db5a0adc4254938efcce48e06de7206a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/l/llvm-toolchain-7/libomp5-7_7.0.1-8_amd64.deb
+    digest: ae5128d5bbcf665e53047626bca87f28bfaff959b112fc71e2fff590f27534d8
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-network_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 5494551340afe9b4f61f89565775f4e82be935c3dd95c35d3bd09557e1c4ed77
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 344282ea487885e2fc1e571377fcbf102d5e708c6547808fc81829f9d3494492
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg.2-1+dde_all.deb
+    digest: 254325c7e7161c19a68e0b8d1c2464544f2b9c211bcbd9264e96dafa40ba8b40
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtdbus4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 9276c8b76dc280379bda261c4b86d24d2c53643701fb59d02200650969bcdfe6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-xml_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: bfbd39bea0ba21d187fba978db125c6cd1b6f6bd9f860ff576d7d4cf409c258a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxv/libxv1_1.0.11-1_amd64.deb
+    digest: d77a44d3e78bdd5bf5049e938839020500ba398f4e6e76e8e7640d47d40ae932
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/c/caja/libcaja-extension1_1.20.3-1+b1_amd64.deb
+    digest: 089c5dc1a531bc4b8817ac31e971b419c355d75ef0008ca5ae6596009e6df595
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/n/nautilus/libnautilus-extension1a_3.30.5-2_amd64.deb
+    digest: 93f29e7c2214d2f6ad14d7fc7b1a4f53623d1385263ea67c91046c889231445d
 build: >-
   export LINGLONG_RAW_ID="cn.wps.wps-office-pro"
 

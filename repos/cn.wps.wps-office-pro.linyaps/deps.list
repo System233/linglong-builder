@@ -1,1 +1,10 @@
 cn.wps.wps-office-pro
+libpng12-0
+libusb-1.0-0
+libomp-13-dev
+libomp-7-dev
+libqt4-network
+libqt4-xml
+libxv1
+libcaja-extension1
+libnautilus-extension1a
