@@ -1,1 +1,10 @@
 cn.bizconf.bizcloudec
+apulse
+libgstreamer-plugins-base1.0-0
+libgstreamer1.0-0
+libpulse-mainloop-glib0
+libpulse0
+libroar-compat2
+libxkbcommon-x11-0
+libxv1
+pipewire-audio-client-libraries
