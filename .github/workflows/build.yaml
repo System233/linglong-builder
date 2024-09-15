@@ -182,7 +182,7 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: ${{steps.build.outputs.commit == 'yes' || ${{steps.build.outputs.force_build == 'yes' }} }}
+        if: ${{steps.build.outputs.commit == 'yes' || steps.build.outputs.force_build == 'yes' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
           body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id}}/repos/${{matrix.appid}}.linyaps")
