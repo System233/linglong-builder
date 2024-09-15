@@ -7,6 +7,9 @@
 - [ ] 自动更新仓库
 - [ ] 集中存储库
 
-## 限制
+## 文件
 
-- 考虑到 Action 有每月免费限额以及 Release 总和最大 10G 限制，不打算实现 layer 的打包和自动发布
+* [list.csv](./list.csv) 任务总表
+* [tested.list](./tested.list) 已测试成功列表
+* [rebuild.list](./rebuild.list) 强制构建列表
+* [dead.list](./dead.list) 忽略任务列表 
