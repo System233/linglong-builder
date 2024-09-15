@@ -8,10 +8,7 @@ libxt6
 libice6
 libbsd0
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libsm6
 libuuid1
 libx11-6
@@ -30,6 +27,9 @@ libpng16-16
 zlib1g
 fontconfig-config
 debconf
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libgl1
 libglvnd0

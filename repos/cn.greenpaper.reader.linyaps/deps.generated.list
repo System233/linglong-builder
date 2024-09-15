@@ -1,8 +1,6 @@
 cn.greenpaper.reader
 libaudio2
 libxt6
-libgcc-s1
-gcc-13-base
 libgstreamer-plugins-base1.0-0
 libgstreamer1.0-0
 libcap2-bin
