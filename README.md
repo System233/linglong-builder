@@ -1,5 +1,7 @@
 # 玲珑自动化打包器
 
+[![Linglong Builder](https://github.com/System233/linglong-builder/actions/workflows/build.yaml/badge.svg)](https://github.com/System233/linglong-builder/actions/workflows/build.yaml)
+
 ## 路线图
 
 - [ ] 自动构建发布
