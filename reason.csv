@@ -6,3 +6,4 @@ cn.com.gf.hippo.linyaps,Received signal 11 SEGV_MAPERR 000000000000
 cn.com.topsec.topsap.linyaps, VPN软件，能启动不一定能用
 cn.com.topsec.topnac.linyaps,Segmentation fault
 cn.coremail.cmclient.linyaps, 控件全灰
+cn.foxitsoftware.online.linyaps, 打开网页https://online.foxitsoftware.cn/ xdg失败-等待修复
