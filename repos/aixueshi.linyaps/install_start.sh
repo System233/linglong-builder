@@ -39,7 +39,7 @@ if [ ! -e "$REBASED_STARTUP" ];then
     fi
 
     if  [ ! -e "$REBASED_STARTUP" ];then
-        echo "Error: $REBASED_STARTUP does not exists."
+        echo "Error: $REBASED_STARTUP does not exists." >&2
     fi
 fi
 
