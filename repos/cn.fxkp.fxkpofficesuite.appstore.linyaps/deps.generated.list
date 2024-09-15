@@ -18,5 +18,4 @@ libpcsclite1
 ca-certificates-uniontech
 libaudio2
 libxt6
-libgcc-s1
-gcc-13-base
+libcurl3-gnutls
