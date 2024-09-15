@@ -19,7 +19,7 @@ jobs:
         run: |
           if [ -e rebuild.list ];then
             cat rebuild.list > _build_app.list
-          eles
+          else
             echo > _build_app.list
           fi
 
@@ -36,7 +36,7 @@ jobs:
           git diff --name-only -z ${{ github.event.before }} ${{ github.sha }}|xargs -0 -I {} echo "{}"| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e 's#.linyaps$##' >> _build_app.list
           echo [Selected]
           cat _build_app.list
-          if [ ! -e "ignore.list" ];
+          if [ ! -e "ignore.list" ];then
             touch ignore.list
           fi
           echo "appid=[$(cat _build_app.list| sort -u |grep -vxf ignore.list|xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
