@@ -28,3 +28,4 @@ com.cfca.seceditctl.cgb.linyaps, 无启动文件
 com.codeweavers.crossover.linyaps, 有界面，但需要启动服务，得想办法修复服务问题
 com.cvicse.ump.agentpc.linyaps,纯服务无界面
 com.eagleyun.yunshu.linyaps, 需要服务启动，跳过
+com.dhbiens.player.linyaps, 依赖的ffplay正常播放视频，但主程序不能播放

@@ -1,1 +1,14 @@
 com.dhbiens.player
+apulse
+libass9
+libcaca0
+libfaad2
+libmp3lame0
+libpulse-mainloop-glib0
+libpulse0
+libroar-compat2
+libvdpau1
+libx264-155
+libxvidcore4
+pipewire-audio-client-libraries
+ffmpeg
