@@ -7,8 +7,8 @@ package:
   description: WeChat Desktop WeChat Desktop
 command:
   - /opt/apps/store.spark-app.wechat-linux-spark.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
-runtime: org.deepin.Runtime/20.0.1
+base: org.deepin.foundation/23.0.0
+runtime: org.deepin.Runtime/23.0.1
 sources:
   - kind: file
     url: https://com-store-packages.uniontech.com/appstorev23/pool/appstore/s/store.spark-app.wechat-linux-spark/store.spark-app.wechat-linux-spark_2.2.1-real1.0.0.241.6_amd64.deb
