@@ -1,9 +1,12 @@
 version: "1.0"
 package:
-  id: id
+  id: id.example
   name: name
   version: 0.0.0.1
   kind: app
   description: DESC
+command: [echo, hello]
 base: com.uniontech.foundation/20.0.1
 runtime: org.deepin.Runtime/20.0.1
+build: |
+  echo hello

@@ -121,6 +121,7 @@ jobs:
           echo APPID=${APP_ID}
 
           yarn install
+          bash ./build_cache.sh
           bash ./build.sh "$CMD" "${APP_ID}"
 
           git add .
