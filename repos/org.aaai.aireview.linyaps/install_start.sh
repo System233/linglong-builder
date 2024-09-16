@@ -25,6 +25,7 @@ done <<< `find "$PREFIX/share/applications/" -name "*.desktop"`
 
 STARTUP=$(cat $PREFIX/share/applications/*.desktop | grep '^Exec=' | head -n 1 | sed 's/^Exec=//g' | xargs -n 1 echo 2>/dev/null | head -n 1)
 REBASED_STARTUP=$(echo $STARTUP | sed -E -e "$PATCH_APP_PATH" -e "$PATCH_USR_PATH")
+REBASED_STARTUP_RAW=$REBASED_STARTUP
 
 PATCH_STARTUP="s#$REBASED_STARTUP#$LINGLONG_COMMAND#"
 
@@ -34,13 +35,13 @@ if [ ! -e "$REBASED_STARTUP" ];then
         echo "Try $REBASED_STARTUP"
     fi
     if  [ ! -e "$REBASED_STARTUP" ];then
-        REBASED_STARTUP=$(find $PREFIX -type f -executable -name "$(basename "$REBASED_STARTUP")")
+        REBASED_STARTUP=$(find $PREFIX -type f -executable -name "$(basename "$REBASED_STARTUP")"|head -n1)
         echo "Try $REBASED_STARTUP"
     fi
 
     if  [ ! -e "$REBASED_STARTUP" ];then
         echo "Error: $REBASED_STARTUP does not exists." >&2
-        REBASED_STARTUP=$STARTUP
+        REBASED_STARTUP=$REBASED_STARTUP_RAW
     fi
 fi
 
