@@ -45,6 +45,9 @@ libfreetype6
 libpng16-16
 libuuid1
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libnss3
 libnspr4
@@ -75,10 +78,7 @@ libxi6
 libxrender1
 libxtst6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libglib2.0-0
 libxrandr2
 libxinerama1

@@ -7,8 +7,6 @@ default-jre-headless
 openjdk-11-jre-headless
 java-common
 libpcsclite1
-libgcc-s1
-gcc-13-base
 libgl1-mesa-glx
 libgtk-3-0
 librest-0.7-0
