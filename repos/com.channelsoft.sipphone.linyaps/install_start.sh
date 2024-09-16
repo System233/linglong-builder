@@ -27,7 +27,7 @@ STARTUP=$(cat $PREFIX/share/applications/*.desktop | grep '^Exec=' | head -n 1 |
 REBASED_STARTUP=$(echo $STARTUP | sed -E -e "$PATCH_APP_PATH" -e "$PATCH_USR_PATH")
 REBASED_STARTUP_RAW=$REBASED_STARTUP
 
-PATCH_STARTUP="s#$REBASED_STARTUP#$LINGLONG_COMMAND#"
+PATCH_STARTUP="s#$STARTUP#$LINGLONG_COMMAND#"
 
 if [ ! -e "$REBASED_STARTUP" ];then
     if  [ -e "$PREFIX/$REBASED_STARTUP" ];then
@@ -49,7 +49,6 @@ fi
 echo STARTUP: ${STARTUP}
 echo REBASED_STARTUP: ${REBASED_STARTUP}
 echo BOOT: ${LINGLONG_COMMAND}
-
 
 sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP" 
 perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -i $PREFIX/share/applications/*.desktop
