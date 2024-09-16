@@ -1,1 +1,3 @@
-/opt/apps/com.elex.tscs.linyaps/files/lib/x86_64-linux-gnu/libgcc_s.so.1:
+libgnutls.so.28
+libjvm.so
+libnettle.so.4

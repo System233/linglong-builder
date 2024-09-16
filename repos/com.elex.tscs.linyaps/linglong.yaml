@@ -85,12 +85,6 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/j/java-common/java-common_0.71.2-1+dde_all.deb
     digest: 9e91af596be89c10fc6e597024b86900c7c28d78ea3a89b1c2c595a58f00e35c
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
-    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
-    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
-  - kind: file
     url: https://professional-security.chinauos.com/pool/main/g/giflib/libgif7_5.1.4.3-deepin1_amd64.deb
     digest: 3ed3fcabecab373b364762bf85cb9e822caa31903bc953f9f243eb5c39b62245
 build: >-

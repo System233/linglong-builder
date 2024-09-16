@@ -21,6 +21,4 @@ openjdk-11-jre-headless
 ca-certificates-java
 default-jre-headless
 java-common
-libgcc-s1
-gcc-13-base
 libgif7
