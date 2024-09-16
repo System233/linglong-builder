@@ -13,6 +13,9 @@ zlib1g
 libuuid1
 fontconfig-config
 debconf
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libx11-6
@@ -194,10 +197,7 @@ libnotify4
 libsm6
 libice6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libwebkit2gtk-4.0-37
 libjavascriptcoregtk-4.0-18
 libatomic1

@@ -19,8 +19,6 @@ ca-certificates-uniontech
 libfdk-aac1
 libgl1-mesa-glx
 libnotify4
-libgcc-s1
-gcc-13-base
 libwebkit2gtk-4.0-37
 libjavascriptcoregtk-4.0-18
 gstreamer1.0-plugins-base
