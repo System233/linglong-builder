@@ -30,12 +30,12 @@ PATCH_STARTUP="s#$REBASED_STARTUP#$LINGLONG_COMMAND#"
 
 if [ ! -e "$REBASED_STARTUP" ];then
     if  [ -e "$PREFIX/$REBASED_STARTUP" ];then
-    REBASED_STARTUP="$PREFIX/$REBASED_STARTUP"
-        echo "Try "$REBASED_STARTUP""
+        REBASED_STARTUP="$PREFIX/$REBASED_STARTUP"
+        echo "Try $REBASED_STARTUP"
     fi
     if  [ ! -e "$REBASED_STARTUP" ];then
         REBASED_STARTUP=$(find $PREFIX -type f -executable -name "$(basename "$REBASED_STARTUP")")
-        echo "Try "$REBASED_STARTUP""
+        echo "Try $REBASED_STARTUP"
     fi
 
     if  [ ! -e "$REBASED_STARTUP" ];then
@@ -51,6 +51,7 @@ echo BOOT: ${LINGLONG_COMMAND}
 
 
 sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP" 
+perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -i $PREFIX/share/applications/*.desktop
 
 if [ "$STARTUP" != "sh" ];then
     if od "$REBASED_STARTUP" -An -N2 -tx2 | grep -q "2123"; then

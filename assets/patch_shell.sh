@@ -6,6 +6,8 @@ echo Applying Patch: shell
 while read file;do
     if [ "$LINGLONG_COMMAND" != "$file" ] && od "$file" -An -N2 -tx2 | grep -q "2123"; then
         echo Patch Script: ${file}
+        # perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -e "s#${LINGLONG_RAW_ID}(?!/)#${LINGLONG_APP_ID}#g"  -i "$file"
         sed -i -e "s#${LINGLONG_RAW_ID}#${LINGLONG_APP_ID}#g" "$file"
+
     fi
 done<<<$(find $PREFIX -type f -executable)
