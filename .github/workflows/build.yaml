@@ -8,7 +8,7 @@ jobs:
   scan:
     runs-on: ubuntu-24.04
     outputs:
-      appid-list: ${{ steps.list-appid.outputs.appid }}
+      cmd-list: ${{ steps.list-appid.outputs.cmd }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,36 +17,32 @@ jobs:
       - name: Check changes
         id: list-appid
         run: |
-          if [ -e rebuild.list ];then
-            cat rebuild.list > _build_app.list
-          else
-            echo > _build_app.list
-          fi
+          CMD_LIST=_cmd.list
+          function check_commit(){
+            commit=$1
+            git show --name-only --format="" $commit | grep '^repos/' | cut -d '/' -f 2 | sort -u |sed -E -e 's#.linyaps$##'
+          }
+          echo >${CMD_LIST}
+          for commit in $(git log --format='%H' ${{ github.event.before }}..${{ github.sha }}); do
+            message=$(git log --format=%B -n 1 $commit)
 
-
-          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
-          if [[ "$COMMIT_MESSAGE" =~ \[\s*build\s+(\S+)\s*\] ]]; then
-            FILE_LIST="${BASH_REMATCH[1]}"
-            echo CI build cmd: ${FILE_LIST}
-            if [ -e "$FILE_LIST" ];then
-              cat "$FILE_LIST" >>_build_app.list
+            if [[ "$message" == *"[build]"* ]]; then
+              echo "Checking build $commit"
+              check_commit $commit|xargs -r -I{} echo 'build:{}' | tee -a ${CMD_LIST}
+            elif  [[ "$message" == *"[resolve]"* ]]; then
+              echo "Checking resolve $commit"
+              check_commit $commit|xargs -r -I{} echo 'resolve:{}' | tee -a ${CMD_LIST}
             fi
-          fi
+          done
 
-          git diff --name-only -z ${{ github.event.before }} ${{ github.sha }}|xargs -0 -I {} echo "{}"| grep '^repos/' | cut -d '/' -f 2 | sort -u|sed -E -e 's#.linyaps$##' >> _build_app.list
-          echo [Selected]
-          cat _build_app.list
-          if [ ! -e "skip.list" ];then
-            touch skip.list
-          fi
-          echo "appid=[$(cat _build_app.list| sort -u |grep -vxf skip.list|xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
-  build:
+          echo "cmd=[$(cat ${CMD_LIST}| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
+  run:
     needs: scan
     runs-on: ubuntu-24.04
-    if: ${{needs.scan.outputs.appid-list != '[]' }}
+    if: ${{needs.scan.outputs.cmd-list != '[]' }}
     strategy:
       matrix:
-        appid: ${{ fromJson(needs.scan.outputs.appid-list) }}
+        cmd: ${{ fromJson(needs.scan.outputs.cmd-list) }}
       fail-fast: false
     steps:
       - name: Checkout
@@ -110,19 +106,22 @@ jobs:
           sudo apt install linglong-builder linglong-box linglong-bin
           ll-cli --version
 
-      - name: Build ${{matrix.appid}}
+      - name: Run ${{matrix.cmd}}
         id: build
         run: |
-          echo APPID=${{matrix.appid}}
+          export CMD=$(echo "${{matrix.cmd}}"|cut -d: -f1)
+          export APP_ID=$(echo "${{matrix.cmd}}"|cut -d: -f2)
           export REPO_ROOT=$(pwd)/repos
-          export APP_ID=${{matrix.appid}}
           export NEW_APP_ID="${APP_ID}.linyaps"
-          export APP_NAME=$(grep ${{matrix.appid}} list.csv | cut -d, -f2)
+          export APP_NAME=$(grep ${APP_ID} list.csv | cut -d, -f2)
           export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
           export CACHE_DIR=~/.cache/linglong-helper
 
+          echo CMD=${CMD}
+          echo APPID=${APP_ID}
+
           yarn install
-          bash ./build.sh
+          bash ./build.sh "$CMD" "${APP_ID}"
 
           git add .
           COMMIT=$(git diff --cached --quiet&&echo no||echo yes)
@@ -135,6 +134,7 @@ jobs:
           popd >/dev/null
 
           echo COMMIT=${COMMIT}
+          echo "rawid=${APP_ID}" >> $GITHUB_OUTPUT
           echo "appid=${NEW_APP_ID}" >> $GITHUB_OUTPUT
           echo "appdir=${APP_DIR}" >> $GITHUB_OUTPUT
           echo "commit=${COMMIT}" >> $GITHUB_OUTPUT
@@ -142,14 +142,15 @@ jobs:
           echo "sha1_name=${SHA1_NAME}" >> $GITHUB_OUTPUT
           echo "tag_name=$(date '+%Y%m%d')" >> $GITHUB_OUTPUT
           echo "ref_id=${REF_ID}" >> $GITHUB_OUTPUT
+          echo "cmd=${CMD}" >> $GITHUB_OUTPUT
 
       - name: Commit
-        if: ${{steps.build.outputs.commit == 'yes' }}
+        if: ${{ steps.build.outputs.commit == 'yes' }}
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Build ${{matrix.appid}}"
+          git commit -m "Update ${{matrix.appid}}"
           git status -s
           git pull --rebase origin main
           git push origin main
@@ -159,6 +160,7 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v2
+        if: ${{steps.run.outputs.cmd == 'build' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
           body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}/repos/${{matrix.appid}}.linyaps")

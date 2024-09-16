@@ -5,29 +5,33 @@
 # https://opensource.org/licenses/MIT
 set -e
 CWD=$(pwd)
+echo CMD=${CMD}
 echo CWD=${CWD}
 echo REPO_ROOT=${REPO_ROOT}
 echo APP_DIR=${APP_DIR}
 echo APP_ID=${APP_ID}
 echo APP_NAME=${APP_NAME}
-BASE="${CWD}/com.uniontech.foundation"
 export PATH=$PATH:${CWD}/node_modules/.bin
 
 cd "${REPO_ROOT}"
 
-if [ ! -e "$APP_DIR" ]; then
+if [ -e "$APP_DIR" ]; then
+    cd "${APP_DIR}"
+    BASE_NAME=$(grep -q "appstorev23" "linglong.yaml" && echo org.deepin.foundation || echo "com.uniontech.foundation")
+    BASE="${CWD}/${BASE_NAME}"
+else
+    BASE_NAME=$(apt-cli resolve "${APP_ID}" -c "${CACHE_DIR}" -f "${CWD}/com.uniontech.foundation/sources.list" | grep -q "missing" && echo org.deepin.foundation || echo "com.uniontech.foundation")
+    BASE="${CWD}/${BASE_NAME}"
     ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${BASE}" --quiet --cache-dir "${CACHE_DIR}"
     cd "${APP_DIR}"
-    # cp -v ${CWD}/.gitignore "${APP_DIR}"
     ll-helper patch ld icon --from "${BASE}"
-    echo [搜索依赖]
-    ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
-else
-    cd "${APP_DIR}"
 fi
 
+if [ "$CMD" == "resolve" ]; then
+    ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
+fi
 
-echo [正式构建]
-ll-builder build
-echo [导出Layer]
-ll-builder export -l
+if [ "$CMD" == "build" ]; then
+    ll-builder build
+    ll-builder export -l
+fi
