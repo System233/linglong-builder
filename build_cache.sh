@@ -6,6 +6,7 @@ DIR=$(dirname $0)
 function build(){
     cd "$DIR/$1"
     ll-builder build
+    ll-builder run
 }
 
 build com.uniontech.foundation &
