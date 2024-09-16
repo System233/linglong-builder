@@ -1,1 +1,15 @@
 com.codeweavers.crossover
+libncurses5
+libtinfo5
+libusb-1.0-0
+libs
+libgphoto2-6
+libgphoto2-port12
+libgstreamer-plugins-base1.0-0
+libgstreamer1.0-0
+libmpg123-0
+libopenal1
+libpcap0.8
+libpulse0
+libunwind8
+libroar-compat2
