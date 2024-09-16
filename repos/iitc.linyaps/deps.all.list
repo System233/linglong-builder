@@ -41,6 +41,9 @@ libexpat1
 libfreetype6
 fontconfig-config
 debconf
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libxcb-render0
@@ -162,10 +165,7 @@ libnss3
 libnspr4
 libxss1
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libxtst6
 xdg-utils
 libsecret-1-0
@@ -175,3 +175,6 @@ libpcsclite1
 ca-certificates
 openssl
 ca-certificates-uniontech
+liblttng-ust0
+liburcu6
+liblttng-ust-ctl4
