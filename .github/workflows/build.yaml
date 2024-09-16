@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       cmd-list: ${{ steps.list-appid.outputs.cmd }}
+      build-cache: ${{ steps.list-appid.outputs.cache }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,6 +19,7 @@ jobs:
         id: list-appid
         run: |
           CMD_LIST=_cmd.list
+          BUILD_CACHE=no
           function check_commit(){
             commit=$1
             git show --name-only --format="" $commit | grep '^repos/' | cut -d '/' -f 2 | sort -u |sed -E -e 's#.linyaps$##'
@@ -33,9 +35,85 @@ jobs:
               echo "Checking resolve $commit"
               check_commit $commit|xargs -r -I{} echo 'resolve:{}' | tee -a ${CMD_LIST}
             fi
+            if [[ "$message" == *"[cache]"* ]]; then
+              echo "build cache"
+              BUILD_CACHE=yes
+            fi
           done
 
           echo "cmd=[$(cat ${CMD_LIST}| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
+          echo "cache=${BUILD_CACHE}" >> $GITHUB_OUTPUT
+  cache:
+    needs: scan
+    runs-on: ubuntu-24.04
+    if: ${{needs.scan.outputs.build-cache=='yes' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: linglong-builder-repo
+        id: linglong-builder-repo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/repo/
+          key: ${{ runner.os }}-linglong-builder-repo
+
+      - name: linglong-builder-deepin-Runtime
+        id: linglong-builder-deepin-Runtime
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
+          key: ${{ runner.os }}-linglong-builder-deepin-Runtime
+
+      - name: linglong-builder-deepin-base
+        id: linglong-builder-deepin-base
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.base
+          key: ${{ runner.os }}-linglong-builder-deepin-base
+
+      - name: linglong-builder-deepin-foundation
+        id: linglong-builder-deepin-foundation
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.foundation
+          key: ${{ runner.os }}-linglong-builder-deepin-foundation
+
+      - name: linglong-builder-uniontech-foundation
+        id: linglong-builder-uniontech-foundation
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
+          key: ${{ runner.os }}-linglong-builder-uniontech-foundation
+
+      - name: linglong-helper-cache
+        id: linglong-helper-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-helper
+          key: ${{ runner.os }}-linglong-helper-cache
+      - name: install
+        run: |
+          sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
+          sudo mkdir -p /etc/apt/keyrings/
+          curl -fsSL https://download.opensuse.org/repositories/home:/kamiyadm/xUbuntu_24.04/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/linglong-apt-keyring.gpg
+          echo "deb [signed-by=/etc/apt/keyrings/linglong-apt-keyring.gpg] https://download.opensuse.org/repositories/home:/kamiyadm/xUbuntu_24.04/ ./" | sudo tee /etc/apt/sources.list.d/linglong.list
+          sudo apt update
+          sudo apt install linglong-builder linglong-box linglong-bin
+          ll-cli --version
+
+      - name: cache
+        run: |
+          export REPO_ROOT=$(pwd)/repos
+          export CACHE_DIR=~/.cache/linglong-helper
+          yarn install
+          bash ./build_cache.sh
   run:
     needs: scan
     runs-on: ubuntu-24.04
