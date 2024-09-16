@@ -14,8 +14,6 @@ mount
 systemd-sysv
 libgtk-3-common
 libnotify4
-libgcc-s1
-gcc-13-base
 xdg-utils
 libsecret-1-0
 libsecret-common
