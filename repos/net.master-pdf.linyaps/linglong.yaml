@@ -114,6 +114,126 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/d/deepin-app-store-runtime/deepin-app-store-runtime_1.0.2+community_amd64.deb
     digest: 72b0e156537437f4628468f53607a50c64aef9dd0984ea8187108b2d5bb2b6aa
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/s/sane-backends/libsane1_1.2.1-5deepin1_amd64.deb
+    digest: d3e7ca60aa0468cd92554f8fd416181a212447f8cffbe015191e9aa4dab7a9d7
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/a/acl/acl_2.3.1-1_amd64.deb
+    digest: c8326a4deb20000fbec2c8c053528c2d74d6f7c78ae6d6839d430526286902b9
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxcrypt/libcrypt1_4.4.36-2_amd64.deb
+    digest: 3ebae5a5f27eff3c2b9598ba323b4b556d6cec915a78200e305fb6ecde3972cd
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsemanage/libsemanage2_3.5-1deepin1_amd64.deb
+    digest: 6f69d2a20ebe5bb06552ccc0e9c9e71d3d16bb936271ff1c1526a9a8ef35c253
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsepol/libsepol2_3.5-2_amd64.deb
+    digest: 47738eed5444661ac0a8a8f2ce6fee7bcd448cfab2701340c51464cf532ccbc9
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/s/sane-backends/libsane-common_1.2.1-5deepin1_all.deb
+    digest: 916caa35075ab6fc9918fb30e337d92247ee6fc3495dd2a78cb55eb474d4794a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/s/systemd/udev_255.2-4_amd64.deb
+    digest: 8381c6392aa88ac31cbbd34f3d289470c251b8e2da3f70193fbc6bbb3c721309
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/s/systemd/systemd_255.2-4_amd64.deb
+    digest: 5509c863942480ff087520e55d0fbf67b13f42cf3938a002326ca1a5fa43fb54
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/j/json-c/libjson-c5_0.17-1_amd64.deb
+    digest: 4d8d2274f87aa27a15c420fabe43f7ce1c1ad16180fddba704ed107447db45ad
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/s/systemd/libsystemd-shared_255.2-4_amd64.deb
+    digest: 9a7a903ab6e05e63aa011e0a16d342bb7b83e5b1f3ba8bcd185a3c6f51faa548
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/s/systemd/systemd-dev_255.2-4_all.deb
+    digest: 9a82369b13b5a86762cfc4b08591f6ddb38bbb338eafe503317129d41e863cf8
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/u/util-linux/mount_2.39.3-6deepin1_amd64.deb
+    digest: 1bf6ba7c9a55cd2793d59059bf1d241dd298ea1c17aa3a5495a217201492b69b
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/c/curl/libcurl3-gnutls_8.5.0-2_amd64.deb
+    digest: b110cf015375ad4f835de12cbb70aede00733c1b61bc3380383a22423286c068
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/o/openldap/libldap-2.5-0_2.5.13+dfsg-5_amd64.deb
+    digest: 35570c1c9b06d39aea8c6d2a149f420dfcd1d7503db10e6e5753e0245e1c681d
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libg/libgphoto2/libgphoto2-6_2.5.27-1_amd64.deb
+    digest: e5f82e260738212c21d60da54bf4b686ad475aa9fcb53cdb320dad0e510ac9de
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libe/libexif/libexif12_0.6.23-1_amd64.deb
+    digest: 777bcea02800cf2c508fff7e5af7fac426da67dd4d9fc21599f5fb43a7dd171d
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libg/libgd2/libgd3_2.3.0-2_amd64.deb
+    digest: cbad8a1cab779d93201e09a26c31e5c1f0e968e809b16efded9c44a19b8c5fa5
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/t/tiff/libtiff6_4.5.1+git230720-1_amd64.deb
+    digest: 8a0ee5ae052e11c5f52db3a793392cbcf8450760cc7ac83ff65d12b54120c83a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libd/libdeflate/libdeflate0_1.18-1_amd64.deb
+    digest: 1b411007d982c5f2f2a6d1e2d0af7a85cbc274770e533fbd895fc54956a995ba
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/l/lerc/liblerc4_4.0.0+ds-3_amd64.deb
+    digest: 4024f109044643693dad079fce71b942ffba3bf3ec994d523130c33e776ea06e
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libw/libwebp/libwebp7_1.3.2-0.2_amd64.deb
+    digest: f2271cabfa4d4847bef8a522e2775d4f9c09a2560911df4779a7cc06d650eec6
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libw/libwebp/libsharpyuv0_1.3.2-0.2_amd64.deb
+    digest: 9da48196bd083c4749d1b4814a15780fdfa5a962ce3c19c5abfe0fa98e4e870e
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxpm/libxpm4_3.5.12-1_amd64.deb
+    digest: d059120ee0223b38479b03c9693f9c4fe39fd71cb37d808185250311013b3aa9
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libg/libgphoto2/libgphoto2-port12_2.5.27-1_amd64.deb
+    digest: b2ed825456f6c9908f59a58a60ebda36a6c07c599803f13af0345e7309d8ca22
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libt/libtool/libltdl7_2.4.7-7deepin1_amd64.deb
+    digest: e18d489cd1bf97a94accc75191953179d0ee3a599eb97843a24d0dac1e4c1329
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.24-3_amd64.deb
+    digest: e719be9bc84266bd81d01ca2dae17b3e8e029ee2574bd1afb82209a11fe6fd31
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libi/libieee1284/libieee1284-3_0.2.11-14_amd64.deb
+    digest: 175ab70ea65872474206e5e49badcd7217a8d8d5e92b296d51d99ee653068003
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/p/poppler/libpoppler-glib8_22.02.0-3_amd64.deb
+    digest: d2e23b550baa0c709cddec12a223e16f70befb87edbbc40483d49d959851223a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/p/poppler/libpoppler118_22.02.0-3_amd64.deb
+    digest: b9dae44e13f9805ebd26e1bb5dd67a7990790f1ae4e0195cc4374e4741e9b98a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/o/openjpeg2/libopenjp2-7_2.5.0-2_amd64.deb
+    digest: 1d7109a9c3f29c8bde7b4f92866d28860ee641dcfe3a718f4b730f845e63a4a4
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/n/net-snmp/libsnmp40_5.9.4+dfsg-1_amd64.deb
+    digest: 186814c7478a1e272f815dfc441dbf575a6619bed35a0899980aebc15b3120c4
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/p/pciutils/libpci3_3.10.0-2_amd64.deb
+    digest: 6dca73d98199375592e8ce0e136bb922d7fa21ec43d1f750fc260b2503a1c59d
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/p/pci.ids/pci.ids_0.0~2024.06.23-1_all.deb
+    digest: 6568d72a6712109f22745a3b02fb5784a14a37ddffee860edd6d70f0edbc1f3c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/p/perl/libperl5.36_5.36.0-10_amd64.deb
+    digest: 1cca8c85872210489e92326ca7fda2fcc8d9b37a085cd1a0c87d54aa685118e8
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/p/perl/perl-modules-5.36_5.36.0-10_all.deb
+    digest: 907542b9a413bd0276d5ef94fef77083715a692fd33c52ece44d11fff847bab0
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/t/tcp-wrappers/libwrap0_7.6.q-31_amd64.deb
+    digest: 40b9546740607b7907a735481fbb471ff771c5d1fb2ffa7aff4c7785b8e4899b
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libn/libnsl/libnsl2_1.3.0-2_amd64.deb
+    digest: 27219179fd316e3bdc7f9556d1852fcec175d13334b5aadf6274c19be98fb268
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libt/libtirpc/libtirpc3_1.3.2-2_amd64.deb
+    digest: 4ded57b843774f3c65449d6ad7bed6efb97bf94cdb4aadb8554fe5cc12210291
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libt/libtirpc/libtirpc-common_1.3.2-2_all.deb
+    digest: 74bddc18e3289947b20653433e82025873f5679ccba52f258ca4912e435a09ee
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/n/net-snmp/libsnmp-base_5.9.4+dfsg-1_all.deb
+    digest: 0f0e57635dbaad673786bd96e5e6814346fd3814945d64a18ac08f1adfcb0d70
 build: >-
   export LINGLONG_RAW_ID="net.master-pdf"
 
