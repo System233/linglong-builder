@@ -2,8 +2,6 @@ net.textseek.off
 libqtgui4
 libaudio2
 libxt6
-libgcc-s1
-gcc-13-base
 libmng1
 libqtcore4
 qtcore4-l10n
