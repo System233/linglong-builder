@@ -1,1 +1,8 @@
 com.ovital.map
+libgstreamer-plugins-base1.0-0
+libgstreamer1.0-0
+libgstreamer-plugins-bad1.0-0
+libpulse-mainloop-glib0
+libpulse0
+libxkbcommon-x11-0
+libroar-compat2
