@@ -34,10 +34,7 @@ libxtst6
 libxext6
 libxi6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libnss3
 libnspr4
 libsqlite3-0
@@ -49,6 +46,9 @@ libexpat1
 libfreetype6
 fontconfig-config
 debconf
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libxcb-render0
