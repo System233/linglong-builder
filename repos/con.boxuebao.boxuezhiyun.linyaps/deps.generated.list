@@ -23,8 +23,6 @@ libappindicator1
 libdbusmenu-glib4
 libdbusmenu-gtk4
 libindicator7
-libgcc-s1
-gcc-13-base
 deepin-elf-verify
 libgtk-3-0
 librest-0.7-0
