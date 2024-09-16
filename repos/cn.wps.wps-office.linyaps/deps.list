@@ -1,1 +1,5 @@
 cn.wps.wps-office
+libxv1
+libltdl7
+libusb-1.0-0
+libxkbcommon-x11-0
