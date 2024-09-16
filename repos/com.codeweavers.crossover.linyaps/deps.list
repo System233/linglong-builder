@@ -2,7 +2,6 @@ com.codeweavers.crossover
 libncurses5
 libtinfo5
 libusb-1.0-0
-libs
 libgphoto2-6
 libgphoto2-port12
 libgstreamer-plugins-base1.0-0
@@ -13,3 +12,6 @@ libpcap0.8
 libpulse0
 libunwind8
 libroar-compat2
+gir1.2-gtk-3.0
+python3-gi-cairo
+gir1.2-vte-2.91

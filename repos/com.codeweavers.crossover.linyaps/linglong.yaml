@@ -104,6 +104,15 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7-minimal_3.7.3.18-deepin1_amd64.deb
     digest: 849fa70903bc43feeee400b29f9f9266018f61233b08d70e7759520ab64dd4ec
   - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3.7/libpython3.7-minimal_3.7.3.18-deepin1_amd64.deb
+    digest: b50d10679daa4e4668f5039850d3b15b667962a62653bf1a471e203546f28d47
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3.7/libpython3.7-stdlib_3.7.3.18-deepin1_amd64.deb
+    digest: 7a58c74a1e83b63b3d4eac474184e1a5a4e7c70ccc321ef66492d0fd7010450b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/python3-defaults/libpython3-stdlib_3.7.3-1_amd64.deb
+    digest: 4f8883d378e698aa89b7bd4b68ce8e7cca01c961d3df87fafe4c079bb4668f5b
+  - kind: file
     url: https://professional-security.chinauos.com/pool/main/p/pygobject/python3-gi_3.30.4-1_amd64.deb
     digest: 539d7f81bc80152194b2dccdc4559ccf637eb692b260e0e522bb77240f30fd3a
   - kind: file
@@ -238,6 +247,12 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/s/speex/libspeexdsp1_1.2.1.1-1+dde_amd64.deb
     digest: d7703da55dc03766223b15ed6e6de1293cba24d7b720740d9f4963788ebc1044
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pygobject/python3-gi-cairo_3.30.4-1_amd64.deb
+    digest: fe855b275c76e58b18f3150d7cd8881b123627acf9e91e58528a175eb6f6d58d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pycairo/python3-cairo_1.16.2.1-1+rebuild_amd64.deb
+    digest: e8392dfbb34a8609961d3b080eeb4da959319f989ecf230f18493d2c49760312
 build: >-
   export LINGLONG_RAW_ID="com.codeweavers.crossover"
 

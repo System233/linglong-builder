@@ -20,6 +20,9 @@ libc6-i386
 python3
 python3.7
 python3.7-minimal
+libpython3.7-minimal
+libpython3.7-stdlib
+libpython3-stdlib
 python3-gi
 gir1.2-glib-2.0
 python3-dbus
@@ -65,3 +68,5 @@ libroar-compat2
 libroar2
 libspeex1
 libspeexdsp1
+python3-gi-cairo
+python3-cairo

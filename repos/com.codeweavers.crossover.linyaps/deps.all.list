@@ -242,3 +242,5 @@ libroar-compat2
 libroar2
 libspeex1
 libspeexdsp1
+python3-gi-cairo
+python3-cairo
