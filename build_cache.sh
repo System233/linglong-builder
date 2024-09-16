@@ -9,8 +9,8 @@ echo [准备缓存]
 DIR=$(dirname $0)
 function build() {
     cd "$DIR/$1"
-    apt-cli resolve "example" -c "${CACHE_DIR}" -f "./sources.list"
-    apt-cli find "example" -c "${CACHE_DIR}" -f "./sources.list"
+    apt-cli resolve "never-apt-cli" -c "${CACHE_DIR}" -f "./sources.list" 2>&1 | grep -viq "Error" || (echo ${1}包索引缓存失败 && false)
+    apt-cli find "never-apt-cli" -c "${CACHE_DIR}" -f "./sources.list" 2>&1 | grep -viq "Error" || (echo ${1}包内容缓存失败 && false)
     ll-builder build
     ll-builder run
 }
