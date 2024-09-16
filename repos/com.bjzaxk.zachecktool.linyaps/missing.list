@@ -1,9 +1,9 @@
-libcrypto.so.10
 libMagickCore-6.Q16.so.6
 libMagickWand-6.Q16.so.6
+libQt5EglDeviceIntegration.so.5
+libcrypto.so.10
 libmysqlclient_r.so.16
 libodbc.so.2
 libpng12.so.0
 libpq.so.5
-libQt5EglDeviceIntegration.so.5
 libssl.so.10
