@@ -58,12 +58,6 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/libn/libnotify/libnotify4_0.7.7-4_amd64.deb
     digest: f34c48c92e6811a9ec8157539242b72b24615e14944e728ff552ba73f2a2684d
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
-    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
-    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
-  - kind: file
     url: https://professional-security.chinauos.com/pool/main/x/xdg-utils/xdg-utils_1.1.3+deepin-1+deepin_all.deb
     digest: 4d5702d36507859b0d74b09a22e9bddde7328ea159267f0cb05e5e8c010af94f
   - kind: file
@@ -81,6 +75,15 @@ sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
     digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/ust/liblttng-ust0_2.10.3-1_amd64.deb
+    digest: 17065595393a66ff990d45194bccdb86b402f281f03069b44dd88300faae3ef7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libu/liburcu/liburcu6_0.10.2.2-1+dde_amd64.deb
+    digest: 8857d914598cbfa71e841ef70b1b7f291e68654fa9af2cdebe62b68bd0cbf23a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/ust/liblttng-ust-ctl4_2.10.3-1_amd64.deb
+    digest: e064865f36c136bacd020bea4e138b210f0f2b4de4256bc56a542297516640cc
 build: >-
   export LINGLONG_RAW_ID="com.hisense-syxs.hiedu"
 

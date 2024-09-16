@@ -14,11 +14,12 @@ mount
 systemd-sysv
 libgtk-3-common
 libnotify4
-libgcc-s1
-gcc-13-base
 xdg-utils
 libsecret-1-0
 libsecret-common
 deepin-elf-verify
 libpcsclite1
 ca-certificates-uniontech
+liblttng-ust0
+liburcu6
+liblttng-ust-ctl4
