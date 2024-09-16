@@ -242,7 +242,7 @@ jobs:
         if: ${{steps.build.outputs.cmd == 'build' }}
         with:
           tag_name: ${{steps.build.outputs.tag_name}}
-          body: Add layer ${{matrix.appid}} [${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}/repos/${{matrix.appid}}.linyaps")
+          body: Add ${{steps.build.outputs.appid}} [${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}/repos/${{steps.build.outputs.appid}}")
           append_body: true
           files: |
             ${{steps.build.outputs.layer_name}}
