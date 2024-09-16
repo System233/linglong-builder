@@ -135,7 +135,7 @@ while read LINE; do
     ICON_NAME="${LINGLONG_APP_ID}_${NAME%.*}"
 
     if [[ $ICON == /* ]]; then
-        REBASE_ICON=$(echo $ICON | sed -E -e "$PATCH_APP_PATH" -e "$PATCH_USR_PATH" -e "$PATCH_ENTRIES_PATH")
+        REBASE_ICON=$(echo $ICON | sed -E -e "$PATCH_APP_PATH" -e "$PATCH_USR_PATH" -e "$PATCH_ENTRIES_PATH"|perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" )
         if [ -e "$REBASE_ICON" ]; then
             replace_image "$REBASE_ICON" "$ICON_NAME"
             sed -i -E -e "/Icon=/ s#$ICON#$ICON_NAME#g" $LINE

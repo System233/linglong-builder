@@ -126,6 +126,7 @@ function replace_image() {
     setup_image "$1" "${SIZE}x${SIZE}" "${ICON_NAME}.png"
 }
 PATCH_APP_PATH="s#/opt/apps/\S+/files#${PREFIX}#g"
+PATCH_ENTRIES_PATH="s#/opt/apps/\S+/entries#${PREFIX}/share#g"
 PATCH_USR_PATH="s#/usr#${PREFIX}#g"
 while read LINE; do
     ICON=$(grep -oP "(?:Icon=)\K.*" "$LINE" | head -n1)
@@ -134,12 +135,12 @@ while read LINE; do
     ICON_NAME="${LINGLONG_APP_ID}_${NAME%.*}"
 
     if [[ $ICON == /* ]]; then
-        REBASE_ICON=$(echo $ICON | sed -E -e "$PATCH_APP_PATH" -e "$PATCH_USR_PATH")
+        REBASE_ICON=$(echo $ICON | sed -E -e "$PATCH_APP_PATH" -e "$PATCH_USR_PATH" -e "$PATCH_ENTRIES_PATH"|perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" )
         if [ -e "$REBASE_ICON" ]; then
             replace_image "$REBASE_ICON" "$ICON_NAME"
             sed -i -E -e "/Icon=/ s#$ICON#$ICON_NAME#g" $LINE
         else
-            echo "Warning: Rebased path for ${ICON} not found: ${REBASE_ICON}"
+            echo -e "\033[31mWarning: Rebased path for ${ICON} not found: ${REBASE_ICON}\033[0m"
         fi
     else
         sed -i -E -e "/Icon=/ s#$ICON#$ICON_NAME#g" $LINE
