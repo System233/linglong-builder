@@ -84,12 +84,6 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/libi/libindicator/libindicator7_0.5.0-4_amd64.deb
     digest: f1e4c59db9b3462f72df6cc8f6c83be14af8c3f9e7f108ab3ae5c10c08db7660
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
-    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
-    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
-  - kind: file
     url: https://professional-security.chinauos.com/pool/main/m/mesa/libgl1-mesa-glx_19.2.6.3-1_amd64.deb
     digest: a1c196b874cf5f5e72ecdb4346a7c039e4de8a73b400cec93ff0ddd7ba3e8cd6
   - kind: file

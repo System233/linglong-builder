@@ -165,10 +165,7 @@ libcroco3
 libindicator7
 libxtst6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libnss3
 libnspr4
 libgl1-mesa-glx
