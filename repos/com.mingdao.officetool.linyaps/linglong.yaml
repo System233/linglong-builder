@@ -142,6 +142,15 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/libx/libxslt/libxslt1.1_1.1.34-4_amd64.deb
     digest: 57b60e3910615c73c78c090eb6f5a3d69c13638e2f212fe651a610e6b6d72ced
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/q/qtwebengine-opensource-src/libqt5webenginewidgets5_5.15.15+dfsg-3deepin3_amd64.deb
+    digest: 59d4ff2bfe741fae3a146e8fc596830124792760fa576b3195344aadeae2da02
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/n/nettle/libhogweed6_3.7.3-1_amd64.deb
+    digest: 0557f0e34a15444b6792c2726b5d1eb48f9ea8cd42bc7f4d697081e804ced558
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/n/nettle/libnettle8_3.7.3-1_amd64.deb
+    digest: d19dd4ebabccc00232223b414732c26b63d4ee67f4147ad5a105795f4514382a
 build: >-
   export LINGLONG_RAW_ID="com.mingdao.officetool"
 
