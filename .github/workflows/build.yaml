@@ -229,7 +229,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update ${{matrix.appid}}"
+          git commit -m "Update ${{ steps.build.outputs.appid }}
           git status -s
           git pull --rebase origin main
           git push origin main
