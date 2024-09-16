@@ -89,6 +89,9 @@ libfontconfig1
 libfreetype6
 libpng16-16
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libdrm2
 libdrm-common
@@ -135,10 +138,7 @@ libharfbuzz0b
 libgraphite2-3
 libice6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libinput10
 libevdev2
 libmtdev1

@@ -11,8 +11,6 @@ libpam-systemd
 systemd
 mount
 systemd-sysv
-libgcc-s1
-gcc-13-base
 libinput10
 libevdev2
 libmtdev1
