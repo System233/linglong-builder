@@ -75,12 +75,6 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/libd/libdbi-perl/libdbi-perl_1.642-1+deb10u2_amd64.deb
     digest: 1c2d22486bf2de61c6141accb0837d94f40b75d33e8294e6a29cee38fc8e562c
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
-    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
-    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
-  - kind: file
     url: https://professional-security.chinauos.com/pool/main/l/lsof/lsof_4.91+dfsg-1_amd64.deb
     digest: e173eb02642c842b87ce734874a8670d0101722c539811bfc9d636ba2147d7f5
   - kind: file
@@ -437,6 +431,9 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/z/zenity/zenity-common_3.30.0-2_all.deb
     digest: 16b29bb02345dfccc8693121a516fa7411a433770296039003dad2bd6646ec97
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsigsegv/libsigsegv2_2.12.1-1+dde_amd64.deb
+    digest: 7e0328e0954be127d0e85eb85320ed03f892bd2e41f25cbba923620dee7a6f6a
 build: >-
   export LINGLONG_RAW_ID="com.jumple.pns.server"
 

@@ -55,10 +55,7 @@ libselinux1
 libxtables12
 libcap2-bin
 libdbi-perl
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 lsof
 mariadb-server-core-10.3
 passwd
@@ -350,3 +347,4 @@ libice6
 x11-common
 libsm6
 zenity-common
+libsigsegv2

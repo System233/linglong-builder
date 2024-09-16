@@ -17,8 +17,6 @@ libmnl0
 libxtables12
 libcap2-bin
 libdbi-perl
-libgcc-s1
-gcc-13-base
 lsof
 mariadb-server-core-10.3
 psmisc
@@ -138,3 +136,4 @@ libwoff1
 libbrotli1
 libxt6
 zenity-common
+libsigsegv2
