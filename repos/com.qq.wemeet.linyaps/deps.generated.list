@@ -2,8 +2,6 @@ com.qq.wemeet
 desktop-file-utils
 libpulse0
 libasyncns0
-libgcc-s1
-gcc-13-base
 libsndfile1
 libflac8
 libogg0

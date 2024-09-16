@@ -27,10 +27,7 @@ libdbus-1-3
 libsystemd0
 libice6
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 libsm6
 libsndfile1
 libflac8
@@ -54,6 +51,9 @@ libfreetype6
 libpng16-16
 fontconfig-config
 debconf
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libxcb-render0
