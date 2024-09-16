@@ -12,3 +12,4 @@ if [ -d "$QT_PLATFORM_PATH" ]; then
     echo Patch QT_QPA_PLATFORM_PLUGIN_PATH
     echo "export QT_QPA_PLATFORM_PLUGIN_PATH=$QT_PLATFORM_PATH" | tee -a $LINGLONG_COMMAND
 fi
+
