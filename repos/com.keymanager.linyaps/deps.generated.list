@@ -19,5 +19,3 @@ ca-certificates-uniontech
 pcscd
 libccid
 libusb-1.0-0
-libgcc-s1
-gcc-13-base
