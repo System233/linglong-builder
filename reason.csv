@@ -18,3 +18,5 @@ com.360.browser-stable, 提示安装损坏
 cn.wps.wps-office-pro.linyaps, 段错误，等待修复
 com.aivisioning.dsplayer.linyaps,[python]:加载dll失败 等待排查
 com.amdox.booth.linyaps, 仓库中找不到libdc1394.so.22，等待排查
+com.apps.vplayer.linyaps,系统非常卡，日志无报错，无界面
+com.apps.ipcsearch.linyaps,无法启动，网络相关应用，可能需要root
