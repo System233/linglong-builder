@@ -1,3 +1,6 @@
+libOpenCL.so.1
+libSDL2-2.0.so.0
+libXv.so.1
 libaom.so.0
 libass.so.9
 libavc1394.so.0
@@ -13,12 +16,12 @@ libdav1d.so.5
 libdavs2.so.16
 libdc1394.so.22
 libdc1394.so.25
+libflite.so.1
 libflite_cmu_us_awb.so.1
-libflite_cmu_us_kal16.so.1
 libflite_cmu_us_kal.so.1
+libflite_cmu_us_kal16.so.1
 libflite_cmu_us_rms.so.1
 libflite_cmu_us_slt.so.1
-libflite.so.1
 libgme.so.0
 libgsm.so.1
 libiec61883.so.0
@@ -32,7 +35,6 @@ libnppicc.so.9.2
 libnppidei.so.9.2
 libnppig.so.9.2
 libopenal.so.1
-libOpenCL.so.1
 libopenjp2.so.7
 libopenmpt.so.0
 libopus.so.0
@@ -43,7 +45,6 @@ librabbitmq.so.4
 libraw1394.so.11
 librom1394.so.0
 librubberband.so.2
-libSDL2-2.0.so.0
 libshine.so.3
 libsnappy.so.1
 libsndio.so.7.0
@@ -56,12 +57,12 @@ libtheoradec.so.1
 libtheoraenc.so.1
 libtwolame.so.0
 libva-drm.so.2
-libva.so.2
 libva-x11.so.2
+libva.so.2
 libvdpau.so.1
 libvidstab.so.1.1
-libvorbisenc.so.2
 libvorbis.so.0
+libvorbisenc.so.2
 libvpx.so.5
 libwavpack.so.1
 libx264.so.155
@@ -70,7 +71,6 @@ libx265.so.165
 libx265.so.192
 libxavs2.so.13
 libxvidcore.so.4
-libXv.so.1
 libzimg.so.2
 libzmq.so.5
 libzvbi.so.0
