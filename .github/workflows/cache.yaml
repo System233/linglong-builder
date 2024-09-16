@@ -1,0 +1,74 @@
+name: Build Cache
+run-name: Build Cache
+on:
+  workflow_dispatch:
+jobs:
+  cache:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: linglong-builder-repo
+        id: linglong-builder-repo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/repo/
+          key: ${{ runner.os }}-linglong-builder-repo
+
+      - name: linglong-builder-deepin-Runtime
+        id: linglong-builder-deepin-Runtime
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
+          key: ${{ runner.os }}-linglong-builder-deepin-Runtime
+
+      - name: linglong-builder-deepin-base
+        id: linglong-builder-deepin-base
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.base
+          key: ${{ runner.os }}-linglong-builder-deepin-base
+
+      - name: linglong-builder-deepin-foundation
+        id: linglong-builder-deepin-foundation
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/org.deepin.foundation
+          key: ${{ runner.os }}-linglong-builder-deepin-foundation
+
+      - name: linglong-builder-uniontech-foundation
+        id: linglong-builder-uniontech-foundation
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
+          key: ${{ runner.os }}-linglong-builder-uniontech-foundation
+
+      - name: linglong-helper-cache
+        id: linglong-helper-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-helper
+          key: ${{ runner.os }}-linglong-helper-cache
+      - name: install
+        run: |
+          sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
+          sudo mkdir -p /etc/apt/keyrings/
+          curl -fsSL https://download.opensuse.org/repositories/home:/kamiyadm/xUbuntu_24.04/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/linglong-apt-keyring.gpg
+          echo "deb [signed-by=/etc/apt/keyrings/linglong-apt-keyring.gpg] https://download.opensuse.org/repositories/home:/kamiyadm/xUbuntu_24.04/ ./" | sudo tee /etc/apt/sources.list.d/linglong.list
+          sudo apt update
+          sudo apt install linglong-builder linglong-box linglong-bin
+          ll-cli --version
+
+      - name: cache
+        run: |
+          export REPO_ROOT=$(pwd)/repos
+          export CACHE_DIR=~/.cache/linglong-helper
+          yarn install
+          bash ./build_cache.sh
