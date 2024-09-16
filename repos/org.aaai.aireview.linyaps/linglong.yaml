@@ -41,12 +41,6 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/t/tk8.6/libtk8.6_8.6.9-2_amd64.deb
     digest: 36493b3772fc884a18b8dd32418ad0ce171b86996bf0bb103a90a9d231459112
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
-    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
-    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
-  - kind: file
     url: https://professional-security.chinauos.com/pool/main/r/requests/python3-requests_2.21.0-1_all.deb
     digest: 1ef2814c9be7246165f56d8bd8fa9a42ed70eed989dc6da9d0d90e5d774d4b47
   - kind: file

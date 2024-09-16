@@ -36,6 +36,9 @@ libfontconfig1
 libfreetype6
 libpng16-16
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libx11-6
 libxcb1
@@ -48,10 +51,7 @@ libxft2
 libxrender1
 libxss1
 x11-common
-sysvinit-utils
-libc6
-libgcc-s1
-gcc-13-base
+lsb-base
 python3-requests
 python3-certifi
 ca-certificates
