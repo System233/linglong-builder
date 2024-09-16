@@ -22,3 +22,4 @@ com.apps.vplayer.linyaps,系统非常卡，日志无报错，无界面
 com.apps.ipcsearch.linyaps,无法启动，网络相关应用，可能需要root
 com.bhyf.bhpainter.linyaps, 右下角有图标，但点不开
 com.biometrics.fprint.ft9348.linyaps,无快捷方式，跳过
+com.bjzaxk.zacleantool.linyaps, 需要服务启动，跳过

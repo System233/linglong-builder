@@ -40,8 +40,15 @@ if [ ! -e "$REBASED_STARTUP" ];then
     fi
 
     if  [ ! -e "$REBASED_STARTUP" ];then
-        echo "Error: $REBASED_STARTUP does not exists." >&2
-        REBASED_STARTUP=$REBASED_STARTUP_RAW
+        echo "\033[31mError: '$REBASED_STARTUP' does not exists." >&2
+        if [ -e "$STARTUP" ];then
+            REBASED_STARTUP=$STARTUP
+        elif [ -e "/bin/$(basename $STARTUP)" ];then
+            REBASED_STARTUP="/bin/$(basename $STARTUP)"
+        else
+            REBASED_STARTUP=$REBASED_STARTUP_RAW
+        fi
+        echo -e "\033[31mFallback '$REBASED_STARTUP' \033[0m"
     fi
 fi
 
