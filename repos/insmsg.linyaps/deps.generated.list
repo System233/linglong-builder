@@ -14,8 +14,6 @@ mount
 systemd-sysv
 libgtk-3-common
 libjavascriptcoregtk-4.0-18
-libgcc-s1
-gcc-13-base
 libwebkit2gtk-4.0-37
 gstreamer1.0-plugins-base
 libcdparanoia0
