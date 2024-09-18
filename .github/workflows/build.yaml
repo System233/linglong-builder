@@ -22,19 +22,20 @@ jobs:
           BUILD_CACHE=no
           function check_commit(){
             commit=$1
-            git show --name-only --format="" $commit | grep '^repos/' | cut -d '/' -f 2 | sort -u |sed -E -e 's#.linyaps$##'
+            git show --name-only --format="" $commit | grep '^repos/' | cut -d '/' -f 2 | sort -u | grep -Ff "filter.list" |sed -E -e 's#.linyaps$##'
           }
           echo >${CMD_LIST}
           for commit in $(git log --format='%H' ${{ github.event.before }}..${{ github.sha }}); do
             message=$(git log --format=%B -n 1 $commit)
 
-            if [[ "$message" == *"[build]"* ]]; then
-              echo "Checking build $commit"
-              check_commit $commit|xargs -r -I{} echo 'build:{}' | tee -a ${CMD_LIST}
-            elif  [[ "$message" == *"[resolve]"* ]]; then
+            if  [[ "$message" == *"[resolve]"* ]]; then
               echo "Checking resolve $commit"
               check_commit $commit|xargs -r -I{} echo 'resolve:{}' | tee -a ${CMD_LIST}
+            else
+              echo "Checking build $commit"
+              check_commit $commit|xargs -r -I{} echo 'build:{}' | tee -a ${CMD_LIST}
             fi
+            
             if [[ "$message" == *"[cache]"* ]]; then
               echo "build cache"
               BUILD_CACHE=yes
