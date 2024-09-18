@@ -101,6 +101,12 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/p/pcre2/libpcre2-8-0_10.32.2-deepin1_amd64.deb
     digest: b19fb4d07b792896b02663319e49515f568bce4ff439de6e4858efade44e8b0c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/strace/strace_4.26-0.2_amd64.deb
+    digest: ed242d5d3dec7a228cd20ca3ee5f5d614adf921b6b67c77155c702c14ee80ed5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libu/libunwind/libunwind8_1.2.1.1-1+dde_amd64.deb
+    digest: aaa1817cad456a5d6db59fe3819f2fd025ab21e1dfff5d16ae6dde331d8b85ca
 build: >-
   export LINGLONG_RAW_ID="china.nfs-browser"
 

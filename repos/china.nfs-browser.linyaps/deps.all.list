@@ -197,3 +197,5 @@ libindicator7
 xdg-utils
 wget
 libpcre2-8-0
+strace
+libunwind8

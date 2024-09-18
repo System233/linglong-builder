@@ -140,7 +140,7 @@ while read LINE; do
             replace_image "$REBASE_ICON" "$ICON_NAME"
             sed -i -E -e "/Icon=/ s#$ICON#$ICON_NAME#g" $LINE
         else
-            echo -e "\033[31mWarning: Rebased path for ${ICON} not found: ${REBASE_ICON}\033[0m"
+            echo -e "\033[31mWarning: Rebased path for ${ICON} not found: ${REBASE_ICON}\033[0m" |tee -a error.list >&2
         fi
     else
         sed -i -E -e "/Icon=/ s#$ICON#$ICON_NAME#g" $LINE

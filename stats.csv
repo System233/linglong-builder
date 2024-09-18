@@ -1,0 +1,235 @@
+包名,名称,UI界面,是否可用,图标正常,备注
+aixueshi,爱学仕校园教师端,是,是,是
+app.web.3done,3D One测试版,否,否,"网页应用，网站已挂,xdg-open不正常"
+bidfiledownloader,投标文件下载加速客户端,是,是
+china.nfs-browser,方德浏览器,是,是
+classin,ClassIn,是,是
+cn.10086.yidonghuiyi,移动会议（云视讯）网页版
+cn.ankexinchuang.weimail,微邮个人版,是,是,启动时间较长
+cn.bitnum.certmanager,证书管理器,是,是,qt.network.ssl: No TLS backend is available
+cn.bizconf.bizcloudec,超视云企业版,是,是
+cn.bjca.certaide,BJCA证书助手,否,否,试图打开本地网页-等待修复
+cn.bosyun.pixso,Pixso-协同设计,是,是
+cn.ccwork.com,360织语-数字化工作门户平台,是,是
+cn.com.gf.hippo,广发操盘手（网页版）,否,否,Received signal 11 SEGV_MAPERR 000000000000
+cn.com.sangfor.atrust,深信服零信任访问控制系统aTrust,否,否,闪退 Error: connect ENOENT /usr/share/sangfor/.aTrust/var/run/aTrustTunnel-c46a26c5-2cd4-4c20-9352-8efbb6358ea0
+cn.com.topsec.topnac,天融信NAC客户端,否,否,Segmentation fault
+cn.com.topsec.topsap,安全接入,是,是,VPN软件，能启动不一定能用
+cn.com.xcsa.uos,数据安全集中管控,是,是
+cn.coremail.cmclient,Coremail邮箱客户端,是,否,控件全灰
+cn.foxitsoftware.foxitreader,福昕PDF阅读器
+cn.foxitsoftware.online,福昕高级PDF编辑器网页版,否,否,"试图打开网页https://online.foxitsoftware.cn/,但xdg-open不正常"
+cn.fxkp.fxkpofficesuite.appstore,福昕OFD版式办公套件,是,否,"显示安装有误-等待修复"
+cn.greenpaper.reader,绿页阅读器
+cn.gzca.certmanager,GZCA数字证书客户端,否,否,egmentation fault，读取了USB，可能需要加密狗
+cn.hitecloud.hitecamera,鸿合视频展台软件
+cn.hitecloud.hitecenter,鸿合消息中心,否,否,无快捷方式，等待修复
+cn.hitecloud.hitecontroller,鸿合系统管家,是,否,提示需要重启，不一定能用
+cn.hitecloud.hitetools,鸿合通用工具
+cn.i4.i4tools,爱思助手
+cn.lanxin,蓝信,是,否,"启动器+本体模型,会导致容器退出，等待修复"
+cn.linuxgame.cstrike,反恐精英
+cn.loongnix.lbrowser,龙芯浏览器
+cn.newcloud.newss,蓝云天同窗电子教室教师端软件,否,否,TScrollBox.Destroy with LCLRefCount>0
+cn.newcloud.newssst,蓝云天同窗电子教室学生端软件
+cn.org.hbca.ceac,湖北CA证书管家
+cn.smxxy.igspc,甘棠政务
+cn.suwell.reader.appstore,数科OFD
+cn.ts-it.suite,泰山办公2022专业版
+cn.turboex.turboexclient,TurboExClient-邮箱
+cn.vrv.linkdood,信源密信
+cn.worldflying.setdevicetool,沃航科技设备配置工具
+cn.wps.wps-office-pro,WPS2019专业版,否,否,段错误，等待修复
+cn.wps.wps-office,WPS Office 2019 For Linux
+cn.yidianwan.cloudgame,易点玩云游戏
+com.163.mailmaster,网易邮箱大师
+com.360.browser-stable,360安全浏览器,是,否,提示安装损坏
+com.aisdp,亚信安全SDP
+com.aivisioning.dsplayer,鼎视智能播放器,否,否,[python]:加载dll失败 等待排查
+com.alibabainc.dingtalk,3.-让工作学习更简单,是,是,正常
+com.amdox.booth,安道展台,否,否,仓库中找不到libdc1394.so.22，等待排查
+com.antutu.benchmark,安兔兔评测
+com.apowersoft.apowermanager,手机管理大师
+com.apps.ipcsearch,IPCSearch 3.1-IP地址搜索,否,否,无法启动，网络相关应用，可能需要root
+com.apps.vplayer,vPlayer,否,否,启动后系统非常卡，日志无报错，无界面
+com.axsizg.dtt,芯盾智能锁传输工具
+com.bhyf.bhpainter,碧海视频展台,否,否,右下角有图标，但点不开
+com.biometrics.fprint.ft9348,敦泰指纹模组,否,否,无快捷方式，跳过
+com.bjzaxk.zachecktool,中安国产通用计算机终端保密检查系统V1.0 (单机版),是,否,可以启动，不过弹窗关掉后卡住，需要读取光盘，可能不可用
+com.bjzaxk.zacleantool,中安兴坤信息消除工具V1.0,否,否,需要服务启动，跳过
+com.bmb1688.audit,帝岚计算机终端保密检查系统
+com.cfca.seceditctl.cgb,广发银行网银密码安全控件,否,否,"纯插件,无启动文件"
+com.channelsoft.sipphone,CPFCcodSipPhone
+com.cloudwan,CloudWAN
+com.cnezsoft.xuanxuan,喧喧企业协同聊天
+com.codeweavers.crossover,Crossover-wine运行器,是,否,有界面，但需要启动服务，得想办法修复服务问题
+com.cutecomm.broadcast,智慧帮直播
+com.cutecomm.remotedt,智慧帮远程
+com.cutecomm.videoconf,智慧帮视频会议
+com.cvicse.ump.agentpc,中创统一监管平台软件桌面客户端V2.1,否,否,纯服务无界面
+com.deepin.uos-cmca,CMCA根证书
+com.dhbiens.player,东海播放器影音版,是,否,依赖的ffplay正常播放视频，但主程序不能播放
+com.eagleyun.yunshu,云枢,否,否,需要服务启动，跳过
+com.eastmoney.emapp,东方财富
+com.echanceyun.pan,企业云盘
+com.elex.tscs,博智计算机终端保密检查系统V2.0
+com.eolink,Eolink
+com.eusoft.eudic,欧路词典
+com.founderinternational.cebreader,方正CEB版式文档阅读器
+com.foxit.foxitpdfeditor,福昕高级PDF编辑器
+com.ftsafe.interpass3000-cgb,广发银行key盾管理工具-飞天诚信
+com.fz.deepin,方正证券股票期权经典版
+com.gdca.gdcaclient,GDCA数字证书客户端
+com.gdca.trustofdreader,信鉴易OFD印章阅读器
+com.gingo,金鸽
+com.github.desktopnaotu,桌面版百度脑图
+com.gnway.appcloud,云联信创专版
+com.gstarcad.cad,浩辰CAD 2024
+com.gsubo.xoa,心通达OA精灵
+com.gtja.richeasy,国泰君安富易
+com.gzsdkj,山地签
+com.hillstonenet.scvpn,Hillstone Secure Connect-远程工具
+com.hisense-syxs.hiedu,海信智学
+com.hsl.amis,电子档案管理系统
+com.hst.fsmeeting,好视通云会议
+com.htsec.ehtsec,e海通财
+com.huashuoaf.finger,华硕安防指纹
+com.huidu.hdplayer,HDPlayer软件
+com.huluer.ichainpi,派盘
+com.icvp.vwas,万控一体化集控
+com.insight.client,信创运维小助手
+com.isoftstone.hwcloudlink,HW CloudLink-视频会议
+com.jiaedian.power,华腾节能客户端
+com.jiaoyi.tradermaster,交易侠
+com.jimi.evimsagent,Evimsagent-系统性能监控
+com.joydin.braingame,智力游戏
+com.jsdeepnet.swgap,深网文件传输客户端
+com.jumple.pns.server,PNS全国产桌面云系统软件V2.0（服务端）
+com.jzaq.client,集中安全平台
+com.jzaq.stand-alone,集中安全平台单机版
+com.keymanager,密信Key管理工具
+com.kinggrid.isignature10.common,金格电子签章系统V10
+com.kinggrid.surread,超阅版式办公套件
+com.langlangjiaoyu.langyunzhihuijiaoxuexitong,朗云智慧教学系统
+com.lightwan,LightWAN
+com.longhubang.numnode,龙虎榜
+com.longser.gm3000user,中科朗思通用证书驱动
+com.meia.me,美啊
+com.meitu.mtxx,美图秀秀-图片编辑与设计神器
+com.microcloudsys.appv,微云云应用
+com.mindlinker.boardmeeting,MindLinker(intel大屏版)
+com.mindlinker.meeting,MindLinker迈聆会议
+com.mingdao.officetool,明道云办公
+com.mythware.cms-student,极域课堂互动教学系统软件（学生端）
+com.mythware.cms-teacher,极域课堂互动教学系统软件（教师端）
+com.netchina.ndoffice-stable,网龙Office 2021
+com.nutstore.deepin,坚果云
+com.oa8000.htim,小天精灵即时通讯软件
+com.onbonbx.ledshowsuite,LedShowSuite
+com.oneofd.ofdreader,葫芦OFD阅读器
+com.opiping.manager,opiping
+com.opiping.nabric,Nabric 一站式团队协作系统
+com.oray.hsk,花生壳网页版
+com.oray.pgyenterprise.client,蒲公英企业版
+com.oray.sunlogin.client,向日葵远程控制
+com.oray.sunlogin.enterprise,向日葵企业版客户端
+com.oray.sunlogin.remote,向日葵企业版控制端
+com.ovital.map,奥维互动地图
+com.qljy.qlteacher,青鹿教室
+com.qq.wemeet,腾讯会议
+com.rembb.jsx-tc,记上学三个课堂
+com.sample.sradio,SRadio
+com.sdca.certmng,SDCA证书桌面管理软件
+com.sdguodun.dzonesign,大众签章
+com.semxum.aivoicebox,声讯智能会议终端系统
+com.sumscope.qeubee,qeubee终端
+com.synology.drive,Synology Drive Client
+com.szca.msm.uos,协同签名密码模块
+com.szca.signproducttool,深圳CA签署产品
+com.szshenshu.aidemo,深数科技人脸识别身份核验软件
+com.teakki.akeychat,安司密信
+com.tencent.gamereva,腾讯先锋云游戏
+com.tencent.wechat,微信
+com.thtfpc.camerashow,同方视频展台
+com.thtfpc.classeva,同方课堂评价
+com.thtfpc.integratedesktop,同方教育桌面
+com.thtfpc.whiteboard,同方教育白板
+com.todesk,ToDesk-远程控制
+com.todesk.bclient,ToDesk企业主控
+com.todesk.bhost,ToDesk企业被控
+com.todesk.bsos,ToDesk企业SOS
+com.tongzhi.corecryptplugin,核心密码组件
+com.tongzhi.corecryptserver,核心密码组件（http）
+com.unity.unityhub,Unity Hub
+com.vymeet.cloud.meeting,Vymeet 云会议
+com.wind.wfc,万得投顾终端
+com.wind.wft,Wind金融终端(机构专用)
+com.wkimtilinux,马兰头会议
+com.wotrus.wosignassist,沃签助手
+com.xhzx.dazzle,众芯盾电子文档安全管理系统V1.0
+com.xunlei.download,迅雷
+com.xylink.linuxclient,小鱼易连
+com.yiqixie.yiqixie,一起写
+com.yozosoft.yozo-office.s1,永中Office2019专业版办公软件V8.0
+com.yunkanpan.numnode,云看盘
+com.yygongzi,用友工资条
+com.zhixue.zhixuewang,智学网
+com.zjca.zjcakeymanager,ZJCA证书助手
+com.zjd.gov,浙政钉
+com.zlgpy.capturevideov4,哲林影像采集系统
+com.zqykj.hyjjai,智器云火眼金睛人工智能版
+com.zwsoft.zw3d2024,中望3D 2024
+com.zwsoft.zwcadm2024,中望CAD机械版 2024
+con.boxuebao.boxuezhiyun,博学智云
+dev.warp.app,Warp Terminal
+duoyu-browser,多御安全浏览器
+ekvit,全能看版式阅读编辑器软件
+em-va,集智(VA)应用云平台-客户端
+encoo.robot,云扩RPA机器人
+feidao,飞稻在线课程设计平台
+holder,holder
+hscore,山河安全工作空间
+huaweicloudmeeting,华为云会议-视频会议办公软件
+iauto,IAuto绘图
+iiis,3IS蓝聪会议预约
+iitc,3IS智能信息交互系统-控制端
+insmsg,InsMsg企业即时通信
+io.github.msojocs.bilibili,哔哩哔哩
+j2l3x,J2L3x 数字工作空间系统
+life.zishu.sdt,闪电藤文件传输
+mcs,视宽电子教室广播教学软件学生端
+mct,视宽电子教室广播教学软件教师端
+mcu,PoloMeeting视频会议系统-MCU服务器
+meeting,红杉会议
+mmc-server,噢易多媒体网络教室软件（信创版）
+net.cnki.cajviewer,CAJViewer全文浏览器
+net.cnki.cnkiexpress,全球学术报告
+net.master-pdf,Master PDF 编辑器
+net.textseek,TextSeek 文本搜索工具
+net.textseek.off,TextSeek (离线版)-文本搜索
+net.thunderbird,雷鸟邮件客户端
+net.zhuoaninfo.pdf417.creator,卓安公文二维条形码生成软件
+org.aaai.aireview,智能阅卷
+org.east.upsmart,UPSmart
+pdmaner,PDManer 元数建模
+photosir,PhotoSir
+ppthelper-agent,PPT遥控翻页
+smail.community,SMail安全邮件
+store.spark-app.redict-dtk5,Redict词典
+store.spark-app.wechat-linux-spark,微信Linux
+sursen-reader,书生阅读器
+swt-swcx,河北省商务诚信
+syl-safe,SYL OS电脑管家
+syl-smartclass,SYL智慧授课助手
+ttmz,天天码字
+ubx-auxiliary,统信有往开发工具
+ubx-server,统信有往服务
+uclient,UClient
+uengine-dc-com.ay293.app,多多影视（安卓版）
+uos-youku-app,优酷视频
+vip.evdo.deepin,医维度
+weici-teaching,维词教学系统
+wonderpen,妙笔
+xcb-app,软通桥信创应用兼容适配客户端
+xcshy,校餐守护云
+youzone,友空间
