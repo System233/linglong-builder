@@ -1,1 +1,5 @@
 com.founderinternational.cebreader
+libqtdbus4
+libqt4-xml
+libqtcore4
+qtcore4-l10n

@@ -1,1 +1,8 @@
 com.huidu.hdplayer
+libmp3lame0
+libsndio7.0
+libva-drm2
+libva-x11-2
+libva2
+libvdpau1
+strace

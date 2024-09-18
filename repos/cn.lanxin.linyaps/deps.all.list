@@ -165,3 +165,5 @@ libpcsclite1
 ca-certificates
 openssl
 ca-certificates-uniontech
+strace
+libunwind8

@@ -1,0 +1,9 @@
+libdfm-extension.so.1
+libQt5Core.so.5
+libQt5DBus.so.5
+libQt5Gui.so.5
+libQt5Svg.so.5
+libQt5Widgets.so.5
+libQt5XdgIconLoader.so.3
+libQt5Xdg.so.3
+libQt5Xml.so.5

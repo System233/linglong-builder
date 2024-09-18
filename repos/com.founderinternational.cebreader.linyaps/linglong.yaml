@@ -12,6 +12,18 @@ sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.founderinternational.cebreader/com.founderinternational.cebreader_1.0.20200629-1_amd64.deb
     digest: 4ac85a0153d041faac213295e080811b28ade96aa6b769fa9b7a2abf141476ce
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtdbus4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 9276c8b76dc280379bda261c4b86d24d2c53643701fb59d02200650969bcdfe6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqt4-xml_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: bfbd39bea0ba21d187fba978db125c6cd1b6f6bd9f860ff576d7d4cf409c258a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg.2-1+dde_amd64.deb
+    digest: 344282ea487885e2fc1e571377fcbf102d5e708c6547808fc81829f9d3494492
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg.2-1+dde_all.deb
+    digest: 254325c7e7161c19a68e0b8d1c2464544f2b9c211bcbd9264e96dafa40ba8b40
 build: >-
   export LINGLONG_RAW_ID="com.founderinternational.cebreader"
 

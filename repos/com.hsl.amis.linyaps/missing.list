@@ -1,0 +1,6 @@
+libQt5EglFSDeviceIntegration.so.5
+libQt5Qml.so.5
+libQt5Quick.so.5
+libQt5VirtualKeyboard.so.5
+libQt5WaylandClient.so.5
+libQt5WebSockets.so.5

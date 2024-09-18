@@ -1,1 +1,9 @@
 com.gstarcad.cad
+libqt5gui5
+liblttng-ust0
+libxcb-icccm4
+libxcb-image0
+libxcb-keysyms1
+libxcb-render-util0
+libxkbcommon-x11-0
+strace

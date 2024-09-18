@@ -97,12 +97,6 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6network6_6.6.1+dfsg-5deepin3_amd64.deb
     digest: 85a22379e0e0509eba507e773541e852aa694623d1376b688f6f508618d3f86a
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.19_amd64.deb
-    digest: 10ab83cb1741451205766a833ddf58ad38cf222e4a6e219210839dbf943a723c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/q/qt6-base/libqt6opengl6_6.6.1+dfsg-5deepin3_amd64.deb
-    digest: 7cf93e172a9a678caf7903563b9eb7e880e5fc6da21a1c4f9fc3259e26444d3e
 build: >-
   export LINGLONG_RAW_ID="cn.bitnum.certmanager"
 

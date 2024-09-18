@@ -15,3 +15,5 @@ systemd-sysv
 libgtk-3-common
 libpcsclite1
 ca-certificates-uniontech
+strace
+libunwind8

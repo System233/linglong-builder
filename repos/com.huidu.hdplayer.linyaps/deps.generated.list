@@ -16,3 +16,11 @@ systemd-sysv
 libgtk-3-common
 libpcsclite1
 ca-certificates-uniontech
+libmp3lame0
+libsndio7.0
+libva-drm2
+libva2
+libva-x11-2
+libvdpau1
+strace
+libunwind8

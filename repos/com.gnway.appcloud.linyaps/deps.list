@@ -1,1 +1,7 @@
 com.gnway.appcloud
+libfuse2
+libxmu6
+libpulse0
+libxkbfile1
+libroar-compat2
+procps

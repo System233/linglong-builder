@@ -121,8 +121,3 @@ libcom-err2
 libk5crypto3
 libkeyutils1
 libproxy1v5
-dde-qt6xcb-plugin
-libqt6opengl6
-libxcb-composite0
-libxcb-damage0
-libxi6

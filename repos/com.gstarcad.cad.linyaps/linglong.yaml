@@ -9,6 +9,7 @@ package:
 command:
   - /opt/apps/com.gstarcad.cad.linyaps/files/bin/start.sh
 base: com.uniontech.foundation/20.0.1
+runtime: org.deepin.Runtime/20.0.1
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.gstarcad.cad/com.gstarcad.cad_24.1_amd64.deb
@@ -64,6 +65,60 @@ sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
     digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libi/libinput/libinput10_1.12.6.2-1+dde_amd64.deb
+    digest: dc29809f40278b4a80c24d819d2ce669737b2d11a882aa8cbd59649110999955
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libe/libevdev/libevdev2_1.6.0+dfsg-1_amd64.deb
+    digest: e25abaf6ca46022c0b62cc5eed3a91818b7e7c2b26696a765c3fa784f8fb3564
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mtdev/libmtdev1_1.1.5.1-1+rebuild_amd64.deb
+    digest: e25e1cb21990d0148091edba4acb9c374612a59f1a61247c9e1b164c04ea2ccd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libw/libwacom/libwacom2_0.32-1_amd64.deb
+    digest: 470f3ef98419a485d32a521ce79f0401438ff9324816e92d4ac444dd4ac6e3bb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libg/libgudev/libgudev-1.0-0_232.1-1+dde_amd64.deb
+    digest: 8e4d9002fc937c8aef15b4c5a91f47c81fdee97aeb7a97fe69b6e215ed7b6bb9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libw/libwacom/libwacom-common_0.32-1_all.deb
+    digest: 654f6d07188516ec4c566bccca0b65aca9f8b95b32e4338e66847237e2266fa6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libi/libinput/libinput-bin_1.12.6.2-1+dde_amd64.deb
+    digest: 113c65e67f86df09e1373a4b6a9f7ce7ebf8cac31a0f3abfa2491fc35aabb3f1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/d/double-conversion/libdouble-conversion1_3.1.0.2-1+dde_amd64.deb
+    digest: 7a306a37a9952dbe292ec97a0b53c069f5cbb6ea5346f7f1acfc08a65fa968cf
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pcre2/libpcre2-16-0_10.32.2-deepin1_amd64.deb
+    digest: b8511f509b2878ab25321abd71183bbb18cc37e2d75e8c4071919811082de7d2
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1_amd64.deb
+    digest: a498ff92806369ab8fdc0ac218185fe148288b840443409b665b05cdc7bf2c9e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-image/libxcb-image0_0.4.0.1-1+rebuild_amd64.deb
+    digest: f54347e90eaf15ff0e85847d226ac82a6960d2a64f14b911dc8e1916165610d5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util/libxcb-util0_0.3.8.1-1+rebuild_amd64.deb
+    digest: d571cf09a867aa8a9d416e3bfdfdbb53dae1f97d0f499cc4f7ef9124b953f9ca
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0.1-1+rebuild_amd64.deb
+    digest: a8656090cd2971bff2d6596aafa14dff59c8d5e627f8564370ed2d210505b55c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9.1-1+rebuild_amd64.deb
+    digest: 474b363a06dbbafa4a40b965ed2f066d46fa474aa3fc0a9f6da44ec1e2e240bb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_0.8.2-1_amd64.deb
+    digest: 387f2e36c582b123f7988f250f3ab739a7f3a54e5b507d4e5fa445cd1c43f61a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/ust/liblttng-ust0_2.10.3-1_amd64.deb
+    digest: 17065595393a66ff990d45194bccdb86b402f281f03069b44dd88300faae3ef7
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libu/liburcu/liburcu6_0.10.2.2-1+dde_amd64.deb
+    digest: 8857d914598cbfa71e841ef70b1b7f291e68654fa9af2cdebe62b68bd0cbf23a
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/u/ust/liblttng-ust-ctl4_2.10.3-1_amd64.deb
+    digest: e064865f36c136bacd020bea4e138b210f0f2b4de4256bc56a542297516640cc
 build: >-
   export LINGLONG_RAW_ID="com.gstarcad.cad"
 

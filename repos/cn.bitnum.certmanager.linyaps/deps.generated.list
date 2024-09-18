@@ -27,5 +27,3 @@ libxcb-icccm4
 libxcb-keysyms1
 libxkbcommon-x11-0
 libqt6network6
-dde-qt6xcb-plugin
-libqt6opengl6

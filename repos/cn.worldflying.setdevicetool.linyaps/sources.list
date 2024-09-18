@@ -1,2 +1,3 @@
 deb [arch=amd64] https://pro-store-packages.uniontech.com/appstore eagle-pro appstore
 deb [arch=amd64] https://professional-security.chinauos.com  eagle/1070 main contrib non-free
+#deb [arch=amd64] https://professional-packages.chinauos.com/desktop-professional eagle main contrib non-free
