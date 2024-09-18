@@ -1,12 +1,12 @@
+libQt5EglFSDeviceIntegration.so.5
+libQt5Quick.so.5
+libQt5WaylandClient.so.5
+libQt5WebSockets.so.5
 libinput.so.10
 libjasper.so.1
 libmtdev.so.1
 libpulse-mainloop-glib.so.0
 libpulse.so.0
-libQt5EglFSDeviceIntegration.so.5
-libQt5Quick.so.5
-libQt5WaylandClient.so.5
-libQt5WebSockets.so.5
 libxcb-icccm.so.4
 libxcb-image.so.0
 libxcb-keysyms.so.1
