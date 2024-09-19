@@ -32,6 +32,7 @@ if [ "$CMD" == "resolve" ]; then
 fi
 
 if [ "$CMD" == "build" ]; then
+    ll-helper update --from "${BASE}" --cache-dir ${CACHE_DIR}
     ll-builder build
     ll-builder export -l
 fi

@@ -8,54 +8,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 100
 
-      - name: linglong-builder-repo
-        id: linglong-builder-repo
+      - name: Generate Cache Key
+        id: cache-key
+        run: |
+          hash=$(cat yarn.lock | sha256sum | cut -d' ' -f1)
+          time=$(date +%Y-%m-%d)
+          key=${{ runner.os }}-${hash}-${time}
+          echo "key=$key" >> $GITHUB_OUTPUT
+          
+      - name: Pull Cache
+        id: builder-cache
         uses: actions/cache@v4
         with:
           path: |
-            ~/.cache/linglong-builder/repo/
-          key: ${{ runner.os }}-linglong-builder-repo
-
-      - name: linglong-builder-deepin-Runtime
-        id: linglong-builder-deepin-Runtime
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/linglong-builder/layers/main/org.deepin.Runtime
-          key: ${{ runner.os }}-linglong-builder-deepin-Runtime
-
-      - name: linglong-builder-deepin-base
-        id: linglong-builder-deepin-base
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/linglong-builder/layers/main/org.deepin.base
-          key: ${{ runner.os }}-linglong-builder-deepin-base
-
-      - name: linglong-builder-deepin-foundation
-        id: linglong-builder-deepin-foundation
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/linglong-builder/layers/main/org.deepin.foundation
-          key: ${{ runner.os }}-linglong-builder-deepin-foundation
-
-      - name: linglong-builder-uniontech-foundation
-        id: linglong-builder-uniontech-foundation
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/linglong-builder/layers/main/com.uniontech.foundation
-          key: ${{ runner.os }}-linglong-builder-uniontech-foundation
-
-      - name: linglong-helper-cache
-        id: linglong-helper-cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/linglong-helper
-          key: ${{ runner.os }}-linglong-helper-cache
+            ~/.cache/linglong-builder/
+            ~/.cache/linglong-helper/
+            node_modules
+          key: ${{steps.cache-key.outputs.key}}
       - name: install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
@@ -65,8 +37,7 @@ jobs:
           sudo apt update
           sudo apt install linglong-builder linglong-box linglong-bin
           ll-cli --version
-
-      - name: cache
+      - name: Build Cache
         run: |
           export REPO_ROOT=$(pwd)/repos
           export CACHE_DIR=~/.cache/linglong-helper

@@ -19,7 +19,14 @@ build com.uniontech.foundation &
 pid1=$!
 build org.deepin.foundation &
 pid2=$!
+build org.deepin.foundation.v20 &
+pid3=$!
+build org.deepin.base &
+pid4=$!
 
-wait $pid1 && wait $pid2
+wait $pid1
+wait $pid2
+wait $pid3
+wait $pid4
 
 echo 缓存已就绪
