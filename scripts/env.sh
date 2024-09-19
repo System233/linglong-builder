@@ -1,6 +1,7 @@
 #!/bin/bash
 
-export PATH=$PATH:$(dirname $(readlink -f "$BASH_SOURCE"))
+DIR=$(dirname $(readlink -f "$BASH_SOURCE"))
+export PATH=$PATH:$DIR
 
 alias "llb=ll-builder build"
 alias "llr=ll-builder run"
@@ -17,9 +18,12 @@ alias "llcp=ll-cli ps"
 alias "llcs=rm linglong/sources/*.deb"
 
 alias "llu=ll-helper update --cache-dir ~/.cache/linglong-helper"
+alias "llrs=ll-helper resolve --cache-dir ~/.cache/linglong-helper --from '$DIR/../assets'"
 alias "llf=apt-cli find --cache-dir ~/.cache/linglong-helper -f sources.list"
 
 alias "llel=ll-builder export -l"
 alias "lltest=ll-cli uninstall $(basename $(readlink -f .));ll-cli install $(basename $(readlink -f .))*_binary.layer"
 
 alias "llt=test.sh"
+
+export DISPLAY=${DISPLAY:-:0}

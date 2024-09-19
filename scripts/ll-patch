@@ -1,0 +1,11 @@
+#!/bin/bash
+DIR=$(dirname $0)
+ASSETS_DIR=$DIR/../assets
+NAME=patch_$1.sh
+if [ -e "$ASSETS_DIR/$NAME" ]; then
+    echo 添加补丁$NAME
+    cp -af $ASSETS_DIR/$NAME .
+    echo -e "\n./$NAME" >>./install_patch.sh
+else
+    echo 找不到补丁$1 >&2
+fi

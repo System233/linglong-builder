@@ -1,8 +1,8 @@
 {
   "type": "module",
   "dependencies": {
-    "apt-cli": "^0.1.10",
-    "linglong-helper": "^0.3.7"
+    "apt-cli": "^0.1.11",
+    "linglong-helper": "^0.3.8"
   },
   "devDependencies": {
     "@types/node": "^22.5.5"
