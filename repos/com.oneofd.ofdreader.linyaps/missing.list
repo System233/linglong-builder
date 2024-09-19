@@ -1,7 +1,7 @@
+libQt5Concurrent.so.5
+libQt5Xdg.so.3
+libQt5XdgIconLoader.so.3
 libdtkcore.so.5
 libdtkgui.so.5
 libmtdev.so.1
-libQt5Concurrent.so.5
-libQt5XdgIconLoader.so.3
-libQt5Xdg.so.3
 libxcb-util.so.0
