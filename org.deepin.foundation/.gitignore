@@ -6,3 +6,4 @@ linglong
 *.layer
 *.uab
 *.uabBuild
+extraLibs.uab.yaml

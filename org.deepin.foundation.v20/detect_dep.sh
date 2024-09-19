@@ -1,0 +1,1 @@
+../assets/detect_dep.sh

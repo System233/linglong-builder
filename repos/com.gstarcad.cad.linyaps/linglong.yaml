@@ -119,6 +119,12 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/u/ust/liblttng-ust-ctl4_2.10.3-1_amd64.deb
     digest: e064865f36c136bacd020bea4e138b210f0f2b4de4256bc56a542297516640cc
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/strace/strace_4.26-0.2_amd64.deb
+    digest: ed242d5d3dec7a228cd20ca3ee5f5d614adf921b6b67c77155c702c14ee80ed5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libu/libunwind/libunwind8_1.2.1.1-1+dde_amd64.deb
+    digest: aaa1817cad456a5d6db59fe3819f2fd025ab21e1dfff5d16ae6dde331d8b85ca
 build: >-
   export LINGLONG_RAW_ID="com.gstarcad.cad"
 

@@ -6,7 +6,7 @@ package:
   kind: app
   description: DESC
 command: [echo, hello]
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 runtime: org.deepin.Runtime/20.0.1
 build: |
   echo hello

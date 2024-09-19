@@ -226,3 +226,5 @@ libxkbcommon-x11-0
 liblttng-ust0
 liburcu6
 liblttng-ust-ctl4
+strace
+libunwind8
