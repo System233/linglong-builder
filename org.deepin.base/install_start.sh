@@ -1,0 +1,1 @@
+../assets/install_start.sh

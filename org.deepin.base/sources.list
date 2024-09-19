@@ -1,0 +1,2 @@
+deb [arch=amd64] https://com-store-packages.uniontech.com/appstorev23 beige appstore
+deb [arch=amd64] https://community-packages.deepin.com/beige beige main
