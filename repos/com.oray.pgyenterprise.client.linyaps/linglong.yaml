@@ -16,7 +16,7 @@ package:
     local area networks of local branches.
 command:
   - /opt/apps/com.oray.pgyenterprise.client.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.oray.pgyenterprise.client/com.oray.pgyenterprise.client_1.1.0.47994_amd64.deb

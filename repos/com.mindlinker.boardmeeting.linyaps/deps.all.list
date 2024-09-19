@@ -8,6 +8,7 @@ libcairo2
 libfontconfig1
 libexpat1
 libfreetype6
+libbrotli1
 libpng16-16
 zlib1g
 libuuid1
@@ -43,7 +44,7 @@ libwebp6
 libzstd1
 shared-mime-info
 libxml2
-libicu63
+libicu70
 libstdc++6
 libgdk-pixbuf2.0-common
 libgtk-3-0
@@ -133,18 +134,14 @@ libargon2-1
 libdevmapper1.02.1
 dmsetup
 libjson-c3
-libidn11
+libfdisk1
 libip4tc0
 libkmod2
 liblz4-1
 libseccomp2
 util-linux
-fdisk
-libfdisk1
-libncursesw6
-libtinfo6
+util-linux-extra
 libsmartcols1
-login
 mount
 libpam-runtime
 systemd-sysv
@@ -167,6 +164,7 @@ openssl
 ca-certificates-uniontech
 libfdk-aac1
 libgl1-mesa-glx
+mesa-config
 libgl1
 libglvnd0
 libglx0
@@ -180,6 +178,7 @@ libxcb-dri3-0
 libxcb-glx0
 libxcb-present0
 libxcb-sync1
+libxcb-xfixes0
 libxshmfence1
 libxxf86vm1
 libgl1-mesa-dri
@@ -189,10 +188,12 @@ libpciaccess0
 libdrm-nouveau2
 libdrm-radeon1
 libelf1
-libllvm7
+libllvm13
 libedit2
+libtinfo6
 libsensors5
 libsensors-config
+libvulkan1
 libnotify4
 libsm6
 libice6
@@ -222,6 +223,7 @@ libslang2
 libavc1394-0
 libraw1394-11
 libcaca0
+libncursesw6
 libdv4
 libflac8
 libgudev-1.0-0
@@ -234,6 +236,7 @@ libshout3
 libspeex1
 libtag1v5
 libtag1v5-vanilla
+libicu63
 libtwolame0
 libv4l-0
 libv4lconvert0
@@ -245,7 +248,6 @@ libegl1
 libegl-mesa0
 libgbm1
 libwayland-server0
-libxcb-xfixes0
 libenchant1c2a
 aspell-en
 aspell
@@ -258,11 +260,11 @@ libhunspell-1.7-0
 libgstreamer-gl1.0-0
 libharfbuzz-icu0
 libhyphen0
+libopengl0
 libopenjp2-7
 libsecret-1-0
 libsecret-common
 libwebpdemux2
 libwoff1
-libbrotli1
 libxslt1.1
 libxt6

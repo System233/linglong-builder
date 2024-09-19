@@ -7,7 +7,7 @@ package:
   description: 软通桥 A system that is compatible with Windows applications on Chinese OS
 command:
   - /opt/apps/xcb-app.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 runtime: org.deepin.Runtime/20.0.1
 sources: []
 build: >-

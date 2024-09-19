@@ -1,6 +1,1 @@
-libpulse-simple.so.0
-libpulse.so.0
-libsndio.so.7.0
-libva-drm.so.2
-libva.so.2
-libvdpau.so.1
+libglut.so.3

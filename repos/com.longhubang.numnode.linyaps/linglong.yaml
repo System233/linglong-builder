@@ -107,6 +107,9 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/libg/libglvnd/libglvnd-core-dev_1.1.0-1_amd64.deb
     digest: 2bae9473e270936a87bc4d7756dfb40643c48c77520d9743b0e1ed92f65ba52a
   - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mesa/libgl1-mesa-dri_19.2.6.3-1_amd64.deb
+    digest: ede691bbe199f4853186ac58509aa845708dd5227b26fef126582f4c3869674f
+  - kind: file
     url: https://professional-security.chinauos.com/pool/main/libx/libx11/libx11-xcb-dev_1.6.12.4-deepin1_amd64.deb
     digest: 0d83983c0ace325afad0cc5404d33a45e3d3b8210e4429682547978b28668899
   - kind: file
@@ -235,6 +238,9 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/p/python-defaults/python2_2.7.16-1_amd64.deb
     digest: d412efde85b1bbdec65f7a4f4f3fc9754eb33b4712218d51eaaa8f6b950613e0
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mesa/libgl1-mesa-glx_19.2.6.3-1_amd64.deb
+    digest: a1c196b874cf5f5e72ecdb4346a7c039e4de8a73b400cec93ff0ddd7ba3e8cd6
 build: >-
   export LINGLONG_RAW_ID="com.longhubang.numnode"
 

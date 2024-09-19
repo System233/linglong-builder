@@ -7,7 +7,7 @@ package:
   description: BiliBili For Linux.  BiliBili For Linux. This version is unofficial.
 command:
   - /opt/apps/io.github.msojocs.bilibili.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/i/io.github.msojocs.bilibili/io.github.msojocs.bilibili_1.14.0-2_amd64.deb

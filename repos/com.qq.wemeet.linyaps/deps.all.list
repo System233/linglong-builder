@@ -16,7 +16,6 @@ libglib2.0-0
 libffi6
 libmount1
 libblkid1
-libuuid1
 libselinux1
 libpcre3
 zlib1g
@@ -29,6 +28,7 @@ libice6
 x11-common
 lsb-base
 libsm6
+libuuid1
 libsndfile1
 libflac8
 libogg0
@@ -48,6 +48,7 @@ libcairo2
 libfontconfig1
 libexpat1
 libfreetype6
+libbrotli1
 libpng16-16
 fontconfig-config
 debconf
@@ -68,7 +69,7 @@ libwebp6
 libzstd1
 shared-mime-info
 libxml2
-libicu63
+libicu70
 libstdc++6
 libgdk-pixbuf2.0-common
 libgtk-3-0
@@ -151,18 +152,14 @@ libargon2-1
 libdevmapper1.02.1
 dmsetup
 libjson-c3
-libidn11
+libfdisk1
 libip4tc0
 libkmod2
 liblz4-1
 libseccomp2
 util-linux
-fdisk
-libfdisk1
-libncursesw6
-libtinfo6
+util-linux-extra
 libsmartcols1
-login
 mount
 libpam-runtime
 systemd-sysv

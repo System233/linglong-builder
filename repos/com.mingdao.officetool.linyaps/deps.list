@@ -1,2 +1,5 @@
 com.mingdao.officetool
 libqt5webenginewidgets5
+libffi6
+libwebp6
+libicu73

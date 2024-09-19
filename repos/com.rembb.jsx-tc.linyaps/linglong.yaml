@@ -8,62 +8,326 @@ package:
     《记上学三个课堂》不依赖专业回声消除设备、录播设备、跟踪相机即可完美实时导播需求，具有回声消除度高、划框极速定位、本地录像剪裁一体，极速生成MP4的鲜明特征，用于交互、录播类三个课堂应用。
 command:
   - /opt/apps/com.rembb.jsx-tc.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/j/jsx-tc/com.rembb.jsx-tc_2.3.1.17_amd64.deb
-    digest: f50c7c44797cc6a8f6006697e4d7b48cb4f6ae0ccc262a0278822da9c66fefd7
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libavcodec-extra58_4.4.2-1_amd64.deb
+    digest: 0687c4de610cb64f2463445f5eee9a7c05a69031f1f74e27d12a1f06ff76e8c5
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
-    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/a/aom/libaom0_1.0.0.1-1+dde_amd64.deb
+    digest: 3c4037b8a55b8fe4811fd974762eba261856e31a76f40e1035df51e2c7320991
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
-    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/a/aribb24/libaribb24-0_1.0.3-2_amd64.deb
+    digest: f8fb01fba326b6a7296add6120522bbdca704b290afd36fdeb384f99231cbc26
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
-    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libavutil56_4.4.2-1_amd64.deb
+    digest: 89496ee295d2a4825b9184497aecfdb467b9f137d0daf7ad5cbe36999cf36630
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
-    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/intel-mediasdk/libmfx1_21.1.0-1_amd64.deb
+    digest: 42553ee6fb75be2c618525d55a24f183d7a009e833d9b86c971df15ed55d7780
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
-    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libva/libva2_2.14.0-1_amd64.deb
+    digest: 8ab09a93d042fc50ff28c36c5026f65c74a9ff365f8a2abc5d3ba25300e8f790
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
-    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libva/libva-drm2_2.14.0-1_amd64.deb
+    digest: dbf16289f772f6c992a262bafa2329b1225d50292d1dcd6ce4ea93bba0797dea
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
-    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libva/libva-x11-2_2.14.0-1_amd64.deb
+    digest: a4b8002f8617414975d17cbbe58aa1c617ba61fa3ddc0d78a02a2f444de47b87
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
-    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvdpau/libvdpau1_1.1.1-10_amd64.deb
+    digest: 0a7fde6fb66ebda340914ddcc716d17f622af3e38f897678a1307d9477ee25e5
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
-    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/ocl-icd/ocl-icd-libopencl1_2.2.12-2_amd64.deb
+    digest: c60b454d0c5900c6b844d2c74f2785a8d9a1684aa3bc31451e762b53a2def853
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
-    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
-    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/c/codec2/libcodec2-0.8.1_0.8.1-2_amd64.deb
+    digest: d313482fb33d4639a41e06407b75e05ebaba639b1d3ecc4ee25b43d3578855da
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
-    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/d/dav1d/libdav1d5_0.9.2-1_amd64.deb
+    digest: 28d7533a59b5b1aab8547caa7f46642fae9147095c970061e01ac6405dcc3df1
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
-    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libg/libgsm/libgsm1_1.0.18-2_amd64.deb
+    digest: 7a2526bced6cb6de1830ab02150bc84be0756b2d7945274bee1bca24aa0cd561
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
-    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/lame/libmp3lame0_3.100.1-1+rebuild_amd64.deb
+    digest: 123d1042e02a70b559e1d47b3272b5ef4ecb8819e5fd24ad00f3cc4f793bdbbc
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
-    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/opencore-amr/libopencore-amrnb0_0.1.3.1-1+rebuild_amd64.deb
+    digest: ff86cd72362a305e2a7a9f43aadeeac0d75824267a6eb0f774f72d3c9568b4f6
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
-    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/opencore-amr/libopencore-amrwb0_0.1.3.1-1+rebuild_amd64.deb
+    digest: 75ad20cbe1357258b53772ebe54cac270e31350147249d1050499a37fa5d7dc5
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
-    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/openjpeg2/libopenjp2-7_2.3.0.5-2+deb10u2+dde_amd64.deb
+    digest: bcd2eb22c5b98139982382afde4c0d4e933308878b1da3e4b2ac9ae5a132faad
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/opus/libopus0_1.3.1-0.1_amd64.deb
+    digest: 0a2e5c04566a7753dd82ceab31df3be945e06336bae10732656eb1c7ea32ca25
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
+    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/shine/libshine3_3.1.1-2_amd64.deb
+    digest: 31edca62da03d6a5390e74cc60aad25a26f5bd10a73c6881cdb47f521d363f6a
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/snappy/libsnappy1v5_1.1.7-1_amd64.deb
+    digest: 2fb28e83a9d69034ef729d32f1a4ed0ff075c944449264a97ed91f1ea9595af5
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/speex/libspeex1_1.2.1-1+rebuild_amd64.deb
+    digest: 13a890c207b1c56e8bdfb185700156463bf7b6144e837a9301657ee84ea5fa6f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libswresample3_4.4.2-1_amd64.deb
+    digest: 6f9d40543d62e42a7b74bb821cc8c5b9fc5bc9c200e91b6bdd546164f0a881c9
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libsoxr/libsoxr0_0.1.2-3_amd64.deb
+    digest: c5f8f03143f48f9b50e5f2b38ad6dd717fbcc79d5add1598515519f42df24afd
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libt/libtheora/libtheora0_1.1.1+dfsg.1-15_amd64.deb
+    digest: 810420dc717e295115576639b8e95d65f5938fb6c2a00aa95b63ce1d6cbd4a66
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libo/libogg/libogg0_1.3.2.1-1+rebuild_amd64.deb
+    digest: 29bcb4e5c68648da6016e42a019e1d37b46e9829451d1b7414f71ce6d059eb0b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/t/twolame/libtwolame0_0.3.13-4_amd64.deb
+    digest: e7260c1012b5bcbc6f39652f9cc6e37707946d5859358745c8fb4471130339c7
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/v/vo-amrwbenc/libvo-amrwbenc0_0.1.3.1-1+rebuild_amd64.deb
+    digest: 699864b758ef0dd94feb7aeadba534ad3c22f5359fab8ae528de1aade357c52d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvorbis/libvorbis0a_1.3.6-2_amd64.deb
+    digest: 58ceadc9fcdb5a18c9092e0ab0b65130063132712b81fee72e14ad3d367ca172
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvorbis/libvorbisenc2_1.3.6-2_amd64.deb
+    digest: dc6ba53bfba31f24e5c8a4a54786747f1ca60855d4351c3de5bd5a1f36d292fa
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvpx/libvpx5_1.7.0.2-1+dde_amd64.deb
+    digest: e87651f7839ea8c9ad5e797698835f8feceeabff38145b2817c8e8ce8d2caabd
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libw/libwebp/libwebpmux3_0.6.1.2-1+dde_amd64.deb
+    digest: ab2f32bca36cccb76e40fcea851a453836fef05fa7794344dc56e1068ce550fa
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/x/x264/libx264-160_0.160.3011+gitcde9a93-3_amd64.deb
+    digest: 04c85febcc85e3f69f8678bcc5389e45c95eb32909ecc4e4a3731b5cf57db5dc
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/x/x265/libx265-192_3.4-2_amd64.deb
+    digest: a5d2f544eda03555ae88d8af33930089649733107d75c888a4d3aa908265cf24
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/n/numactl/libnuma1_2.0.12-1_amd64.deb
+    digest: 3fa5514eeef47fda7e09aabd5d5108fd7f01f6ce30143d4129fb1c76cdfe8a5e
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/x/xvidcore/libxvidcore4_1.3.5-1_amd64.deb
+    digest: cb5711704119cea06b2410f205499dd34b5eeafa761a5062df565229f5ab5132
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/z/zvbi/libzvbi0_0.2.35-16_amd64.deb
+    digest: b6fd33cba43784a9ae6beebca689b44ed2273770826ac4fa1ed4338b03c1e18e
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/z/zvbi/libzvbi-common_0.2.35-16_all.deb
+    digest: 5eea3f86857626ce4371a8a70ba9ce89f1abfc47ed033d1de12ebc0c7d1dd3ea
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libavdevice58_4.4.2-1_amd64.deb
+    digest: 54c99328e31f4708361cbcbff47cb622e3ec5b6f6cc63e9948f9f154bf1b5dc4
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/liba/libavc1394/libavc1394-0_0.5.4-5_amd64.deb
+    digest: 8d56a4234ca7372a09f2e282ca7af1c0e4cb5d920dda8adeae55fa6f43948169
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libr/libraw1394/libraw1394-11_2.1.2.1-1+rebuild_amd64.deb
+    digest: ff1ddda100bdbf3dad8b8586653c5e5ff2d11302499cde11dbcfa71cfcb6a4d6
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libavfilter-extra7_4.4.2-1_amd64.deb
+    digest: 2fecac7bb13dac86d38ec8cd6f0bf6649d5e9c58fc38ba9830ee6f383582809c
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/liba/libass/libass9_0.14.0-2_amd64.deb
+    digest: adca33cfc6875764e880ff7e3271e7de8ff6e1e5a0be695334e55e5d7f3c8323
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libavformat-extra58_4.4.2-1_amd64.deb
+    digest: 7a91dea85667397506e0eca64cf38006f5110c8700e5b2f5fa81e7321506a003
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libb/libbluray/libbluray2_1.1.0-1_amd64.deb
+    digest: c836aca7da86ec39b655c0ffd2e4e13d498bd2a88b3f6c4df64eef0d5b1270bd
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/c/chromaprint/libchromaprint1_1.4.3-3_amd64.deb
+    digest: 00a9ca9d30811af8c619eabd3af368a5a8ae1d9c5939641a8cc6ef88373c3f27
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/game-music-emu/libgme0_0.6.2-1_amd64.deb
+    digest: 46f15b6152b5733be0e6c80237a956951d7064f0ab58bfac913274587a7ce0f5
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libo/libopenmpt/libopenmpt0_0.4.3.2-1+dde_amd64.deb
+    digest: 1adfb0a1ac6cf2734542e37092d79cc3cd4ded29e1a4348c55186f980cc6b97f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/m/mpg123/libmpg123-0_1.25.10-2_amd64.deb
+    digest: fb4b7f428842121b0dd79abbb213fb5608526f51ad7de62e8f82f64bd206672b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvorbis/libvorbisfile3_1.3.6-2_amd64.deb
+    digest: 1515ce5de5deaabd71654649d229fbe543c84f7aec27eb7d65f1b3dec72420e3
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libr/librabbitmq/librabbitmq4_0.9.0-0.2_amd64.deb
+    digest: a240bf1a9aba51acf086d1f0cbed4c35d05c581053f530ed806c48dc312ba784
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/srt/libsrt1.4-gnutls_1.4.2-2_amd64.deb
+    digest: 8f87ed717c864ff78d08e0d372546045f03c59027bfee0408092c870baaf353f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libssh/libssh-gcrypt-4_0.8.7.3-1+dde_amd64.deb
+    digest: 9eb6cad505acf0e5f794a250298727bd0067d037b02491973226fa629c71beea
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/z/zeromq3/libzmq5_4.3.1.2-1_amd64.deb
+    digest: fb64aaf33578d8afe753233263c7c2b805037f8b2aa06eb26d62ed23fbc637c0
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/n/norm/libnorm1_1.5.8+dfsg2-1_amd64.deb
+    digest: 8831e9e0e74eb6e618e6ca4f02bf0a6fd415c135ef6d9f49e1f3744e31ece154
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libp/libpgm/libpgm-5.2-0_5.2.122~dfsg-3_amd64.deb
+    digest: 08143209802c5a8de27b55fe9589da5570e508c4027aa0dc3d894bd579ad2039
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libsodium/libsodium23_1.0.17-1_amd64.deb
+    digest: afa7c52fb6509e70d32438ec76e27f48fe0b10f10ceaac098b738f27fa19c317
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libb/libbs2b/libbs2b0_3.1.0+dfsg-2.2+apricot_amd64.deb
+    digest: 7c2a641a2e4628bb17ccb2ccb50a4e8eaab81fb0e4cc647ebb5b92d3515a64fa
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/flite/libflite1_2.1-release-3_amd64.deb
+    digest: 7818ffa7889ad01398f283f425059d38935d3b2669d3c9b89130b63810611a9b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/lilv/liblilv-0-0_0.24.2~dfsg0-2_amd64.deb
+    digest: b678c201a4b1db7a1faa4fc069dd1a3bbf38569c2682c9ff5b4c9087f7367c7b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/serd/libserd-0-0_0.28.0~dfsg0-1_amd64.deb
+    digest: 1d9b8c70bad4f4a8a5a6c79977bcfd05fc0c43e055a731f509e57ff397f4a20e
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/sord/libsord-0-0_0.16.0.1-1+rebuild_amd64.deb
+    digest: 0d42478c68d6f9f2a503d0646cdd78a37f89d17f6e2431e4a4ad16c2db60ed4f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/sratom/libsratom-0-0_0.6.0~dfsg0-1+apricot_amd64.deb
+    digest: a1e09f1b8647e265bc7e60bc51d7172bf1d656f40bf89b9e571f2c382156713c
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libm/libmysofa/libmysofa1_1.0~dfsg0-2_amd64.deb
+    digest: ea0541b33695b7bab0bec5e813e73515c1018762df9e3c46464b9e0703233801
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pocketsphinx/libpocketsphinx3_0.8+5prealpha+1-14_amd64.deb
+    digest: ab7e10f08291bfa9d870ace9196e3ef2fab37545fc7cec68447c64719e39a9a4
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/sphinxbase/libsphinxbase3_0.8+5prealpha+1-3+b1_amd64.deb
+    digest: ff324eaa06e604d698026258fad3fc11dc845c399e3a0806b10b5ad1080b1391
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/lapack/libblas3_3.8.0.1-2+dde_amd64.deb
+    digest: 9fecc9913ef6127585fee80c6a03168a5fb414b7913d43fe3b8f23e81800fd84
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libgfortran5_8.3.0.3-3+rebuild_amd64.deb
+    digest: c71c8a6be27b15bdcb4f969e22ad8d8201408271df46a62fb7c246178efc4b4c
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libquadmath0_8.3.0.3-3+rebuild_amd64.deb
+    digest: 386fe084e1c95e0fbf30bbdbc1be886b178dc40226daa1ad16b160902ea34687
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/lapack/liblapack3_3.8.0.1-2+dde_amd64.deb
+    digest: 254b077d6009a1df40804de8a07e979de71fefe5e4d64640c7587756a0946e49
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pulseaudio/libpulse0_14.2.3-deepin1_amd64.deb
+    digest: 997860325f33c3b276e4a5cd3731c27b20bcf72809902de81f62da8525c66368
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/liba/libasyncns/libasyncns0_0.8-6+apricot_amd64.deb
+    digest: de805cf3264f385e10c99745700e1ce5e7c23c37b1437ec90903c7b70f8c4ebf
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libsndfile/libsndfile1_1.0.28.3-1+deepin_amd64.deb
+    digest: a3c358e16e60c5e012d1e0c1feb664d877948fe12814fc45b42dc28423255430
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/flac/libflac8_1.3.2.2-3+dde_amd64.deb
+    digest: 656e2eecc4b3d99469f5e946d1e399f51bf8d7c27e7a4c05465bf666668a32a6
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/t/tcp-wrappers/libwrap0_7.6.q-28_amd64.deb
+    digest: 545d24beda62aa37ac22af697dbc43c9fb87d718aeefd3664309759f716ea0ac
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libpostproc55_4.4.2-1_amd64.deb
+    digest: 23fd5efbe51c899d3ed05e2926e570c1cda4fe4274f85e0fedd88aa32a317179
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/rubberband/librubberband2_1.8.1-7+apricot_amd64.deb
+    digest: afc437ed09f4502b0889b2512c5573dca8ed32ba86bd49366d152fc96bcf5c1d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/fftw3/libfftw3-double3_3.3.8-2_amd64.deb
+    digest: 8a6006f28ee3b17fd55dedb69ce3f20c1daa8bdc5f7fb77d9e937a25569f812f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libsamplerate/libsamplerate0_0.1.9.1-1+deepin_amd64.deb
+    digest: 743544d2718be1dd19aa77ad8b787997ba0dfeab8f6662f9da05f9d50e997035
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libswscale5_4.4.2-1_amd64.deb
+    digest: 8ecd247fbf42bf917239426081cc2628b25ebac95d232c34bb51a7d40fcd58b5
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/t/tesseract/libtesseract4_4.0.0-2_amd64.deb
+    digest: bb846131259f83055c5bf7cb8a5248ea91fa73bd4415e9b079cd017083034fa7
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/leptonlib/liblept5_1.76.0-1_amd64.deb
+    digest: fd136eb4907d04382f46bdf75a4fadd8d589a6bd6eb19609c186a1c774cf98ca
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/giflib/libgif7_5.1.4.3-deepin1_amd64.deb
+    digest: 66306157d31bcdf8186a791686749b6218e2617e945f3482df2bdb333a3f374d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvidstab/libvidstab1.1_1.1.0-2_amd64.deb
+    digest: 423ec68b75a6ccce821b6a9cffe5d4f8c9ea83997b91f6ac358f9b698053c721
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/z/zimg/libzimg2_3.0.3+ds1-1_amd64.deb
+    digest: d124a12bfef44bac7c2e47d30788e3480c58d5e19e8809317fe64630c758b445
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libc/libcaca/libcaca0_0.99.beta19.2-deepin1_amd64.deb
+    digest: c4cdf0d85e49c2ea6a7015f7dda890f036ef388e05824a7a96194f572bac4c70
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/slang2/libslang2_2.3.2-2_amd64.deb
+    digest: ad7f4717f04c4780e9acce56cdcfe757f1d46fbad718775985f95956216c9915
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libc/libcdio-paranoia/libcdio-cdda2_10.2+0.94+2-4_amd64.deb
+    digest: 43fb2a4bd4b6020468afa586b979de988e3417904236e261301e854c49af4649
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libc/libcdio/libcdio18_2.0.0-2_amd64.deb
+    digest: 25423bc20e59faa635b4cd8d5e979eb8744dbc0a2855675fb8fe4850bbecc7f2
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libc/libcdio-paranoia/libcdio-paranoia2_10.2+0.94+2-4_amd64.deb
+    digest: 1996725c5b0309af6eb78573e4afbf5f43f91c6eb890a97ada33c3aca499bd17
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libd/libdc1394/libdc1394-25_2.2.6-4_amd64.deb
+    digest: d331ab5b41586c79756fb004ce6b7b42e1e8227eb7f6333f6617f4f459984618
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.22-2_amd64.deb
+    digest: 8a43f6ea6356adcf2067c46f0781372b5b85b632182da19ffa61757703458b1b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/m/mesa/mesa-config_21.3.8.3-1_amd64.deb
+    digest: edda7affd1f8916f4d14151879007a800def64644a2c3c2aae3f888dcd4bce6c
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/llvm-toolchain-13/libllvm13_13.0.1~+rc3-1~exp1_amd64.deb
+    digest: 76a12a863196a1476c2d80e4e9760a1c6b372c5ac6625d192847e839c675c95a
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/v/vulkan-loader/libvulkan1_1.2.162.0-1_amd64.deb
+    digest: eb3e80d6202012ee920926fe1bc15feae18d2e57582e2fdffba9c1ce2ec55f82
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libi/libiec61883/libiec61883-0_1.2.0-3_amd64.deb
+    digest: 175addd498fe454a21dba3c7cf5a5bc09aa72f4e72caf08a73dd404ec26ca584
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/j/jackd2/libjack-jackd2-0_1.9.12~dfsg-2+rb2_amd64.deb
+    digest: 610fd5d3b492400ec07230caaafe1646aea6d2de69dff5daac0d0c29dee78d98
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/openal-soft/libopenal1_1.19.1-1_amd64.deb
+    digest: 3ca1c8b8d1c2b9853f55d8655463755af2cee08dc0bbd310e00f6fe86c1ead9d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/openal-soft/libopenal-data_1.19.1-1_all.deb
+    digest: 9b0dd21d531039891b030a819701ec141d22ee24f4f6aa2ecd4bff71e12c804a
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/sndio/libsndio7.0_1.5.0-3_amd64.deb
+    digest: 3c2c3b73947c70b6d526f6e70457f1c0d5ce9d0b63f1124c3e3ed951a02138ab
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libsdl2/libsdl2-2.0-0_2.0.14+dfsg2-3_amd64.deb
+    digest: 8b309c3ee81cb2c0931590e97bd2c4d0218588b2a91105caa80dbc9e05106525
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libx/libxv/libxv1_1.0.11-1_amd64.deb
+    digest: d77a44d3e78bdd5bf5049e938839020500ba398f4e6e76e8e7640d47d40ae932
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/roaraudio/libroar-compat2_1.0~beta12-2_amd64.deb
+    digest: 51550b75a4fbdc3b46f4c9952f012d564d931bd80b24ecc6fe40abfd42698a2f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/roaraudio/libroar2_1.0~beta12-2_amd64.deb
+    digest: 6939da625327cef1387e9255900c3a14daeea302b96eb36aef3d72e9d8ccaf3b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/speex/libspeexdsp1_1.2.1-1+rebuild_amd64.deb
+    digest: d1f12aa3c3a5234de7fb48ad8ff97d3548cd48adce04223399b2db8acc83bdb2
 build: >-
   export LINGLONG_RAW_ID="com.rembb.jsx-tc"
 

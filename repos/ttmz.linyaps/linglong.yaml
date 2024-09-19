@@ -7,7 +7,7 @@ package:
   description: 天天码字，开心码字
 command:
   - /opt/apps/ttmz.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/t/ttmz/ttmz_1.0.2_amd64.deb

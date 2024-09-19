@@ -1,1 +1,16 @@
-com.rembb.jsx-tc
+com.rembb.jsx-tclibavcodec58
+libavcodec-extra58
+libavdevice58
+libavfilter7
+libavfilter-extra7
+libavformat58
+libavformat-extra58
+libavutil56
+libpulse0
+libroar-compat2
+libsndio7.0
+libswresample3
+libswscale5
+libva2
+libva-drm2
+libvdpau1

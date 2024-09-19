@@ -11,7 +11,7 @@ package:
     (Converted from a rpm package by alien version 8.95kord.)
 command:
   - /opt/apps/com.zlgpy.capturevideov4.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.zlgpy.capturevideov4/com.zlgpy.capturevideov4_4.0.2.2-200806_amd64.deb

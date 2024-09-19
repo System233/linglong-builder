@@ -1,1 +1,17 @@
 com.szca.signproducttool
+libdouble-conversion1
+libpcre2-16-0
+libicu70
+libcurl4
+libldap-2.4-2
+libsasl2-2
+libsasl2-modules-db
+libldap-common
+libnghttp2-14
+librtmp1
+libssh2-1
+procps
+libncurses6
+libprocps7
+strace
+libunwind8

@@ -7,7 +7,7 @@ package:
   description: J2L3x  j2l3x
 command:
   - /opt/apps/j2l3x.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/j/j2l3x/j2l3x_1.8.0_amd64.deb

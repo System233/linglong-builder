@@ -1,1 +1,4 @@
 com.yozosoft.yozo-office.s1
+strace
+lsof
+procps

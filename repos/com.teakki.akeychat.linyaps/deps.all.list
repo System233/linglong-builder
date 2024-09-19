@@ -1,1 +1,13 @@
 com.teakki.akeychat
+libexif12
+libc6
+libgcc1
+gcc-8-base
+libxslt1.1
+libgcrypt20
+libgpg-error0
+libxml2
+libicu70
+libstdc++6
+liblzma5
+zlib1g

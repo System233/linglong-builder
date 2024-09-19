@@ -1,1 +1,5 @@
 com.netchina.ndoffice-stable
+#python3
+#openjdk-8-jre
+libpng12-0
+libsdl1.2debian

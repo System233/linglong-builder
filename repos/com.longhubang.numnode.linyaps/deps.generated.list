@@ -30,6 +30,7 @@ libpthread-stubs0-dev
 libdrm-dev
 libglvnd-dev
 libglvnd-core-dev
+libgl1-mesa-dri
 libx11-xcb-dev
 libxcb-dri3-dev
 libxcb-present-dev
@@ -73,3 +74,4 @@ libpython2.7-stdlib
 libpython-stdlib
 libpython2-stdlib
 python2
+libgl1-mesa-glx

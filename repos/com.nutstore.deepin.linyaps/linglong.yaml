@@ -11,125 +11,116 @@ package:
     Check us out at http://www.jianguoyun.com/
 command:
   - /opt/apps/com.nutstore.deepin.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.nutstore.deepin/com.nutstore.deepin_5.0.1_amd64.deb
     digest: ddf0e7523400606dda219e32eeac1ecc407706c5f9792c28a09d30949eb03058
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libn/libnotify/gir1.2-notify-0.7_0.7.7-4_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libn/libnotify/gir1.2-notify-0.7_0.7.7-4_amd64.deb
     digest: 6387c79378c957674b6a6206166c66d8ee416b40ac832404c8d90ff57b9363b3
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gdk-pixbuf/gir1.2-gdkpixbuf-2.0_2.38.1+dfsg-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gdk-pixbuf/gir1.2-gdkpixbuf-2.0_2.38.1+dfsg-1_amd64.deb
     digest: 64d9e66e272541f790eafeb2a3ddea9868f9e7987e048d290f323cce3aaaa9ed
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gobject-introspection/gir1.2-glib-2.0_1.58.3-2_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gobject-introspection/gir1.2-glib-2.0_1.58.3-2_amd64.deb
     digest: 00a2163fb9649eb56f2227c90b297cf0ba867a7d85504f5936cdc37577a43411
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libn/libnotify/libnotify4_0.7.7-4_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gobject-introspection/libgirepository-1.0-1_1.58.3-2_amd64.deb
+    digest: 68c4170ac95d5152b2d9e1e40525b25b65efaf36470eec0dd4f1c21005b9249f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
+    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libn/libnotify/libnotify4_0.7.7-4_amd64.deb
     digest: f34c48c92e6811a9ec8157539242b72b24615e14944e728ff552ba73f2a2684d
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/n/nautilus/libnautilus-extension1a_3.30.5-2_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/n/nautilus/libnautilus-extension1a_3.30.5-2_amd64.deb
     digest: 93f29e7c2214d2f6ad14d7fc7b1a4f53623d1385263ea67c91046c889231445d
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
-    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
-    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/u/util-linux/util-linux-extra_2.38.1-1.1_amd64.deb
+    digest: 489bc82e8e2d2d00cc216a38240b738958871e94d5cc4a1b7724095adb9e9560
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
-    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gvfs/gvfs-bin_1.38.1.3-deepin3_amd64.deb
+    digest: c9f68c789ee2bb26d44b41009d31f2e19af8ae4bcf39b4923cf1bef33d83c08d
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
-    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gvfs/gvfs-common_1.38.1.3-deepin3_all.deb
+    digest: 9fbbca282d2bee316ef2d40a13b1a1f84bfda9171a34a65b6d012de81d4b4675
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
-    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
-    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
-    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
-    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
-    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
-    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
-    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
-    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
-    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
-    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gvfs/gvfs-bin_1.38.1-5_amd64.deb
-    digest: c21042501cdb58bcce5a4eac3bf0bc52dbca7e32b213d45245bf763b7b976575
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gvfs/gvfs-common_1.38.1-5_all.deb
-    digest: 0b03bcb7bf46245545dfac7da6bcf4c9616fbe7e4667f9e81a64ec1f6db594cb
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/desktop-file-utils/desktop-file-utils_0.23-4_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/d/desktop-file-utils/desktop-file-utils_0.23-4_amd64.deb
     digest: 5c348a6fd46fd8cb27d7e864fda0d6314c7147015083d214f09b9dd7d9e655e4
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/glib2.0/libglib2.0-bin_2.58.3.12-deepin1_amd64.deb
-    digest: 832de8b7ccbe70451ff75199a31c6c4077817bcc164847dd47a9ea07e77cc14e
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/glib2.0/libglib2.0-bin_2.58.3.9-1+deepin_amd64.deb
+    digest: ee17eaa5bd970639115e41b3413429948211d0f41091ef6c43e6fbc13c33c6db
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/w/wget/wget_1.20.1.4-1+eagle_amd64.deb
-    digest: 9721f45303858f6f5642a8e6a97964855a2cec2e100407b22efd6ab85087a44f
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/glib2.0/libglib2.0-data_2.58.3.9-1+deepin_all.deb
+    digest: ba1866506e52f49f80a8497556e4ec98f78f8790504cdffc3325d7f493037755
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/pcre2/libpcre2-8-0_10.32.2-deepin1_amd64.deb
-    digest: b19fb4d07b792896b02663319e49515f568bce4ff439de6e4858efade44e8b0c
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/w/wget/wget_1.20.1-1.1_amd64.deb
+    digest: e8220229a80ae15d19248886964ae315e11254635c7fd502181abb8c074e9c48
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/liba/libappindicator/gir1.2-appindicator3-0.1_0.4.92-7_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pcre2/libpcre2-8-0_10.32.2-deepin1_amd64.deb
+    digest: 1948f51000969088ba5ae466aea3296c74ea8f4475bdd4ec9be03b4c086631e1
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/liba/libappindicator/gir1.2-appindicator3-0.1_0.4.92-7_amd64.deb
     digest: ff48e6aa96b5901698047f38a915390c85b41e14b545068d6309025fd76252b6
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/gir1.2-gtk-3.0_3.24.5.9-1+deepin_amd64.deb
-    digest: 8334841a267a42e9701b8e2a87d0130d1c7ec961945a7d3c6c8b242158df5e50
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gtk+3.0/gir1.2-gtk-3.0_3.24.5.10-1+deepin_amd64.deb
+    digest: 9465161242a082ac1371b113a4eecef1732064c283c7a4d54dccdcf5305eb4d7
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/a/atk1.0/gir1.2-atk-1.0_2.30.0-2_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/a/atk1.0/gir1.2-atk-1.0_2.30.0-2_amd64.deb
     digest: 1c606506d2f73c4f933c231f724f0cd4cf6135fabe00f369f93717ccce435eb4
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gobject-introspection/gir1.2-freedesktop_1.58.3-2_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gobject-introspection/gir1.2-freedesktop_1.58.3-2_amd64.deb
     digest: d7decfe38fa1401f0ab54eb7923882316d71d537da0be3eb1438c6f06e726071
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/pango1.0/gir1.2-pango-1.0_1.42.4-8~deb10u1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pango1.0/gir1.2-pango-1.0_1.42.4-8~deb10u1_amd64.deb
     digest: 36e4f995659cc24f73104042736e7a20a3d2c353385b2e702db44dfb804e5d32
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/liba/libappindicator/libappindicator3-1_0.4.92-7_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/liba/libappindicator/libappindicator3-1_0.4.92-7_amd64.deb
     digest: 08c1afe2022474153ed67d5ded0ab16b040cb0406fe519378a420d35e5451954
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libd/libdbusmenu/libdbusmenu-glib4_18.10.20180917~bzr490+repack1-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libd/libdbusmenu/libdbusmenu-glib4_18.10.20180917~bzr490+repack1-1_amd64.deb
     digest: 902070a16150a97b9cb97f2c54a4bd1ae1a9c172b44108974bf7f8e05e3985e8
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libd/libdbusmenu/libdbusmenu-gtk3-4_18.10.20180917~bzr490+repack1-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libd/libdbusmenu/libdbusmenu-gtk3-4_18.10.20180917~bzr490+repack1-1_amd64.deb
     digest: 80cc224df2faa307c67e6ddd8415c7be8df52d5a5ae05e65c4793fc666bd5e82
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libi/libindicator/libindicator3-7_0.5.0-4_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libi/libindicator/libindicator3-7_0.5.0-4_amd64.deb
     digest: 9139a019c4c147ab4daa61ba833141414e4198ec212ae83e616273f65ff6b1ff
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/pygobject/python3-gi_3.30.4-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pygobject/python3-gi_3.30.4-1_amd64.deb
     digest: 539d7f81bc80152194b2dccdc4559ccf637eb692b260e0e522bb77240f30fd3a
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
     digest: eb7862c7ad2cf5b86f3851c7103f72f8fa45b48514ddcf371a8e4ba8f02a79e5
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7_3.7.3.18-deepin1_amd64.deb
-    digest: aa54af41ccf48a7834c7c70049a279dcaa0ecc97cbe9590606a14cd4571c56ff
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/python3.7_3.7.3.14-1+dde_amd64.deb
+    digest: 2d8225b625bafcbb63d9325a09fe47e4fcedf62a1114ffbc60f8984f9365a5a0
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7-minimal_3.7.3.18-deepin1_amd64.deb
-    digest: 849fa70903bc43feeee400b29f9f9266018f61233b08d70e7759520ab64dd4ec
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/python3.7-minimal_3.7.3.14-1+dde_amd64.deb
+    digest: 27b70e1bb61eca6b13d58fdd9d90dc2a742c5c022701e0b3716681439b269410
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/libpython3.7-minimal_3.7.3.14-1+dde_amd64.deb
+    digest: 4bec9249513ba9ee658b29e2fe10711487e1852a03a78fab5b9b941805f58271
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/libpython3.7-stdlib_3.7.3.14-1+dde_amd64.deb
+    digest: 3bb97e974231c4f7d2a5ad0501c4f167569e3adc228470186c15f540a02ba9b3
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/m/mpdecimal/libmpdec2_2.4.2-2_amd64.deb
+    digest: 7160bd015a6aa706780854b509315cb0fa9799b98617d7516c18258d0a511c51
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/readline/libreadline7_7.0-5_amd64.deb
+    digest: 81f5de3eb7ee29089e24a181b3eb26c0c3ba5694ddcb14320e49e83cfec9aefe
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/readline/readline-common_7.0-5_all.deb
+    digest: 153d8a5ddb04044d10f877a8955d944612ec9035f4c73eec99d85a92c3816712
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3-defaults/libpython3-stdlib_3.7.3-1_amd64.deb
+    digest: 4f8883d378e698aa89b7bd4b68ce8e7cca01c961d3df87fafe4c079bb4668f5b
 build: >-
   export LINGLONG_RAW_ID="com.nutstore.deepin"
 

@@ -1,1 +1,14 @@
-com.qljy.qlteacher
+com.qljy.qlteacherlibavcodec58
+libavcodec-extra58
+libavdevice58
+libavfilter7
+libavfilter-extra7
+libavformat58
+libavformat-extra58
+libavutil56
+libqt5xml5
+libsdl2-2.0-0
+libswresample3
+libswscale5
+libvlc5
+libvlccore9

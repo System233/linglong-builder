@@ -8,7 +8,7 @@ package:
     software of artificial intelligence
 command:
   - /opt/apps/com.zqykj.hyjjai.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.zqykj.hyjjai/com.zqykj.hyjjai_2.0.0.00-1_amd64.deb

@@ -9,7 +9,7 @@ package:
     ubx-auxiliary 工具是用来生成接口代码的工具。通过xml编写的xml文件直接生成对应.js文件以及.h文件。
 command:
   - /opt/apps/ubx-auxiliary.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 runtime: org.deepin.Runtime/20.0.1
 sources:
   - kind: file

@@ -1,1 +1,8 @@
 com.szca.signproducttool
+libdouble-conversion1
+libpcre2-16-0
+libqt5concurrent5
+libcurl4
+procps
+
+strace

@@ -7,7 +7,7 @@ package:
   description: 闪电藤是基于LocalSend二次开发的一款局域网文件传输工具，完全兼容LocalSend，在它的基础上进行UI交互的重新设计，以及功能上的增强和删减，使其更加符合中国用户的使用体验。
 command:
   - /opt/apps/life.zishu.sdt.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/l/life.zishu.sdt/life.zishu.sdt_2.2.3+fix0_amd64.deb

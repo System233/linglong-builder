@@ -1,1 +1,4 @@
 com.yiqixie.yiqixie
+libgconf-2-4
+libdbus-glib-1-2
+gconf2-common

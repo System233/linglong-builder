@@ -1,1 +1,12 @@
 com.meitu.mtxx
+libcurl4
+libgstreamer1.0-0
+libgstreamer1.0-dev
+libgstreamer-plugins-base1.0-0
+libhyphen0
+libjansson4
+libpcre2-16-0
+libwoff1
+libxslt1.1
+libqt5webenginecore5
+libqt5webenginewidgets5

@@ -9,7 +9,7 @@ package:
     CNKI Express
 command:
   - /opt/apps/net.cnki.cnkiexpress.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/n/net.cnki.cnkiexpress/net.cnki.cnkiexpress_0.0.3.1_amd64.deb

@@ -8,6 +8,7 @@ libxau6
 libxdmcp6
 libbsd0
 libfreetype6
+libbrotli1
 libpng16-16
 zlib1g
 libsm6
@@ -51,7 +52,7 @@ libwebp6
 libzstd1
 shared-mime-info
 libxml2
-libicu63
+libicu70
 libstdc++6
 libgdk-pixbuf2.0-common
 libgtk-3-0
@@ -140,18 +141,14 @@ libargon2-1
 libdevmapper1.02.1
 dmsetup
 libjson-c3
-libidn11
+libfdisk1
 libip4tc0
 libkmod2
 liblz4-1
 libseccomp2
 util-linux
-fdisk
-libfdisk1
-libncursesw6
-libtinfo6
+util-linux-extra
 libsmartcols1
-login
 mount
 libpam-runtime
 systemd-sysv

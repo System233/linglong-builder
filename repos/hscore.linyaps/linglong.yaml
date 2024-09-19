@@ -8,7 +8,7 @@ package:
     Cargo package manager for building Debian packages from Rust projects."
 command:
   - /opt/apps/hscore.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/h/hscore/hscore_1.6.1-1_amd64.deb

@@ -7,7 +7,7 @@ package:
   description: 飞稻在线课程设计平台
 command:
   - /opt/apps/feidao.linyaps/files/bin/start.sh
-base: com.uniontech.foundation/20.0.1
+base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/f/feidao/feidao_1.0.0_amd64.deb
