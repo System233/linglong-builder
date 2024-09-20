@@ -149,7 +149,11 @@ while read LINE; do
         sed -i -E -e "/Icon=/ s#$ICON#$ICON_NAME#g" $LINE
         while read IMAGE; do
             DIR=$(dirname "$IMAGE")
+            RAW_EXT=$(echo "${IMAGE##*.}" | tr '[:upper:]' '[:lower:]')
             EXTENSION=png #$(echo "${IMAGE##*.}" | tr '[:upper:]' '[:lower:]')
+            if [ "$RAW_EXT" == "svg" ]; then
+                EXTENSION=svg
+            fi
             TO="$DIR/$ICON_NAME.${EXTENSION}"
             mv -v "$IMAGE" "$TO"
         done <<<$(find $PREFIX/share/icons/ -name "${ICON}.*")
