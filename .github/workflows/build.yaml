@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       cmd-list: ${{ steps.list-appid.outputs.cmd }}
-      cache-id: ${{ steps.cache-key.outputs.key }}
+      npm-cache-id: ${{ steps.cache-key.outputs.npm }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -91,16 +91,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Pull Cache
-        id: builder-cache
+      - name: Pull Builder Cache
         uses: actions/cache@v4
         with:
           path: |
             ~/.cache/linglong-builder/
-            ~/.cache/linglong-helper/
-            node_modules
-          key: ${{needs.scan.outputs.cache-id}}
+          key: linglong-builder-cache
 
+      - name: Pull NPM Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+          key: ${{needs.scan.outputs.npm-cache-id}}
       - name: Install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
