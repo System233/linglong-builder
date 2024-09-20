@@ -1,0 +1,6 @@
+libopencv_core.so.2.4
+libopencv_imgproc.so.2.4
+/opt/sursen/lib/libfreeimage.so
+/opt/sursen/pdf/libSSPDFSignServer.so
+/opt/sursen/sedcore/libcheckgrant.so
+/opt/sursen/sep2/libsep2.so

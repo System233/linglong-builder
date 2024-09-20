@@ -7,6 +7,7 @@ gcc-8-base
 libfontconfig1
 libexpat1
 libfreetype6
+libbrotli1
 libpng16-16
 zlib1g
 libuuid1
@@ -70,7 +71,7 @@ libxcb-shm0
 libgdk-pixbuf2.0-0
 shared-mime-info
 libxml2
-libicu63
+libicu70
 libgdk-pixbuf2.0-common
 libgtk-3-0
 adwaita-icon-theme
@@ -154,16 +155,14 @@ libargon2-1
 libdevmapper1.02.1
 dmsetup
 libjson-c3
-libidn11
+libfdisk1
 libip4tc0
 libkmod2
 liblz4-1
 libseccomp2
 util-linux
-fdisk
-libfdisk1
+util-linux-extra
 libsmartcols1
-login
 mount
 libpam-runtime
 systemd-sysv

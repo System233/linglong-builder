@@ -1,1 +1,5 @@
 life.zishu.sdt
+libappindicator3-1
+libdbusmenu-glib4
+xdg-user-dirs
+dmidecode

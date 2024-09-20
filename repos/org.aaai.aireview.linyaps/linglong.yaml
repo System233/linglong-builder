@@ -17,49 +17,70 @@ sources:
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/o/org.aaai.aireview/org.aaai.aireview_0.0.1-2_all.deb
     digest: 72c36559711f98c2e4d83b923531f51e30acd1aacbf9721e99960da0b0d2752e
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3-defaults/python3_3.7.3-1_amd64.deb
     digest: eb7862c7ad2cf5b86f3851c7103f72f8fa45b48514ddcf371a8e4ba8f02a79e5
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7_3.7.3.18-deepin1_amd64.deb
-    digest: aa54af41ccf48a7834c7c70049a279dcaa0ecc97cbe9590606a14cd4571c56ff
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/python3.7_3.7.3.14-1+dde_amd64.deb
+    digest: 2d8225b625bafcbb63d9325a09fe47e4fcedf62a1114ffbc60f8984f9365a5a0
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3.7/python3.7-minimal_3.7.3.18-deepin1_amd64.deb
-    digest: 849fa70903bc43feeee400b29f9f9266018f61233b08d70e7759520ab64dd4ec
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/python3.7-minimal_3.7.3.14-1+dde_amd64.deb
+    digest: 27b70e1bb61eca6b13d58fdd9d90dc2a742c5c022701e0b3716681439b269410
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python3-stdlib-extensions/python3-tk_3.7.3-1_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/libpython3.7-minimal_3.7.3.14-1+dde_amd64.deb
+    digest: 4bec9249513ba9ee658b29e2fe10711487e1852a03a78fab5b9b941805f58271
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3.7/libpython3.7-stdlib_3.7.3.14-1+dde_amd64.deb
+    digest: 3bb97e974231c4f7d2a5ad0501c4f167569e3adc228470186c15f540a02ba9b3
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/m/mpdecimal/libmpdec2_2.4.2-2_amd64.deb
+    digest: 7160bd015a6aa706780854b509315cb0fa9799b98617d7516c18258d0a511c51
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/readline/libreadline7_7.0-5_amd64.deb
+    digest: 81f5de3eb7ee29089e24a181b3eb26c0c3ba5694ddcb14320e49e83cfec9aefe
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/readline/readline-common_7.0-5_all.deb
+    digest: 153d8a5ddb04044d10f877a8955d944612ec9035f4c73eec99d85a92c3816712
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3-defaults/libpython3-stdlib_3.7.3-1_amd64.deb
+    digest: 4f8883d378e698aa89b7bd4b68ce8e7cca01c961d3df87fafe4c079bb4668f5b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python3-stdlib-extensions/python3-tk_3.7.3-1_amd64.deb
     digest: ec55733d3c1ff4021926fe43e66739ce6b55a36ebdc446568c5ce8f9f1dfa6f4
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/b/blt/blt_2.5.3+dfsg-4_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/blt/blt_2.5.3+dfsg-4_amd64.deb
     digest: 624e1c02bc1e72fa77523f514a606b7b7da3399def37995d016955b8d950584b
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/b/blt/tk8.6-blt2.5_2.5.3+dfsg-4_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/blt/tk8.6-blt2.5_2.5.3+dfsg-4_amd64.deb
     digest: dfc7f6b1d80bf65c31c9effcec0136ef6634c4c7a08000bf59a7fd0a25cb8c19
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/t/tcl8.6/libtcl8.6_8.6.9.1-deepin1_amd64.deb
-    digest: 0fd199a103f2cbd36b678a0c0dcea213751b65795e3ec9e01a814fafdd04b159
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/t/tcl8.6/libtcl8.6_8.6.9+dfsg-2.1+deepin1_amd64.deb
+    digest: b7857504593402724bfe83c0b44592577315642496800ef9685e520d00d2870b
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/t/tk8.6/libtk8.6_8.6.9-2_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/t/tk8.6/libtk8.6_8.6.9-2_amd64.deb
     digest: 36493b3772fc884a18b8dd32418ad0ce171b86996bf0bb103a90a9d231459112
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/r/requests/python3-requests_2.21.0-1_all.deb
-    digest: 1ef2814c9be7246165f56d8bd8fa9a42ed70eed989dc6da9d0d90e5d774d4b47
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python-certifi/python3-certifi_2018.8.24-1_all.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/requests/python3-requests_2.25.1+dfsg-2_all.deb
+    digest: 8e6f3b57b1ccdd118ce9b5a20737d9cb02a9ab451cb9432be4b6b597086045c1
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python-certifi/python3-certifi_2018.8.24-1_all.deb
     digest: 3b9254e27f33843ec445a54e27c86220daecfb08f9fb428fffd08523a7de6271
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/c/chardet/python3-chardet_3.0.4-3_all.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/c/chardet/python3-chardet_3.0.4-3_all.deb
     digest: 317d150bb84857b42c55fb0eee734355d6ff3b55f7abba231e3a43bdcc0d4c36
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python-setuptools/python3-pkg-resources_40.8.0-1_all.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python-setuptools/python3-pkg-resources_40.8.0-1_all.deb
     digest: 43783cd63c996b36fcf29bfd8be8c44666148c9129ade88985876d7f9c0bf2f6
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python-idna/python3-idna_2.6-1_all.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python-idna/python3-idna_2.6-1_all.deb
     digest: 6f85411665239c6747d3157f59e170eebe820d3f5dee027e1301310a545ecfea
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python-urllib3/python3-urllib3_1.24.1.2-1+dde_all.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python-urllib3/python3-urllib3_1.24.1.2-1+dde_all.deb
     digest: b3af34ad4c560cb623aa1c0bc8031ff95bbfaa9876f289ea0651f0c7e3d46e08
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/six/python3-six_1.12.0-1_all.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/six/python3-six_1.12.0-1_all.deb
     digest: ec43cea7798b07e39ad53bb4088f6db17ef1fb01abaebab0641da0ba0e6819e4
 build: >-
   export LINGLONG_RAW_ID="org.aaai.aireview"

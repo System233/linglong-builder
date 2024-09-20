@@ -129,3 +129,4 @@ libfile-find-rule-perl
 libnumber-compare-perl
 libtext-glob-perl
 deepin-app-store-runtime
+libatomic1

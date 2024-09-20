@@ -15,7 +15,6 @@ libglib2.0-0
 libffi6
 libmount1
 libblkid1
-libuuid1
 libselinux1
 libpcre3
 zlib1g
@@ -33,8 +32,13 @@ libcairo2
 libfontconfig1
 libexpat1
 libfreetype6
+libbrotli1
 libpng16-16
+libuuid1
 fontconfig-config
+ucf
+coreutils
+sensible-utils
 fonts-dejavu-core
 libpixman-1-0
 libxcb-render0
@@ -74,6 +78,8 @@ libssh2-1
 libdrm2
 libdrm-common
 libgbm1
+mesa-config
+libstdc++6
 libwayland-server0
 libgtk-3-0
 adwaita-icon-theme
@@ -88,8 +94,7 @@ libwebp6
 libzstd1
 shared-mime-info
 libxml2
-libicu63
-libstdc++6
+libicu70
 libgdk-pixbuf2.0-common
 librsvg2-common
 librsvg2-2
@@ -147,18 +152,14 @@ libargon2-1
 libdevmapper1.02.1
 dmsetup
 libjson-c3
-libidn11
+libfdisk1
 libip4tc0
 libkmod2
 liblz4-1
 libseccomp2
 util-linux
-fdisk
-libfdisk1
-libncursesw6
-libtinfo6
+util-linux-extra
 libsmartcols1
-login
 mount
 libpam-runtime
 systemd-sysv
@@ -184,3 +185,5 @@ xdg-utils
 deepin-elf-verify
 libpcsclite1
 ca-certificates-uniontech
+strace
+libunwind8

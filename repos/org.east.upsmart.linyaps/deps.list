@@ -1,1 +1,6 @@
 org.east.upsmart
+libpq5
+libpulse0
+libroar-compat2
+libusb-1.0-0
+libxslt1.1

@@ -7,96 +7,30 @@ package:
   description: WeChat Desktop WeChat Desktop
 command:
   - /opt/apps/store.spark-app.wechat-linux-spark.linyaps/files/bin/start.sh
-base: org.deepin.foundation/23.0.0
+base: org.deepin.base/23.1.0
 runtime: org.deepin.Runtime/23.0.1
 sources:
   - kind: file
     url: https://com-store-packages.uniontech.com/appstorev23/pool/appstore/s/store.spark-app.wechat-linux-spark/store.spark-app.wechat-linux-spark_2.2.1-real1.0.0.241.6_amd64.deb
     digest: ee122785a1a1d196657ae47f11049a03657e89b57648933943a9638fad1465dc
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin3_amd64.deb
-    digest: bfe5009a5995e8e9d8206188394c5422b9c7fbbbea954bc632abab9e6699f35c
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin3_amd64.deb
-    digest: d9c679af2dd0d3878d823075b2fb1433618bd3227cbae336e11d8e89274b5ab1
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/libf/libffi/libffi8_3.4.6-1_amd64.deb
-    digest: daa2aeb5a23c7dea09b2f16b94d15fa6f015ad5ff8c3db15bd0ab890fc920dd2
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/p/pcre2/libpcre2-8-0_10.39-2_amd64.deb
-    digest: 26ba66e349a9d46978d24e5b165c327e1ef51007770c43a3a49eb35b5fe0310e
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/a/at-spi2-core/at-spi2-common_2.50.0-1_all.deb
-    digest: 5289ad162167a611940e8f169ce6a1e6974bbe14f77a66ee890c137196fc654a
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/b/brotli/libbrotli1_1.1.0-2_amd64.deb
-    digest: c90c041d2069cc78a80e07d62ce3e251306a81b23f9b95fa35a65ce7af87ad04
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/libm/libmd/libmd0_1.0.4-1_amd64.deb
-    digest: 755e2a59d76415999f46b0c307ade64df3788013286e902e2531e07ff58ca781
-  - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/e/elogind/libelogind0_246.9.1-1+debian1_amd64.deb
     digest: 6148a3218b1431e495b7fd399d860ef5d8bf0a428e3521689515fe1baa238830
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/n/nettle/libhogweed6_3.7.3-1_amd64.deb
-    digest: 0557f0e34a15444b6792c2726b5d1eb48f9ea8cd42bc7f4d697081e804ced558
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/n/nettle/libnettle8_3.7.3-1_amd64.deb
-    digest: d19dd4ebabccc00232223b414732c26b63d4ee67f4147ad5a105795f4514382a
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/o/openssl/libssl3_3.2.0-2deepin1_amd64.deb
-    digest: 46dbbfa082c30da5f6115246215db4e6cd116cde40c1da33cbca706455c25790
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.42.10+dfsg-3_amd64.deb
-    digest: ae9e961d452cbbcb9b8be26835441805f05888a1840799162c2c1ccff924f9a9
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/i/icu/libicu74_74.2-1_amd64.deb
-    digest: ad3f769fb52e996fad6d8dd369ab7a09f558b221ddc7647164ab8cc0bd8fa245
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/t/tiff/libtiff6_4.5.1+git230720-1_amd64.deb
-    digest: 8a0ee5ae052e11c5f52db3a793392cbcf8450760cc7ac83ff65d12b54120c83a
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/libd/libdeflate/libdeflate0_1.18-1_amd64.deb
-    digest: 1b411007d982c5f2f2a6d1e2d0af7a85cbc274770e533fbd895fc54956a995ba
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/l/lerc/liblerc4_4.0.0+ds-3_amd64.deb
-    digest: 4024f109044643693dad079fce71b942ffba3bf3ec994d523130c33e776ea06e
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/libw/libwebp/libwebp7_1.3.2-0.2_amd64.deb
-    digest: f2271cabfa4d4847bef8a522e2775d4f9c09a2560911df4779a7cc06d650eec6
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/libw/libwebp/libsharpyuv0_1.3.2-0.2_amd64.deb
-    digest: 9da48196bd083c4749d1b4814a15780fdfa5a962ce3c19c5abfe0fa98e4e870e
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/libn/libnotify/libnotify4_0.7.9-3_amd64.deb
     digest: b0e8d984c0b63b8e1ce6905e3ccb9b0caec0d84a6f4e3a0d6351af9eb6ab85ce
   - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxss/libxss1_1.2.3-1_amd64.deb
+    digest: c14df136ee438ad89b2eddff611d9686fb520f76df28ab30646e4941011b8617
+  - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/x/xdg-utils/xdg-utils_1.1.3-4.1deepin1_all.deb
     digest: d5e090896201fb8fa27fa3d42f2c56de7822c26b8b5f8d9c6c44da690f887c1a
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/g/glib2.0/libglib2.0-bin_2.80.1-1deepin1_amd64.deb
-    digest: a90fbe965ef03785f21e55dc04d550243495e96ba47107ddf0874bd0bde8a416
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/b/bubblewrap/bubblewrap_0.10.0-1_amd64.deb
     digest: e82acc13972c1d2f717ce85ca7a48b6368acad650cb9be60f97ba32bc62ee3b0
   - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/p/procps/procps_4.0.4-4_amd64.deb
-    digest: b1528a0323d4042b72f4646b89bc668d41a9f52cbac161f741e7097277766550
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/p/procps/libproc2-0_4.0.4-4_amd64.deb
-    digest: dcf36fc37d53d89d6fb80dd4d3094199f47cff8f4f622af050ff78ede2351fba
-  - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/u/usrmerge/usrmerge_38_all.deb
     digest: fdc636985788b18a04cd15941a111fb2a73d3b56cf58c689b918345e6f003161
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/p/perl/perl-modules-5.36_5.36.0-10_all.deb
-    digest: 907542b9a413bd0276d5ef94fef77083715a692fd33c52ece44d11fff847bab0
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/p/perl/libperl5.36_5.36.0-10_amd64.deb
-    digest: 1cca8c85872210489e92326ca7fda2fcc8d9b37a085cd1a0c87d54aa685118e8
-  - kind: file
-    url: https://community-packages.deepin.com/beige/pool/main/libx/libxcrypt/libcrypt1_4.4.36-2_amd64.deb
-    digest: 3ebae5a5f27eff3c2b9598ba323b4b556d6cec915a78200e305fb6ecde3972cd
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/libf/libfile-find-rule-perl/libfile-find-rule-perl_0.34-1_all.deb
     digest: 8ebc94473bf3381e34408415da523e390c2fb3be418f3c298deb6bc82373ded5
@@ -109,6 +43,9 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/beige/pool/main/d/deepin-app-store-runtime/deepin-app-store-runtime_1.0.2+community_amd64.deb
     digest: 72b0e156537437f4628468f53607a50c64aef9dd0984ea8187108b2d5bb2b6aa
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libatomic1_13.2.0-3deepin3_amd64.deb
+    digest: 5d6b54ca73089b87ec0b01a6f029665d20a1a031a30ed21cc052763b67ec0135
 build: >-
   export LINGLONG_RAW_ID="store.spark-app.wechat-linux-spark"
 

@@ -1,2 +1,6 @@
 net.master-pdf
 libsane1
+libffi6
+libssl1.1
+libtiff5
+libwebp6

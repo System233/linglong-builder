@@ -1,1 +1,13 @@
 mct
+libfcitx-config4
+libfcitx-utils0
+libqt5pdf5
+libqt5qmlmodels5
+libqt5virtualkeyboard5
+libqt5webengine5
+libva2
+libva-drm2
+libva-x11-2
+libvdpau1
+libxv1
+strace

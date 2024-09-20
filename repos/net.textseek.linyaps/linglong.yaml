@@ -15,80 +15,47 @@ sources:
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/n/net.textseek/net.textseek_2.19.2996_amd64.deb
     digest: 5a3e044d28006d2441e99b821f065b9af763ce26182feb3867a2d980f02c0f85
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtgui4_4.8.7+dfsg.2-1+dde_amd64.deb
-    digest: 9df1de1780032044815e3bf486188a1d1c564396b86019ecce13ea45dab02d17
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/q/qt4-x11/libqtgui4_4.8.7.1+dfsg-1+dde_amd64.deb
+    digest: 9302fffe5c3f9e560102b22294dbab6da7970b5b9b208551ae944d1e70ed5cf9
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/n/nas/libaudio2_1.9.4.1-1+dde_amd64.deb
-    digest: 998126dadd5eadb592633e528b8c74839ab21ad8298af495bd9502e24ca8bd23
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libx/libxt/libxt6_1.1.5.1.1-1+dde_amd64.deb
-    digest: 3b62b28febb4d5609d0d2ffe9307881c1607acd238857138479ad66789567dc9
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/n/nas/libaudio2_1.9.4-6_amd64.deb
+    digest: 72fd507933e3cf2c7d0143a63f5c7ababca0d8aa94e247f38e0614da6abf5042
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libm/libmng/libmng1_1.0.10.1-1+rebuild_amd64.deb
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libx/libxt/libxt6_1.1.5.1-1+rebuild_amd64.deb
+    digest: 0308731e783c2c8ea195161e092b86dd5cb7189cdcc7fa3823e5053c953dd0a2
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libm/libmng/libmng1_1.0.10.1-1+rebuild_amd64.deb
     digest: 7077e9373cf989fb17ce98f31b9e28b35db9ae4c40e43514350c05d85462898d
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg.2-1+dde_amd64.deb
-    digest: 344282ea487885e2fc1e571377fcbf102d5e708c6547808fc81829f9d3494492
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/q/qt4-x11/libqtcore4_4.8.7.1+dfsg-1+dde_amd64.deb
+    digest: 3c2532693ad383418bfe96b9ab7d295c2996a52ab8b09dc6001634118c8f6832
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg.2-1+dde_all.deb
-    digest: 254325c7e7161c19a68e0b8d1c2464544f2b9c211bcbd9264e96dafa40ba8b40
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7.1+dfsg-1+dde_all.deb
+    digest: 24e4832da28c6346f5509997b1667b2f05e1250821a3f2403d5175d773d2a1d9
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python2.7/libpython2.7_2.7.16.12-deepin1_amd64.deb
-    digest: c4ca7b76d14ba03d22b388b09106f94cabf2e6701f52b17344e4189d63a5020e
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python2.7/libpython2.7_2.7.16.5-1+dde_amd64.deb
+    digest: 6ed8def5ec6e0869c4c8fc89b7b1a09ea3fc4d2a8d5c63a76c8dd574701ace54
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python2.7/libpython2.7-stdlib_2.7.16.12-deepin1_amd64.deb
-    digest: f268ced27d62cb38c5d4fff0ac4e47b876cf5f3e27bc2dd40a2d19074f5b3689
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python2.7/libpython2.7-stdlib_2.7.16.5-1+dde_amd64.deb
+    digest: fb79d70349db0f8441cbf1ee519d7abb7c4c2adc6cb28eb0a4b258bd5aaf49bd
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/python2.7/libpython2.7-minimal_2.7.16.12-deepin1_amd64.deb
-    digest: 1522b61163139f4660d35d1fce1f8c0f7469b7f5ac990572738f23c402067d08
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/python2.7/libpython2.7-minimal_2.7.16.5-1+dde_amd64.deb
+    digest: 2392ce0cd54c56340567853ebb546b3042d7afbd3f5d68d3623a0b2249d61293
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
-    digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/readline/libreadline7_7.0-5_amd64.deb
+    digest: 81f5de3eb7ee29089e24a181b3eb26c0c3ba5694ddcb14320e49e83cfec9aefe
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
-    digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/r/readline/readline-common_7.0-5_all.deb
+    digest: 153d8a5ddb04044d10f877a8955d944612ec9035f4c73eec99d85a92c3816712
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb
-    digest: bbddaa5962c2eff4f23457b31316f6b5f7f63d537afb6bf4287090dc715fd587
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
+    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.64.2-2_amd64.deb
-    digest: 8928260930f2880ac7b53447c6be86f24e3d2bdbf75286451261456ca21e56f7
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libs/libsoup2.4/libsoup2.4-1_2.64.2-2_amd64.deb
-    digest: 3f03bcff1029a7013c4977167cfca4a9ef32989587be323e494e807a975ce050
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/glib-networking/glib-networking_2.58.0.1-2+deb10u2_amd64.deb
-    digest: 725cadaad5d48889799fd4d4ef19814aad4f124fe672de445c90cef3d529d030
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.28.1-1_all.deb
-    digest: a75aed8781a781c4b819b2d1e952791b123580b1a02a4bb35fdbbba2e3ab8310
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-gsettings-backend_0.30.1-2_amd64.deb
-    digest: f7166908f9da965681550a73cdcc3ad616f38bebb4a44556a1fb9dd5602e6cd7
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dconf/dconf-service_0.30.1-2_amd64.deb
-    digest: 54b07464471e06bef6b9bf34bcc6c0cb19bedf084a7016bb5df638e176fa8521
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/d/dbus/dbus-user-session_1.12.20.7-1+security_amd64.deb
-    digest: c108f260970116eb4a55c728e95b0c85f587d4b4e56817fe7779cfe6b7554b46
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/libpam-systemd_241.50-1+deepin1_amd64.deb
-    digest: 410a8fa0b53d99642703aa4850f647f1c5a96fc08305f2089db9f92f6aec4f6d
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd_241.50-1+deepin1_amd64.deb
-    digest: 59f1251c64ccccf244814a754c68b478995610b133cb4662b2caac1118968024
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/u/util-linux/mount_2.33.1.17-1+dde_amd64.deb
-    digest: bb80eadd2d2d109f49f5b11e3f59264ef4be44ce9a00b07aa91211d7e4c12a3f
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/s/systemd/systemd-sysv_241.50-1+deepin1_amd64.deb
-    digest: 36df6171836b55da89fcca58b141ed2573c804bb1f0937e853e3c57a675f9efd
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-common_3.24.5.9-1+deepin_all.deb
-    digest: 9cbf358a8d036c08d11170ccca1bc6820b8381eb827c1a04dbf7766b2f0e68eb
-  - kind: file
-    url: https://professional-security.chinauos.com/pool/main/p/pcsc-lite/libpcsclite1_1.8.24-1_amd64.deb
-    digest: 2dabe194816f9863d59d31d38d8caa558557eb4e09cf9fe6439e4f2c3a172720
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/u/util-linux/util-linux-extra_2.38.1-1.1_amd64.deb
+    digest: 489bc82e8e2d2d00cc216a38240b738958871e94d5cc4a1b7724095adb9e9560
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
     digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d

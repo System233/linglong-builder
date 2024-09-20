@@ -34,6 +34,7 @@ tzdata
 libtk8.6
 libfontconfig1
 libfreetype6
+libbrotli1
 libpng16-16
 fontconfig-config
 ucf
