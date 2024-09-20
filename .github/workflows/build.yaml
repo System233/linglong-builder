@@ -19,10 +19,20 @@ jobs:
         id: cache-key
         run: |
           hash=$(cat yarn.lock | sha256sum | cut -d' ' -f1)
-          time=$(date +%Y-%m-%d)
-          key=${{ runner.os }}-${hash}-${time}
-          echo "key=$key" >> $GITHUB_OUTPUT
-
+          key=${{ runner.os }}-npm-${hash}
+          echo "npm=$key" >> $GITHUB_OUTPUT
+      - name: Pull Builder Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/linglong-builder/
+          key: linglong-builder-cache
+      - name: Pull NPM Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+          key: ${{steps.cache-key.outputs.npm}}
       - name: Check changes
         id: list-appid
         run: |
@@ -53,15 +63,7 @@ jobs:
           echo "cmd=[$(cat ${CMD_LIST}| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
           echo "cache=${BUILD_CACHE}" >> $GITHUB_OUTPUT
 
-      - name: Pull Cache
-        id: builder-cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/linglong-builder/
-            ~/.cache/linglong-helper/
-            node_modules
-          key: ${{steps.cache-key.outputs.key}}
+
       - name: install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils

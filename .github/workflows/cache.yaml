@@ -10,24 +10,24 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 100
-
       - name: Generate Cache Key
         id: cache-key
         run: |
           hash=$(cat yarn.lock | sha256sum | cut -d' ' -f1)
-          time=$(date +%Y-%m-%d)
-          key=${{ runner.os }}-${hash}-${time}
-          echo "key=$key" >> $GITHUB_OUTPUT
-          
-      - name: Pull Cache
-        id: builder-cache
+          npm=${{ runner.os }}-npm-${hash}
+          echo "npm=$key" >> $GITHUB_OUTPUT
+      - name: Pull Builder Cache
         uses: actions/cache@v4
         with:
           path: |
             ~/.cache/linglong-builder/
-            ~/.cache/linglong-helper/
+          key: linglong-builder-cache
+      - name: Pull NPM Cache
+        uses: actions/cache@v4
+        with:
+          path: |
             node_modules
-          key: ${{steps.cache-key.outputs.key}}
+          key: ${{steps.cache-key.outputs.npm}}
       - name: install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
