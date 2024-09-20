@@ -64,7 +64,7 @@ jobs:
           echo "cache=${BUILD_CACHE}" >> $GITHUB_OUTPUT
 
 
-      - name: install
+      - name: Install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
           sudo mkdir -p /etc/apt/keyrings/
@@ -101,7 +101,7 @@ jobs:
             node_modules
           key: ${{needs.scan.outputs.cache-id}}
 
-      - name: install
+      - name: Install
         run: |
           sudo apt install -y apt-transport-https ca-certificates curl gpg xdg-utils
           sudo mkdir -p /etc/apt/keyrings/
@@ -126,7 +126,7 @@ jobs:
           echo APPID=${APP_ID}
 
           yarn install
-          bash ./build_cache.sh
+          # bash ./build_cache.sh
           bash ./build.sh "$CMD" "${APP_ID}"
 
           git add .
