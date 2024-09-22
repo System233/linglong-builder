@@ -36,6 +36,9 @@
 #define ORIGINAL_PATH "/tmp/original_path.txt"
 #define PATH_MAX 4096
 
+#define ENABLE_BPF 0
+#define ATTACH_CLONE 0
+
 char const *upper;
 char lower[PATH_MAX];
 int upperLen = 0;
@@ -285,8 +288,16 @@ void trace_openat_path(pid_t pid)
     // ptrace(PTRACE_EVENT_SECCOMP, pid, NULL, NULL);
 
     // ptrace(PTRACE_SYSCALL, pid, NULL, NULL);
+#if ENABLE_BPF
+    ptrace(PTRACE_CONT, pid, NULL, NULL);
+#else
+    ptrace(PTRACE_SYSCALL, pid, NULL, NULL);
+#endif
+#if ATTACH_CLONE
     pid = waitpid(-1, &status, 0);
-
+#else
+    waitpid(pid, &status, 0);
+#endif
     // ptrace(PTRACE_SYSCALL, pid, NULL, NULL);
     while (!WIFEXITED(status))
     {
@@ -304,7 +315,7 @@ void trace_openat_path(pid_t pid)
         //     ptrace(PTRACE_GETEVENTMSG, pid, NULL, &pid);
         //     // printf("New process created with PID: %d\n", pid);
         // }
-        // ptrace(PTRACE_GETREGS, pid, NULL, &regs);
+        ptrace(PTRACE_GETREGS, pid, NULL, &regs);
 
         // syslog(LOG_DEBUG, "syscall: id=%d", regs.orig_eax);
         // FD, PATH, FLAG, MODE
@@ -316,34 +327,34 @@ void trace_openat_path(pid_t pid)
         //         syslog(LOG_DEBUG, "[%d] openat: fd=%d, flags=%s", pid, regs.ebx, path, strflag(regs.edx));
         //     }
         // }
-        // if (regs.orig_eax == SYS_openat && regs.ebx == AT_FDCWD && ((regs.edx & (FILTER)) && (~(regs.edx & O_DIRECTORY))))
-        // {
-        //     // long path_addr = regs.ecx; // + sizeof(long); // ebx 是第一个参数
-        //     // peek_string(pid, path, PATH_MAX, path_addr);
-        //     // syslog(LOG_DEBUG, "openat: AT_FDCWD %s, flags=%s", path, strflag(regs.edx));
-        //     // syslog(LOG_DEBUG, "openat: AT_FDCWD %s, match=%s", path, strflag(regs.edx & (FILTER)));
-        //     // if (*path != '/')
-        //     // {
-        //     //     regs.ebx = upperFd;
-        //     //     regs.ecx = path_addr;
-        //     //     redirect(path, path);
+        if (regs.orig_eax == SYS_openat && regs.ebx == AT_FDCWD && ((regs.edx & (FILTER)) && (~(regs.edx & O_DIRECTORY))))
+        {
+            long path_addr = regs.ecx; // + sizeof(long); // ebx 是第一个参数
+            peek_string(pid, path, PATH_MAX, path_addr);
+            syslog(LOG_DEBUG, "openat: AT_FDCWD %s, flags=%s", path, strflag(regs.edx));
+            // syslog(LOG_DEBUG, "openat: AT_FDCWD %s, match=%s", path, strflag(regs.edx & (FILTER)));
+            if (*path != '/')
+            {
+                regs.ebx = upperFd;
+                regs.ecx = path_addr;
+                redirect(path, path);
 
-        //     //     syslog(LOG_DEBUG, "openat: %s -> %s/%s, flag=%s", path, upper, path, strflag(regs.edx));
-        //     //     ptrace(PTRACE_SETREGS, pid, NULL, &regs);
-        //     // }
-        //     // else if ((diff = pathcmp(lower, path)) != NULL)
-        //     // {
-        //     //     regs.ebx = upperFd;
-        //     //     regs.ecx = path_addr + (diff - path);
-        //     //     redirect(path, diff);
-        //     //     syslog(LOG_DEBUG, "openat: %s -> %s/%s, flag=%s", path, upper, diff, strflag(regs.edx));
-        //     //     ptrace(PTRACE_SETREGS, pid, NULL, &regs);
-        //     // }
-        //     // else
-        //     // {
-        //     //     // syslog(LOG_DEBUG, "openat: skip %s", path);
-        //     // }
-        // }
+                syslog(LOG_DEBUG, "openat: %s -> %s/%s, flag=%s", path, upper, path, strflag(regs.edx));
+                ptrace(PTRACE_SETREGS, pid, NULL, &regs);
+            }
+            else if ((diff = pathcmp(lower, path)) != NULL)
+            {
+                regs.ebx = upperFd;
+                regs.ecx = path_addr + (diff - path);
+                redirect(path, diff);
+                syslog(LOG_DEBUG, "openat: %s -> %s/%s, flag=%s", path, upper, diff, strflag(regs.edx));
+                ptrace(PTRACE_SETREGS, pid, NULL, &regs);
+            }
+            else
+            {
+                // syslog(LOG_DEBUG, "openat: skip %s", path);
+            }
+        }
         // else if (regs.orig_eax == SYS_stat64)
         // {
 
@@ -399,13 +410,17 @@ void trace_openat_path(pid_t pid)
         //         // }
         //     }
         // }
-
-        // ptrace(PTRACE_SYSCALL, pid, NULL, NULL);
+#if ENABLE_BPF
         ptrace(PTRACE_CONT, pid, NULL, NULL);
-
+#else
+        ptrace(PTRACE_SYSCALL, pid, NULL, NULL);
+#endif
         // ptrace(PTRACE_EVENT_SECCOMP, pid, NULL, NULL);
-
+#if ATTACH_CLONE
         pid = waitpid(-1, &status, 0);
+#else
+        waitpid(pid, &status, 0);
+#endif
     }
 }
 void setuplog()
@@ -459,6 +474,7 @@ int main(int argc, char *argv[])
     pid_t child = fork();
     if (child == 0)
     {
+#if ENABLE_BPF
         struct sock_filter filter[] = {
             BPF_STMT(BPF_LD + BPF_W + BPF_ABS, offsetof(struct seccomp_data, nr)),
             BPF_JUMP(BPF_JMP + BPF_JEQ + BPF_K, SYS_openat, 0, 1),
@@ -483,6 +499,9 @@ int main(int argc, char *argv[])
             perror("when setting seccomp filter");
             return 1;
         }
+#else
+        ptrace(PTRACE_TRACEME, 0, NULL, NULL);
+#endif
         kill(getpid(), SIGSTOP);
         int ret = execv(argv[2], &argv[2]);
         syslog(LOG_ERR, "execv: %s", argv[2], strerror(errno));
@@ -492,10 +511,13 @@ int main(int argc, char *argv[])
     {
         int status;
         waitpid(child, &status, 0);
+#if ENABLE_BPF
         ptrace(PTRACE_SETOPTIONS, child, 0, PTRACE_O_TRACESECCOMP
-               // | PTRACE_O_TRACECLONE
+#if ATTACH_CLONE
+                                                | PTRACE_O_TRACECLONE
+#endif
         );
-        ptrace(PTRACE_CONT, child, 0, 0);
+#endif
         trace_openat_path(child);
     }
 
