@@ -1,0 +1,113 @@
+version: "1.0"
+package:
+  id: gcc-i386-linux-gnu
+  name: App Name
+  version: 0.0.0.1
+  kind: app
+  description: Description
+command:
+  - /opt/apps/gcc-i386-linux-gnu/files/bin/start.sh
+base: org.deepin.foundation/20.0.0
+sources:
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libseccomp/libseccomp-dev_2.5.1-1~bpo10+1_i386.deb
+    digest: eef8924c0516ab50abaa910777dc9d05cb3213b916ce7b2fbf3da107bbc2ec8d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libseccomp/libseccomp2_2.5.1-1~bpo10+1_i386.deb
+    digest: 38633496af2274d669de8ae84b43f8190a72df8c00401115d5dd190ab13f7742
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/glibc/libc6_2.28.21-1+deepin-1_i386.deb
+    digest: 552e3c85748d2deccf04bc79b38af4ba05b623499aa4c6ce483c36f1d4f10950
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libgcc1_8.3.0.3-3+rebuild_i386.deb
+    digest: 4dd22498404a62eaccb2a218351afa5314cde17cf1138d97f8e4aa9c37274dec
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/gcc-8-base_8.3.0.3-3+rebuild_i386.deb
+    digest: d8aa57a003c468046763a7f377a5586f3dd7d24d95d8ae31bd2b89b3d4b0ac0b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-defaults/gcc_8.3.0-1_i386.deb
+    digest: cce9f56f5d0b6d9d58f85679702ee7f0b55ba76758bc6197ded3d3d8d991b795
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-defaults/cpp_8.3.0-1_i386.deb
+    digest: 9a26d345f9b27ef868aa3883fcb24f9057750a8ebc221921fd356dec296068fd
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/cpp-8_8.3.0.3-3+rebuild_i386.deb
+    digest: e56f0b13333edc8476a9fdb466db42a14c268906891221811a00ee3f5398511d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gmp/libgmp10_6.1.2+dfsg.1-1_i386.deb
+    digest: 5d0b9cd251dfa5763e0597a13fa664169c6c4cc97c1b0f9fb256f9ec204bc815
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/isl/libisl19_0.20-2_i386.deb
+    digest: 22ae650e56f29eba36f4dd8b008bc6bf1b1a6589dcdba67543f1bcf299c44e2b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/m/mpclib3/libmpc3_1.1.0-1_i386.deb
+    digest: 670c27c54e98039c475fb63b2cb8444866ee79a9e543b8e686c914714abd53e6
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/m/mpfr4/libmpfr6_4.0.2-1_i386.deb
+    digest: f9a9c27c401fa9a7e7a227a78aecce190ea14b3184d6370102fd5ef5603592d5
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/z/zlib/zlib1g_1.2.12.5-1+dde_i386.deb
+    digest: e1431dc99892f5082c6522553a8a730bf10c467ca795200e6dd49d0ad44e8703
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/gcc-8_8.3.0.3-3+rebuild_i386.deb
+    digest: f38f99bf735d5e2b0530a67422fc6093416c4d13289926ec460998d47f22c96f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libcc1-0_8.3.0.3-3+rebuild_i386.deb
+    digest: d8d71bd293479cefdca1c6d7191de5b6dc1c7cdd0723f207ffbad99673d33a18
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libstdc++6_8.3.0.3-3+rebuild_i386.deb
+    digest: 97b429d7d14f22e72097a6c80da0c5fb0d86346f38e4de0fc59604fdc00f11bf
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/binutils/binutils_2.31.1.8-deepin1_i386.deb
+    digest: 720105b13c6b35f01d54488f4d7d6f5a0e36bdb270bb22341a61a67a6c381c29
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/binutils/binutils-common_2.31.1.8-deepin1_i386.deb
+    digest: 32d73ade92261a8c2b3e47c71a67a488b320b2093a7d154ac73fb15c2877eb0a
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/binutils/libbinutils_2.31.1.8-deepin1_i386.deb
+    digest: 2dd4f4a4aa067979adeb58f0160b8b574022026c96ffa65a902117ca1d8b5df4
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/binutils/binutils-i686-linux-gnu_2.31.1.8-deepin1_i386.deb
+    digest: 5bfa256a4ce7f7f404c638d852eeb8094f17995085634bf5fffe50604622c187
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libgcc-8-dev_8.3.0.3-3+rebuild_i386.deb
+    digest: eda05ed23849531441002a8207245a8e2a61e71d1911cdd97f02c991028490ab
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libgomp1_8.3.0.3-3+rebuild_i386.deb
+    digest: d257692e78fe715a5130cd61a098cb9a8570ebaf1f0e64d7fd464b43540cc5d2
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libitm1_8.3.0.3-3+rebuild_i386.deb
+    digest: c83ac59f5bf5e6770461b4f7ba2ddb6fb44861f4b8055749d18ce8dfa841bbb9
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libatomic1_8.3.0.3-3+rebuild_i386.deb
+    digest: d9161b6cc3134efcb95b1440b31bb1f1f034ae1d114f949d9d9e5da67e53e364
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libasan5_8.3.0.3-3+rebuild_i386.deb
+    digest: f54430756934d7d87e98966c133d99829fbf56c7c86bc98124c8f64295080a0d
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libubsan1_8.3.0.3-3+rebuild_i386.deb
+    digest: 0591274ba80938079cc57b474513b93bd1274f75578e407a4a2bb1afbdad6ce6
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libmpx2_8.3.0.3-3+rebuild_i386.deb
+    digest: 980376556e1fdcd75c41ceaec2914131afbd8e08296e1070f222fcfe008d0e2f
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gcc-8/libquadmath0_8.3.0.3-3+rebuild_i386.deb
+    digest: 30a45494cf3fcb5bc3ba3f30010252ebe195984864864ccada0c07ee6ff270aa
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/glibc/libc6-dev_2.28.21-1+deepin-1_i386.deb
+    digest: 1c8b0cbf201816c2f29718823e8904f40286959087ba7238a996505d1e7ae1d7
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/glibc/libc-dev-bin_2.28.21-1+deepin-1_i386.deb
+    digest: 42f05a7cd782829d99ffe491301c80cf9f2f18d342b382108352eab9028347ac
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/linux/linux-libc-dev_5.15.5-2~bpo11+1_i386.deb
+    digest: 2f76ec95a995e96fb643734344a47dc173aa4f54989315e44801bacb60a32d4b
+build: |-
+  export LINGLONG_RAW_ID="gcc-i386-linux-gnu"
+  export LINGLONG_APP_ID="gcc-i386-linux-gnu"
+  export LINGLONG_APP_NAME="App Name"
+  export LINGLONG_APP_VERSION="0.0.0.1"
+  export LINGLONG_APP_KIND="app"
+  export LINGLONG_APP_DESC="Description"
+  export LINGLONG_COMMAND="/opt/apps/gcc-i386-linux-gnu/files/bin/start.sh"
+  exec /project/build.sh
