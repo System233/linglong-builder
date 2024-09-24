@@ -1,0 +1,20 @@
+version: "1.0"
+package:
+  id: bug-test-1.linyaps
+  name: App Name
+  version: 0.0.0.1
+  kind: app
+  description: Description
+command:
+  - /opt/apps/bug-test-1.linyaps/files/bin/start.sh
+base: org.deepin.base/23.1.0
+runtime: org.deepin.Runtime/23.0.1
+build: |-
+  export LINGLONG_RAW_ID="bug-test-1"
+  export LINGLONG_APP_ID="bug-test-1.linyaps"
+  export LINGLONG_APP_NAME="App Name"
+  export LINGLONG_APP_VERSION="0.0.0.1"
+  export LINGLONG_APP_KIND="app"
+  export LINGLONG_APP_DESC="Description"
+  export LINGLONG_COMMAND="/opt/apps/bug-test-1.linyaps/files/bin/start.sh"
+  exec /project/build.sh

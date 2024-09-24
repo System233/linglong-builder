@@ -1,0 +1,100 @@
+version: "1.0"
+package:
+  id: com.processon.processonmind.linyaps
+  name: ProcessOn思维导图
+  version: 5.3.3.1
+  kind: app
+  description: 流程图、思维导图作图工具
+command:
+  - /opt/apps/com.processon.processonmind.linyaps/files/bin/start.sh
+base: org.deepin.foundation/20.0.0
+sources:
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.processon.processonmind/com.processon.processonmind_5.3.3.1_amd64.deb
+    digest: 59fbc87318f9b8dc0dbf51b001c9ea797d95b41bd6295a46a165a7d75426ade4
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
+    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/u/util-linux/util-linux-extra_2.38.1-1.1_amd64.deb
+    digest: 489bc82e8e2d2d00cc216a38240b738958871e94d5cc4a1b7724095adb9e9560
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/g/giflib/libgif7_5.1.4.3-deepin1_amd64.deb
+    digest: 66306157d31bcdf8186a791686749b6218e2617e945f3482df2bdb333a3f374d
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/p/pulseaudio/libpulse0_14.2.3-deepin1_amd64.deb
+    digest: 997860325f33c3b276e4a5cd3731c27b20bcf72809902de81f62da8525c66368
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/liba/libasyncns/libasyncns0_0.8-6+apricot_amd64.deb
+    digest: de805cf3264f385e10c99745700e1ce5e7c23c37b1437ec90903c7b70f8c4ebf
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/libs/libsndfile/libsndfile1_1.0.28.3-1+deepin_amd64.deb
+    digest: a3c358e16e60c5e012d1e0c1feb664d877948fe12814fc45b42dc28423255430
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/f/flac/libflac8_1.3.2.2-3+dde_amd64.deb
+    digest: 656e2eecc4b3d99469f5e946d1e399f51bf8d7c27e7a4c05465bf666668a32a6
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/libo/libogg/libogg0_1.3.2.1-1+rebuild_amd64.deb
+    digest: 29bcb4e5c68648da6016e42a019e1d37b46e9829451d1b7414f71ce6d059eb0b
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/libv/libvorbis/libvorbis0a_1.3.6-2_amd64.deb
+    digest: 58ceadc9fcdb5a18c9092e0ab0b65130063132712b81fee72e14ad3d367ca172
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/libv/libvorbis/libvorbisenc2_1.3.6-2_amd64.deb
+    digest: dc6ba53bfba31f24e5c8a4a54786747f1ca60855d4351c3de5bd5a1f36d292fa
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/t/tcp-wrappers/libwrap0_7.6.q-28_amd64.deb
+    digest: 545d24beda62aa37ac22af697dbc43c9fb87d718aeefd3664309759f716ea0ac
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/r/roaraudio/libroar-compat2_1.0~beta12-2_amd64.deb
+    digest: 51550b75a4fbdc3b46f4c9952f012d564d931bd80b24ecc6fe40abfd42698a2f
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/r/roaraudio/libroar2_1.0~beta12-2_amd64.deb
+    digest: 6939da625327cef1387e9255900c3a14daeea302b96eb36aef3d72e9d8ccaf3b
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/s/speex/libspeex1_1.2.1-1+rebuild_amd64.deb
+    digest: 13a890c207b1c56e8bdfb185700156463bf7b6144e837a9301657ee84ea5fa6f
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/s/speex/libspeexdsp1_1.2.1-1+rebuild_amd64.deb
+    digest: d1f12aa3c3a5234de7fb48ad8ff97d3548cd48adce04223399b2db8acc83bdb2
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1_amd64.deb
+    digest: a498ff92806369ab8fdc0ac218185fe148288b840443409b665b05cdc7bf2c9e
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/x/xcb-util-image/libxcb-image0_0.4.0.1-1+rebuild_amd64.deb
+    digest: f54347e90eaf15ff0e85847d226ac82a6960d2a64f14b911dc8e1916165610d5
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/x/xcb-util/libxcb-util0_0.3.8.1-1+rebuild_amd64.deb
+    digest: d571cf09a867aa8a9d416e3bfdfdbb53dae1f97d0f499cc4f7ef9124b953f9ca
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0.1-1+rebuild_amd64.deb
+    digest: a8656090cd2971bff2d6596aafa14dff59c8d5e627f8564370ed2d210505b55c
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9.1-1+rebuild_amd64.deb
+    digest: 474b363a06dbbafa4a40b965ed2f066d46fa474aa3fc0a9f6da44ec1e2e240bb
+  - kind: file
+    url: https://mirrors.tuna.tsinghua.edu.cn/deepin/apricot/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_0.8.2-1_amd64.deb
+    digest: 387f2e36c582b123f7988f250f3ab739a7f3a54e5b507d4e5fa445cd1c43f61a
+build: >-
+  export LINGLONG_RAW_ID="com.processon.processonmind"
+
+  export LINGLONG_APP_ID="com.processon.processonmind.linyaps"
+
+  export LINGLONG_APP_NAME="com.processon.processonmind"
+
+  export LINGLONG_APP_VERSION="5.3.3.1"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="流程图、思维导图作图工具"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.processon.processonmind.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

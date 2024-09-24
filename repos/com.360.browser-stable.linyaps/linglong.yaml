@@ -13,8 +13,8 @@ sources:
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.360.browser-stable/com.360.browser-stable_13.3.1016.4-1_amd64.deb
     digest: 0d2bd8dd4ddbd4f00d30693664b76f2c492adf35f13cf7a25727829267166781
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/c/curl/libcurl3-gnutls_7.64.1.21-deepin1_amd64.deb
-    digest: aae86661b49f90d327a19116327aa3afeb157575a5ac9ac1fdf89c4e7420ec35
+    url: https://professional-security.chinauos.com/pool/main/c/curl/libcurl3-gnutls_7.64.1.22-deepin1_amd64.deb
+    digest: 0f17aa924579ca8584f89524d4f993cba2552deb66dc7282bd387b576b1c2992
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/w/wget/wget_1.20.1.4-1+eagle_amd64.deb
     digest: 9721f45303858f6f5642a8e6a97964855a2cec2e100407b22efd6ab85087a44f

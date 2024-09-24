@@ -1,0 +1,9 @@
+.cache
+node_modules
+linglong
+*.swp
+*.log
+*.layer
+*.uab
+*.uabBuild
+extraLibs.uab.yaml

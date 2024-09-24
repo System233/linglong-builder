@@ -16,3 +16,8 @@
 - [tested.list](./tested.list) 已测试成功列表
 - [rebuild.list](./rebuild.list) ~~ 强制构建列表 ~~
 - [ignore.list](./ignore.list) 忽略任务列表
+
+
+## TODO
+
+- [ ] 更新ld补丁,避免将CWD加入动态库搜索路径
