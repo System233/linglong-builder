@@ -18,12 +18,12 @@ alias "llcp=ll-cli ps"
 alias "llcs=rm linglong/sources/*.deb"
 
 alias "llu=ll-helper update --cache-dir ~/.cache/linglong-helper"
-alias "llrs=ll-helper resolve --cache-dir ~/.cache/linglong-helper --from '$DIR/../assets'"
-alias "llf=apt-cli find --cache-dir ~/.cache/linglong-helper -f sources.list"
+alias "llrb=ll-rebase"
+alias "llf=ll-find"
 
 alias "llel=ll-builder export -l"
-alias "lltest=ll-cli uninstall $(basename $(readlink -f .));ll-cli install $(basename $(readlink -f .))*_binary.layer"
 
-alias "llt=test.sh"
+alias "llt=ll-test"
+alias "llclr=ll-clear"
 
 export DISPLAY=${DISPLAY:-:0}

@@ -7,6 +7,6 @@ ll-cli uninstall $APP_ID
 ll-cli install $APP_ID*_binary.layer
 
 echo "测试快捷方式 $APP_ID"
-exec check_desktop.sh
+exec check-desktop.sh
 
 rm *.layer
