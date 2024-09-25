@@ -28,6 +28,7 @@ function merge() {
     rm -rf "$SRC"
 }
 
+#chmod -R +rw $PREFIX
 merge $PREFIX/opt/apps/*/files $PREFIX
 merge $PREFIX/opt/apps/*/entries $PREFIX/share
 merge $PREFIX/usr $PREFIX

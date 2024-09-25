@@ -1,3 +1,11 @@
+com.sample.sradio
+libbrotli1
+libicu70
+util-linux-extra
+ca-certificates-uniontech
+libgconf-2-4
+libdbus-glib-1-2
+gconf2-common
 libpython2.7
 libpython2.7-stdlib
 libpython2.7-minimal
@@ -10,5 +18,4 @@ libvorbis0a
 libvorbisenc2
 libusb-1.0-0
 libxslt1.1
-libicu70
 libxt6

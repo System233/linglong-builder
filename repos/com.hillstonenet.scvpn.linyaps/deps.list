@@ -1,1 +1,13 @@
 com.hillstonenet.scvpn
+libdouble-conversion1
+libinput10
+libmtdev1
+libpcre2-16-0
+libqt5gui5
+libqt5svg5
+libwebpdemux2
+libxcb-icccm4
+libxcb-image0
+libxcb-keysyms1
+libxcb-render-util0
+libxkbcommon-x11-0

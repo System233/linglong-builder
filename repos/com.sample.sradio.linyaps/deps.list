@@ -1,4 +1,5 @@
-com.sample.sradiolibgconf-2-4
+com.sample.sradio
+libgconf-2-4
 libpython2.7
 #libqt5concurrent5
 #libqt5opengl5
