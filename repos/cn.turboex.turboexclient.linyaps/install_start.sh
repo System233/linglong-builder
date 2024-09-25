@@ -65,12 +65,29 @@ if [ ! -e "$REBASED_STARTUP" ]; then
         echo -e "\033[31mFallback '$REBASED_STARTUP' \033[0m"
     fi
 fi
+if [ -z "$NO_PATCH_EXEC" ] && [ -z "$ENABLE_INSERT_EXEC_PTACH" ]; then
+    DESKTOP_NUM=$(ls $PREFIX/share/applications/*.desktop | wc -l)
+    if [ "$DESKTOP_NUM" -gt 1 ]; then
+        NO_PATCH_EXEC=1
+        ENABLE_INSERT_EXEC_PTACH=1
+    fi
+fi
 
 echo STARTUP: ${STARTUP}
 echo REBASED_STARTUP: ${REBASED_STARTUP}
 echo BOOT: ${LINGLONG_COMMAND}
 
-sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP" -e '/^\s*$/d' -e '/^#.*$/d' -e 's#^\s+##g' -e 's#\s*=\s*#=#'
+sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e '/^\s*$/d' -e '/^#.*$/d' -e 's#^\s+##g' -e 's#\s*=\s*#=#'
+
+if [ -z "$NO_PATCH_EXEC" ]; then
+    sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_STARTUP"
+fi
+
+if [ -n "$ENABLE_INSERT_EXEC_PTACH" ]; then
+    SHELL_CMD="${SHELL_CMD:- }"
+    sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ s#Exec=#Exec=$LINGLONG_COMMAND #g"
+fi
+
 perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -i $PREFIX/share/applications/*.desktop
 
 if [ "$STARTUP" != "sh" ]; then
@@ -85,7 +102,9 @@ if [ "$STARTUP" != "sh" ]; then
     fi
 fi
 SHELL_CMD=${SHELL_CMD:-${REBASED_STARTUP}}
-echo SHELL_CMD=$SHELL_CMD
+SHELL_EXEC=${SHELL_EXEC:-exec}
+echo SHELL_CMD: $SHELL_CMD
+echo SHELL_EXEC: $SHELL_EXEC
 echo "${SHELL_EXEC:-exec} ${SHELL_CMD} \$@" >>$LINGLONG_COMMAND
 chmod -v +x $LINGLONG_COMMAND
 
