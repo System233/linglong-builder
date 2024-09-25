@@ -12,7 +12,19 @@ package:
 command:
   - /opt/apps/dev.warp.app.linyaps/files/bin/start.sh
 base: org.deepin.foundation/23.0.0
-sources: []
+sources:
+  - kind: file
+    url: https://com-store-packages.uniontech.com/appstorev23/pool/appstore/d/dev.warp.app/dev.warp.app_0.2024.04.02.08.02.stable.01_amd64.deb
+    digest: 98a6b170c64625ab8a03e3511dcecc54fa3a967bb9499dad50f2c3ebe802d663
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-deepin_all.deb
+    digest: 5982963d05dbf4efa009c3ab6db3576a03f680199d75d7d5edda89c55def912c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.6.0-1_amd64.deb
+    digest: d763060cdbffd1ed849ae63e091ca47b8b75c8777ccc2d0ee968fcbe66aa9b51
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/d/deepin-app-store-runtime/deepin-app-store-runtime_1.0.2+community_amd64.deb
+    digest: 72b0e156537437f4628468f53607a50c64aef9dd0984ea8187108b2d5bb2b6aa
 build: >-
   export LINGLONG_RAW_ID="dev.warp.app"
 

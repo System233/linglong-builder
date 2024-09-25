@@ -54,7 +54,7 @@ if [ ! -e "$REBASED_STARTUP" ]; then
     fi
 
     if [ ! -e "$REBASED_STARTUP" ]; then
-        echo "\033[31mError: '$REBASED_STARTUP' does not exists." >&2
+        echo -e "\033[31mError: '$REBASED_STARTUP' does not exists." >&2
         if [ -e "$STARTUP" ]; then
             REBASED_STARTUP=$STARTUP
         elif [ -e "/bin/$(basename $STARTUP)" ]; then
@@ -70,7 +70,7 @@ echo STARTUP: ${STARTUP}
 echo REBASED_STARTUP: ${REBASED_STARTUP}
 echo BOOT: ${LINGLONG_COMMAND}
 
-sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP"
+sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP" -e '/^\s*$/d' -e '/^#.*$/d' -e 's#^\s+##g' -e 's#\s*=\s*#=#'
 perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -i $PREFIX/share/applications/*.desktop
 
 if [ "$STARTUP" != "sh" ]; then

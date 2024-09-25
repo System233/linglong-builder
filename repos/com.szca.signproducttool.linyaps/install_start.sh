@@ -6,7 +6,15 @@ echo Setting Application Entrypoint
 PATCH_APP_PATH="s#/opt/apps/\S+/files#${PREFIX}#g"
 PATCH_USR_PATH="s#/usr#$PREFIX#g"
 
-DESKTOP_LIST=$(dpkg --contents linglong/sources/$LINGLONG_RAW_ID*.deb | grep -oP "[^\/]+.desktop$" | paste -sd :)
+for deb_file in linglong/sources/*.deb; do
+    if [[ -f "$deb_file" ]]; then
+        pkg_name=$(dpkg-deb --info "$deb_file" | grep -m 1 "Package:" | awk '{print $2}')
+        if [ "$pkg_name" == "$LINGLONG_RAW_ID" ]; then
+            echo "Found package: $pkg_name in $deb_file"
+            DESKTOP_LIST=$(dpkg --contents $deb_file | grep -oP "[^\/]+.desktop$" | paste -sd :)
+        fi
+    fi
+done
 
 rm -f error.log
 function log_error() {
@@ -46,7 +54,7 @@ if [ ! -e "$REBASED_STARTUP" ]; then
     fi
 
     if [ ! -e "$REBASED_STARTUP" ]; then
-        echo "\033[31mError: '$REBASED_STARTUP' does not exists." >&2
+        echo -e "\033[31mError: '$REBASED_STARTUP' does not exists." >&2
         if [ -e "$STARTUP" ]; then
             REBASED_STARTUP=$STARTUP
         elif [ -e "/bin/$(basename $STARTUP)" ]; then
@@ -62,17 +70,23 @@ echo STARTUP: ${STARTUP}
 echo REBASED_STARTUP: ${REBASED_STARTUP}
 echo BOOT: ${LINGLONG_COMMAND}
 
-sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP"
+sed -i -E $PREFIX/share/applications/*.desktop -e "/Exec=/ $PATCH_APP_PATH" -e "/Exec=/ $PATCH_USR_PATH" -e "/Exec=/ $PATCH_STARTUP" -e '/^\s*$/d' -e '/^#.*$/d' -e 's#^\s+##g' -e 's#\s*=\s*#=#'
 perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -i $PREFIX/share/applications/*.desktop
 
 if [ "$STARTUP" != "sh" ]; then
     if od "$REBASED_STARTUP" -An -N2 -tx2 | grep -q "2123"; then
         echo Patch Script: ${STARTUP}
         sed -i -E -e "$PATCH_APP_PATH" "$REBASED_STARTUP"
+        perl -pe "s#/opt/(?!apps)#$PREFIX/opt/#g" -i "$REBASED_STARTUP"
+
+        if [ -n "$ENABLE_USR_PATCH" ]; then
+            sed -i -E -e "$PATCH_USR_PATH" "$REBASED_STARTUP"
+        fi
     fi
 fi
-
-echo "${SHELL_EXEC:-exec} ${REBASED_STARTUP} \$@" >>$LINGLONG_COMMAND
+SHELL_CMD=${SHELL_CMD:-${REBASED_STARTUP}}
+echo SHELL_CMD=$SHELL_CMD
+echo "${SHELL_EXEC:-exec} ${SHELL_CMD} \$@" >>$LINGLONG_COMMAND
 chmod -v +x $LINGLONG_COMMAND
 
 while read desktop; do
