@@ -5,11 +5,10 @@
 # https://opensource.org/licenses/MIT
 set -e
 CWD=$(pwd)
-echo CMD=${CMD}
 echo CWD=${CWD}
 echo REPO_ROOT=${REPO_ROOT}
 echo APP_DIR=${APP_DIR}
-echo APP_ID=${APP_ID}
+echo APP_ID=${APP_ID:-$1}
 echo APP_NAME=${APP_NAME}
 export PATH=$PATH:${CWD}/node_modules/.bin
 
@@ -25,14 +24,8 @@ else
     ll-helper convert "$APP_ID" --name "$APP_NAME" --with-linyaps --from "${BASE}" --quiet --cache-dir "${CACHE_DIR}"
     cd "${APP_DIR}"
     ll-helper patch ld icon --from "${BASE}"
+    ll-helper update --from "${BASE}"
 fi
 
-if [ "$CMD" == "resolve" ]; then
-    ll-helper resolve --cache-dir ${CACHE_DIR} --from "${BASE}"
-fi
-
-if [ "$CMD" == "build" ]; then
-    # ll-helper update --from "${BASE}" --cache-dir ${CACHE_DIR}
-    ll-builder build
-    ll-builder export -l
-fi
+ll-builder build
+ll-builder export -l
