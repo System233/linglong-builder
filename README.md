@@ -64,4 +64,4 @@ alias "llclr=ll-clear"
 
 ## TODO
 
-- [ ] 更新ld补丁,避免将CWD加入动态库搜索路径
+- [x] 更新ld补丁,避免将CWD加入动态库搜索路径

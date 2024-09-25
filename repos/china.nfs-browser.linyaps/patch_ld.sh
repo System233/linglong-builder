@@ -3,5 +3,5 @@
 
 echo Applying Patch: ld
 
-LD_PATH=$(find $PREFIX -name "*.so*" | xargs dirname | grep -v "/lib/jvm" | sort | uniq | paste -sd :)
-echo "export LD_LIBRARY_PATH=$LD_PATH:\$LD_LIBRARY_PATH" | tee -a $LINGLONG_COMMAND
+LD_PATH=$(find $PREFIX -name "*.so*" | xargs dirname | grep -v "/lib/jvm" | sort -u | paste -sd :)
+echo "export LD_LIBRARY_PATH=\${LD_LIBRARY_PATH:-/}:$LD_PATH" | tee -a $LINGLONG_COMMAND
