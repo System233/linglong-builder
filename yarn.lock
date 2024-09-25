@@ -122,6 +122,54 @@
   resolved "https://registry.npmmirror.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.5.tgz#56f00962ff0c4e0eb93d34a047d29fa995e3e342"
   integrity sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==
 
+"@mongodb-js/zstd-darwin-arm64@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-darwin-arm64/-/zstd-darwin-arm64-1.2.2.tgz#7766e6002b9cb2c221212db639cd6015b272ead1"
+  integrity sha512-hjQgub8fhn3itewwRSCSe3sl8rmnbZOFwuBHOZj4j4xu1Hde7xs+ACkfeEvvmNjUuxAzvc1MnDjHX2UwUlA7qA==
+
+"@mongodb-js/zstd-darwin-x64@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-darwin-x64/-/zstd-darwin-x64-1.2.2.tgz#8847ae2ab1d03c47107297885591203e034a22f8"
+  integrity sha512-gHSxcWgAdED/bDKyOqLhiwC0VYlhkhSyQuR0Fqcrl1CMpWSJAfu0jxhaEvM4Ncs6yH0+BPVwTp8xtHW2iJ5DuQ==
+
+"@mongodb-js/zstd-linux-arm64-gnu@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-linux-arm64-gnu/-/zstd-linux-arm64-gnu-1.2.2.tgz#a83a645fd2f28dac0c82495cb55c22c8cc20b9ab"
+  integrity sha512-DJVSC5IU/GlY9lY4qpKML/655OstZvueN/WZeuO8hyYJ5115x/usUM1pHpp7dbZWyUUhTlRIU4peR62Tk1H3lQ==
+
+"@mongodb-js/zstd-linux-arm64-musl@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-linux-arm64-musl/-/zstd-linux-arm64-musl-1.2.2.tgz#f37d79977c468634e2d741c1bd1ab075e7af4c64"
+  integrity sha512-rxTmMF2NGLLijnw+MZCs0ixiE+NylpDYvUUkJemqjyHstlmYG0Ku6i3+SzViB6L0kkktwYSRpaI4y7OG+SFt3w==
+
+"@mongodb-js/zstd-linux-x64-gnu@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-linux-x64-gnu/-/zstd-linux-x64-gnu-1.2.2.tgz#45fc132f46d7e32080b045d91c01203d5870d911"
+  integrity sha512-ctz/XY6aX2THxkTjAygOYbyFp2/UYbqZIF3sB1F5Cjcbus9wfD3vPbaDegqRjQhlHBvKia3IjqJDUiC+aZxmww==
+
+"@mongodb-js/zstd-linux-x64-musl@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-linux-x64-musl/-/zstd-linux-x64-musl-1.2.2.tgz#664997208e461fefb4dcddfb6ec8adcaac91ab96"
+  integrity sha512-EqD271yPIRBGbkMtBJSVTLlUrukTsmi7qt1G3dh+Z9RWVXn5MXnlnEn4znfBXoaVqlniUNZhmzDEaATNIktJpw==
+
+"@mongodb-js/zstd-win32-x64-msvc@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd-win32-x64-msvc/-/zstd-win32-x64-msvc-1.2.2.tgz#5565de063e48435e98e42d514c23e19a23454a09"
+  integrity sha512-h3O9NGOrGtfQ7g+rFqs5Hn+GSmgF2ik+xg0/1crNUXWthcBsxcCK5woawHfDcJxWkaiijJe5PVo6/fo8Jm7qCg==
+
+"@mongodb-js/zstd@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@mongodb-js/zstd/-/zstd-1.2.2.tgz#6de24599f95af798e9c03658035229d5e217fd08"
+  integrity sha512-NRXiFhk2Nl8UMuIZ4pviKkGVZY/e5P37Opam1u0OtgXjEE0kO1HLapA9heTcZ1PUomArnKS426XbiRFr5iaWvw==
+  optionalDependencies:
+    "@mongodb-js/zstd-darwin-arm64" "1.2.2"
+    "@mongodb-js/zstd-darwin-x64" "1.2.2"
+    "@mongodb-js/zstd-linux-arm64-gnu" "1.2.2"
+    "@mongodb-js/zstd-linux-arm64-musl" "1.2.2"
+    "@mongodb-js/zstd-linux-x64-gnu" "1.2.2"
+    "@mongodb-js/zstd-linux-x64-musl" "1.2.2"
+    "@mongodb-js/zstd-win32-x64-msvc" "1.2.2"
+
 "@types/node@^22.5.5":
   version "22.5.5"
   resolved "https://registry.npmmirror.com/@types/node/-/node-22.5.5.tgz#52f939dd0f65fc552a4ad0b392f3c466cc5d7a44"
@@ -139,15 +187,30 @@ ansi-regex@^5.0.1:
   resolved "https://registry.npmmirror.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
   integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
 
-apt-cli@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/apt-cli/-/apt-cli-0.1.13.tgz#3f5459ac2d612ae40a434e9e777deec29cb4fcf2"
-  integrity sha512-gkid2htS+/1w2hmctjFwp/SJlvF6oL+78TpCZxF0GbE38QGx0D2kSHW9Og4h0RRrP0QtNpAnSGDF1VsZIwwX2A==
+apt-cli@^0.1.16:
+  version "0.1.16"
+  resolved "https://registry.npmjs.org/apt-cli/-/apt-cli-0.1.16.tgz#1370f4fd6a3dfc5db898bc1d8f2f1bc730efecfe"
+  integrity sha512-blQpWs++uvfyZBmUXEUFGsiW5QdFPm3HaFgYUaR8NgjkC7Ski2FeioYx8NX7hu1iwCLBw1srJSjamwHOJrlt7g==
   dependencies:
     cli-progress "^3.12.0"
     commander "^12.1.0"
     lzma-native "^8.0.6"
     unbzip2-stream "^1.4.3"
+
+archive-stream@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/archive-stream/-/archive-stream-0.0.4.tgz#ab25337f18dcad82cfb455f080e51e1ef9279cf4"
+  integrity sha512-9Pejf7y+kFruBU+so0KRwLVaXIkoqZb0VkdqskCIZFj5CKk5gk5rhRERw9mqzSiJYbQcbkrQnARbHtZPSlQ7kQ==
+
+b4a@^1.6.4:
+  version "1.6.6"
+  resolved "https://registry.npmjs.org/b4a/-/b4a-1.6.6.tgz#a4cc349a3851987c3c4ac2d7785c18744f6da9ba"
+  integrity sha512-5Tk1HLk6b6ctmjIkAcU/Ujv/1WqiDl0F0JdRCR80VsOcUlHcu7pWeWRlOqQLHfDEsVx9YH/aif5AG4ehoCtTmg==
+
+bare-events@^2.2.0:
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/bare-events/-/bare-events-2.5.0.tgz#305b511e262ffd8b9d5616b056464f8e1b3329cc"
+  integrity sha512-/E8dDe9dsbLyh2qrZ64PEPadOQ0F4gbl1sUJOrmph7xOiIxfY8vwab/4bFLh4Y88/Hk/ujKcrQKc+ps0mv873A==
 
 base64-js@^1.3.1:
   version "1.5.1"
@@ -226,6 +289,11 @@ emoji-regex@^8.0.0:
   resolved "https://registry.npmmirror.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
 
+fast-fifo@^1.2.0, fast-fifo@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/fast-fifo/-/fast-fifo-1.3.2.tgz#286e31de96eb96d38a97899815740ba2a4f3640c"
+  integrity sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==
+
 ieee754@^1.1.13:
   version "1.2.1"
   resolved "https://registry.npmmirror.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -251,17 +319,20 @@ libphonenumber-js@^1.10.53:
   resolved "https://registry.npmmirror.com/libphonenumber-js/-/libphonenumber-js-1.11.8.tgz#697fdd36500a97bc672d7927d867edf34b4bd2a7"
   integrity sha512-0fv/YKpJBAgXKy0kaS3fnqoUVN8901vUYAKIGD/MWZaDfhJt1nZjPL3ZzdZBt/G8G8Hw2J1xOIrXWdNHFHPAvg==
 
-linglong-helper@^0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/linglong-helper/-/linglong-helper-0.3.9.tgz#55e659cd07c4401f5322bf10030e29ffc517d0aa"
-  integrity sha512-CRJrEPym51VGCI93vs1r4X0rzLQ2QrNlr8PItdNgRhJEaKyuqHRp5eJl1L0ssWqz48ZWah1tZg7Ky/U1lloeXw==
+linglong-helper@^0.5.0-beta.0:
+  version "0.5.0-beta.0"
+  resolved "https://registry.npmjs.org/linglong-helper/-/linglong-helper-0.5.0-beta.0.tgz#53c391ea95720ce876b4400f1363cff1e33c4a1d"
+  integrity sha512-yCZvpwDnQ3U2h1EooapLPgibtpG2hR3l9j4OGILgN661vcELqYeYrJttlq6q8F7Srtfvwq8/zCzTqHkWuOa0fg==
   dependencies:
-    apt-cli "^0.1.13"
+    "@mongodb-js/zstd" "^1.2.2"
+    apt-cli "^0.1.16"
+    archive-stream "^0.0.4"
     class-transformer "^0.5.1"
     class-validator "^0.14.1"
     commander "^12.1.0"
     reflect-metadata "^0.2.2"
     sharp "^0.33.5"
+    tar-stream "^3.1.7"
     yaml "^2.5.1"
 
 lzma-native@^8.0.6:
@@ -282,6 +353,11 @@ node-gyp-build@^4.2.1:
   version "4.8.2"
   resolved "https://registry.npmmirror.com/node-gyp-build/-/node-gyp-build-4.8.2.tgz#4f802b71c1ab2ca16af830e6c1ea7dd1ad9496fa"
   integrity sha512-IRUxE4BVsHWXkV/SFOut4qTlagw2aM8T5/vnTsmrHJvVoKueJHRc/JaFND7QDDc61kLYUJ6qlZM3sqTSyx2dTw==
+
+queue-tick@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/queue-tick/-/queue-tick-1.0.1.tgz#f6f07ac82c1fd60f82e098b417a80e52f1f4c142"
+  integrity sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==
 
 readable-stream@^3.6.0:
   version "3.6.2"
@@ -343,6 +419,17 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+streamx@^2.15.0:
+  version "2.20.1"
+  resolved "https://registry.npmjs.org/streamx/-/streamx-2.20.1.tgz#471c4f8b860f7b696feb83d5b125caab2fdbb93c"
+  integrity sha512-uTa0mU6WUC65iUvzKH4X9hEdvSW7rbPxPtwfWiLMSj3qTdQbAiUboZTxauKfpFuGIGa1C2BYijZ7wgdUXICJhA==
+  dependencies:
+    fast-fifo "^1.3.2"
+    queue-tick "^1.0.1"
+    text-decoder "^1.1.0"
+  optionalDependencies:
+    bare-events "^2.2.0"
+
 string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.npmmirror.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
@@ -365,6 +452,22 @@ strip-ansi@^6.0.1:
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
   dependencies:
     ansi-regex "^5.0.1"
+
+tar-stream@^3.1.7:
+  version "3.1.7"
+  resolved "https://registry.npmjs.org/tar-stream/-/tar-stream-3.1.7.tgz#24b3fb5eabada19fe7338ed6d26e5f7c482e792b"
+  integrity sha512-qJj60CXt7IU1Ffyc3NJMjh6EkuCFej46zUqJ4J7pqYlThyd9bO0XBTmcOIhSzZJVWfsLks0+nle/j538YAW9RQ==
+  dependencies:
+    b4a "^1.6.4"
+    fast-fifo "^1.2.0"
+    streamx "^2.15.0"
+
+text-decoder@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/text-decoder/-/text-decoder-1.2.0.tgz#85f19d4d5088e0b45cd841bdfaeac458dbffeefc"
+  integrity sha512-n1yg1mOj9DNpk3NeZOx7T6jchTbyJS3i3cucbNN6FcdPriMZx7NsgrGpWWdWZZGxD7ES1XB+3uoqHMgOKaN+fg==
+  dependencies:
+    b4a "^1.6.4"
 
 through@^2.3.8:
   version "2.3.8"
