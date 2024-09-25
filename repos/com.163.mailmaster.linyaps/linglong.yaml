@@ -1,0 +1,70 @@
+version: "1.0"
+package:
+  id: com.163.mailmaster.linyaps
+  name: 网易邮箱大师
+  version: 5.0.2.1011
+  kind: app
+  description: >-
+    网易邮箱大师-高效强大的全平台邮箱客户端
+
+    「网易邮箱大师」是网易官方出品的全平台邮箱客户端，支持网易邮箱、QQ邮箱在内的各类个人及企业邮箱，更有众多拓展功能与服务，让你的邮箱更强大，让邮件处理更高效。邮箱添加问题及产品建议，可发送邮件至dashiteam@163.com，感谢你对网易邮箱大师的支持，更多功能，敬请期待~
+command:
+  - /opt/apps/mailmaster.linyaps/files/bin/start.sh
+base: org.deepin.foundation/23.0.0
+sources:
+  - kind: file
+    url: https://res.126.net/dl/client/linuxmail/dashi/mail.deb
+    digest: 97bab6171df06aeea24564551d853900a7c2bbffea53332d707dfc5d08064bfa
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/n/nss-wrapper/libnss-wrapper_1.1.11-1_amd64.deb
+    digest: 46e4f9d2fc725c4db132c67e06d52d9177906d80505b250d69cd6f786a6ffbc7
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gconf/libgconf-2-4_3.2.6-7+rb2_amd64.deb
+    digest: 5e82fb58d55c27ec296dd182bf449e9c8d25a16330ea500ccce7819d3dc862be
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/e/elogind/libelogind0_246.9.1-1+debian1_amd64.deb
+    digest: 6148a3218b1431e495b7fd399d860ef5d8bf0a428e3521689515fe1baa238830
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/d/dbus-glib/libdbus-glib-1-2_0.112-2_amd64.deb
+    digest: 9851909b01f56525d066117ed0a2e5ee0470963f9b149d30d0c819140ed44e39
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gconf/gconf2-common_3.2.6-7+rb2_all.deb
+    digest: 6736ca7a457404acabaffbe0bd9a3021c4fbd0540d84ee7659b2cdce0c93edd9
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/c/curl/curl_8.5.0-2_amd64.deb
+    digest: ece439189103419b3cf521c9533b6da1c9a850df02edcd165f4c5b50f8e00bc3
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1_amd64.deb
+    digest: be2ad80833f41279cad9ff66445251ea6ad3eec32cc9d2b9400ff8ad75ae255c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-image/libxcb-image0_0.4.0-deepin1_amd64.deb
+    digest: f41b73e88b0dfb9a8b1cf7dc6b7717cdbf19b3eb0c4b9a395323b70cb3f22daf
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util/libxcb-util1_0.4.0-deepin1_amd64.deb
+    digest: f0b0176f922757c116b36801584068ab4e0411c6d97a6ed9acb578a4ef56a7c7
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0-deepin1_amd64.deb
+    digest: f240c2c0304a253f65767ab856f995ceea9d999fca674f71e210704210218e65
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9-deepin1_amd64.deb
+    digest: c7bee3954ed81690c89b297ad68e14b95a634dc57ec1a235348efbf63de095b5
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.6.0-1_amd64.deb
+    digest: d763060cdbffd1ed849ae63e091ca47b8b75c8777ccc2d0ee968fcbe66aa9b51
+build: >-
+  export LINGLONG_RAW_ID="mailmaster"
+
+  export LINGLONG_APP_ID="com.163.mailmaster.linyaps"
+
+  export LINGLONG_APP_NAME="网易邮箱大师"
+
+  export LINGLONG_APP_VERSION="5.0.2.1011"
+
+  export LINGLONG_APP_KIND="app"
+
+  export
+  LINGLONG_APP_DESC="网易邮箱大师-高效强大的全平台邮箱客户端\n「网易邮箱大师」是网易官方出品的全平台邮箱客户端，支持网易邮箱、QQ邮箱在内的各类个人及企业邮箱，更有众多拓展功能与服务，让你的邮箱更强大，让邮件处理更高效。邮箱添加问题及产品建议，可发送邮件至dashiteam@163.com，感谢你对网易邮箱大师的支持，更多功能，敬请期待~"
+
+  export LINGLONG_COMMAND="/opt/apps/mailmaster.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh

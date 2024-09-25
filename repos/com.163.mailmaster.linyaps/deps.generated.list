@@ -1,0 +1,12 @@
+libnss-wrapper
+libgconf-2-4
+libelogind0
+libdbus-glib-1-2
+gconf2-common
+curl
+libxcb-icccm4
+libxcb-image0
+libxcb-util1
+libxcb-keysyms1
+libxcb-render-util0
+libxkbcommon-x11-0
