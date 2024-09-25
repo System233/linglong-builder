@@ -21,7 +21,10 @@ cn.suwell.reader.appstore
 cn.ts-it.suite
 cn.turboex.turboexclient
 cn.vrv.linkdood
+cn.wps.wps-office
+cn.wps.wps-office-pro
 cn.yidianwan.cloudgame
+com.163.mailmaster
 com.aisdp
 com.alibabainc.dingtalk
 com.apowersoft.apowermanager
@@ -30,6 +33,7 @@ com.bmb1688.audit
 com.channelsoft.sipphone
 com.cloudwan
 com.cnezsoft.xuanxuan
+com.codeweavers.crossover
 com.cutecomm.broadcast
 com.cutecomm.remotedt
 com.cutecomm.videoconf
@@ -40,6 +44,7 @@ com.eolink
 com.eusoft.eudic
 com.founderinternational.cebreader
 com.foxit.foxitpdfeditor
+com.gdca.gdcaclient
 com.gdca.trustofdreader
 com.gingo
 com.github.desktopnaotu
@@ -47,6 +52,7 @@ com.gnway.appcloud
 com.gstarcad.cad
 com.gsubo.xoa
 com.gtja.richeasy
+com.hillstonenet.scvpn
 com.hisense-syxs.hiedu
 com.hsl.amis
 com.hst.fsmeeting
@@ -73,6 +79,8 @@ com.opiping.manager
 com.opiping.nabric
 com.oray.hsk
 com.ovital.map
+com.processon.processonclient
+com.processon.processonmind
 com.qljy.qlteacher
 com.qq.wemeet
 com.sdguodun.dzonesign
@@ -140,6 +148,3 @@ wonderpen
 xcb-app
 xcshy
 youzone
-com.processon.processonclient
-com.processon.processonmind
-com.163.mailmaster
