@@ -1,9 +1,7 @@
 version: "1.0"
 package:
   id: cn.wps.wps-office.linyaps
-  name: |-
-    WPS2019专业版
-    WPS Office 2019 For Linux
+  name: WPS Office 2019 For Linux
   version: 12.1.0.17885
   kind: app
   description: "WPS Office, is an office productivity suite. WPS Office including
