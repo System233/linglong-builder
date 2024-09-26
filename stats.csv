@@ -1,246 +1,247 @@
-包名,名称,UI界面,是否可用,图标正常,桌面启动,备注,
-aixueshi,爱学仕校园教师端,是,是,是,是,,
-app.web.3done,3D One测试版,否,否,,,"网页应用，网站已挂,xdg-open不正常",
-bidfiledownloader,投标文件下载加速客户端,是,是,是,是,,
-china.nfs-browser,方德浏览器,是,是,是,是,,
-classin,ClassIn,是,是,是,是,,
-cn.10086.yidonghuiyi,移动会议（云视讯）网页版,,否,,,仓库无包,
-cn.ankexinchuang.weimail,微邮个人版,是,是,是,是,,
-cn.bitnum.certmanager,证书管理器,是,否,是,否,,qt.network.ssl: No TLS backend is available
-cn.bizconf.bizcloudec,超视云企业版,是,是,是,是,,
-cn.bjca.certaide,BJCA证书助手,否,否,是,否,试图打开本地网页-等待修复,
-cn.bosyun.pixso,Pixso-协同设计,是,是,是,是,,
-cn.ccwork.com,360织语-数字化工作门户平台,是,是,是,是,启动器图标刚装好是黑方块,
-cn.com.gf.hippo,广发操盘手（网页版）,否,否,,,Received signal 11 SEGV_MAPERR 000000000000,
-cn.com.sangfor.atrust,深信服零信任访问控制系统aTrust,否,否,,,闪退 Error: connect ENOENT /usr/share/sangfor/.aTrust/var/run/aTrustTunnel-c46a26c5-2cd4-4c20-9352-8efbb6358ea0,
-cn.com.topsec.topnac,天融信NAC客户端,否,否,,,Segmentation fault,
-cn.com.topsec.topsap,安全接入,是,是,是,是,VPN软件，能启动不一定能用,
-cn.com.xcsa.uos,数据安全集中管控,是,是,是,是,启动器图标刚装好是黑方块,
-cn.coremail.cmclient,Coremail邮箱客户端,是,否,是,是,控件全灰,
-cn.foxitsoftware.foxitreader,福昕PDF阅读器,,,,,无包,
-cn.foxitsoftware.online,福昕高级PDF编辑器网页版,是,否,是,否,"复制desktop的ll-cli命令可启动,双击不行",
-cn.fxkp.fxkpofficesuite.appstore,福昕OFD版式办公套件,是,否,,,显示安装有误-等待修复,
-cn.greenpaper.reader,绿页阅读器,是,是,是,是,,
-cn.gzca.certmanager,GZCA数字证书客户端,否,否,,,Segmentation fault，GZCAGZLM DLL加载失败；读取了USB，可能需要加密狗,
-cn.hitecloud.hitecamera,鸿合视频展台软件,,,,,仓库缺少libopencv-contrib4.5,
-cn.hitecloud.hitecenter,鸿合消息中心,否,否,,,无快捷方式，等待修复,
-cn.hitecloud.hitecontroller,鸿合系统管家,是,否,,,提示需要重启，不一定能用,
-cn.hitecloud.hitetools,鸿合通用工具,,,,,无快捷方式,
-cn.i4.i4tools,爱思助手,是,是,是,是,"启动器图标刚装好是黑方块,USB相关软件,不一定可用",
-cn.lanxin,蓝信,是,是,是,是,,
-cn.linuxgame.cstrike,反恐精英,否,否,是,否,"32位应用;需要重定向应用目录的读写;ptrace拦截性能差,BPF会出问题",
-cn.loongnix.lbrowser,龙芯浏览器,是,是,是,是,,
-cn.newcloud.newss,蓝云天同窗电子教室教师端软件,否,否,,,TScrollBox.Destroy with LCLRefCount>0,
-cn.newcloud.newssst,蓝云天同窗电子教室学生端软件,是,否,是,是,"远控相关软件,读写程序目录,修好了也大概率不可用",
+包名,名称,UI界面,是否可用,图标正常,桌面启动,备注
+aixueshi,爱学仕校园教师端,是,是,是,是,
+app.web.3done,3D One测试版,否,否,,,"网页应用，网站已挂,xdg-open不正常"
+bidfiledownloader,投标文件下载加速客户端,是,是,是,是,
+china.nfs-browser,方德浏览器,是,是,是,是,
+classin,ClassIn,是,是,是,是,
+cn.10086.yidonghuiyi,移动会议（云视讯）网页版,,否,,,仓库无包
+cn.ankexinchuang.weimail,微邮个人版,是,是,是,是,
+cn.bitnum.certmanager,证书管理器,是,否,是,否,"qt.network.ssl: No functional TLS backend was found
+qt.network.ssl: No TLS backend is available"
+cn.bizconf.bizcloudec,超视云企业版,是,是,是,是,
+cn.bjca.certaide,BJCA证书助手,否,否,是,否,试图打开本地网页-等待修复
+cn.bosyun.pixso,Pixso-协同设计,是,是,是,是,
+cn.ccwork.com,360织语-数字化工作门户平台,是,是,是,是,
+cn.com.gf.hippo,广发操盘手（网页版）,否,否,,,Received signal 11 SEGV_MAPERR 000000000000
+cn.com.sangfor.atrust,深信服零信任访问控制系统aTrust,否,否,,,闪退 Error: connect ENOENT /usr/share/sangfor/.aTrust/var/run/aTrustTunnel-c46a26c5-2cd4-4c20-9352-8efbb6358ea0
+cn.com.topsec.topnac,天融信NAC客户端,否,否,,,Segmentation fault
+cn.com.topsec.topsap,安全接入,是,是,是,是,VPN软件，能启动不一定能用
+cn.com.xcsa.uos,数据安全集中管控,是,是,是,是,
+cn.coremail.cmclient,Coremail邮箱客户端,是,否,是,是,控件全灰
+cn.foxitsoftware.foxitreader,福昕PDF阅读器,,,,,无包
+cn.foxitsoftware.online,福昕高级PDF编辑器网页版,是,否,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+cn.fxkp.fxkpofficesuite.appstore,福昕OFD版式办公套件,是,否,,,显示安装有误-等待修复
+cn.greenpaper.reader,绿页阅读器,是,是,是,是,
+cn.gzca.certmanager,GZCA数字证书客户端,否,否,,,Segmentation fault，GZCAGZLM DLL加载失败；读取了USB，可能需要加密狗
+cn.hitecloud.hitecamera,鸿合视频展台软件,,,,,仓库缺少libopencv-contrib4.5
+cn.hitecloud.hitecenter,鸿合消息中心,否,否,,,无快捷方式，等待修复
+cn.hitecloud.hitecontroller,鸿合系统管家,是,否,,,提示需要重启，不一定能用
+cn.hitecloud.hitetools,鸿合通用工具,,,,,无快捷方式
+cn.i4.i4tools,爱思助手,是,是,是,是,
+cn.lanxin,蓝信,是,是,是,是,
+cn.linuxgame.cstrike,反恐精英,否,否,是,否,"32位应用;需要重定向应用目录的读写;ptrace拦截性能差,BPF会出问题"
+cn.loongnix.lbrowser,龙芯浏览器,是,是,是,是,
+cn.newcloud.newss,蓝云天同窗电子教室教师端软件,否,否,,,TScrollBox.Destroy with LCLRefCount>0
+cn.newcloud.newssst,蓝云天同窗电子教室学生端软件,是,否,是,是,"远控相关软件,读写程序目录,修好了也大概率不可用"
 cn.org.hbca.ceac,湖北CA证书管家,是,否,是,是,"UCAPI加载失败,
 lock file error/n: Resource temporarily unavailable
 QWidget: Must construct a QApplication before a QWidget,
-启动器图标刚装好是黑方块,USB相关软件,大概率不可用",
-cn.smxxy.igspc,甘棠政务,,,,,无包,
-cn.suwell.reader.appstore,数科OFD,是,是,是,是,,
-cn.ts-it.suite,泰山办公2022专业版,是,是,是,是,,
-cn.turboex.turboexclient,TurboExClient-邮箱,是,是,是,是,,
-cn.vrv.linkdood,信源密信,是,是,是,是,,
-cn.worldflying.setdevicetool,沃航科技设备配置工具,,,,,"缺包pkexec,暂时跳过",
-cn.wps.wps-office-pro,WPS2019专业版,是,是,是,是,,
-cn.wps.wps-office,WPS Office 2019 For Linux,是,是,是,是,,
-cn.yidianwan.cloudgame,易点玩云游戏,是,是,是,是,,
-com.163.mailmaster,网易邮箱大师,是,是,是,是,,
-com.360.browser-stable,360安全浏览器,是,否,,,提示安装损坏;/var/lib不可读;容器可能不支持polkit,
-com.aisdp,亚信安全SDP,是,是,是,是,,
-com.aivisioning.dsplayer,鼎视智能播放器,否,否,,,[python]:加载dll失败 等待排查,
-com.alibabainc.dingtalk,3.-让工作学习更简单,是,是,是,是,,
-com.amdox.booth,安道展台,否,否,,,仓库中找不到libdc1394.so.22，等待排查,
-com.antutu.benchmark,安兔兔评测,,,,,无包,
-com.apowersoft.apowermanager,手机管理大师,是,是,是,是,,
-com.apps.ipcsearch,IPCSearch 3.1-IP地址搜索,否,否,,,无法启动，网络相关应用，可能需要root,
-com.apps.vplayer,vPlayer,否,否,,,启动后系统非常卡，日志无报错，无界面,
-com.axsizg.dtt,芯盾智能锁传输工具,是,是,是,是,,
-com.bhyf.bhpainter,碧海视频展台,否,否,,,右下角有图标，但点不开,
-com.biometrics.fprint.ft9348,敦泰指纹模组,否,否,,,无快捷方式，跳过,
-com.bjzaxk.zachecktool,中安国产通用计算机终端保密检查系统V1.0 (单机版),是,否,,,可以启动，不过弹窗关掉后卡住，需要读取光盘，可能不可用,
-com.bjzaxk.zacleantool,中安兴坤信息消除工具V1.0,否,否,,,需要服务启动，跳过,
-com.bmb1688.audit,帝岚计算机终端保密检查系统,是,是,是,是,,
-com.cfca.seceditctl.cgb,广发银行网银密码安全控件,否,否,,,"纯插件,无启动文件",
-com.channelsoft.sipphone,CPFCcodSipPhone,是,是,是,是,,
-com.cloudwan,CloudWAN,是,未知,是,是,VPN软件，能启动不一定能用,
-com.cnezsoft.xuanxuan,喧喧企业协同聊天,是,是,是,是,,
-com.codeweavers.crossover,Crossover-wine运行器,是,否,是,是,有界面，但需要启动服务，得想办法修复服务问题,
-com.cutecomm.broadcast,智慧帮直播,是,未知,是,是,需要授权班级ID,
-com.cutecomm.remotedt,智慧帮远程,是,未知,是,是,"可以正常启动,但需要更完善的测试",
-com.cutecomm.videoconf,智慧帮视频会议,是,未知,是,是,"可以正常启动,但需要更完善的测试",
-com.cvicse.ump.agentpc,中创统一监管平台软件桌面客户端V2.1,否,未知,是,是,"右下有图标可用交互,但没有窗口,可能就只是个监控软件",
-com.deepin.uos-cmca,CMCA根证书,,,,,不适合玲珑,
-com.dhbiens.player,东海播放器影音版,是,否,,,依赖的ffplay正常播放视频，但主程序不能播放,
-com.eagleyun.yunshu,云枢,否,否,,,需要服务启动，跳过,
-com.eastmoney.emapp,东方财富,是,是,是,是,,
-com.echanceyun.pan,企业云盘,,,,,模块fs-extra 为空无法启动,
-com.elex.tscs,博智计算机终端保密检查系统V2.0,是,是,是,是,,
-com.eolink,Eolink,是,否,是,是,"强制更新,暂时跳过",
-com.eusoft.eudic,欧路词典,是,是,是,是,,
-com.founderinternational.cebreader,方正CEB版式文档阅读器,是,是,是,是,,
-com.foxit.foxitpdfeditor,福昕高级PDF编辑器,是,是,是,是,,
-com.ftsafe.interpass3000-cgb,广发银行key盾管理工具-飞天诚信,,,,,卡住无法启动,
-com.fz.deepin,方正证券股票期权经典版,,,,,"wine应用,且文件不完整,跳过",
-com.gdca.gdcaclient,GDCA数字证书客户端,是,是,是,是,,
-com.gdca.trustofdreader,信鉴易OFD印章阅读器,是,是,是,是,,
-com.gingo,金鸽,是,是,是,是,,
-com.github.desktopnaotu,桌面版百度脑图,是,是,是,是,,
-com.gnway.appcloud,云联信创专版,是,未知,是,是,偶尔显示个就退出getLineNum[62],
-com.gstarcad.cad,浩辰CAD 2024,是,是,是,是,,
-com.gsubo.xoa,心通达OA精灵,是,是,是,是,,
-com.gtja.richeasy,国泰君安富易,是,否,是,是,"基本功能可用,登录显示连接中,不知能否用",
-com.gzsdkj,山地签,,,,,"服务端,且在程序目录写日志sd_warn.log",
-com.hillstonenet.scvpn,Hillstone Secure Connect-远程工具,是,是,是,是,,
-com.hisense-syxs.hiedu,海信智学,是,是,是,是,,
-com.hsl.amis,电子档案管理系统,是,是,是,是,,
-com.hst.fsmeeting,好视通云会议,是,是,是,是,,
-com.htsec.ehtsec,e海通财,是,是,是,是,,
-com.huashuoaf.finger,华硕安防指纹,是,是,是,是,"设备文件相关,不一定可用",
-com.huidu.hdplayer,HDPlayer软件,是,是,是,是,,
-com.huluer.ichainpi,派盘,,,,,"试图打开只读目录,暂时跳过: error=""open /etc/ichainpi/service.db: no such file or directory""",
-com.icvp.vwas,万控一体化集控,是,是,是,是,,
-com.insight.client,信创运维小助手,,,,,纯服务,
-com.isoftstone.hwcloudlink,HW CloudLink-视频会议,是,是,是,是,,
-com.jiaedian.power,华腾节能客户端,,,,,字体异常,
-com.jiaoyi.tradermaster,交易侠,,,,,Segmentation fault,
-com.jimi.evimsagent,Evimsagent-系统性能监控,是,是,是,是,,
-com.joydin.braingame,智力游戏,是,是,是,是,,
-com.jsdeepnet.swgap,深网文件传输客户端,,否,,,"缺libdlog.so,仓库中找不到",
-com.jumple.pns.server,PNS全国产桌面云系统软件V2.0（服务端）,,,,,无快捷方式；dpkg文件权限错误,
-com.jzaq.client,集中安全平台,,,,,找不到包,
-com.jzaq.stand-alone,集中安全平台单机版,,,,,找不到包,
-com.keymanager,密信Key管理工具,是,是,是,是,,
-com.kinggrid.isignature10.common,金格电子签章系统V10,,,,,找不到包,
-com.kinggrid.surread,超阅版式办公套件,是,是,是,是,,
-com.langlangjiaoyu.langyunzhihuijiaoxuexitong,朗云智慧教学系统,,,,,找不到包,
-com.lightwan,LightWAN,是,是,是,是,,
+启动器图标刚装好是黑方块,USB相关软件,大概率不可用"
+cn.smxxy.igspc,甘棠政务,,,,,无包
+cn.suwell.reader.appstore,数科OFD,是,是,是,是,
+cn.ts-it.suite,泰山办公2022专业版,是,是,是,是,
+cn.turboex.turboexclient,TurboExClient-邮箱,是,是,是,是,
+cn.vrv.linkdood,信源密信,是,是,是,是,
+cn.worldflying.setdevicetool,沃航科技设备配置工具,,,,,"缺包pkexec,暂时跳过"
+cn.wps.wps-office-pro,WPS2019专业版,是,是,是,是,
+cn.wps.wps-office,WPS Office 2019 For Linux,是,是,是,是,
+cn.yidianwan.cloudgame,易点玩云游戏,是,是,是,是,
+com.163.mailmaster,网易邮箱大师,是,是,是,是,
+com.360.browser-stable,360安全浏览器,是,否,,,提示安装损坏;/var/lib不可读;容器可能不支持polkit
+com.aisdp,亚信安全SDP,是,是,是,是,
+com.aivisioning.dsplayer,鼎视智能播放器,否,否,,,[python]:加载dll失败 等待排查
+com.alibabainc.dingtalk,3.-让工作学习更简单,是,是,是,是,
+com.amdox.booth,安道展台,否,否,,,仓库中找不到libdc1394.so.22，等待排查
+com.antutu.benchmark,安兔兔评测,,,,,无包
+com.apowersoft.apowermanager,手机管理大师,是,是,是,是,
+com.apps.ipcsearch,IPCSearch 3.1-IP地址搜索,否,否,,,无法启动，网络相关应用，可能需要root
+com.apps.vplayer,vPlayer,否,否,,,启动后系统非常卡，日志无报错，无界面
+com.axsizg.dtt,芯盾智能锁传输工具,是,是,是,是,
+com.bhyf.bhpainter,碧海视频展台,否,否,,,右下角有图标，但点不开
+com.biometrics.fprint.ft9348,敦泰指纹模组,否,否,,,无快捷方式，跳过
+com.bjzaxk.zachecktool,中安国产通用计算机终端保密检查系统V1.0 (单机版),是,否,,,可以启动，不过弹窗关掉后卡住，需要读取光盘，可能不可用
+com.bjzaxk.zacleantool,中安兴坤信息消除工具V1.0,否,否,,,需要服务启动，跳过
+com.bmb1688.audit,帝岚计算机终端保密检查系统,是,是,是,是,
+com.cfca.seceditctl.cgb,广发银行网银密码安全控件,否,否,,,"纯插件,无启动文件"
+com.channelsoft.sipphone,CPFCcodSipPhone,是,是,是,是,
+com.cloudwan,CloudWAN,是,未知,是,是,VPN软件，能启动不一定能用
+com.cnezsoft.xuanxuan,喧喧企业协同聊天,是,是,是,是,
+com.codeweavers.crossover,Crossover-wine运行器,是,否,是,是,有界面，但需要启动服务，得想办法修复服务问题
+com.cutecomm.broadcast,智慧帮直播,是,是,是,是,
+com.cutecomm.remotedt,智慧帮远程,是,是,是,是,
+com.cutecomm.videoconf,智慧帮视频会议,是,是,是,是,
+com.cvicse.ump.agentpc,中创统一监管平台软件桌面客户端V2.1,否,未知,是,是,"右下有图标可用交互,但没有窗口,可能就只是个监控软件"
+com.deepin.uos-cmca,CMCA根证书,,,,,不适合玲珑
+com.dhbiens.player,东海播放器影音版,是,否,,,依赖的ffplay正常播放视频，但主程序不能播放
+com.eagleyun.yunshu,云枢,否,否,,,需要服务启动，跳过
+com.eastmoney.emapp,东方财富,是,是,是,是,
+com.echanceyun.pan,企业云盘,,,,,模块fs-extra 为空无法启动
+com.elex.tscs,博智计算机终端保密检查系统V2.0,是,是,是,是,
+com.eolink,Eolink,是,否,是,是,"强制更新,暂时跳过"
+com.eusoft.eudic,欧路词典,是,是,是,是,
+com.founderinternational.cebreader,方正CEB版式文档阅读器,是,是,是,是,
+com.foxit.foxitpdfeditor,福昕高级PDF编辑器,是,是,是,是,
+com.ftsafe.interpass3000-cgb,广发银行key盾管理工具-飞天诚信,,,,,卡住无法启动
+com.fz.deepin,方正证券股票期权经典版,,,,,"wine应用,且文件不完整,跳过"
+com.gdca.gdcaclient,GDCA数字证书客户端,是,是,是,是,
+com.gdca.trustofdreader,信鉴易OFD印章阅读器,是,是,是,是,
+com.gingo,金鸽,是,是,是,是,
+com.github.desktopnaotu,桌面版百度脑图,是,是,是,是,
+com.gnway.appcloud,云联信创专版,是,是,是,是,
+com.gstarcad.cad,浩辰CAD 2024,是,是,是,是,
+com.gsubo.xoa,心通达OA精灵,是,是,是,是,
+com.gtja.richeasy,国泰君安富易,是,否,是,是,"基本功能可用,登录显示连接中,不知能否用"
+com.gzsdkj,山地签,,,,,"服务端,且在程序目录写日志sd_warn.log"
+com.hillstonenet.scvpn,Hillstone Secure Connect-远程工具,是,是,是,是,
+com.hisense-syxs.hiedu,海信智学,是,是,是,是,
+com.hsl.amis,电子档案管理系统,是,是,是,是,
+com.hst.fsmeeting,好视通云会议,是,是,是,是,
+com.htsec.ehtsec,e海通财,是,是,是,是,
+com.huashuoaf.finger,华硕安防指纹,是,是,是,是,
+com.huidu.hdplayer,HDPlayer软件,是,是,是,是,
+com.huluer.ichainpi,派盘,,,,,"试图打开只读目录,暂时跳过: error=""open /etc/ichainpi/service.db: no such file or directory"""
+com.icvp.vwas,万控一体化集控,是,是,是,是,
+com.insight.client,信创运维小助手,,,,,纯服务
+com.isoftstone.hwcloudlink,HW CloudLink-视频会议,是,是,是,是,
+com.jiaedian.power,华腾节能客户端,,,,,字体异常
+com.jiaoyi.tradermaster,交易侠,,,,,Segmentation fault
+com.jimi.evimsagent,Evimsagent-系统性能监控,是,是,是,是,
+com.joydin.braingame,智力游戏,是,是,是,是,
+com.jsdeepnet.swgap,深网文件传输客户端,,否,,,"缺libdlog.so,仓库中找不到"
+com.jumple.pns.server,PNS全国产桌面云系统软件V2.0（服务端）,,,,,无快捷方式；dpkg文件权限错误
+com.jzaq.client,集中安全平台,,,,,找不到包
+com.jzaq.stand-alone,集中安全平台单机版,,,,,找不到包
+com.keymanager,密信Key管理工具,是,是,是,是,
+com.kinggrid.isignature10.common,金格电子签章系统V10,,,,,找不到包
+com.kinggrid.surread,超阅版式办公套件,是,是,是,是,
+com.langlangjiaoyu.langyunzhihuijiaoxuexitong,朗云智慧教学系统,,,,,找不到包
+com.lightwan,LightWAN,是,是,是,是,
 com.longhubang.numnode,龙虎榜,,,,,"libGL error: failed to load driver: swrast
-X Error of failed request:  GLXBadContext",
-com.longser.gm3000user,中科朗思通用证书驱动,,,,,跳过，不适合玲珑,
-com.meia.me,美啊,,,,,无快捷方式,
-com.meitu.mtxx,美图秀秀-图片编辑与设计神器,是,是,是,是,,
-com.microcloudsys.appv,微云云应用,是,是,是,是,,
-com.mindlinker.boardmeeting,MindLinker(intel大屏版),是,否,是,是,无网络,
-com.mindlinker.meeting,MindLinker迈聆会议,是,是,是,是,,
-com.mingdao.officetool,明道云办公,是,是,是,否?,"复制desktop的ll-cli命令可启动,双击不行",
-com.mythware.cms-student,极域课堂互动教学系统软件（学生端）,,,,,无法启动,
-com.mythware.cms-teacher,极域课堂互动教学系统软件（教师端）,,,,,无法启动,
-com.netchina.ndoffice-stable,网龙Office 2021,是,是,是,是,,
-com.nutstore.deepin,坚果云,,,,,包内缺启动文件nutstore-pydaemon.py,
-com.oa8000.htim,小天精灵即时通讯软件,是,是,是,是,,
-com.onbonbx.ledshowsuite,LedShowSuite,是,是,是,是,,
-com.oneofd.ofdreader,葫芦OFD阅读器,是,是,是,是,,
-com.opiping.manager,opiping,是,是,是,是,,
-com.opiping.nabric,Nabric 一站式团队协作系统,是,是,是,是,,
-com.oray.hsk,花生壳网页版,是,是,是,是,网页应用,
-com.oray.pgyenterprise.client,蒲公英企业版,,,,,"需要服务,* INFO  * A program with the same name is already running",
-com.oray.sunlogin.client,向日葵远程控制,,,,,需要服务,
-com.oray.sunlogin.enterprise,向日葵企业版客户端,,,,,跳过,
-com.oray.sunlogin.remote,向日葵企业版控制端,,,,,需要服务,
-com.ovital.map,奥维互动地图,是,是,是,是,,
-com.qljy.qlteacher,青鹿教室,是,是,是,是,,
-com.qq.wemeet,腾讯会议,是,是,是,是,,
-com.rembb.jsx-tc,记上学三个课堂,,,,,Runtime error 217 at 00000000009F7AB7,
-com.sample.sradio,SRadio,,,,,仓库libfontconfig1版本太高：symbol lookup error: /usr/lib/x86_64-linux-gnu/libfontconfig.so.1: undefined symbol: FT_Done_MM_Var,
-com.sdca.certmng,SDCA证书桌面管理软件,,,,,"BS软件,启动后用户不能结束服务端,不适合,跳过",
-com.sdguodun.dzonesign,大众签章,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行",
-com.semxum.aivoicebox,声讯智能会议终端系统,,,,,无快捷方式,
-com.sumscope.qeubee,qeubee终端,是,是,是,是,,
-com.synology.drive,Synology Drive Client,是,是,是,是,,
-com.szca.msm.uos,协同签名密码模块,是,是,是,是,,
-com.szca.signproducttool,深圳CA签署产品,是,是,是,是/部分正常,,
-com.szshenshu.aidemo,深数科技人脸识别身份核验软件,是,是,是,是,"摄像头打开失败,USB相关,可能不可用",
-com.teakki.akeychat,安司密信,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行",
-com.tencent.gamereva,腾讯先锋云游戏,是,是,是,是,,
-com.tencent.wechat,微信,是,是,是,是,,
-com.thtfpc.camerashow,同方视频展台,,,,,没有包,
-com.thtfpc.classeva,同方课堂评价,,,,,没有包,
-com.thtfpc.integratedesktop,同方教育桌面,,,,,没有包,
-com.thtfpc.whiteboard,同方教育白板,,,,,没有包,
-com.todesk,ToDesk-远程控制,是,否,是,是,无网络,
-com.todesk.bclient,ToDesk企业主控,是,否,是,是,无网络,
-com.todesk.bhost,ToDesk企业被控,是,否,是,是,无网络,
-com.todesk.bsos,ToDesk企业SOS,是,是,是,是,,
-com.tongzhi.corecryptplugin,核心密码组件,,,,,"纯插件,无快捷方式",
-com.tongzhi.corecryptserver,核心密码组件（http）,,,,,"纯插件,无快捷方式",
-com.unity.unityhub,Unity Hub,,,,,"[58:0919/213237.931164:ERROR:angle_platform_impl.cc(44)] renderergl_utils.cpp:188 (ClearErrors): Preexisting GL error 0x00000500 as of ../../third_party/angle/src/libANGLE/renderer/gl/TextureGL.cpp, setImageHelper:256. ",
-com.vymeet.cloud.meeting,Vymeet 云会议,是,是,是,是,,
-com.wind.wfc,万得投顾终端,是,是,是,是,,
-com.wind.wft,Wind金融终端(机构专用),是,是,是,是,,
-com.wkimtilinux,马兰头会议,,,,,"UOS/V20 base均有问题,libQt5WebEngineCore.so.5: undefined symbol: FT_Palette_Select",
+X Error of failed request:  GLXBadContext"
+com.longser.gm3000user,中科朗思通用证书驱动,,,,,跳过，不适合玲珑
+com.meia.me,美啊,,,,,无快捷方式
+com.meitu.mtxx,美图秀秀-图片编辑与设计神器,是,是,是,是,
+com.microcloudsys.appv,微云云应用,是,是,是,是,
+com.mindlinker.boardmeeting,MindLinker(intel大屏版),是,否,是,是,无网络
+com.mindlinker.meeting,MindLinker迈聆会议,是,是,是,是,
+com.mingdao.officetool,明道云办公,是,是,是,否?,"复制desktop的ll-cli命令可启动,双击不行"
+com.mythware.cms-student,极域课堂互动教学系统软件（学生端）,,,,,无法启动
+com.mythware.cms-teacher,极域课堂互动教学系统软件（教师端）,,,,,无法启动
+com.netchina.ndoffice-stable,网龙Office 2021,是,是,是,是,
+com.nutstore.deepin,坚果云,,,,,包内缺启动文件nutstore-pydaemon.py
+com.oa8000.htim,小天精灵即时通讯软件,是,是,是,是,
+com.onbonbx.ledshowsuite,LedShowSuite,是,是,是,是,
+com.oneofd.ofdreader,葫芦OFD阅读器,是,是,是,是,
+com.opiping.manager,opiping,是,是,是,是,
+com.opiping.nabric,Nabric 一站式团队协作系统,是,是,是,是,
+com.oray.hsk,花生壳网页版,是,是,是,是,
+com.oray.pgyenterprise.client,蒲公英企业版,,,,,"需要服务,* INFO  * A program with the same name is already running"
+com.oray.sunlogin.client,向日葵远程控制,,,,,需要服务
+com.oray.sunlogin.enterprise,向日葵企业版客户端,,,,,跳过
+com.oray.sunlogin.remote,向日葵企业版控制端,,,,,需要服务
+com.ovital.map,奥维互动地图,是,是,是,是,
+com.qljy.qlteacher,青鹿教室,是,是,是,是,
+com.qq.wemeet,腾讯会议,是,是,是,是,
+com.rembb.jsx-tc,记上学三个课堂,是,是,是,是,
+com.sample.sradio,SRadio,,,,,仓库libfontconfig1版本太高：symbol lookup error: /usr/lib/x86_64-linux-gnu/libfontconfig.so.1: undefined symbol: FT_Done_MM_Var
+com.sdca.certmng,SDCA证书桌面管理软件,,,,,"BS软件,启动后用户不能结束服务端,不适合,跳过"
+com.sdguodun.dzonesign,大众签章,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.semxum.aivoicebox,声讯智能会议终端系统,,,,,无快捷方式
+com.sumscope.qeubee,qeubee终端,是,是,是,是,
+com.synology.drive,Synology Drive Client,是,是,是,是,
+com.szca.msm.uos,协同签名密码模块,是,是,是,是,
+com.szca.signproducttool,深圳CA签署产品,是,是,是,是/部分正常,
+com.szshenshu.aidemo,深数科技人脸识别身份核验软件,是,是,是,是,没有摄像头测试
+com.teakki.akeychat,安司密信,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.tencent.gamereva,腾讯先锋云游戏,是,是,是,是,
+com.tencent.wechat,微信,是,是,是,是,
+com.thtfpc.camerashow,同方视频展台,,,,,没有包
+com.thtfpc.classeva,同方课堂评价,,,,,没有包
+com.thtfpc.integratedesktop,同方教育桌面,,,,,没有包
+com.thtfpc.whiteboard,同方教育白板,,,,,没有包
+com.todesk,ToDesk-远程控制,是,否,是,是,无网络
+com.todesk.bclient,ToDesk企业主控,是,否,是,是,无网络
+com.todesk.bhost,ToDesk企业被控,是,否,是,是,无网络
+com.todesk.bsos,ToDesk企业SOS,是,是,是,是,
+com.tongzhi.corecryptplugin,核心密码组件,,,,,"纯插件,无快捷方式"
+com.tongzhi.corecryptserver,核心密码组件（http）,,,,,"纯插件,无快捷方式"
+com.unity.unityhub,Unity Hub,,,,,"[58:0919/213237.931164:ERROR:angle_platform_impl.cc(44)] renderergl_utils.cpp:188 (ClearErrors): Preexisting GL error 0x00000500 as of ../../third_party/angle/src/libANGLE/renderer/gl/TextureGL.cpp, setImageHelper:256. "
+com.vymeet.cloud.meeting,Vymeet 云会议,是,是,是,是,
+com.wind.wfc,万得投顾终端,是,是,是,是,
+com.wind.wft,Wind金融终端(机构专用),是,是,是,是,
+com.wkimtilinux,马兰头会议,,,,,"UOS/V20 base均有问题,libQt5WebEngineCore.so.5: undefined symbol: FT_Palette_Select"
 com.wotrus.wosignassist,沃签助手,是,否,是,否,"builder run正常,cli run 出Segmentation fault可能写入了程序目录
-",
-com.xhzx.dazzle,众芯盾电子文档安全管理系统V1.0,,,,,"服务相关,跳过",
-com.xunlei.download,迅雷,是,是,是,是,,
-com.xylink.linuxclient,小鱼易连,是,是,是,是,,
-com.yiqixie.yiqixie,一起写,是,否,是,是,白屏,
-com.yozosoft.yozo-office.s1,永中Office2019专业版办公软件V8.0,是,是,是,是,,
-com.yunkanpan.numnode,云看盘,是,否,是,是,"无限加载,疑似服务端已挂",
-com.yygongzi,用友工资条,是,是,是,是,网页快捷方式,
-com.zhixue.zhixuewang,智学网,是,是,是,是,网页快捷方式,
-com.zjca.zjcakeymanager,ZJCA证书助手,是,是,是,是,,
-com.zjd.gov,浙政钉,是,否,是,是,无网络,
-com.zlgpy.capturevideov4,哲林影像采集系统,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行",
-com.zqykj.hyjjai,智器云火眼金睛人工智能版,,,,,崩溃,
-com.zwsoft.zw3d2024,中望3D 2024,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行",
-com.zwsoft.zwcadm2024,中望CAD机械版 2024,是,是,是,是,"除了启动器快捷方式不可用,其他快捷方式可用",
-con.boxuebao.boxuezhiyun,博学智云,是,是,是,否,,
-dev.warp.app,Warp Terminal,,否,,,透明窗口，不能正常使用,
-duoyu-browser,多御安全浏览器,是,是,是,是,,
-ekvit,全能看版式阅读编辑器软件,,,,,需要libfontconfig1=1.10，仓库中无/opt/apps/ekvit.linyaps/files//opt/apps/ekvit/ekvit: symbol lookup error: /opt/apps/ekvit.linyaps/files/lib/x86_64-linux-gnu/libfontconfig.so.1: undefined symbol: FT_Done_MM_Var,
-em-va,集智(VA)应用云平台-客户端,是,是,是,是,,
-encoo.robot,云扩RPA机器人,是,是,是,是,,
-feidao,飞稻在线课程设计平台,是,是,是,是,,
-holder,holder,是,是,是,是,,
-hscore,山河安全工作空间,是,是,是,是,,
-huaweicloudmeeting,华为云会议-视频会议办公软件,是,是,是,是,,
-iauto,IAuto绘图,是,是,是,是,,
-iiis,3IS蓝聪会议预约,,,,,"BS结构,用户无法关闭服务,不适合",
-iitc,3IS智能信息交互系统-控制端,,,,,"BS结构,用户无法关闭服务,不适合",
-insmsg,InsMsg企业即时通信,是,是,是,是,,
-io.github.msojocs.bilibili,哔哩哔哩,是,是,是,是,,
-j2l3x,J2L3x 数字工作空间系统,是,是,是,是,,
+"
+com.xhzx.dazzle,众芯盾电子文档安全管理系统V1.0,,,,,"服务相关,跳过"
+com.xunlei.download,迅雷,是,是,是,是,
+com.xylink.linuxclient,小鱼易连,是,是,是,是,
+com.yiqixie.yiqixie,一起写,是,否,是,是,白屏
+com.yozosoft.yozo-office.s1,永中Office2019专业版办公软件V8.0,是,是,是,是,
+com.yunkanpan.numnode,云看盘,是,否,是,是,"无限加载,疑似服务端已挂"
+com.yygongzi,用友工资条,是,是,是,是,
+com.zhixue.zhixuewang,智学网,是,是,是,是,
+com.zjca.zjcakeymanager,ZJCA证书助手,是,是,是,是,
+com.zjd.gov,浙政钉,是,否,是,是,无网络
+com.zlgpy.capturevideov4,哲林影像采集系统,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.zqykj.hyjjai,智器云火眼金睛人工智能版,,,,,崩溃
+com.zwsoft.zw3d2024,中望3D 2024,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.zwsoft.zwcadm2024,中望CAD机械版 2024,是,是,是,是,Cloud2D不可用
+con.boxuebao.boxuezhiyun,博学智云,是,是,是,否,
+dev.warp.app,Warp Terminal,,否,,,透明窗口，不能正常使用
+duoyu-browser,多御安全浏览器,是,是,是,是,
+ekvit,全能看版式阅读编辑器软件,,,,,需要libfontconfig1=1.10，仓库中无/opt/apps/ekvit.linyaps/files//opt/apps/ekvit/ekvit: symbol lookup error: /opt/apps/ekvit.linyaps/files/lib/x86_64-linux-gnu/libfontconfig.so.1: undefined symbol: FT_Done_MM_Var
+em-va,集智(VA)应用云平台-客户端,是,是,是,是,
+encoo.robot,云扩RPA机器人,是,是,是,是,
+feidao,飞稻在线课程设计平台,是,是,是,是,
+holder,holder,是,是,是,是,
+hscore,山河安全工作空间,是,是,是,是,
+huaweicloudmeeting,华为云会议-视频会议办公软件,是,是,是,是,
+iauto,IAuto绘图,是,是,是,是,
+iiis,3IS蓝聪会议预约,,,,,"BS结构,用户无法关闭服务,不适合"
+iitc,3IS智能信息交互系统-控制端,,,,,"BS结构,用户无法关闭服务,不适合"
+insmsg,InsMsg企业即时通信,是,是,是,是,
+io.github.msojocs.bilibili,哔哩哔哩,是,是,是,是,
+j2l3x,J2L3x 数字工作空间系统,是,是,是,是,
 life.zishu.sdt,闪电藤文件传输,是,否,是,是,"不支持dmidecode# dmidecode 3.2
 /sys/firmware/dmi/tables/smbios_entry_point: Permission denied
 Scanning /dev/mem for entry point.
-/dev/mem: No such file or directory",
-mcs,视宽电子教室广播教学软件学生端,,,,,启动后无界面,
-mct,视宽电子教室广播教学软件教师端,,,,,提示文件损坏,
-mcu,PoloMeeting视频会议系统-MCU服务器,是,是,是,是,,
+/dev/mem: No such file or directory"
+mcs,视宽电子教室广播教学软件学生端,,,,,启动后无界面
+mct,视宽电子教室广播教学软件教师端,,,,,提示文件损坏
+mcu,PoloMeeting视频会议系统-MCU服务器,是,是,是,是,
 meeting,红杉会议,,,,,"容器不支持shm:[pid    47] openat(AT_FDCWD, ""/dev/shm/pulse-shm-4079904060"", O_RDWR|O_NOFOLLOW|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-shm_open() failed: No such file or directory",
-mmc-server,噢易多媒体网络教室软件（信创版）,,,,,无桌面快捷方式,
-net.cnki.cajviewer,CAJViewer全文浏览器,是,是,是,是,,
-net.cnki.cnkiexpress,全球学术报告,是,是,是,是,,
-net.master-pdf,Master PDF 编辑器,是,是,是,是,,
-net.textseek,TextSeek 文本搜索工具,,,,,启动无反应,
-net.textseek.off,TextSeek (离线版)-文本搜索,,,,,启动无反应,
-net.thunderbird,雷鸟邮件客户端,是,是,是,是,,
-net.zhuoaninfo.pdf417.creator,卓安公文二维条形码生成软件,是,否,是,是,试用期结束,
-org.aaai.aireview,智能阅卷,是,是,是,是,,
-org.east.upsmart,UPSmart,是,否,是,否,"复制desktop的ll-cli命令可启动,双击不行",
-pdmaner,PDManer 元数建模,是,是,是,是,,
-photosir,PhotoSir,是,是,是,是,,
-ppthelper-agent,PPT遥控翻页,是,是,是,是,,
-smail.community,SMail安全邮件,是,是,是,是,,
-store.spark-app.redict-dtk5,Redict词典,是,是,是,是,,
-store.spark-app.wechat-linux-spark,微信Linux,是,是,是,是,,
-sursen-reader,书生阅读器,,,,,需要root启动服务,
-swt-swcx,河北省商务诚信,是,是,是,是,,
-syl-safe,SYL OS电脑管家,,,,,没有包,
-syl-smartclass,SYL智慧授课助手,,,,,没有包,
-ttmz,天天码字,,,,,初始化设置表失败,
-ubx-auxiliary,统信有往开发工具,是,是,是,是,,
-ubx-server,统信有往服务,,,,,无快捷方式,
-uclient,UClient,,,,,没有包,
-uengine-dc-com.ay293.app,多多影视（安卓版）,,,,,没有包,
-uos-youku-app,优酷视频,是,是,是,是,,
-vip.evdo.deepin,医维度,是,是,是,是,,
-weici-teaching,维词教学系统,是,是,是,是,,
-wonderpen,妙笔,是,是,是,是,,
-xcb-app,软通桥信创应用兼容适配客户端,是,否,是,是,需要sudo,
-xcshy,校餐守护云,是,是,是,是,,
-youzone,友空间,是,是,是,是,,
-com.processon.processonclient,ProcessOn流程图,是,是,是,是,,
-com.processon.processonmind,ProcessOn思维导图,是,是,是,是,,
+shm_open() failed: No such file or directory"
+mmc-server,噢易多媒体网络教室软件（信创版）,,,,,无桌面快捷方式
+net.cnki.cajviewer,CAJViewer全文浏览器,是,是,是,是,
+net.cnki.cnkiexpress,全球学术报告,是,是,是,是,
+net.master-pdf,Master PDF 编辑器,是,是,是,是,
+net.textseek,TextSeek 文本搜索工具,,,,,启动无反应
+net.textseek.off,TextSeek (离线版)-文本搜索,,,,,启动无反应
+net.thunderbird,雷鸟邮件客户端,是,是,是,是,
+net.zhuoaninfo.pdf417.creator,卓安公文二维条形码生成软件,是,否,是,是,试用期结束
+org.aaai.aireview,智能阅卷,是,是,是,是,
+org.east.upsmart,UPSmart,是,否,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+pdmaner,PDManer 元数建模,是,是,是,是,
+photosir,PhotoSir,是,是,是,是,
+ppthelper-agent,PPT遥控翻页,是,是,是,是,
+smail.community,SMail安全邮件,是,是,是,是,
+store.spark-app.redict-dtk5,Redict词典,是,是,是,是,
+store.spark-app.wechat-linux-spark,微信Linux,是,是,是,是,
+sursen-reader,书生阅读器,,,,,需要root启动服务
+swt-swcx,河北省商务诚信,是,是,是,是,
+syl-safe,SYL OS电脑管家,,,,,没有包
+syl-smartclass,SYL智慧授课助手,,,,,没有包
+ttmz,天天码字,,,,,初始化设置表失败
+ubx-auxiliary,统信有往开发工具,是,是,是,是,
+ubx-server,统信有往服务,,,,,无快捷方式
+uclient,UClient,,,,,没有包
+uengine-dc-com.ay293.app,多多影视（安卓版）,,,,,没有包
+uos-youku-app,优酷视频,是,是,是,是,
+vip.evdo.deepin,医维度,是,是,是,是,
+weici-teaching,维词教学系统,是,是,是,是,
+wonderpen,妙笔,是,是,是,是,
+xcb-app,软通桥信创应用兼容适配客户端,是,否,是,是,需要sudo
+xcshy,校餐守护云,是,是,是,是,
+youzone,友空间,是,是,是,是,
+com.processon.processonclient,ProcessOn流程图,是,是,是,是,
+com.processon.processonmind,ProcessOn思维导图,是,是,是,是,
