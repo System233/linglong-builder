@@ -8,6 +8,7 @@ package:
 command:
   - /opt/apps/cn.lanxin.linyaps/files/bin/start.sh
 base: com.uniontech.foundation/20.0.1
+runtime: org.deepin.Runtime/20.0.1
 sources:
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/cn.lanxin/cn.lanxin_8.2.1.107897_amd64.deb
@@ -66,6 +67,84 @@ sources:
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/libu/libunwind/libunwind8_1.2.1.1-1+dde_amd64.deb
     digest: aaa1817cad456a5d6db59fe3819f2fd025ab21e1dfff5d16ae6dde331d8b85ca
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libi/libinput/libinput10_1.12.6.2-1+dde_amd64.deb
+    digest: dc29809f40278b4a80c24d819d2ce669737b2d11a882aa8cbd59649110999955
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libe/libevdev/libevdev2_1.6.0+dfsg-1_amd64.deb
+    digest: e25abaf6ca46022c0b62cc5eed3a91818b7e7c2b26696a765c3fa784f8fb3564
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/m/mtdev/libmtdev1_1.1.5.1-1+rebuild_amd64.deb
+    digest: e25e1cb21990d0148091edba4acb9c374612a59f1a61247c9e1b164c04ea2ccd
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libw/libwacom/libwacom2_0.32-1_amd64.deb
+    digest: 470f3ef98419a485d32a521ce79f0401438ff9324816e92d4ac444dd4ac6e3bb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libg/libgudev/libgudev-1.0-0_232.1-1+dde_amd64.deb
+    digest: 8e4d9002fc937c8aef15b4c5a91f47c81fdee97aeb7a97fe69b6e215ed7b6bb9
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libw/libwacom/libwacom-common_0.32-1_all.deb
+    digest: 654f6d07188516ec4c566bccca0b65aca9f8b95b32e4338e66847237e2266fa6
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libi/libinput/libinput-bin_1.12.6.2-1+dde_amd64.deb
+    digest: 113c65e67f86df09e1373a4b6a9f7ce7ebf8cac31a0f3abfa2491fc35aabb3f1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pulseaudio/libpulse0_12.2.27-1+dde_amd64.deb
+    digest: 5325ed34769ba417071a20c1138d654e084a3f3ca01c44a5e008fdea8c43d808
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/liba/libasyncns/libasyncns0_0.8-6_amd64.deb
+    digest: ff03f23cc327b963512c7e1d0689951abbaf1406035456cf6e6d7c67ccce5431
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libs/libsndfile/libsndfile1_1.0.28.3-1+deepin_amd64.deb
+    digest: 52f5093b8cfae890826dd27350de8a1c0432ed9f8d125ebebb5c5fd8dba47dd1
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/f/flac/libflac8_1.3.2.3-deepin1_amd64.deb
+    digest: 120eb80b701f874a7aac18bd430eb2bb2009cdac47d4ef68b8e52277186f61cf
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libo/libogg/libogg0_1.3.2.2-1+dde_amd64.deb
+    digest: 684ed420aa9ac57885cbc14989fa893d75510acf19d29e14fd9bd25338072516
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbis0a_1.3.6-2_amd64.deb
+    digest: 58ceadc9fcdb5a18c9092e0ab0b65130063132712b81fee72e14ad3d367ca172
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libv/libvorbis/libvorbisenc2_1.3.6-2_amd64.deb
+    digest: dc6ba53bfba31f24e5c8a4a54786747f1ca60855d4351c3de5bd5a1f36d292fa
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/t/tcp-wrappers/libwrap0_7.6.q-28_amd64.deb
+    digest: 545d24beda62aa37ac22af697dbc43c9fb87d718aeefd3664309759f716ea0ac
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/p/pulseaudio/libpulse-mainloop-glib0_12.2.27-1+dde_amd64.deb
+    digest: 5bf2394c749545b1de4c7d7e677a7b13bb70f6acfc33d890af3083c4d802e5ef
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/r/roaraudio/libroar-compat2_1.0~beta12-2_amd64.deb
+    digest: 51550b75a4fbdc3b46f4c9952f012d564d931bd80b24ecc6fe40abfd42698a2f
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/r/roaraudio/libroar2_1.0~beta12-2_amd64.deb
+    digest: 6939da625327cef1387e9255900c3a14daeea302b96eb36aef3d72e9d8ccaf3b
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/speex/libspeex1_1.2.1.1-1+dde_amd64.deb
+    digest: d05a2cac1aa8be49eef2e309e301e812cb4598f9cd8d3b439fe78b89894c2b34
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/s/speex/libspeexdsp1_1.2.1.1-1+dde_amd64.deb
+    digest: d7703da55dc03766223b15ed6e6de1293cba24d7b720740d9f4963788ebc1044
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1_amd64.deb
+    digest: a498ff92806369ab8fdc0ac218185fe148288b840443409b665b05cdc7bf2c9e
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-image/libxcb-image0_0.4.0.1-1+rebuild_amd64.deb
+    digest: f54347e90eaf15ff0e85847d226ac82a6960d2a64f14b911dc8e1916165610d5
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util/libxcb-util0_0.3.8.1-1+rebuild_amd64.deb
+    digest: d571cf09a867aa8a9d416e3bfdfdbb53dae1f97d0f499cc4f7ef9124b953f9ca
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0.1-1+rebuild_amd64.deb
+    digest: a8656090cd2971bff2d6596aafa14dff59c8d5e627f8564370ed2d210505b55c
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9.1-1+rebuild_amd64.deb
+    digest: 474b363a06dbbafa4a40b965ed2f066d46fa474aa3fc0a9f6da44ec1e2e240bb
+  - kind: file
+    url: https://professional-security.chinauos.com/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_0.8.2-1_amd64.deb
+    digest: 387f2e36c582b123f7988f250f3ab739a7f3a54e5b507d4e5fa445cd1c43f61a
 build: |-
   export LINGLONG_RAW_ID="cn.lanxin"
   export LINGLONG_APP_ID="cn.lanxin.linyaps"
