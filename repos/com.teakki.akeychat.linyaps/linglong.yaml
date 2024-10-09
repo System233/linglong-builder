@@ -21,6 +21,30 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
     digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pulseaudio/libpulse0_14.2.3-deepin1_amd64.deb
+    digest: 997860325f33c3b276e4a5cd3731c27b20bcf72809902de81f62da8525c66368
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/liba/libasyncns/libasyncns0_0.8-6+apricot_amd64.deb
+    digest: de805cf3264f385e10c99745700e1ce5e7c23c37b1437ec90903c7b70f8c4ebf
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libs/libsndfile/libsndfile1_1.0.28.3-1+deepin_amd64.deb
+    digest: a3c358e16e60c5e012d1e0c1feb664d877948fe12814fc45b42dc28423255430
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/flac/libflac8_1.3.2.2-3+dde_amd64.deb
+    digest: 656e2eecc4b3d99469f5e946d1e399f51bf8d7c27e7a4c05465bf666668a32a6
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libo/libogg/libogg0_1.3.2.1-1+rebuild_amd64.deb
+    digest: 29bcb4e5c68648da6016e42a019e1d37b46e9829451d1b7414f71ce6d059eb0b
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvorbis/libvorbis0a_1.3.6-2_amd64.deb
+    digest: 58ceadc9fcdb5a18c9092e0ab0b65130063132712b81fee72e14ad3d367ca172
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libv/libvorbis/libvorbisenc2_1.3.6-2_amd64.deb
+    digest: dc6ba53bfba31f24e5c8a4a54786747f1ca60855d4351c3de5bd5a1f36d292fa
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/t/tcp-wrappers/libwrap0_7.6.q-28_amd64.deb
+    digest: 545d24beda62aa37ac22af697dbc43c9fb87d718aeefd3664309759f716ea0ac
 build: >-
   export LINGLONG_RAW_ID="com.teakki.akeychat"
 

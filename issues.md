@@ -13,3 +13,9 @@ export QML2_IMPORT_PATH=$dirname/qml2
 export QTWEBENGINEPROCESS_PATH=$dirname/QtWebEngineProcess
 
 ```
+
+## 图标概率双击无反应，复制deskto双击正常
+DDE 默认 设置QT_QPA_PLATFORM=dxcb;xcb所致，覆盖此环境变量进行修复
+```
+export QT_QPA_PLATFORM=xcb
+```

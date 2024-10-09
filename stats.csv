@@ -19,7 +19,7 @@ cn.com.topsec.topsap,安全接入,是,是,是,是,VPN软件，能启动不一定
 cn.com.xcsa.uos,数据安全集中管控,是,是,是,是,
 cn.coremail.cmclient,Coremail邮箱客户端,是,否,是,是,控件全灰
 cn.foxitsoftware.foxitreader,福昕PDF阅读器,,,,,无包
-cn.foxitsoftware.online,福昕高级PDF编辑器网页版,是,否,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+cn.foxitsoftware.online,福昕高级PDF编辑器网页版,是,是,是,是,
 cn.fxkp.fxkpofficesuite.appstore,福昕OFD版式办公套件,是,否,,,显示安装有误-等待修复
 cn.greenpaper.reader,绿页阅读器,是,是,是,是,
 cn.gzca.certmanager,GZCA数字证书客户端,否,否,,,Segmentation fault，GZCAGZLM DLL加载失败；读取了USB，可能需要加密狗
@@ -124,7 +124,7 @@ com.meitu.mtxx,美图秀秀-图片编辑与设计神器,是,是,是,是,
 com.microcloudsys.appv,微云云应用,是,是,是,是,
 com.mindlinker.boardmeeting,MindLinker(intel大屏版),是,否,是,是,无网络
 com.mindlinker.meeting,MindLinker迈聆会议,是,是,是,是,
-com.mingdao.officetool,明道云办公,是,是,是,否?,"复制desktop的ll-cli命令可启动,双击不行"
+com.mingdao.officetool,明道云办公,是,是,是,是,
 com.mythware.cms-student,极域课堂互动教学系统软件（学生端）,,,,,无法启动
 com.mythware.cms-teacher,极域课堂互动教学系统软件（教师端）,,,,,无法启动
 com.netchina.ndoffice-stable,网龙Office 2021,是,是,是,是,
@@ -145,14 +145,14 @@ com.qq.wemeet,腾讯会议,是,是,是,是,
 com.rembb.jsx-tc,记上学三个课堂,是,是,是,是,
 com.sample.sradio,SRadio,,,,,仓库libfontconfig1版本太高：symbol lookup error: /usr/lib/x86_64-linux-gnu/libfontconfig.so.1: undefined symbol: FT_Done_MM_Var
 com.sdca.certmng,SDCA证书桌面管理软件,,,,,"BS软件,启动后用户不能结束服务端,不适合,跳过"
-com.sdguodun.dzonesign,大众签章,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.sdguodun.dzonesign,大众签章,是,是,是,是,
 com.semxum.aivoicebox,声讯智能会议终端系统,,,,,无快捷方式
 com.sumscope.qeubee,qeubee终端,是,是,是,是,
 com.synology.drive,Synology Drive Client,是,是,是,是,
 com.szca.msm.uos,协同签名密码模块,是,是,是,是,
 com.szca.signproducttool,深圳CA签署产品,是,是,是,是/部分正常,
 com.szshenshu.aidemo,深数科技人脸识别身份核验软件,是,是,是,是,没有摄像头测试
-com.teakki.akeychat,安司密信,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.teakki.akeychat,安司密信,是,否,是,是,无法访问服务器/无效的服务器
 com.tencent.gamereva,腾讯先锋云游戏,是,是,是,是,
 com.tencent.wechat,微信,是,是,是,是,
 com.thtfpc.camerashow,同方视频展台,,,,,没有包
@@ -182,9 +182,9 @@ com.yygongzi,用友工资条,是,是,是,是,
 com.zhixue.zhixuewang,智学网,是,是,是,是,
 com.zjca.zjcakeymanager,ZJCA证书助手,是,是,是,是,
 com.zjd.gov,浙政钉,是,否,是,是,无网络
-com.zlgpy.capturevideov4,哲林影像采集系统,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.zlgpy.capturevideov4,哲林影像采集系统,是,是,是,是,
 com.zqykj.hyjjai,智器云火眼金睛人工智能版,,,,,崩溃
-com.zwsoft.zw3d2024,中望3D 2024,是,是,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+com.zwsoft.zw3d2024,中望3D 2024,是,是,是,是,
 com.zwsoft.zwcadm2024,中望CAD机械版 2024,是,是,是,是,Cloud2D不可用
 con.boxuebao.boxuezhiyun,博学智云,是,是,是,否,
 dev.warp.app,Warp Terminal,,否,,,透明窗口，不能正常使用
@@ -215,12 +215,12 @@ mmc-server,噢易多媒体网络教室软件（信创版）,,,,,无桌面快捷�
 net.cnki.cajviewer,CAJViewer全文浏览器,是,是,是,是,
 net.cnki.cnkiexpress,全球学术报告,是,是,是,是,
 net.master-pdf,Master PDF 编辑器,是,是,是,是,
-net.textseek,TextSeek 文本搜索工具,,,,,启动无反应
-net.textseek.off,TextSeek (离线版)-文本搜索,,,,,启动无反应
+net.textseek,TextSeek 文本搜索工具,是,是,是,是,
+net.textseek.off,TextSeek (离线版)-文本搜索,是,是,是,是,
 net.thunderbird,雷鸟邮件客户端,是,是,是,是,
-net.zhuoaninfo.pdf417.creator,卓安公文二维条形码生成软件,是,否,是,是,试用期结束
+net.zhuoaninfo.pdf417.creator,卓安公文二维条形码生成软件,是,是,是,是,
 org.aaai.aireview,智能阅卷,是,是,是,是,
-org.east.upsmart,UPSmart,是,否,是,否,"复制desktop的ll-cli命令可启动,双击不行"
+org.east.upsmart,UPSmart,是,是,是,是,
 pdmaner,PDManer 元数建模,是,是,是,是,
 photosir,PhotoSir,是,是,是,是,
 ppthelper-agent,PPT遥控翻页,是,是,是,是,
