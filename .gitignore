@@ -8,3 +8,4 @@ linglong
 *.uabBuild
 extraLibs.uab.yaml
 /build
+/rsync
