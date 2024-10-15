@@ -15,8 +15,8 @@ sources:
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/l/lbrowser/cn.loongnix.lbrowser_3.3.1876.3-1.stable_amd64.deb
     digest: 058895364359f4a9c9770e54d77c6dcfeeda849245e0bf3d51b85f3cedae37ea
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/c/curl/libcurl3-gnutls_7.64.1.21-deepin1_amd64.deb
-    digest: aae86661b49f90d327a19116327aa3afeb157575a5ac9ac1fdf89c4e7420ec35
+    url: https://professional-security.chinauos.com/pool/main/c/curl/libcurl3-gnutls_7.64.1.22-deepin1_amd64.deb
+    digest: 0f17aa924579ca8584f89524d4f993cba2552deb66dc7282bd387b576b1c2992
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/g/gtk+3.0/libgtk-3-0_3.24.5.9-1+deepin_amd64.deb
     digest: 4018ff6ed2ebb89a4adc37ad3a830aaccf125386bb38b0fdfb670545cd79badd

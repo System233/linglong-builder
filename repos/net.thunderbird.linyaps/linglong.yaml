@@ -22,8 +22,8 @@ command:
 base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/m/mozilla/net.thunderbird_115.15.0_amd64.deb
-    digest: b58ace9dc00d68de48a85d25606b3a2352542f995b95c070ca87984fc1853487
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/m/mozilla/net.thunderbird_115.16.0esr_amd64.deb
+    digest: 7fe3596517d41a66ba5837e1f2a9774905982216e5c87ba19ab46008c0d48fd7
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/d/dbus-glib/libdbus-glib-1-2_0.110-4_amd64.deb
     digest: 64746681d66d507d07b6158adc9151836f4bd892dcf5e7c9c2085b079a3294b7

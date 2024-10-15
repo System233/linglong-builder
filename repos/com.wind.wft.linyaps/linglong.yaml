@@ -10,8 +10,8 @@ command:
 base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.wind.wft/com.wind.wft_24.3.2.09040_amd64.deb
-    digest: 353517262a2b871404779921fddb6e015d5ae435e06a626cbbdd2e23c9501bec
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.wind.wft/com.wind.wft_24.3.3.09140_amd64.deb
+    digest: d8ae13b4681af562674d8b8310e70101c28ef8faadb4f0ac8db00f93e4426a9c
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
     digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330

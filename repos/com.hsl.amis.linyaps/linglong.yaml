@@ -10,8 +10,8 @@ command:
 base: com.uniontech.foundation/20.0.1
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.hsl.amis/com.hsl.amis_2022.10.18-10_amd64.deb
-    digest: 6e07e9acbb8367f22cf7bb9bd47b42dd4b745afd2d7232e15a9b20898451a84d
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.hsl.amis/com.hsl.amis_2022.10.18-5_amd64.deb
+    digest: 1df5f6e1bf1dce727c2154adbcebe06b9a333525f3aae9dcd55fdb2019256414
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
     digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64

@@ -65,6 +65,7 @@ build: >-
   export
   LINGLONG_APP_DESC="网易邮箱大师-高效强大的全平台邮箱客户端\n「网易邮箱大师」是网易官方出品的全平台邮箱客户端，支持网易邮箱、QQ邮箱在内的各类个人及企业邮箱，更有众多拓展功能与服务，让你的邮箱更强大，让邮件处理更高效。邮箱添加问题及产品建议，可发送邮件至dashiteam@163.com，感谢你对网易邮箱大师的支持，更多功能，敬请期待~"
 
-  export LINGLONG_COMMAND="/opt/apps/com.163.mailmaster.linyaps/files/bin/start.sh"
+  export
+  LINGLONG_COMMAND="/opt/apps/com.163.mailmaster.linyaps/files/bin/start.sh"
 
   exec /project/build.sh

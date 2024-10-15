@@ -162,3 +162,9 @@ libpcsclite1
 ca-certificates
 openssl
 ca-certificates-uniontech
+libqt5qml5
+libqt5core5a
+libdouble-conversion1
+libpcre2-16-0
+libqt5network5
+libqt5dbus5

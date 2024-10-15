@@ -10,8 +10,8 @@ command:
 base: com.uniontech.foundation/20.0.1
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.alibabainc.dingtalk/com.alibabainc.dingtalk_7.6.0.40718_amd64.deb
-    digest: 08412d0162f971b11ad9f940e5277d8fec215bc2ae1ef3317b8b1483efd33351
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.alibabainc.dingtalk/com.alibabainc.dingtalk_7.6.0.4091801_amd64.deb
+    digest: 03334421449900ee8ef21b1e3dd433a311e5eac9d418dc7bb8605ee084aa8400
   - kind: file
     url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/s/signverify-go/deepin-elf-verify_1.1.10-1_amd64.deb
     digest: fa378ba33c9149a74a1770a1b52f9029cbf61291dad5353652ce058c631cca64

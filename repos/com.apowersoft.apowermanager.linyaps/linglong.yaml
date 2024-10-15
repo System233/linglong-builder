@@ -391,8 +391,8 @@ sources:
     url: https://professional-security.chinauos.com/pool/main/f/ffmpeg/libavformat58_4.1.9.13-deepin13_amd64.deb
     digest: 8633e7e5129fd6124f26c5d837f3e640614476134da2a9460659b218e56015ee
   - kind: file
-    url: https://professional-security.chinauos.com/pool/main/libb/libbluray/libbluray2_1.1.0-1_amd64.deb
-    digest: c836aca7da86ec39b655c0ffd2e4e13d498bd2a88b3f6c4df64eef0d5b1270bd
+    url: https://professional-security.chinauos.com/pool/main/libb/libbluray/libbluray2_1.1.0.1-deepin1_amd64.deb
+    digest: 0b193637700329227afe2edae7433bbd04cad4a2e8ba27d496fcd927dd8133c4
   - kind: file
     url: https://professional-security.chinauos.com/pool/main/c/chromaprint/libchromaprint1_1.4.3.1-1+dde_amd64.deb
     digest: 452439148e31e39daa3551b29f742a1890ea9d4dfaaa8c7ab68980aa8eafebde

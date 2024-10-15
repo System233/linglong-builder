@@ -3,3 +3,5 @@ libbrotli1
 libicu70
 util-linux-extra
 ca-certificates-uniontech
+libdouble-conversion1
+libpcre2-16-0

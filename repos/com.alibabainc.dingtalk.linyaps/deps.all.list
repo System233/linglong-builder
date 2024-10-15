@@ -76,6 +76,7 @@ libcups2
 libavahi-client3
 libavahi-common3
 libavahi-common-data
+libcom-err2
 libgnutls30
 libgmp10
 libhogweed4
@@ -87,7 +88,6 @@ libunistring2
 libp11-kit0
 libtasn1-6
 libgssapi-krb5-2
-libcom-err2
 libk5crypto3
 libkeyutils1
 libkrb5support0

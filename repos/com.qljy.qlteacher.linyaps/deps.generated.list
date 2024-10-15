@@ -1,3 +1,8 @@
+com.qljy.qlteacher
+libbrotli1
+libicu70
+util-linux-extra
+ca-certificates-uniontech
 libavcodec-extra58
 libaom0
 libaribb24-0
@@ -8,7 +13,6 @@ libva-drm2
 libva-x11-2
 libvdpau1
 ocl-icd-libopencl1
-libbrotli1
 libcodec2-0.8.1
 libdav1d5
 libgsm1
@@ -17,7 +21,6 @@ libopencore-amrnb0
 libopencore-amrwb0
 libopenjp2-7
 libopus0
-libicu70
 libshine3
 libsnappy1v5
 libspeex1

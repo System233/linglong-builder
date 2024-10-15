@@ -1,11 +1,15 @@
-libgstreamer-plugins-base1.0-0
+com.sumscope.qeubee
+libbrotli1
+libicu70
+util-linux-extra
+ca-certificates-uniontech
 libgstreamer1.0-0
 libcap2-bin
+libgstreamer-plugins-base1.0-0
 liborc-0.4-0
 iso-codes
 mesa-config
 libllvm13
-libicu70
 libvulkan1
 libpulse-mainloop-glib0
 libpulse0
@@ -18,7 +22,6 @@ libvorbisenc2
 libwrap0
 libdouble-conversion1
 libpcre2-16-0
-libbrotli1
 libinput10
 libevdev2
 libmtdev1

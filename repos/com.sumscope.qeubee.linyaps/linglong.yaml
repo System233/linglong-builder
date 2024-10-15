@@ -11,14 +11,29 @@ base: org.deepin.foundation/20.0.0
 runtime: org.deepin.Runtime/20.0.1
 sources:
   - kind: file
-    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.14.4.3-2+deb10u1_amd64.deb
-    digest: aeed65395f88defae9b42c4e7a43ecb03f4ac248981914b835150a43c33a9415
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.sumscope.qeubee/com.sumscope.qeubee_5.3.99_amd64.deb
+    digest: 02125570b7cf864d402cebc7bc0eadcd3519101fad0b06327f642052e914596e
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
+    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/u/util-linux/util-linux-extra_2.38.1-1.1_amd64.deb
+    digest: 489bc82e8e2d2d00cc216a38240b738958871e94d5cc4a1b7724095adb9e9560
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gstreamer1.0/libgstreamer1.0-0_1.14.4-1_amd64.deb
     digest: 84c3335da9d42d291db92d7030c98780a10d8dab93b379811fbcdefa1e8d2348
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/libc/libcap2/libcap2-bin_2.25-2_amd64.deb
     digest: b9e7ed33ec42322c99f2041719b95b204085a0b7828131b78d4c40295b431ead
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.14.4.3-2+deb10u1_amd64.deb
+    digest: aeed65395f88defae9b42c4e7a43ecb03f4ac248981914b835150a43c33a9415
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/orc/liborc-0.4-0_0.4.28-3.1_amd64.deb
     digest: 10336c49a5fb3f1198e2e1fe2e8a69db8e5c675e2bfb03d83f2eebc78cbef932
@@ -31,9 +46,6 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/llvm-toolchain-13/libllvm13_13.0.1~+rc3-1~exp1_amd64.deb
     digest: 76a12a863196a1476c2d80e4e9760a1c6b372c5ac6625d192847e839c675c95a
-  - kind: file
-    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
-    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/v/vulkan-loader/libvulkan1_1.2.162.0-1_amd64.deb
     digest: eb3e80d6202012ee920926fe1bc15feae18d2e57582e2fdffba9c1ce2ec55f82
@@ -70,9 +82,6 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/p/pcre2/libpcre2-16-0_10.32.2-deepin1_amd64.deb
     digest: ea63907d808773d0c3e51e6e4bb94d4e985d2e524e7005af9cbe85c6652e1d5e
-  - kind: file
-    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
-    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/libi/libinput/libinput10_1.12.6.1-1+deepin_amd64.deb
     digest: 2d3a6e003b9620fa400483d5dfef454b78e196d11cf45bafa386af810075bf9e

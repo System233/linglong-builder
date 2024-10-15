@@ -10,6 +10,21 @@ command:
 base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/c/com.qljy.qlteacher/com.qljy.qlteacher_5.1.0_amd64.deb
+    digest: 8a6ae562994bf3621caca8d5718533b6f6fe313b819d0074d1e352b29b63ac26
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
+    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
+    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/u/util-linux/util-linux-extra_2.38.1-1.1_amd64.deb
+    digest: 489bc82e8e2d2d00cc216a38240b738958871e94d5cc4a1b7724095adb9e9560
+  - kind: file
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/u/uniontech.ca.certificates.chain/ca-certificates-uniontech_1.0.4-1_all.deb
+    digest: 981c39833e80ffd4c15fe75155e07e02b4f31d2db881e6e710bfa435391b6c3d
+  - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/f/ffmpeg/libavcodec-extra58_4.4.2-1_amd64.deb
     digest: 0687c4de610cb64f2463445f5eee9a7c05a69031f1f74e27d12a1f06ff76e8c5
   - kind: file
@@ -40,9 +55,6 @@ sources:
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/ocl-icd/ocl-icd-libopencl1_2.2.12-2_amd64.deb
     digest: c60b454d0c5900c6b844d2c74f2785a8d9a1684aa3bc31451e762b53a2def853
   - kind: file
-    url: https://community-packages.deepin.com/deepin/apricot/pool/main/b/brotli/libbrotli1_1.0.7.1-1+eagle_amd64.deb
-    digest: d0164ef22361cbaf7421adab98ecc52dd0013dc656efcd1993afe4262c13c330
-  - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/c/codec2/libcodec2-0.8.1_0.8.1-2_amd64.deb
     digest: d313482fb33d4639a41e06407b75e05ebaba639b1d3ecc4ee25b43d3578855da
   - kind: file
@@ -66,9 +78,6 @@ sources:
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/o/opus/libopus0_1.3.1-0.1_amd64.deb
     digest: 0a2e5c04566a7753dd82ceab31df3be945e06336bae10732656eb1c7ea32ca25
-  - kind: file
-    url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
-    digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/s/shine/libshine3_3.1.1-2_amd64.deb
     digest: 31edca62da03d6a5390e74cc60aad25a26f5bd10a73c6881cdb47f521d363f6a

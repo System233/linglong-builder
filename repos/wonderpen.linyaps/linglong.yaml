@@ -10,8 +10,8 @@ command:
 base: org.deepin.foundation/20.0.0
 sources:
   - kind: file
-    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/w/wonderpen/wonderpen_2.5.4_amd64.deb
-    digest: 27ddb8fcd47989fb24e35212af2f8da8cf372e9552084a556a7afbf0d4bf2807
+    url: https://pro-store-packages.uniontech.com/appstore/pool/appstore/w/wonderpen/wonderpen_2.5.6_amd64.deb
+    digest: 8176bc7dab4a3f2c1d26f3d211c877063c7d9f92a2dfb0b79e5d7f8f4545f6a7
   - kind: file
     url: https://community-packages.deepin.com/deepin/apricot/pool/main/i/icu/libicu70_70.1-2_amd64.deb
     digest: 413244f007c488d0c54c952239e2511118cbabb52821d3150fa4d3325595b551
