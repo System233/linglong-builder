@@ -5,5 +5,3 @@ linglong
 *.log
 *.layer
 *.uab
-*.uabBuild
-extraLibs.uab.yaml
