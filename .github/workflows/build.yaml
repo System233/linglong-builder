@@ -2,8 +2,6 @@ name: Linglong Builder
 run-name: Build Linglong Packages
 on:
   push:
-    tags:
-      - "*"
 jobs:
   scan:
     runs-on: ubuntu-24.04
@@ -38,13 +36,10 @@ jobs:
         id: list-appid
         run: |
           APPID_LIST=/tmp/appid.list
-          CURRENT_TAG=${GITHUB_REF#refs/tags/}
-          echo "Current Tag: $CURRENT_TAG"
-          PREVIOUS_TAG=$(git tag --sort=-v:refname | grep -A 1 "$CURRENT_TAG" | tail -n 1)
 
           echo >${APPID_LIST}
-          git diff --name-only --format="" ${PREVIOUS_TAG}..${CURRENT_TAG} | grep '^repos/' | cut -d '/' -f 2 | sort -u | grep -Ff "filter.list" |sed -E -e 's#.linyaps$##'| tee -a ${APPID_LIST}
-          echo "tag=${GITHUB_REF#refs/tags/}">> $GITHUB_OUTPUT
+          git diff --name-only --format="" ${GITHUB_SHA} | grep '^repos/' | cut -d '/' -f 2 | sort -u | grep -Ff "filter.list" |sed -E -e 's#.linyaps$##'| tee -a ${APPID_LIST}
+          echo "tag=build-${GITHUB_REF#refs/tags/}">> $GITHUB_OUTPUT
           echo "appid=[$(cat ${APPID_LIST}| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
       - name: Install
         run: |
