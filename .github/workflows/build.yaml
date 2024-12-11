@@ -36,10 +36,10 @@ jobs:
         id: list-appid
         run: |
           APPID_LIST=/tmp/appid.list
-
+          DATE_STR=$(date +'%Y%m%d')
           echo >${APPID_LIST}
-          git diff --name-only --format="" ${GITHUB_SHA} | grep '^repos/' | cut -d '/' -f 2 | sort -u | grep -Ff "filter.list" |sed -E -e 's#.linyaps$##'| tee -a ${APPID_LIST}
-          echo "tag=build-${GITHUB_REF#refs/tags/}">> $GITHUB_OUTPUT
+          git diff --name-only --format="" ${GITHUB_SHA} | grep '^repos/' | cut -d '/' -f 2 | sort -u | tee -a ${APPID_LIST}
+          echo "tag=build-${DATE_STR}">> $GITHUB_OUTPUT
           echo "appid=[$(cat ${APPID_LIST}| sort -u |xargs -r -I{} echo '"{}"'| paste -sd ,)]" >> $GITHUB_OUTPUT
       - name: Install
         run: |
@@ -94,13 +94,14 @@ jobs:
       - name: Build ${{matrix.appid}}
         id: build
         run: |
-          export APP_ID=$(echo "${{matrix.appid}}"|cut -d: -f2)
+          export APP_ID=$(echo "${{matrix.appid}}"|cut -d: -f2|sed -E -e 's#.linyaps.*$##')
           export REPO_ROOT=$(pwd)/repos
           export NEW_APP_ID="${APP_ID}.linyaps"
           export APP_NAME=$(grep ${APP_ID} list.csv | cut -d, -f2)
-          export APP_DIR=${REPO_ROOT}/${NEW_APP_ID}
+          export APP_DIR=${REPO_ROOT}/${{matrix.appid}}
           export CACHE_DIR=~/.cache/linglong-helper
 
+          
           echo APPID=${APP_ID}
 
           yarn install
@@ -127,26 +128,11 @@ jobs:
           echo "sha1_name=${SHA1_NAME}" >> $GITHUB_OUTPUT
           echo "ref_id=${REF_ID}" >> $GITHUB_OUTPUT
 
-      - name: Commit
-        if: ${{ steps.build.outputs.commit == 'yes' }}
-        id: commit
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update ${{ steps.build.outputs.appid }}"
-          git status -s
-          git pull --rebase origin main
-          git push origin main
-
-          REF_ID=$(git rev-parse --short HEAD)
-          echo "ref_id=${REF_ID}" >> $GITHUB_OUTPUT
-
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: ${{steps.build.outputs.cmd == 'build' }}
         with:
           tag_name: ${{needs.scan.outputs.tag}}
-          body: Add ${{steps.build.outputs.appid}} [${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.commit.outputs.ref_id || steps.build.outputs.ref_id || github.sha}}/repos/${{steps.build.outputs.appid}}")
+          body: Add ${{steps.build.outputs.appid}} [${{steps.build.outputs.ref_id || github.sha}}]("https://github.com/${{github.repository}}/tree/${{steps.build.outputs.ref_id || github.sha}}/repos/${{steps.build.outputs.appid}}")
           append_body: true
           files: |
             ${{steps.build.outputs.layer_name}}
